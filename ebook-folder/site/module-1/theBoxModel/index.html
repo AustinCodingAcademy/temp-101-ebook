@@ -14,7 +14,7 @@
     
     
       
-        <title>Student Presentations - Web 101 - Intro to the Web</title>
+        <title>The Box Model - Web 101 - Intro to the Web</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#daily-student-presentations" class="md-skip">
+        <a href="#the-css-box-model" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Student Presentations
+              The Box Model
             
           </span>
         </div>
@@ -188,12 +188,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
         Module One: TITLE
@@ -211,7 +213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module-1/class-1/" class="md-nav__link">
+      <a href="../class-1/" class="md-nav__link">
         Class 1 Hosting Your Page
       </a>
     </li>
@@ -221,12 +223,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
       
       <label class="md-nav__link" for="__nav_2_2">
         Pre-Class 2 Lessons
@@ -242,11 +246,56 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../module-1/theBoxModel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          The Box Model
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         The Box Model
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#box-model-visualizer" class="md-nav__link">
+    Box Model Visualizer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -256,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module-1/boxModel-width%26height/" class="md-nav__link">
+      <a href="../boxModel-width%26height/" class="md-nav__link">
         Width & Height
       </a>
     </li>
@@ -268,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module-1/boxModel-padding/" class="md-nav__link">
+      <a href="../boxModel-padding/" class="md-nav__link">
         Padding
       </a>
     </li>
@@ -280,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module-1/boxModel-border/" class="md-nav__link">
+      <a href="../boxModel-border/" class="md-nav__link">
         Border
       </a>
     </li>
@@ -292,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module-1/boxModel-margin/" class="md-nav__link">
+      <a href="../boxModel-margin/" class="md-nav__link">
         Margin
       </a>
     </li>
@@ -304,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module-1/class-2/" class="md-nav__link">
+      <a href="../class-2/" class="md-nav__link">
         Class 2
       </a>
     </li>
@@ -329,14 +378,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       <label class="md-nav__link" for="__nav_3">
         Additional Resources
@@ -354,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../interviewChallenges/" class="md-nav__link">
+      <a href="../../additionalResources/interviewChallenges/" class="md-nav__link">
         Interview Training
       </a>
     </li>
@@ -364,20 +411,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../additionalResources/studentPresentations/" class="md-nav__link">
         Student Presentations
       </a>
-      
     </li>
   
 
@@ -387,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developSeries/" class="md-nav__link">
+      <a href="../../additionalResources/developSeries/" class="md-nav__link">
         Develop Series Collection
       </a>
     </li>
@@ -420,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../questionsForDiscussion/qfd-class-1/" class="md-nav__link">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-1/" class="md-nav__link">
         Day 1 QFD
       </a>
     </li>
@@ -432,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../questionsForDiscussion/qfd-class-2/" class="md-nav__link">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-2/" class="md-nav__link">
         Day 2 QFD
       </a>
     </li>
@@ -450,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blogPrompts/" class="md-nav__link">
+      <a href="../../additionalResources/blogPrompts/" class="md-nav__link">
         Blog Prompts
       </a>
     </li>
@@ -462,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../keyboardShortcuts/" class="md-nav__link">
+      <a href="../../additionalResources/keyboardShortcuts/" class="md-nav__link">
         Keyboard Shortcuts
       </a>
     </li>
@@ -474,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gitCommands/" class="md-nav__link">
+      <a href="../../additionalResources/gitCommands/" class="md-nav__link">
         Git & CLI Commands
       </a>
     </li>
@@ -486,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../graduationPrerequisites/" class="md-nav__link">
+      <a href="../../additionalResources/graduationPrerequisites/" class="md-nav__link">
         Graduation Prerequisites
       </a>
     </li>
@@ -498,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../presentationsQualifications/" class="md-nav__link">
+      <a href="../../additionalResources/presentationsQualifications/" class="md-nav__link">
         Presentations Qualifications
       </a>
     </li>
@@ -529,6 +567,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#box-model-visualizer" class="md-nav__link">
+    Box Model Visualizer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -540,75 +600,127 @@
               
                 
                 
-                <h1 id="daily-student-presentations">Daily Student Presentations</h1>
-<!-- Explain the purpose of presentations -->
+                <h1 id="the-css-box-model">The CSS Box Model</h1>
+<p><em>Maybe everyone can live beyond what they're capable of.</em></p>
+<p>―Markus Zusak, I Am the Messenger</p>
+<iframe src="https://player.vimeo.com/video/391834446" width="900" height="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<ul>
-<li><strong>Class 5</strong> - <em>Organize and Coordinate who and when students are presenting.</em></li>
-<li><strong>Class 6</strong> - <em>Pitch your graduation app to the class. What’s the problem? How does this app solve it?</em></li>
-<li><strong>Class 7</strong> - <em>Pitch your graduation app to the class. What’s the problem? How does this app solve it?</em></li>
-<li><strong>Class 8</strong> - <em>Pitch your graduation app to the class. What’s the problem? How does this app solve it?</em></li>
-<li><strong>Class 9</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 10</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 11</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 12</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 13</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 14</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 15</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 16</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 17</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 18</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 19</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
-<li><strong>Class 20</strong> -<ol>
-<li><em>todo</em></li>
-<li><em>todo</em></li>
-</ol>
-</li>
+<p>Throughout this course and the rest of the program you'll be introduced to many "models". We mean models by the way we can understand how computers interact with the world around them. They don't see models or know about models, rather models are just ways we humans can conceptualize the way a computer keeps up with memory and transfers that information to other computers.</p>
+<p>Today we're going to learn about the "<a href="https://css-tricks.com/the-css-box-model/">CSS Box Model</a>"  which is, put shortly, a model that helps us understand how to change the size, shape and overall appearance on an HTML element on the screen.</p>
+<p>Think, every element we put in our HTML code has a representation on the screen. That thing on the screen is just a box or rectangle. But with CSS we can change its properties to be taller, wider, centered, have a border and even change the shape to <em>not be a box</em>... The box model properties used to change the appearance of our rectangles are:</p>
+<ol>
+<li><code>height</code></li>
+<li><code>min-height</code></li>
+<li><code>max-height</code></li>
+<li><code>width</code></li>
+<li><code>min-width</code></li>
+<li><code>max-width</code></li>
+<li><code>margin</code> - (short-hand of the following 4 properties)<ul>
+<li><code>margin-top</code></li>
+<li><code>margin-right</code></li>
+<li><code>margin-bottom</code></li>
+<li><code>margin-left</code></li>
 </ul>
+</li>
+<li><code>border</code> - (short-hand of the following 3 properties)</li>
+<li><code>border-style</code></li>
+<li><code>border-color</code></li>
+<li><code>border-width</code></li>
+<li><code>border-radius</code></li>
+<li><code>padding</code> - (short-hand of the following 4 properties)<ul>
+<li><code>padding-top</code></li>
+<li><code>padding-right</code></li>
+<li><code>padding-bottom</code></li>
+<li><code>padding-left</code></li>
+</ul>
+</li>
+</ol>
+<p>The six properties listed above comprise most of the Box Model properties. There are, of course, many more properties that allow you <a href="https://getflywheel.com/layout/create-shapes-css3/">very fine-tuned control over the shape and size of your elements</a>. But for much of our lessons we won't have time to cover them all (you'll have to do that on your own time!).</p>
+<p>To help you understand how the short-hand properties (seen above) can represent all of the long hand properties, below are two CSS declarations that style a Section Element the exact same way. Notice the differences...</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">section</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#b1deef</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">1</span><span class="kt">%</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">5</span><span class="kt">%</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#264653</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>The same properties could have been written this way, as well:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">section</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#b1deef</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">padding-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">padding-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">padding-right</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">padding-left</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">border-width</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-style</span><span class="p">:</span> <span class="kc">solid</span><span class="p">;</span>
+  <span class="k">border-color</span><span class="p">:</span> <span class="mh">#264653</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>Did you pick it up? If not, look again until you understand it for yourself. Do not move on until you got it!</p>
+<h2 id="box-model-visualizer">Box Model Visualizer</h2>
+<p>We'll definitely be re-visiting this visualizer but it may be a good introduction for you now. This CSS Box Model Visualizer is a nifty tool built by <a href="https://github.com/carolineartz">Caroline Artz</a> to help people see how each property on the element effects the visual representation of the element on the screen. Each of the sliders are labeled with the actual properties you could type in CSS and the values you see are actual values you could code in CSS. And the changing box at the bottom right is what the element would look like. Try it!</p>
+<ul>
+<li><a href="http://codepen.io/carolineartz/pen/ogVXZj/">Box Model Visualizer</a></li>
+</ul>
+<p>In the upcoming lessons we'll dig a little deeper into the four categories of the CSS Box Model:</p>
+<blockquote>
+<p>Content Height &amp; Width
+Margin
+Border
+Padding</p>
+</blockquote>
+<p>In addition to knowing the Box Model in your head, your browser's developer Tools offer a visualization of each element. Just open your browser's devtools, hover over an element, then click to select the element. In the DevTool Tray you should see the "Elements" Tab highlighted at the top-left and to the right you'll see two sub-tabs named "Styles" and "Computed".</p>
+<p>The "Styles" tab will list all of the CSS rules that are applied to that element including rules that are overridden (denoted by a strike-through). Under the "Computed" tab you'll see a box with colors of blue(content), green(padding), yellow(border), orange(margin) along with numbers indicating the value in pixels.</p>
+<p><img alt="chrome-devtools-box-model-gif" src="../../images/chrome-devtools-box-model-gif.gif" /></p>
+<p>Keep this tool handy as you learn the properties of the Box Model and for the rest of your career!!</p>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://player.vimeo.com/video/391834446">See It - The Box Model</a></li>
+<li><a href="https://css-tricks.com/the-css-box-model/">CSS Tricks: The CSS Box Model</a></li>
+<li><a href="https://youtu.be/GvIP6QtCVSg?t=21">Box Model, Sizing, Shadow</a></li>
+</ul>
+<!-- [2nd Box Model Playground](https://codepen.io/mistakevin/pen/pbBGBp/) -->
+
+<!-- !END -->
+<hr />
+<!-- ! END OF VIDEO 101.1.3.1 - EXAMPLE TITLE -->
+<!-- ? Video Numbering and Title system: CourseNumber.ModuleNumber.LessonNumber.VideoNumber -->
+<!-- * (VIDEO 101.2.4.3 - "CSS Selectors") === 101 Course, Module 2, Lesson 4, Video 3 - "CSS Selectors" -->
+
+<!-- TODO - INSERT IMAGE EXAMPLE -->
+<hr />
                 
               
               
@@ -626,7 +738,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../interviewChallenges/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../class-1/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -635,19 +747,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Interview Training
+              Class 1 Hosting Your Page
             </div>
           </div>
         </a>
       
       
-        <a href="../developSeries/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../boxModel-width%26height/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Develop Series Collection
+              Width & Height
             </div>
           </div>
           <div class="md-footer__button md-icon">

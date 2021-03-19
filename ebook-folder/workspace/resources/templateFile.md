@@ -1,19 +1,25 @@
 # Subject
 
-<!-- *STARLING QUOTE -Author* -->
+<!-- *quote* -->
 
-## Example 2
+## Overview
+
+### Example 2
 
 ```javascript
 
 ```
+
+## Additional Resources
+
+- [ ] [YT, tuber, title]()
 
 ## Know Your Docs
 
 * [MDN Docs - ...]()
 
 <!-- 
-## Additional Resources
+
 
 ```javascript
 
