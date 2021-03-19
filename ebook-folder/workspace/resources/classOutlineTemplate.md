@@ -44,11 +44,13 @@ Today we're going to:
 ## Creation Time, 60-90 mins
 
 <!-- 
-  * Instructor to Demonstrate with Examples, Explain and Set Expectations
-  * Group Students in 3s 
-    * plan and implements
-  * Partner with other groups for elaboration
-  * Share with the class for evaluation (potentially carry into the next class) 
+* Instructor to Demonstrate with Examples, Explain and Set Expectations
+* Group Students in pairs
+  * plan and implements
+* Partner with other groups for elaboration
+* Share with the class for evaluation (potentially carry into the next class)
+
+*****
 -->
 
 - [ ] 
@@ -59,9 +61,11 @@ Today we're going to:
 - [ ] 
 
 
-<!-- ## Blogs to Show You Know
+<!-- 
+## Blogs to Show You Know
 
-[Blog Prompts](./../additionalResources/blogPrompts.md) -->
+[Blog Prompts](./../additionalResources/blogPrompts.md) 
+-->
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
@@ -78,7 +82,7 @@ Today we're going to:
 
 <!-- TODO INSERT Student Feedback From -->
 
-<!-- TODO INSERT *HIDDEN* Instructor Feedback Form -->
+<!-- TODO INSERT *HIDDEN* Instruc tor Feedback Form -->
 
 <!-- 
 height/width = 1.777 ---- width="655" height="368"

@@ -26,12 +26,12 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 1
 
-- [ ] **Prompt 1: Title** - *description*
+- [ ] **Prompt 1: NONE** - *NONE*
 <!-- - [ ] **Prompt 2: Title** - *description* -->
 
 ### Class 2
 
-- [ ] **Prompt 1: Title** - *description*
+- [ ] **Prompt 1: Wireframe & Plan** - *What is wireframing? How do we plan the construction of a web page? How can we use paper and pencil to guide us while coding? As a class, talk through and develop a plan to build the NASA Contact Page.*
 <!-- - [ ] **Prompt 2: Title** - *description* -->
 
 ### Class 3

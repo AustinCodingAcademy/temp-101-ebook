@@ -23,15 +23,19 @@ site_name: Web 101 - Intro to the Web
 
 nav:
     - Home: 'index.md'
-    - 'Module One: TITLE':
-      - Class 1 Hosting Your Page: module-1/class-1.md
-      - 'Pre-Class 2 Lessons': 
+    - 'Module One: Page Layout':
+      - 'Pre-Class 1 Lessons': 
         - The Box Model: module-1/theBoxModel.md
         - Width & Height: module-1/boxModel-width&height.md
         - Padding: module-1/boxModel-padding.md
         - Border: module-1/boxModel-border.md
         - Margin: module-1/boxModel-margin.md
-        - Class 2: module-1/class-2.md
+        - Class 1 Hosting Your Page: module-1/class-1.md
+      - 'Pre-Class 2 Lessons': 
+        - Display Property: module-1/displayProperty.md
+        - Display Flex: module-1/displayFlexProperties.md
+        - Flex Item: module-1/flexItemProperties.md
+        - Class 2 NASA Page: module-1/class-2.md
       # - 'Pre-Class 3 Lesson': 
       # - 'Pre-Class 4 Lesson': 
     # - 'Module Two: TITLE': 

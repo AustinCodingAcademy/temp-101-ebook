@@ -62,6 +62,40 @@ Need some code fencing and annotation?
   `const addSix = num => {`
 :   When we pass one and only one argument to a function declared with the `const` keyword we don't HAVE to wrap it with `( )`.
 
+Or Like this:
+
+=== "HTML"
+
+    ```html
+    <!-- this section is the parent/container element -->
+    <section class="truthful-statements">
+      <!-- Each of these article elements are child elements/flex items -->
+      <article>A connected life is the best life.</article>
+      <article>People have dogs. Some have cats.</article>
+      <article>Human activity is capturing heat at an alarming rate!</article>
+    </section>
+    ```
+=== "CSS"
+
+    ```css
+    /* the CSS to make it happen */
+    .truthful-statements {
+      display: flex;
+    }
+
+    article {
+      border-color: blue;
+      border-style: solid;
+      border-width: 1pt;
+      margin: 20pt 5pt;
+      padding: 2pt 5pt;
+    }
+    ```
+
+=== "Result"
+    ![truthful-statements-flex-demo](./../images/truthful-statements-flex-demo.png)
+
+<br/>
 
   ```html
 

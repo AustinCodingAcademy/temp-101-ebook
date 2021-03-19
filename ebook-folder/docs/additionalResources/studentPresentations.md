@@ -2,10 +2,14 @@
 
 <!-- Explain the purpose of presentations -->
 
-* **Class 5** - *Organize and Coordinate who and when students are presenting.*
-* **Class 6** - *Pitch your graduation app to the class. What’s the problem? How does this app solve it?*
-* **Class 7** - *Pitch your graduation app to the class. What’s the problem? How does this app solve it?*
-* **Class 8** - *Pitch your graduation app to the class. What’s the problem? How does this app solve it?*
+* **Class 1** - *Teach purpose of presentations and mentally prepare the class.*
+* **Class 2** - *Organize and Coordinate who and when students are presenting.*
+* **Class 3** - *33% of the class will teach the class about something they know well. A special skill, talent or task.*
+* **Class 4** - *33% of the class will teach the class about something they know well. A special skill, talent or task.*
+* **Class 5** - *33% of the class will teach the class about something they know well. A special skill, talent or task.*
+* **Class 6** - *3 mins - Pitch your graduation app idea to the class. What’s the problem? How does this app solve it?*
+* **Class 7** - *3 mins - Pitch your graduation app idea to the class. What’s the problem? How does this app solve it?*
+* **Class 8** - *3 mins - Pitch your graduation app idea to the class. What’s the problem? How does this app solve it?*
 * **Class 9** -
     1. *todo*
     1. *todo*

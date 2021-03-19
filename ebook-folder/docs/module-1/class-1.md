@@ -140,7 +140,7 @@ We'll be using these two programs tonight and for the rest of class. If you didn
 
 6. Click "Create Repository". After this you should see a screen that looks like this:
 
-    <!-- TODO INSERT IMAGE [gitHub-new-emptyRepo](./../images/gitHub-new-emptyRepo.png) -->
+![gitHub-new-emptyRepo](./../images/gitHub-new-emptyRepo.png)
 
 7. Find your Portfolio Folder in the terminal by either:
 
@@ -160,7 +160,7 @@ We'll be using these two programs tonight and for the rest of class. If you didn
 
 10. Watch the progress in your terminal then refresh the tab with your GitHub Repo to see if the files are there. In your terminal you're looking for feedback that looks like this:
 
-<!-- TODO INSERT Image [successful-Git-Push](./../images/successful-Git-Push.png) -->
+![successful-Git-Push](./../images/successful-Git-Push.png)
 
   > **Pause and Partner:**
 
@@ -297,19 +297,19 @@ Now that your web page is hosted on a publicly available computer, GitHub's serv
 
 1. Go back to the repo you just created on GitHub then go to the "Settings Tab".
 
-    <!-- TODO INSERT IMAGE - [gitHub-pages-settings-1](./../images/gitHub-pages-settings-1.png) -->
+![gitHub-pages-settings-1](./../images/gitHub-pages-settings-1.png)
 
 2. Under the Settings, scroll down almost to the bottom of the page until you see "GitHub Pages".
 
-    <!-- TODO INSERT IMAGE - [gitHub-pages-settings-2](./../images/gitHub-pages-settings-2.png) -->
+![gitHub-pages-settings-2](./../images/gitHub-pages-settings-2.png)
 
 3. Click the None dropdown and select `main` branch and then click "Save".
 
-    <!-- TODO INSERT IMAGE - [gitHub-pages-settings-3](./../images/gitHub-pages-settings-3.png) -->
+![gitHub-pages-settings-3](./../images/gitHub-pages-settings-3.png)
 
 4. Now, scroll back down to the "GitHub Pages" section and you'll see a section that says "Your site is ready to be published at `https://yourusername.github.io/`." - This is the ROOT of your live site. In order to see your live site, you need to put in the rest of the URL's **path**.
 
-<!-- TODO INSERT IMAGE - [gitHub-pages-settings-4](./../images/gitHub-pages-settings-4.png) -->
+![gitHub-pages-settings-4](./../images/gitHub-pages-settings-4.png)
 
 5. Use your browser to navigate to: `https://YOUR-GITHUB-USERNAME.github.io/ACA_web101_FIRSTNAME_LASTNAME/myPortfolio/index.html`
 
@@ -329,9 +329,9 @@ Your instructor will show you where and how to turn your assignments in using th
 
 DON'T make changes to your code using the tools on GitHub like editing, deleting, creating, or uploading any files.
 
-<!-- TODO INSERT IMAGE - [gitHub-NoNos-1](./../images/gitHub-NoNos-1.png) -->
+![gitHub-NoNos-1](./../images/gitHub-NoNos-1.png)
 
-<!-- TODO INSERT IMAGE - [gitHub-NoNos-2](./../images/gitHub-NoNos-2.png) -->
+![gitHub-NoNos-2](./../images/gitHub-NoNos-2.png)
 
 Only make changes in your editor (VS Code) and push them up EVERY TIME. No exceptions. If you don't it may cause you some headaches.
 
@@ -359,7 +359,7 @@ Git software is powerful but confusing for beginners. If something goes wrong wh
 
   Knowledge is best when it's learned not taught. In this program instructors and the learning portal guide the student's learning journey but our students own their learning experience. You'll be assigned to teach your classmates specific topics that are related to concepts and techniques being taught throughout the course and program. This process has been proven to deepen student's understanding, boost retention, and strengthen community and interpersonal communication skills.
 
-  Let's take some time to assign & document individual students and groups of students to present the coming topics.
+  Let's take some time look over the topics and get prepared for them. Next class we'll organized who and when each person is going for each topic.
 
   [List of Student Daily Presentations](./../additionalResources/studentPresentations.md)
 
@@ -377,7 +377,7 @@ Git software is powerful but confusing for beginners. If something goes wrong wh
     * [ ] What does Clone mean?
     * [ ] What's a Local Machine?
     * [ ] What's a Repo?
-3. Prepare for your presentations.
+3. Mentally prepare for [your presentations](./../additionalResources/studentPresentations.md).
 4. Next class we'll be adding an image gallery to your website so make sure you study CSS Grid & Box Model tonight and tomorrow. We'll see you then!
 
 <!-- ## Blogs to Show You Know

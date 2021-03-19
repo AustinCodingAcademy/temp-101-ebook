@@ -6,7 +6,9 @@
 
 ## Class 2 - Prompt 101
 
-- [ ]
+- [ ] Describe one thing you learned in class today.
+- [ ] Describe 2 (your choice) pseudo-selectors and discuss what they are used for.
+- [ ] What are some of the "gotchas"/epiphanies you've had for writing efficient CSS? However your heart tells you to.
 
 ## Class 4 - Prompt 102
 
