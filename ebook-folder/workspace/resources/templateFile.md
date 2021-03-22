@@ -1,6 +1,8 @@
 # Subject
 
-<!-- *quote* -->
+cp workspace/resources/templateFile.md docs/module-
+
+*quote*
 
 ## Overview
 
@@ -12,24 +14,18 @@
 
 ## Additional Resources
 
-- [ ] [YT, tuber, title]()
+- [ ] [YT, tuber - title]()
+
+<!-- [Try it yourself](https://replit.com)! -->
 
 ## Know Your Docs
 
-* [MDN Docs - ...]()
+* [MDN Docs - title]()
 
 <!-- 
-
-
 ```javascript
 
 ```
-
-- [ ] Task Two
-    *  [ ] Task Two.a
-    *  [ ] Task Two.b
-    *  [ ] Task Two.c
-
 
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
@@ -38,27 +34,18 @@
 | `DELETE`    | Delete resource |
 
 
-* [MDN Docs - ...]()
-
-- [ ] ...
-- [ ] ...
-
-
-```javascript
-
-``` 
-
-- [ ] ...
-- [ ] ...
-  * [ ] ...
-  * [ ] ... 
+- [ ] [MDN Docs - ...]()
 
     `line numbers`
 :do you like 'em?
 
-++slash++
 
+++slash++
 https://facelessuser.github.io/pymdown-extensions/extensions/keys/
+
+cp workspace/resources/templateFile.md docs/module-
+
+! height/width = 1.777 ---- width="655" height="368"
 
 === "Javascript"
 
@@ -70,8 +57,6 @@ https://facelessuser.github.io/pymdown-extensions/extensions/keys/
   ```python
   ```
 
-### Prompt 3:
-
 === "Example"
     ```console
       .
@@ -82,13 +67,6 @@ https://facelessuser.github.io/pymdown-extensions/extensions/keys/
       .
     ```
 
-=== "Push Yourself Further"
-    ```markdown
-      .
-    ```
-
-cp workspace/resources/templateFile.md docs/module-
-
-height/width = 1.777 ---- width="655" height="368"
-
+=== "Result"
+    ![PIC](./../images/pic.png)
 -->

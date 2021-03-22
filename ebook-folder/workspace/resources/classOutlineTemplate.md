@@ -50,6 +50,8 @@ Today we're going to:
 * Partner with other groups for elaboration
 * Share with the class for evaluation (potentially carry into the next class)
 
+![PIC](./../images/pic.png)
+
 *****
 -->
 
@@ -69,10 +71,11 @@ Today we're going to:
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
-* Create *** Assignment
-<!-- * Create *** Blog Assignment -->
-* Prepare for next by completing all of your pre-class lessons
-* Complete the feedback survey
+- [ ] Create *** Assignment
+<!-- - [ ] Create *** Blog Assignment -->
+- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Complete the feedback survey
+- [ ] Complete the feedback survey(if applicable)
 
 <!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
 <script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script> -->

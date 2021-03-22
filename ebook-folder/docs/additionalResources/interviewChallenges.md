@@ -26,8 +26,7 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 1
 
-- [ ] **Prompt 1: NONE** - *NONE*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: NONE**
 
 ### Class 2
 
@@ -36,8 +35,15 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 3
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: Title** - *Two students, at-a-time, will come up to the board at a time to work with their instructor to wireframe the following website mockups:*
+
+  > NOTE: please use the time to create meaningful wireframes with semantic elements and maybe useful CSS pseudo code that can guide your coding for today's project.
+
+=== "Resume Challenge"
+    ![resume-wireframing-challenge](./../images/resume-wireframing-challenge.png)
+
+=== "Landing Page Challenge"
+    ![landing-page-wireframeing-challenge](./../images/landing-page-wireframeing-challenge.png)
 
 ### Class 4
 

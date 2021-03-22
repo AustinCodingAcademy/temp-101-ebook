@@ -36,7 +36,12 @@ nav:
         - Display Flex: module-1/displayFlexProperties.md
         - Flex Item: module-1/flexItemProperties.md
         - Class 2 NASA Page: module-1/class-2.md
-      # - 'Pre-Class 3 Lesson': 
+      - 'Pre-Class 3 Lesson':
+        - Develop - Mindfulness: module-1/developSeries-mindfulness.md
+        - Wireframing: module-1/wireframing-pt1.md
+        - Display Grid: module-1/displayGrid.md
+        - Grid Properties: module-1/moreGridProperties.md
+        - Class 3 Resume: module-1/class-3.md
       # - 'Pre-Class 4 Lesson': 
     # - 'Module Two: TITLE': 
       # - 'Pre-Class 5 Lessons': 
@@ -61,6 +66,7 @@ nav:
       - 'Questions for Discussion Collections':
         - Day 1 QFD: additionalResources/questionsForDiscussion/qfd-class-1.md
         - Day 2 QFD: additionalResources/questionsForDiscussion/qfd-class-2.md
+        - Day 3 QFD: additionalResources/questionsForDiscussion/qfd-class-3.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - Git & CLI Commands: additionalResources/gitCommands.md
