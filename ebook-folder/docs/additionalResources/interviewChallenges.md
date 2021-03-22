@@ -47,8 +47,16 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 4
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: Title** - *Two students at a time will come up to the board to work with their instructor to wireframe each of the the three [website](https://www.sodgod.com/composting/) mockups below. 3 views = 6 students total.*
+
+=== "Mobile View"
+    ![sod-god-wireframing-mobileView](./../images/sod-god-wireframing-mobileView.png)
+
+=== "Tablet View"
+    ![sod-god-wireframing-tabletView](./../images/sod-god-wireframing-tabletView.png)
+
+=== "Desktop View"
+    ![sod-god-wireframing-laptopView](./../images/sod-god-wireframing-laptopView.png)
 
 ### Class 5
 

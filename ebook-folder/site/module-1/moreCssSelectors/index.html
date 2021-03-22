@@ -1,0 +1,1344 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>More CSS Selectors - Web 101 - Intro to the Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#more-css-selectors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-header__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web 101 - Intro to the Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              More CSS Selectors
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-nav__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    Web 101 - Intro to the Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Module One: Page Layout
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module One: Page Layout" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Module One: Page Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Pre-Class 1 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 1 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 1 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theBoxModel/" class="md-nav__link">
+        The Box Model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boxModel-width%26height/" class="md-nav__link">
+        Width & Height
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boxModel-padding/" class="md-nav__link">
+        Padding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boxModel-border/" class="md-nav__link">
+        Border
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boxModel-margin/" class="md-nav__link">
+        Margin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-1/" class="md-nav__link">
+        Class 1 Hosting Your Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Pre-Class 2 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 2 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 2 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../displayProperty/" class="md-nav__link">
+        Display Property
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../displayFlexProperties/" class="md-nav__link">
+        Display Flex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flexItemProperties/" class="md-nav__link">
+        Flex Item
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developSeries-selfMotivation/" class="md-nav__link">
+        Develop - Self-Motivation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-2/" class="md-nav__link">
+        Class 2 NASA Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Pre-Class 3 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 3 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 3 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developSeries-mindfulness/" class="md-nav__link">
+        Develop - Mindfulness
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wireframing-pt1/" class="md-nav__link">
+        Wireframing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../displayGrid/" class="md-nav__link">
+        Display Grid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moreGridProperties/" class="md-nav__link">
+        Grid Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-3/" class="md-nav__link">
+        Class 3 Resume
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Pre-Class 4 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 4 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 4 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../responsiveLayouts-gridAreas/" class="md-nav__link">
+        Responsive Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mediaQueries/" class="md-nav__link">
+        Media Queries
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          More CSS Selectors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        More CSS Selectors
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-selectors" class="md-nav__link">
+    The Selectors
+  </a>
+  
+    <nav class="md-nav" aria-label="The Selectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-selector" class="md-nav__link">
+    Type Selector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id-selector" class="md-nav__link">
+    id Selector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-selector" class="md-nav__link">
+    Class Selector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attribute-selector" class="md-nav__link">
+    Attribute Selector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#psuedo-class-selectors" class="md-nav__link">
+    Psuedo-class Selectors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practice-it-common-css-selectors" class="md-nav__link">
+    Practice It - Common CSS Selectors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-docs" class="md-nav__link">
+    Know Your Docs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../specificityAndCombinators/" class="md-nav__link">
+        CSS Specificity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-4/" class="md-nav__link">
+        Class 4
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Additional Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Additional Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Additional Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/interviewChallenges/" class="md-nav__link">
+        Interview Training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/studentPresentations/" class="md-nav__link">
+        Student Presentations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/developSeries/" class="md-nav__link">
+        Develop Series Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
+        Questions for Discussion Collections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Questions for Discussion Collections" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Questions for Discussion Collections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-1/" class="md-nav__link">
+        Day 1 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-2/" class="md-nav__link">
+        Day 2 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-3/" class="md-nav__link">
+        Day 3 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-4/" class="md-nav__link">
+        Day 4 QFD
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/blogPrompts/" class="md-nav__link">
+        Blog Prompts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/keyboardShortcuts/" class="md-nav__link">
+        Keyboard Shortcuts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/gitCommands/" class="md-nav__link">
+        Git & CLI Commands
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/graduationPrerequisites/" class="md-nav__link">
+        Graduation Prerequisites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/presentationsQualifications/" class="md-nav__link">
+        Presentations Qualifications
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-selectors" class="md-nav__link">
+    The Selectors
+  </a>
+  
+    <nav class="md-nav" aria-label="The Selectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-selector" class="md-nav__link">
+    Type Selector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id-selector" class="md-nav__link">
+    id Selector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-selector" class="md-nav__link">
+    Class Selector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attribute-selector" class="md-nav__link">
+    Attribute Selector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#psuedo-class-selectors" class="md-nav__link">
+    Psuedo-class Selectors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practice-it-common-css-selectors" class="md-nav__link">
+    Practice It - Common CSS Selectors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-docs" class="md-nav__link">
+    Know Your Docs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="more-css-selectors">More CSS Selectors</h1>
+<p><em>“Listen to the mustn'ts, child. Listen to the don'ts. Listen to the shouldn'ts, the impossibles, the won'ts. Listen to the never haves, then listen close to me... Anything can happen, child. Anything can be.” ―Shel Silverstein</em></p>
+<h2 id="overview">Overview</h2>
+<p>Today we're going to spend some solid time on <a href="https://css-tricks.com/the-difference-between-id-and-class/">how to select the right element</a> in your HTML file so you can style and manipulate to your pleasure.</p>
+<blockquote>
+<p>NOTE: This can be a little trickier than you may first realize. <em>Remember the "Cascade"? In this lesson, we're going to talk a little more about that and learn how to get to exactly the element on the document we want!</em></p>
+</blockquote>
+<p>Today you'll learn to:
+  1. Reference elements by selectors and why you'd use different selectors.
+  1. Select and style an element based on pseudo-elements and pseudo-classes.
+  1. Implement <a href="https://css-tricks.com/latest-ways-deal-cascade-inheritance-specificity/">inheritance</a> and learn to work with it using the Rules of Specificity.</p>
+<iframe src="https://player.vimeo.com/video/393464823" width="655" height="368" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="the-selectors">The Selectors</h2>
+<p>The reason for all the many <strong>selectors</strong> is because of the way the <a href="https://en.wikipedia.org/wiki/Document_Object_Model">DOM</a> is built under-the-hood. As the browser loads your HTML it reserves space for each of the elements in the file, then assigns them properties and values based on what it finds in your CSS and JS files. As it does this it will rewrite those values when it finds a new value assignment, but... if no property &amp; value is found for each child elements during the build, they will <em>Inherit</em> the properties &amp; values of their Parent Elements. This process of <strong>Inheriting</strong> and reassigning values as the page is built is the <strong>Cascade</strong> of <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets. But the Cascade can be overwritten using the <em>Rules of Specificity</em>, hence why we need so many selectors.</p>
+<p><strong>The 5 Main of Selectors</strong></p>
+<hr />
+<ol>
+<li><code>ids</code> - This is added inside the element's opening tag and denoted with a "#". html <code>&lt;article id="element_ID"&gt;</code> text goes here <code>&lt;/article&gt;</code></li>
+<li><code>classes</code> - This is denoted by the keyword: class="someClassNameHere" html <code>&lt;article class="element_class"&gt;</code> text goes here <code>&lt;/article&gt;</code></li>
+<li><code>attributes</code> - <code>&lt;input disabled &gt;</code> For a full list of <a href="https://www.w3schools.com/html/html_attributes.asp">HTML attributes</a>.</li>
+<li><code>pseudo-classes</code> are selectors used on an element when something is done to them like when you hover over an element with your cursor: <code>:hover { }</code></li>
+</ol>
+<h3 id="type-selector">Type Selector</h3>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">index.html</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://google.com&quot;</span><span class="p">&gt;</span>Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">index-style.css</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nt">a</span> <span class="p">{</span>
+    <span class="c">/* removes the underline */</span>
+    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<p>This selector is useful at saving you typing time by setting generic rules for all of your <code>&lt;p&gt;</code> tags, or all of your <code>&lt;section&gt;</code> tags so that they all have the same general style, but then you can give them a <code>class</code> name or <code>id</code> when you want each one to look/do something different than the other <code>&lt;p&gt;</code> and <code>&lt;section&gt;</code>tag.</p>
+<h3 id="id-selector">id Selector</h3>
+<p>The <code>id</code> selector is used for a unique element, which means that an <code>id</code> should only be used one time, on one element, per page. Simply add an id <code>attribute</code> and a value.</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">index.html</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;mario&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;wario&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">index-style.css</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">#</span><span class="nn">mario</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="p">#</span><span class="nn">wario</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">yellow</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>You should only use an <code>id</code> once but you can use multiple ids on a page.</p>
+</blockquote>
+<h3 id="class-selector">Class Selector</h3>
+<p>The <code>class</code> selector is very similar to the id selector, but <code>class</code> can be shared with more elements. You can apply classes multiple times on a page to any element you want.</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">index.html</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;luigi&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;luigi&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">index-style.css</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">.</span><span class="nc">luigi</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<h3 id="attribute-selector">Attribute Selector</h3>
+<p>You are not restricted to the two attributes, class and id. You can specify other element-specific attributes by using <code>[square brackets]</code>. Inside the brackets you put the attribute name, optionally followed by a matching operator and a value.</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">index.html</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">disabled</span><span class="p">&gt;</span>I&#39;m a disabled link!<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">index-style.css</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="o">[</span><span class="nt">disabled</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">gray</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<h3 id="psuedo-class-selectors">Psuedo-class Selectors</h3>
+<p>A CSS pseudo-class is a keyword added to one of the selectors covered above that specifies a special <em>characteristic</em> or <strong>state</strong> of the element you're selecting. For example <code>:hover</code> will apply a style when the user's cursor hovers over the element specified by the selector. You won't see these special state attributes explicitly written in HTML, but they are present nonetheless, as <strong>Element Properties</strong> ready to be manipulated using CSS.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c">/* The Syntax looks like this: */</span>
+  <span class="nt">selector</span><span class="p">:</span><span class="nd">pseudo-class</span> <span class="p">{</span>
+    <span class="n">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">index.html</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">index-style.css</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nt">section</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nt">section</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="kc">yellow</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<h3 id="practice-it-common-css-selectors">Practice It - Common CSS Selectors</h3>
+<ol>
+<li>
+<p>Fork the <a href="https://codepen.io/austincoding/pen/pempxa/">CSS Selector CodePen</a></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Give every other <code>&lt;li&gt;</code> element the class name "other"</li>
+<li class="task-list-item"><input type="checkbox"/> Make the font color of "other" <code>brown</code>.</li>
+<li class="task-list-item"><input type="checkbox"/> Make the <a href="https://www.cssfontstack.com/Verdana">font style</a> of "other <code>verdana</code>.</li>
+<li class="task-list-item"><input type="checkbox"/> Give different <code>id</code> attributes to each of the <code>&lt;p&gt;</code> elements.</li>
+<li class="task-list-item"><input type="checkbox"/> Use the <code>id</code>s to give them different background colors.</li>
+<li class="task-list-item"><input type="checkbox"/> Select the <code>body</code> element an get the text to be centered in the middle of the page.</li>
+</ul>
+</li>
+<li>
+<p>Fork the <a href="http://codepen.io/mistakevin/pen/grVaJL/">Pseudo Selector CodePen</a></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Make an <code>&lt;h1&gt;&lt;/h1&gt;</code> tag in the html</li>
+<li class="task-list-item"><input type="checkbox"/> In the CSS, pseudo-select the h1 with a :hover and make it change to the font color of your choice when you hover on it.</li>
+<li class="task-list-item"><input type="checkbox"/> copy/paste the tr:nth-child(odd) rule and see if you can add a hover selector on top of it to make the light blue backgrounds change to yellow when hovered on.</li>
+<li class="task-list-item"><input type="checkbox"/> Do the same to the even numbered trs but give them a different background color.</li>
+</ul>
+</li>
+<li>
+<p>Fork the <a href="https://codepen.io/austincoding/pen/YQWNjK/">CSS Selector Practice Exercise CodePen</a></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Follow the directions in the comment section of the CSS to learn more about selectors.</li>
+<li class="task-list-item"><input type="checkbox"/> <strong>--or--</strong> follow these instructions</li>
+<li class="task-list-item"><input type="checkbox"/> Give the <code>&lt;body&gt;</code> element a background: #bdc3c7;</li>
+<li class="task-list-item"><input type="checkbox"/> Make the <code>&lt;h1&gt;</code> element color: #9b59b6;</li>
+<li class="task-list-item"><input type="checkbox"/> Make all <code>&lt;h2&gt;</code> elements color: orange;</li>
+<li class="task-list-item"><input type="checkbox"/> Make all <code>&lt;li&gt;</code> elements blue(Use this <a href="https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en">tool</a> to pick your own hexadecimal blue)</li>
+<li class="task-list-item"><input type="checkbox"/> Change the background on every paragraph to be background: <code>yellow</code>;</li>
+<li class="task-list-item"><input type="checkbox"/> Make all inputs have a <code>border: solid red 3px</code>;</li>
+<li class="task-list-item"><input type="checkbox"/> Give everything with the class '<code>hello</code>' a <code>white</code> background</li>
+<li class="task-list-item"><input type="checkbox"/> Give the element with id 'special' a 2px solid blue border(pick your own rgb blue) #special {<code>border: #ff0000</code>}</li>
+<li class="task-list-item"><input type="checkbox"/> Make all the <code>&lt;p&gt;</code>'s that are nested inside of divs 25px font(font-size: 25px)</li>
+<li class="task-list-item"><input type="checkbox"/> Make only inputs with type 'text' have a gray background</li>
+<li class="task-list-item"><input type="checkbox"/> Give both <code>&lt;p&gt;</code>'s inside the 3rd <code>&lt;div&gt;</code> a pink background</li>
+<li class="task-list-item"><input type="checkbox"/> Give the 2nd <code>&lt;p&gt;</code> inside the 3rd <code>&lt;div&gt;</code> a 5px white border</li>
+<li class="task-list-item"><input type="checkbox"/> Make the <code>&lt;em&gt;</code> in the 3rd <code>&lt;div&gt;</code> element white and 20px font(font-size:20px)</li>
+<li class="task-list-item"><input type="checkbox"/> <strong>BONUS CHALLENGES</strong><ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> You may need to research some other selectors and properties</li>
+<li class="task-list-item"><input type="checkbox"/> Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)</li>
+<li class="task-list-item"><input type="checkbox"/> Make the <code>&lt;label&gt;</code> elements all UPPERCASE without changing the HTML(definitely look this one up</li>
+<li class="task-list-item"><input type="checkbox"/> Make the first letter of the element with id 'special' green and 100px font size(font-size: 100)</li>
+<li class="task-list-item"><input type="checkbox"/> Make the <code>&lt;h1&gt;</code> element's color change to blue when hovered over</li>
+<li class="task-list-item"><input type="checkbox"/> Make the <code>&lt;a&gt;</code> element's that have been visited gray</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> <a href="https://css-tricks.com/the-difference-between-id-and-class/">Article, CSS Tricks - Difference btw <code>id</code> and <code>class</code></a></li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://css-tricks.com/latest-ways-deal-cascade-inheritance-specificity/">Article, CSS Tricks - Inheritance</a></li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://www.cssfontstack.com/Verdana">Reference, CSSFontStack - Verdana</a></li>
+</ul>
+<!-- [Try it yourself](https://replit.com)! -->
+
+<h2 id="know-your-docs">Know Your Docs</h2>
+<ul>
+<li><a href="https://www.w3schools.com/html/html_attributes.asp">W3S Docs - HTML attributes</a></li>
+</ul>
+<!-- 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
+</code></pre></div>
+</td></tr></table>
+
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | Fetch resource                       |
+| `PUT`       | Update resource |
+| `DELETE`    | Delete resource |
+
+
+- [ ] [MDN Docs - ...]()
+
+    `line numbers`
+:do you like 'em?
+
+
+++slash++
+https://facelessuser.github.io/pymdown-extensions/extensions/keys/
+
+cp workspace/resources/templateFile.md docs/module-
+
+! height/width = 1.777 ---- width="655" height="368"
+
+=== "Javascript"
+
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
+</code></pre></div>
+</td></tr></table>
+
+=== "Python"
+
+  <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
+</code></pre></div>
+</td></tr></table>
+
+=== "Example"
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="go">  .</span>
+</code></pre></div>
+</td></tr></table>
+
+=== "Instructions"
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  .
+</code></pre></div>
+</td></tr></table>
+
+=== "Result"
+    ![PIC](./../images/pic.png)
+-->
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../mediaQueries/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Media Queries
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../specificityAndCombinators/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              CSS Specificity
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>

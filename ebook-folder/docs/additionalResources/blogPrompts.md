@@ -12,7 +12,13 @@
 
 ## Class 4 - Prompt 102
 
-- [ ]
+  > NOTE: Title your blog something other than "BlogPost_102". Give it a fitting name for the things you're learning or your experience with code.
+
+- [ ] What has your experience learning to code been like so far? What would you change about it?
+- [ ] How do you describe the DOM, as you know it so far?
+- [ ] Can you explain the difference between coding a website to be responsive and using a mobile-first strategy?
+- [ ] What does coding look like to you in your mind?
+- [ ] Where do you see yourself working in 365 days from today? What do you want to be working on?
 
 ## Class 6 - Prompt 103
 
