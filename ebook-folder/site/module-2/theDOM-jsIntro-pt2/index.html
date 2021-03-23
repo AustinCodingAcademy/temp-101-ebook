@@ -1,0 +1,1344 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>The DOM + JS Intro pt.2 - Web 101 - Intro to the Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-dom-js-intro-part-two" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-header__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web 101 - Intro to the Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The DOM + JS Intro pt.2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-nav__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    Web 101 - Intro to the Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Module One: Page Layout
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module One: Page Layout" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Module One: Page Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Pre-Class 1 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 1 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 1 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/theBoxModel/" class="md-nav__link">
+        The Box Model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-width%26height/" class="md-nav__link">
+        Width & Height
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-padding/" class="md-nav__link">
+        Padding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-border/" class="md-nav__link">
+        Border
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-margin/" class="md-nav__link">
+        Margin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-1/" class="md-nav__link">
+        Class 1 Hosting Your Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Pre-Class 2 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 2 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 2 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayProperty/" class="md-nav__link">
+        Display Property
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayFlexProperties/" class="md-nav__link">
+        Display Flex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/flexItemProperties/" class="md-nav__link">
+        Flex Item
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-selfMotivation/" class="md-nav__link">
+        Develop - Self-Motivation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-2/" class="md-nav__link">
+        Class 2 NASA Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Pre-Class 3 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 3 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 3 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-mindfulness/" class="md-nav__link">
+        Develop - Mindfulness
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/wireframing-pt1/" class="md-nav__link">
+        Wireframing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayGrid/" class="md-nav__link">
+        Display Grid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreGridProperties/" class="md-nav__link">
+        Grid Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-3/" class="md-nav__link">
+        Class 3 Resume
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Pre-Class 4 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 4 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 4 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/responsiveLayouts-gridAreas/" class="md-nav__link">
+        Responsive Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/mediaQueries/" class="md-nav__link">
+        Media Queries
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreCssSelectors/" class="md-nav__link">
+        More CSS Selectors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/specificityAndCombinators/" class="md-nav__link">
+        CSS Specificity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-4/" class="md-nav__link">
+        Class 4
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Module Two: Interactions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module Two: Interactions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Module Two: Interactions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Pre-Class 5 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 5 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 5 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introToJavaScript/" class="md-nav__link">
+        Intro to JavaScript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howTheInternetWorks/" class="md-nav__link">
+        How the Internet Works
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ourJobAsWebDevelopers/" class="md-nav__link">
+        Our Job
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../waysOfThinking/" class="md-nav__link">
+        Ways Of Thinking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../twoPerspectives/" class="md-nav__link">
+        Two Perspectives
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          The DOM + JS Intro pt.2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        The DOM + JS Intro pt.2
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-document" class="md-nav__link">
+    The Document
+  </a>
+  
+    <nav class="md-nav" aria-label="The Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentgetelementbyid" class="md-nav__link">
+    document.getElementById()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclick-event-listeners" class="md-nav__link">
+    onclick= &amp; Event Listeners
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js-keywords" class="md-nav__link">
+    JS Keywords
+  </a>
+  
+    <nav class="md-nav" aria-label="JS Keywords">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-let-to-declare-variables" class="md-nav__link">
+    Use let to Declare Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-signatures" class="md-nav__link">
+    Function Signatures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-docs" class="md-nav__link">
+    Know Your Docs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../table-nthChild/" class="md-nav__link">
+        Table and nth Child
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-5/" class="md-nav__link">
+        Class 5 TicTacToe + About
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Additional Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Additional Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Additional Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/interviewChallenges/" class="md-nav__link">
+        Interview Training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/studentPresentations/" class="md-nav__link">
+        Student Presentations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/developSeries/" class="md-nav__link">
+        Develop Series Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        Questions for Discussion Collections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Questions for Discussion Collections" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Questions for Discussion Collections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-1/" class="md-nav__link">
+        Day 1 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-2/" class="md-nav__link">
+        Day 2 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-3/" class="md-nav__link">
+        Day 3 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-4/" class="md-nav__link">
+        Day 4 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-5/" class="md-nav__link">
+        Day 5 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-6/" class="md-nav__link">
+        Day 6 QFD
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/blogPrompts/" class="md-nav__link">
+        Blog Prompts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/keyboardShortcuts/" class="md-nav__link">
+        Keyboard Shortcuts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/gitCommands/" class="md-nav__link">
+        Git & CLI Commands
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/graduationPrerequisites/" class="md-nav__link">
+        Graduation Prerequisites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/presentationsQualifications/" class="md-nav__link">
+        Presentations Qualifications
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-document" class="md-nav__link">
+    The Document
+  </a>
+  
+    <nav class="md-nav" aria-label="The Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentgetelementbyid" class="md-nav__link">
+    document.getElementById()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclick-event-listeners" class="md-nav__link">
+    onclick= &amp; Event Listeners
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js-keywords" class="md-nav__link">
+    JS Keywords
+  </a>
+  
+    <nav class="md-nav" aria-label="JS Keywords">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-let-to-declare-variables" class="md-nav__link">
+    Use let to Declare Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-signatures" class="md-nav__link">
+    Function Signatures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-docs" class="md-nav__link">
+    Know Your Docs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="the-dom-js-intro-part-two">The DOM + JS Intro Part Two</h1>
+<h2 id="the-document">The Document</h2>
+<p>The <strong>document</strong> or <code>document</code> is the <em>Mother of All Objects</em>. It is where your <code>body</code>, <code>header</code>, <code>footer</code>, <code>title</code>, <code>meta</code>, and all other HTML elements are created. This <em>"Mother of All Objects"</em> has a whole list of properties and methods we can use, some of which you'll see in the video below.</p>
+<blockquote>
+<p>In this video , we'll cover a few things in a slow and careful way. Take your time through it and make sure you re-create the task on your own either in a new repo or a codePen.</p>
+</blockquote>
+<iframe src="https://player.vimeo.com/video/393569778" width="655" height="368" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+<blockquote>
+<p>The following will make more sense if you watch the video above first.</p>
+</blockquote>
+<iframe src="https://player.vimeo.com/video/395213797" width="655" height="368" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+<p>To begin, a Method is a special type of Property; in that, a property just holds a value like: <code>font-size: 12pt</code>. While a method looks the same as a property it is actually a <strong>Function</strong> stored in the value of the property name, i.e. <code>write: function(){// code that writes to the document}</code>. This subtle difference helps us understand what we're talking about in the future.</p>
+<ul>
+<li><strong>Property</strong> - holds a value that represents a particular attribute.</li>
+<li><strong>Method</strong> - a functionality of the object stored in an accessible location.</li>
+<li><strong>Event Listener</strong> - a special function that "listens" for certain events, or interactions, in order to trigger a specified action when the "event" happens.</li>
+</ul>
+<p>In either case, when we access a property or a method we use <strong>Dot-Notation</strong>, aka the <strong>Member Operator</strong>. It looks like this: <code>.</code>. Seriously, to get the property <code>write()</code> on the Document Object, we type <code>document.write()</code>. Remember, the Document Object Model is a way we, as humans, can visualize the way these HTML Elements are written under-the-hood.</p>
+<blockquote>
+<p>NOTE: The following code snippet is <strong>not</strong> real code, just a representation that can help you visualize what methods look like on the Document Object:</p>
+</blockquote>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="err">docume</span><span class="kc">nt</span> <span class="err">=</span> <span class="p">{</span>
+  <span class="err">addEve</span><span class="kc">nt</span><span class="err">Lis</span><span class="kc">tener</span><span class="p">:</span> <span class="err">//</span> <span class="err">a</span> <span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">a</span><span class="kc">tta</span><span class="err">ches</span> <span class="err">a</span><span class="kc">n</span> <span class="err">eve</span><span class="kc">nt</span> <span class="err">ha</span><span class="kc">n</span><span class="err">dler</span> <span class="kc">t</span><span class="err">o</span> <span class="kc">t</span><span class="err">he</span> <span class="err">docume</span><span class="kc">nt</span>
+  <span class="err">adop</span><span class="kc">t</span><span class="err">Node</span><span class="p">:</span> <span class="err">//</span> <span class="err">a</span> <span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">adop</span><span class="kc">ts</span> <span class="err">a</span> <span class="kc">n</span><span class="err">ode</span> <span class="kc">fr</span><span class="err">om</span> <span class="err">a</span><span class="kc">n</span><span class="err">o</span><span class="kc">t</span><span class="err">her</span> <span class="err">docume</span><span class="kc">nt</span>
+  <span class="err">close</span><span class="p">:</span> <span class="err">//</span> <span class="err">a</span> <span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span>  <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">closes</span> <span class="kc">t</span><span class="err">he</span> <span class="err">ou</span><span class="kc">t</span><span class="err">pu</span><span class="kc">t</span> <span class="err">s</span><span class="kc">trea</span><span class="err">m</span> <span class="err">previously</span> <span class="err">ope</span><span class="kc">ne</span><span class="err">d</span> <span class="err">wi</span><span class="kc">t</span><span class="err">h</span> <span class="err">docume</span><span class="kc">nt</span><span class="err">.ope</span><span class="kc">n</span><span class="err">()</span>
+  <span class="err">crea</span><span class="kc">te</span><span class="err">A</span><span class="kc">ttr</span><span class="err">ibu</span><span class="kc">te</span><span class="p">:</span> <span class="err">//</span> <span class="err">a</span> <span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">crea</span><span class="kc">tes</span> <span class="err">a</span><span class="kc">n</span> <span class="err">a</span><span class="kc">ttr</span><span class="err">ibu</span><span class="kc">te</span> <span class="kc">n</span><span class="err">ode</span>
+  <span class="err">//</span> <span class="err">crea</span><span class="kc">te</span><span class="err">Comme</span><span class="kc">nt</span><span class="p">:</span>  <span class="err">a</span> <span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">crea</span><span class="kc">tes</span> <span class="err">a</span> <span class="err">Comme</span><span class="kc">nt</span> <span class="kc">n</span><span class="err">ode</span> <span class="err">wi</span><span class="kc">t</span><span class="err">h</span> <span class="kc">t</span><span class="err">he</span> <span class="err">speci</span><span class="kc">f</span><span class="err">ied</span> <span class="kc">te</span><span class="err">x</span><span class="kc">t</span>
+  <span class="err">crea</span><span class="kc">te</span><span class="err">Docume</span><span class="kc">nt</span><span class="err">Fragme</span><span class="kc">nt</span><span class="p">:</span> <span class="err">//</span> <span class="err">a</span> <span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">crea</span><span class="kc">tes</span> <span class="err">a</span><span class="kc">n</span> <span class="err">emp</span><span class="kc">t</span><span class="err">y</span> <span class="err">Docume</span><span class="kc">nt</span><span class="err">Fragme</span><span class="kc">nt</span> <span class="kc">n</span><span class="err">ode</span>
+  <span class="err">crea</span><span class="kc">te</span><span class="err">Eleme</span><span class="kc">nt</span><span class="p">:</span> <span class="err">//</span> <span class="err">a</span> <span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">crea</span><span class="kc">tes</span> <span class="err">a</span><span class="kc">n</span> <span class="err">Eleme</span><span class="kc">nt</span> <span class="kc">n</span><span class="err">ode</span>
+  <span class="err">crea</span><span class="kc">te</span><span class="err">Eve</span><span class="kc">nt</span><span class="p">:</span> <span class="err">//</span> <span class="err">a</span> <span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="kc">t</span><span class="err">ha</span><span class="kc">t</span> <span class="err">crea</span><span class="kc">tes</span> <span class="err">a</span> <span class="kc">ne</span><span class="err">w</span> <span class="err">eve</span><span class="kc">nt</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>STOP! It's important you don't get overwhelmed with all of these <strong>methods</strong>. You don't need to know all of them or even most of them. You'll only use a few of them for the majority of your career. In the video above we only use <code>document.getElementById()</code>.</p>
+<p>For a full list of the available <code>document</code> methods <a href="https://www.w3schools.com/jsref/dom_obj_document.asp">visit and bookmark the docs page</a>.</p>
+<h3 id="documentgetelementbyid">document.getElementById()</h3>
+<p>Just like we use Selectors in CSS to access a specific element and change its properties, in JavaScript, we have access to a few methods that help us get elements by their specific attributes or type. The <code>getElementById()</code> method is a very common method that accesses an element by an id. In the video above we use it to "grab" an element then change its <code>style.display</code> property.</p>
+<p>There are many other methods to get an element by its <code>class</code> name or <code>data</code> or type. For now, all you need to know is that they exist and when you need to use them there are <a href="https://www.w3schools.com/jsref/dom_obj_document.asp">docs you can reference</a>.</p>
+<h3 id="onclick-event-listeners"><code>onclick=</code> &amp; Event Listeners</h3>
+<p>It's a little confusing at first but I think you'll get the hang of it. While the Document Object has methods like the one we just discussed, each and every HTML element also has methods available to them. The methods are usually associated with the action of a user interacting with it so we call them <strong>Event Listeners</strong>. They listen for <strong>Events</strong>, or interactions, between the user and objects in the Document Object Model(<strong>DOM</strong>).</p>
+<p>One of the most common Event Listeners to use is <code>onclick</code>. It, of course, listens for a click from the user's mouse. When the user clicks on that element an event <strong>bubbles</strong> up and we we can point that action to trigger something to happen, like a function to load more pictures or login. In the video above, we use the user's click to trigger a function that sets the element's <code>display</code> property to <code>none</code> so it disappears from the page.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">HTML</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onlick</span><span class="o">=</span><span class="s">&quot;sayHello()&quot;</span><span class="p">&gt;</span>Click To See a Greeting<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">JS</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">sayHello</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">window</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<p>There are many Event Listeners so just breathe for now and be happy that you know this one. But if you're looking for more there are always <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">more docs to study</a>.</p>
+<h2 id="js-keywords">JS Keywords</h2>
+<h3 id="use-let-to-declare-variables">Use <code>let</code> to Declare Variables</h3>
+<p>Just the same way CSS and HTML have specific words that mean something to the browser, so does JavaScript. In HTML we have words like <code>&lt;section&gt;</code> and <code>class=""</code> and in CSS we have <code>color:</code> and <code>solid</code>. JavaScript has a whole set of keywords we'll learn to use in time but the first one we need is: <code>let</code>, as in <em>let</em> me store something here.</p>
+<p>When we program we usually need a place to store data. This data could be a number, a word, an HTML Element, or a function. Whatever it is, we need to store it for later use. In the above video we used two variables to hold two numbers: <code>70</code> &amp; <code>5</code>. Then we add them together by referencing their variable name and not the numbers themselves.</p>
+<p>We also used the keyword <code>const</code> but you'll regularly see <code>let</code> and <code>var</code>. I will now break these three words down once and for all while I continue to reinforce how/when to use them as we learn more about programming.</p>
+<ul>
+<li><code>var</code> is the <strong>old way</strong> to declare a variable. We don't use it anymore but you will still see it in old code bases.</li>
+<li><code>let</code> is used when we expect for the value of the variable to change.</li>
+<li>we use <code>const</code> when we expect for the value to stay the same.</li>
+</ul>
+<p>We'll get into the nitty gritty of this later on but for now just know that's why there are two different words to do the "same" thing. For now, <em>let</em>'s just use the keyword <code>let</code> to <strong>declare</strong> and <strong>define</strong> all of our variables.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">aVariable</span> <span class="o">=</span> <span class="mf">7</span>
+<span class="kd">let</span> <span class="nx">anotherVariable</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="function-signatures">Function Signatures</h3>
+<p>In the video you two different ways to declare functions:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">function</span> <span class="nx">myFunction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// this is the old way of declaring a function in JS</span>
+  <span class="p">}</span>
+
+  <span class="kd">const</span> <span class="nx">myFunction2</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// this is the new and preferred way of declaring a function in JS</span>
+  <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>Again, there is an old way and a new way to write functions in JS. You'll still see the old way so we must teach you it but you'll learn to write functions in the new format.</p>
+</blockquote>
+<p>You also so something like this written in the HTML:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nx">myFunction</span><span class="p">()</span> <span class="c1">// this is how we invoke a function in JS</span>
+  <span class="nx">myFunction2</span><span class="p">()</span> <span class="c1">// no matter how the function is declared in JS</span>
+</code></pre></div>
+</td></tr></table>
+<p>The difference between these two examples is subtle but vastly different! </p>
+<p>The first, <code>const myFunction2 = () =&gt; {}</code> &amp; <code>function myFunction() {}</code>, is a <strong>Function Signature</strong> or <strong>Function Declaration</strong>. This is where we write the instructions to be used later.</p>
+<p>The second, <code>myFunction()</code> &amp; <code>myFunction2()</code>, is a <em>Function Invocation</em> which means we're calling the function or saying, "Hey, do your thing now!" This is when we use the instructions previously written.</p>
+<blockquote>
+<p>If none of that made sense, here's Joe, who might be able to explain it better.</p>
+</blockquote>
+<iframe src="https://player.vimeo.com/video/373457883" width="655" height="368" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="know-your-docs">Know Your Docs</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> <a href="https://www.w3schools.com/jsref/dom_obj_document.asp">W3S Docs - Document Object</a></li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">W3S Docs - DOM Event Listeners</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../twoPerspectives/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Two Perspectives
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../table-nthChild/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Table and nth Child
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -60,8 +60,16 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 5
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: Title** - *Two students(6 total) will come up to the board at a time to work with their instructor to wireframe each of the the three mockups from the [Scientific American](https://www.scientificamerican.com/article/co2-levels-just-hit-another-record-heres-why-it-matters/). While the students work at the board, the rest of the class should be following along with pencil and paper at their own desks.*
+
+=== "Mobile View"
+    ![scientific-american-wireframing-mobileView](./../images/scientific-american-wireframing-mobileView.png)
+
+=== "Tablet View"
+    ![scientific-american-wireframing-tabletView](./../images/scientific-american-wireframing-tabletView.png)
+
+=== "Laptop View"
+    ![scientific-american-wireframing-laptopView](./../images/scientific-american-wireframing-laptopView.png)
 
 ### Class 6
 

@@ -18,3 +18,13 @@
 - [ ] How does understanding the DOM tree help us with accessing child/parent/sibling relationships?
 - [ ] What values should we use with our elements to size them best?
 - [ ] How do we find the answers to these questions?
+
+## Self Motivation
+
+- [ ] What are the 4 Cs of self-motivation?
+- [ ] Why are you motivated? Why are you in this class?
+- [ ] Why do you need a LinkedIn? And what are some good practices you found in your readings?
+- [ ] Have you shared your LinkedIn account with the class on rocketChat? Do it NOW!
+- [ ] What does it mean to network? What are you really doing? Why is this important?
+- [ ] How do you go about networking? How do you approach people? What do you say?
+- [ ] What do you struggle with when talking with people?

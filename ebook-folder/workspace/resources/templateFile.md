@@ -1,4 +1,4 @@
-# Subject
+# Intro to JavaScript
 
 cp workspace/resources/templateFile.md docs/module-
 
@@ -6,7 +6,12 @@ cp workspace/resources/templateFile.md docs/module-
 
 ## Overview
 
-### Example 2
+
+
+
+## The Document
+
+The Document, as in the Document Object Model
 
 ```javascript
 

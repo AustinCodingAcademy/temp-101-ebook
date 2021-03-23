@@ -1,0 +1,1321 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>Two Perspectives - Web 101 - Intro to the Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-two-perspectives-object-modeling" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-header__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web 101 - Intro to the Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Two Perspectives
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-nav__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    Web 101 - Intro to the Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Module One: Page Layout
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module One: Page Layout" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Module One: Page Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Pre-Class 1 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 1 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 1 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/theBoxModel/" class="md-nav__link">
+        The Box Model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-width%26height/" class="md-nav__link">
+        Width & Height
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-padding/" class="md-nav__link">
+        Padding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-border/" class="md-nav__link">
+        Border
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-margin/" class="md-nav__link">
+        Margin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-1/" class="md-nav__link">
+        Class 1 Hosting Your Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Pre-Class 2 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 2 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 2 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayProperty/" class="md-nav__link">
+        Display Property
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayFlexProperties/" class="md-nav__link">
+        Display Flex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/flexItemProperties/" class="md-nav__link">
+        Flex Item
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-selfMotivation/" class="md-nav__link">
+        Develop - Self-Motivation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-2/" class="md-nav__link">
+        Class 2 NASA Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Pre-Class 3 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 3 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 3 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-mindfulness/" class="md-nav__link">
+        Develop - Mindfulness
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/wireframing-pt1/" class="md-nav__link">
+        Wireframing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayGrid/" class="md-nav__link">
+        Display Grid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreGridProperties/" class="md-nav__link">
+        Grid Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-3/" class="md-nav__link">
+        Class 3 Resume
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Pre-Class 4 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 4 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 4 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/responsiveLayouts-gridAreas/" class="md-nav__link">
+        Responsive Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/mediaQueries/" class="md-nav__link">
+        Media Queries
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreCssSelectors/" class="md-nav__link">
+        More CSS Selectors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/specificityAndCombinators/" class="md-nav__link">
+        CSS Specificity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-4/" class="md-nav__link">
+        Class 4
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Module Two: Interactions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module Two: Interactions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Module Two: Interactions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Pre-Class 5 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 5 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 5 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introToJavaScript/" class="md-nav__link">
+        Intro to JavaScript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howTheInternetWorks/" class="md-nav__link">
+        How the Internet Works
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ourJobAsWebDevelopers/" class="md-nav__link">
+        Our Job
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../waysOfThinking/" class="md-nav__link">
+        Ways Of Thinking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Two Perspectives
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Two Perspectives
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-two-perspectives-object-modeling" class="md-nav__link">
+    The Two Perspectives + Object Modeling
+  </a>
+  
+    <nav class="md-nav" aria-label="The Two Perspectives + Object Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-one-objects" class="md-nav__link">
+    Part One: Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-two-object-modeling" class="md-nav__link">
+    Part Two: Object Modeling
+  </a>
+  
+    <nav class="md-nav" aria-label="Part Two: Object Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-three-code-as-communication" class="md-nav__link">
+    Part Three: Code as Communication
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-summary-our-three-jobs-object-modeling-code-as-communication" class="md-nav__link">
+    In Summary: Our Three Jobs, Object Modeling &amp; Code as Communication
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theDOM-jsIntro-pt2/" class="md-nav__link">
+        The DOM + JS Intro pt.2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../table-nthChild/" class="md-nav__link">
+        Table and nth Child
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-5/" class="md-nav__link">
+        Class 5 TicTacToe + About
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Additional Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Additional Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Additional Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/interviewChallenges/" class="md-nav__link">
+        Interview Training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/studentPresentations/" class="md-nav__link">
+        Student Presentations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/developSeries/" class="md-nav__link">
+        Develop Series Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        Questions for Discussion Collections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Questions for Discussion Collections" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Questions for Discussion Collections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-1/" class="md-nav__link">
+        Day 1 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-2/" class="md-nav__link">
+        Day 2 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-3/" class="md-nav__link">
+        Day 3 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-4/" class="md-nav__link">
+        Day 4 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-5/" class="md-nav__link">
+        Day 5 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-6/" class="md-nav__link">
+        Day 6 QFD
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/blogPrompts/" class="md-nav__link">
+        Blog Prompts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/keyboardShortcuts/" class="md-nav__link">
+        Keyboard Shortcuts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/gitCommands/" class="md-nav__link">
+        Git & CLI Commands
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/graduationPrerequisites/" class="md-nav__link">
+        Graduation Prerequisites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/presentationsQualifications/" class="md-nav__link">
+        Presentations Qualifications
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-two-perspectives-object-modeling" class="md-nav__link">
+    The Two Perspectives + Object Modeling
+  </a>
+  
+    <nav class="md-nav" aria-label="The Two Perspectives + Object Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-one-objects" class="md-nav__link">
+    Part One: Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-two-object-modeling" class="md-nav__link">
+    Part Two: Object Modeling
+  </a>
+  
+    <nav class="md-nav" aria-label="Part Two: Object Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-three-code-as-communication" class="md-nav__link">
+    Part Three: Code as Communication
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-summary-our-three-jobs-object-modeling-code-as-communication" class="md-nav__link">
+    In Summary: Our Three Jobs, Object Modeling &amp; Code as Communication
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Two Perspectives</h1>
+                
+                <h2 id="the-two-perspectives-object-modeling">The Two Perspectives + Object Modeling</h2>
+<ul>
+<li>Perspective One: Objects are how the computer keeps up with memory and interacts with the world and people around it?</li>
+<li>Perspective Two: We use code to organize our thoughts about how to access that memory and give instructions on what to do with that memory to both the computer and other human-beings(fellow developers).</li>
+</ul>
+<p>In the next session we'll explore the following questions:</p>
+<ul>
+<li>How do we accomplish the invisible task of seeing the memory of computers?</li>
+<li>How does code represent our programming intentions to the computer?</li>
+</ul>
+<p>To do this we'll break them down in three parts: <strong>Objects</strong>, <strong>Object Modeling</strong>, <strong>Code as Communication</strong>.</p>
+<!-- ! END OF VIDEO 101.1.1.5 - Two Perspectives Overview -->
+
+<h3 id="part-one-objects">Part One: Objects</h3>
+<p>Computers don't have eyes or ears...yet. They can't see a dog and hear a bark; therefore, they can't perceive the animal before them is a canine and not a feline. Instead they rely on objects, and categories of objects to interact with the world. So that dog would become an object with properties like: <code>wagsTail=true, barks=true, licks=true, species="canine"</code>. With this object and its properties the computer could categorize the animal as a dog type object but when it is given another animal with properties: <code>wagsTail=false, barks=false, licks=true, species="feline", isSelfCentered=true</code> then it can categorize that animal as a cat type object.</p>
+<p>Everything is an object to the computer. It's how it relates to the world around it. People are objects, foods are objects, vehicles are objects. With so many objects, it would stand to reason that there would be types of objects/categories to put similarly related types of objects in. So cars, trucks, motorcycles, buses, scooters they could all be Vehicle type objects, objects that are of Vehicle type.</p>
+<!-- * relate this to block and inline elements later -->
+<p>This is the same with the components you see on your screen when you open a page. Your browser creates an object called <code>window</code>. And the website you navigate to sends information back to your browser to create another object called <code>document</code> which gets <strong>mounted</strong> inside of <code>window</code>. Inside this <code>document</code> object there are many other objects. Typical objects inside the <code>document</code> object include <code>header</code>, <code>body</code>, and <code>footer</code>, among many more. These are by no means all of the possible objects but they are the general first objects to build a web page.</p>
+<blockquote>
+<p>Try it out:</p>
+</blockquote>
+<ul>
+<li>Go to any website and right-click your mouse, </li>
+<li>Then click "Inspect" to open your Developer Tools. </li>
+<li>Next click on Console and type <code>window</code> + ENTER where the cursor is flashing. </li>
+<li>You should get something like this returned on the next line: <ul>
+<li><code>Window {window: Window, self: Window, document: document, name: "", location: Location, …}</code> </li>
+</ul>
+</li>
+<li>What you did was ask the <code>console</code> object to access the <code>window</code> object and give you information about it.</li>
+<li>What you're seeing is the <strong>object literal</strong> (literally the object written in JS) with its properties: <code>window</code>, <code>self</code>, <code>document</code>, <code>location</code>, etc...</li>
+</ul>
+<p>We'll be using the console much more in the future and diving much deeper into all the objects mentioned above but before we do we have to get a mental "model" of all of these objects in our minds! The <em>third thing to keep in mind</em>!</p>
+<!-- ! END OF VIDEO 101.1.1.6 - Objects -->
+
+<h3 id="part-two-object-modeling">Part Two: Object Modeling</h3>
+<p>Object Modeling is the process of seeing the objects of the computer and how they relate to one another in our minds so we can effectively communicate with ourselves and one another about what is happening inside and between computers. To model these objects, we can imagine them in our minds, draw them on whiteboards, and even have graphic representations for them on our screen. This type of thinking is the intermediary between what the computer understands and what we humans understand. It is imperative that we practice Object Modeling every time we approach the building of a site or page because it will act as our map and compass for solving problems we've never seen.</p>
+<p>Objects are just slots of memory that represent real-world things. So what does an object look like? What model can we use to describe them? Try first to write it down, draw it, and then imagine it. This will take some time. </p>
+<blockquote>
+<p>But try!</p>
+</blockquote>
+<ul>
+<li>
+<p>Draw a large box nearly the size of a sheet of notebook paper. At the top label it <code>window</code>. Inside draw another box nearly 3/4 the size of the first box. Label this one <code>document</code>.</p>
+<ul>
+<li>Inside the <code>window</code> box create two lists titled: "Properties" &amp; "Methods"</li>
+<li>Under the "Properties" list write down the first five properties you find at this website: <a href="https://www.w3schools.com/jsref/obj_window.asp">W3S Window Object</a> <em>NOTICE: The 2nd property is "Console" and the 4th is "Document"</em> These are two objects you've already come across; the "Console" is the one you opened in your Inspect &gt; Developer Tools earlier and typed "window". And the "Document" is the other box on your page!!</li>
+<li>In the "Methods" list write the first 5 methods you see on that same website: <a href="https://www.w3schools.com/jsref/obj_window.asp">W3S Window Object</a></li>
+<li>Repeat these steps for the smaller box, the "Document" object, but with this page instead: <a href="https://www.w3schools.com/jsref/dom_obj_document.asp">W3S Document Object</a></li>
+</ul>
+<blockquote>
+<p><em>NOTE: the ones with parenthesis, <code>()</code> following them are methods and the ones without are properties.</em></p>
+</blockquote>
+</li>
+<li>
+<p>What you see on your paper is a simple model of two objects, Window and Document, and shorts lists of each of their properties and methods. This is Object Modeling. And this is how we will talk about EVERYTHING we learn. Everything is an object with properties, methods, and events.</p>
+</li>
+</ul>
+<p>To continue on this Object Modeling exploration we'll need to cover some new terms: <strong>Properties</strong>, <strong>Methods</strong>, and <strong>Events</strong>. These three new terms are called the <strong>members</strong> of an object.</p>
+<!-- ! END OF VIDEO 101.1.1.7 - Object Modeling Overview -->
+
+<h4 id="properties">Properties</h4>
+<p>All objects have <strong>properties</strong>. Properties are descriptions of the object. If you were an object you would have properties that might include: <code>name:</code>, <code>gender:</code>, <code>height:</code>, <code>weight:</code>, <code>age:</code>, <code>DOB:</code>, <code>job:</code>. The same goes for our web page objects. All visible objects have <code>color:</code>, <code>height:</code>, <code>width:</code>, <code>z-index:</code>, <code>font-size:</code>, etc... Properties are things that describe what something is, what it contains, and what it looks like when rendered. You'll also see properties referred to as <strong>attributes</strong> and <strong>keys</strong> while the value that is assigned to each of them (the part after the colon and before comma) is called a <strong>value</strong> leading to the common expression: <strong>key/value pairs</strong>, i.e. <code>name: "Rebecca",</code>, <code>age: 33,</code> or <code>width: 500px,</code></p>
+<h4 id="methods">Methods</h4>
+<p>Most objects have <strong>methods</strong>. Methods are like special properties in that they don't describe the object but instead they describe actions the object can do! You might have methods like <code>eat()</code>, <code>sleep()</code>, <code>run()</code>, and <code>beStill()</code>. However, as you saw in your exercise, objects on our web pages might have methods like: <code>confirm()</code>, <code>clearInterval()</code>, <code>createElement()</code>, <code>execCommand()</code> and <code>open()</code> because they are computer object-things and not human-being things with needs like food, water, and shelter.</p>
+<p>Methods are also called <strong>built-in functions</strong> because they work like functions. They're small sets of instructions that can be executed just like other functions. Now, we haven't fully covered functions yet but suffice it to say that if you just learned how to mix cocktails you would now have two new functions written into your system that are maybe called: <code>mixIngredients()</code> and <code>shakeVigoursly()</code>. So every time you need to make a cocktail for your party you would first call <code>mixIngredients()</code> then <code>shakeVigoursly()</code>. Not everyone needs or wants to learn how to make cocktails but everyone needs to eat, sleep, and drink. So the good Lord gave us all built-in functions/<strong>methods</strong> called: <code>sleep()</code>, <code>eat()</code>, and <code>drink()</code>. In web development, the reason we have methods is because some functions need to be called regularly, by all developers for most apps and don't need to be special or customized. So the engineers of HTML created "built-in functions" that are readily available to be used by us. The "built-in" functions are <strong>methods</strong>.</p>
+<h4 id="events">Events</h4>
+<p>Most objects also have a third category of <strong>members</strong> called <strong>Events</strong>. You can think of events as interactions. Interactions that happen between objects and other objects or objects and humans. See, we can move our mouse, place our cursor on an element on our screen, and click on that element. In that single move there are three distinct events/interactions that happen: 1) <code>onmousemove</code>, <code>onmouseenter</code>, and <code>onmousedown</code>. The events are built into objects so that they can be interacted with. We people have events like: <code>lookedAt</code>, <code>smiledAt</code>, <code>handShaked</code>, <code>poked</code>, <code>hugged</code>, <code>shoved</code>, <code>greeted</code>. All of these are ways in which our bodies are interacted with in the world around them.</p>
+<p>In web development terms, these Events are used to "capture" an interaction and then trigger an action because of it. For the most part all of these built-in events are attached to a "blank"; in that, they fire every time the event happens but nothing is triggered. It's up to us, the developer to create the reactions and then attach them to the events. So we might say something like: <code>onmouseenter="openGreetingWindow()"</code>. This could be equivalent to our bodies being programmed with: <code>smiledAt="smileBack()"</code>.</p>
+<p>At this point you may be a bit confused on the difference between <strong>methods</strong> and <strong>events</strong> so for now separate them by this distinctions:</p>
+<ul>
+<li><strong>Events</strong> capture interactions with the object from the outside world, in order for us to attach instructions to be carried out when the event happens.</li>
+<li><strong>Methods</strong> are actions(built-in functions) the object can use to outwardly interact with its world.</li>
+<li>And <strong>properties</strong> are bits of information that describe the object. Often called <strong>attributes</strong>, as well.</li>
+</ul>
+<p>While object modeling is a great way to understand how a computer interacts with the world it is not how we communicate to the computer our programming intentions. The computer, frankly doesn't know anything about this Object Modeling stuff. It just knows about objects because what we interpret as a "model" is the complete and total reality of a computer. It knows nothing else. Because of this, we have to use a language that communicates to the computer our intentions with its objects and their subsequent properties, methods, and events. This language is what we generally call <strong>code</strong>. The great thing about you learning code now is that you've already built things with three different coding languages and you've been reading code in all of these textual examples.</p>
+<!-- ! END OF VIDEO 101.1.1.8 - Objects, Properties, Methods, and Events -->
+
+<h3 id="part-three-code-as-communication">Part Three: Code as Communication</h3>
+<p>In order for us to communicate our programming needs and intentions we need a language that can be interpreted by the computer and understood by humans. This is what we call <strong>code</strong>. Code comes in many different names and flavors that we call languages, or <strong>programming languages</strong>.</p>
+<p>We use programming languages to communicate to both humans and computers what our programming needs and intentions are. Notice earlier, we used the word "interpret" for computers and "understand" for humans. This is because, as long as your fellow developers know the syntax and semantics of the language you chose to write, they will understand what you meant. But the computer must "interpret" what you wrote because the computer doesn't actually know JavaScript from Closure or Haskell. Our computers use interpreters that convert your programming language of choice to binary before it executes the program you built.</p>
+<p>Programming languages are similar to our human languages in that they were all created to represent and communicate our needs and intentions. It doesn't matter what language you are speaking...as long as you are speaking to someone who understands the language they will know what you're saying. This goes for computers as well. When we're building websites and web app we're talking to web browsers who know three languages: HTML, JS, and CSS. If we are building iOS apps we're talking to an operating system that understands Swift and if we're build apps for Android we're talking to a system that understands Java. All languages are built in similar ways because they all have to accomplish the same goals: store data, move data, and render data. In this way, you can feel confident that once you now how to program in JavaScript, learning to program with Python, Swift, Java, Go, or C# will come much easier!</p>
+<p>This layer of "abstraction" is not so important for us to learn, so much, as it is helpful for us to understand that programming languages like JavaScript are just languages with nouns, verbs, sentence structure, actions, and objects that all represent to the computer our programming needs and intention of how to we would like to move, manipulate, and display the objects our computers know about.</p>
+<!-- ! END OF VIDEO 101.1.1.9 - Code as Communication -->
+
+<h2 id="in-summary-our-three-jobs-object-modeling-code-as-communication">In Summary: Our Three Jobs, Object Modeling &amp; Code as Communication</h2>
+<p>Now that we've learned our three jobs as web developers are to store, move, and render data inside an invisible world with 10 levels of abstractions on a computer that sees only objects with properties, methods, &amp; events and interprets only code it recognizes we have our work cut out for us. How do we do it?</p>
+<p>We first have to remember that our three jobs as web developers is to store data, move data, and render data. The next is to always draw out our objects on paper, whiteboard and in our mind so we don't forget that everything is an object. Third, we have to practice gratitude for the languages we get to learn and be happy that we get to create stories and books with these programming languages instead of new words for every thought. After that, we must always reference our docs. <a href="https://www.w3schools.com/jsref/obj_window.asp">Docs are how to learn and remember object, properties, methods, and events</a>. And lastly, we have to keep learning and trusting that <strong>you can do this</strong>!</p>
+<!-- ! END OF VIDEO 101.1.1.10 - In Summary: Our Three Jobs, Object Modeling & Code as Communication -->
+<!-- SEND THEM OFF @CLAYTON -->
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../waysOfThinking/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Ways Of Thinking
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../theDOM-jsIntro-pt2/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              The DOM + JS Intro pt.2
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>
