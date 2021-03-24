@@ -73,7 +73,7 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 6
 
-- [ ] **Prompt 1: Title** - *description*
+- [ ] **Prompt 1: Code Plan** - *As a class, what problem do we need to solve in the Calculator App? How do we solve it? Let's create a list of actions we need to take to complete it.*
 <!-- - [ ] **Prompt 2: Title** - *description* -->
 
 ### Class 7
@@ -125,3 +125,5 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 - [ ] **Prompt 1: Title** - *description*
 <!-- - [ ] **Prompt 2: Title** - *description* -->
+
+<!-- Two students(6 total) will come up to the board at a time to work with their instructor to wireframe each of the the three mockups from the [Bite](https://bitetoothpastebits.com/). While the student work at the board, the rest of the class should be following along with pencil and paper at their own desks. Choose one site and start wireframing it. Make sure to include class and ids. -->

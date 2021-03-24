@@ -22,7 +22,12 @@
 
 ## Class 6 - Prompt 103
 
-- [ ]
+- [ ] How is JavaScript different from CSS? In what ways? How are they similar?
+- [ ] How do you map the many different DOM methods and properties in your mind? How would you describe them to a non-developer?
+- [ ] What do you find surprising about coding so far? Do you find anything easy? What? Why?
+- [ ] What's difficult about coding for you? Why?
+- [ ] What's cool about Event Listeners? Why are they useful and what more would you like to learn about them?
+- [ ] Why are you motivate? Why are you in this class?
 
 ## Class 8 - Prompt 104
 

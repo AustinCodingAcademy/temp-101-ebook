@@ -1,0 +1,1572 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>The Form Element - Web 101 - Intro to the Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-form-element" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-header__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web 101 - Intro to the Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Form Element
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-nav__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    Web 101 - Intro to the Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Module One: Page Layout
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module One: Page Layout" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Module One: Page Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Pre-Class 1 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 1 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 1 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/theBoxModel/" class="md-nav__link">
+        The Box Model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-width%26height/" class="md-nav__link">
+        Width & Height
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-padding/" class="md-nav__link">
+        Padding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-border/" class="md-nav__link">
+        Border
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-margin/" class="md-nav__link">
+        Margin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-1/" class="md-nav__link">
+        Class 1 Hosting Your Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Pre-Class 2 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 2 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 2 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayProperty/" class="md-nav__link">
+        Display Property
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayFlexProperties/" class="md-nav__link">
+        Display Flex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/flexItemProperties/" class="md-nav__link">
+        Flex Item
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-selfMotivation/" class="md-nav__link">
+        Develop - Self-Motivation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-2/" class="md-nav__link">
+        Class 2 NASA Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Pre-Class 3 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 3 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 3 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-mindfulness/" class="md-nav__link">
+        Develop - Mindfulness
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/wireframing-pt1/" class="md-nav__link">
+        Wireframing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayGrid/" class="md-nav__link">
+        Display Grid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreGridProperties/" class="md-nav__link">
+        Grid Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-3/" class="md-nav__link">
+        Class 3 Resume
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Pre-Class 4 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 4 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 4 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/responsiveLayouts-gridAreas/" class="md-nav__link">
+        Responsive Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/mediaQueries/" class="md-nav__link">
+        Media Queries
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreCssSelectors/" class="md-nav__link">
+        More CSS Selectors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/specificityAndCombinators/" class="md-nav__link">
+        CSS Specificity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-4/" class="md-nav__link">
+        Class 4
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Module Two: Interactions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module Two: Interactions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Module Two: Interactions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Pre-Class 5 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 5 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 5 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introToJavaScript/" class="md-nav__link">
+        Intro to JavaScript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howTheInternetWorks/" class="md-nav__link">
+        How the Internet Works
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ourJobAsWebDevelopers/" class="md-nav__link">
+        Our Job
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../waysOfThinking/" class="md-nav__link">
+        Ways Of Thinking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../twoPerspectives/" class="md-nav__link">
+        Two Perspectives
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theDOM-jsIntro-pt2/" class="md-nav__link">
+        The DOM + JS Intro pt.2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../table-nthChild/" class="md-nav__link">
+        Table and nth Child
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-5/" class="md-nav__link">
+        Class 5 TicTacToe + About
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Pre-Class 6 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 6 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 6 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTTP-req-res/" class="md-nav__link">
+        HTTProtocol
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../htmlElements/" class="md-nav__link">
+        HTML Elements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          The Form Element
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        The Form Element
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#attributes-of-the-form" class="md-nav__link">
+    Attributes of the Form
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes of the Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-attributesproperties-action-enctype-method-novalidate-target" class="md-nav__link">
+    Required Attributes/Properties: action, enctype, method, novalidate, target
+  </a>
+  
+    <nav class="md-nav" aria-label="Required Attributes/Properties: action, enctype, method, novalidate, target">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties-that-are-required-but-have-implied-default-values" class="md-nav__link">
+    Properties that are Required but have Implied Default Values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-form-attributesproperties" class="md-nav__link">
+    Optional Form Attributes/Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    Inputs
+  </a>
+  
+    <nav class="md-nav" aria-label="Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-attributes-of-the-input-element" class="md-nav__link">
+    Other Attributes of the Input Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-elements-that-belong-to-the-form-element" class="md-nav__link">
+    Other Elements That Belong to the Form Element
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-it-forms" class="md-nav__link">
+    Practice It - Forms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-docs" class="md-nav__link">
+    Know Your Docs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theButtonElement/" class="md-nav__link">
+        The Button Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commonEventListeners/" class="md-nav__link">
+        Event Listeners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-6/" class="md-nav__link">
+        Class 6 Contact Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Additional Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Additional Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Additional Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/interviewChallenges/" class="md-nav__link">
+        Interview Training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/studentPresentations/" class="md-nav__link">
+        Student Presentations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/developSeries/" class="md-nav__link">
+        Develop Series Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        Questions for Discussion Collections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Questions for Discussion Collections" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Questions for Discussion Collections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-1/" class="md-nav__link">
+        Day 1 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-2/" class="md-nav__link">
+        Day 2 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-3/" class="md-nav__link">
+        Day 3 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-4/" class="md-nav__link">
+        Day 4 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-5/" class="md-nav__link">
+        Day 5 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-6/" class="md-nav__link">
+        Day 6 QFD
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/blogPrompts/" class="md-nav__link">
+        Blog Prompts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/keyboardShortcuts/" class="md-nav__link">
+        Keyboard Shortcuts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/gitCommands/" class="md-nav__link">
+        Git & CLI Commands
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/graduationPrerequisites/" class="md-nav__link">
+        Graduation Prerequisites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/presentationsQualifications/" class="md-nav__link">
+        Presentations Qualifications
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#attributes-of-the-form" class="md-nav__link">
+    Attributes of the Form
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes of the Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-attributesproperties-action-enctype-method-novalidate-target" class="md-nav__link">
+    Required Attributes/Properties: action, enctype, method, novalidate, target
+  </a>
+  
+    <nav class="md-nav" aria-label="Required Attributes/Properties: action, enctype, method, novalidate, target">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties-that-are-required-but-have-implied-default-values" class="md-nav__link">
+    Properties that are Required but have Implied Default Values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-form-attributesproperties" class="md-nav__link">
+    Optional Form Attributes/Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    Inputs
+  </a>
+  
+    <nav class="md-nav" aria-label="Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-attributes-of-the-input-element" class="md-nav__link">
+    Other Attributes of the Input Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-elements-that-belong-to-the-form-element" class="md-nav__link">
+    Other Elements That Belong to the Form Element
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-it-forms" class="md-nav__link">
+    Practice It - Forms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-docs" class="md-nav__link">
+    Know Your Docs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="the-form-element">The Form Element</h1>
+<p><em>Be a self-starter. Do it now! When you don't know how to do something, start. Beware of the paralysis of analysis. Be a person of action. —Mamie McCullough</em></p>
+<p>The Form Element is used to create, you guessed it, forms! Or as defined by <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN</a>:</p>
+<blockquote>
+<p>"The HTML <code>&lt;form&gt;</code> element represents a document section containing interactive controls for submitting information."</p>
+</blockquote>
+<p>The Form element is an object in HTML that presents to the human-user a place to input information/data but also gives us a place to store that data until they complete the form and click the submit button which triggers a fetch request to send that data to a server then to a database.</p>
+<p>To use Form elements properly we have to learn their attributes(properties and methods).</p>
+<!-- TODO INSERT Drawing of Form => Function => Internet => Server => Database -->
+
+<!-- ! END OF VIDEO 101.1.10.1 - Form Element Overview -->
+
+<h2 id="attributes-of-the-form">Attributes of the Form</h2>
+<p>Like all other HTML Elements, the Form Element has all the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Global Attributes</a> (events and methods) along with a few special ones of its own. Let's break them into two categories: Required and Optional</p>
+<h3 id="required-attributesproperties-action-enctype-method-novalidate-target">Required Attributes/Properties: action, enctype, method, novalidate, target</h3>
+<p>These properties are required to be defined for your forms to work properly so let's look at them and how they're used. We'll be using the following code as a reference point.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;https://www.singlesingerssite.com/signin.htm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span>Email<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;password&quot;</span><span class="p">&gt;</span>Password<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Subscribe!&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+
+ <span class="c">&lt;!-- Notes on the unfamiliar part of the code above: --&gt;</span>
+ <span class="c">&lt;!-- The Div element is used to divide out the page --&gt;</span>
+ <span class="c">&lt;!-- Label Elements are used to label an Input Element --&gt;</span>
+ <span class="c">&lt;!-- Input Elements are versatile and can be used for any type of form input --&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>
+<p><code>action=</code> - The value of this must be a URL like the one you see above. This tells the form where to send the data when it's submitted by the human-user. However, the preference for this technique has been replaced with creating a function that uses <code>fetch</code> to handle the HTTP request and calling it <code>onclick=</code> of a <code>submit</code> button, i.e. <code>&lt;input type="submit" onclick="handleSubmit()"&gt;,</code></p>
+</li>
+<li>
+<p><code>method=</code> - If you choose to use the <code>action=</code> attribute to define the URL that will process your forms data, then you have to define the method as a POST. Later in this lesson, you'll learn about the multiple values you can use here to send different types of Requests over HTTP(S). For now, the two values you can use here are <code>"post"</code> and <code>"get"</code>. If you use the preferred <code>fetch</code> alternative then you will need to declare the Request as a POST in the <code>fetch</code> because the default value of the Form Element's <code>method=</code> is <code>get</code>, see below:</p>
+</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://fakestoreapi.com/products&#39;</span><span class="p">,</span> <span class="p">{</span>
+   <span class="nx">method</span><span class="o">:</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+   <span class="nx">body</span><span class="o">:</span> <span class="p">{}</span>
+ <span class="p">})</span>
+</code></pre></div>
+</td></tr></table>
+<h4 id="properties-that-are-required-but-have-implied-default-values">Properties that are Required but have Implied Default Values</h4>
+<ul>
+<li><code>enctype=</code> - This defines the type of encoding the data should go through before it's sent over HTTP. The values you can use are:</li>
+<li><code>"application/x-www-form-urlencoded"</code>: The default value and used for most forms. You don't see it defined and declared in the code above because it's the default value if you don't type out one of the following instead.</li>
+<li><code>"multipart/form-data"</code>: If your form accepts files as a possible input then you need to declare it using this value.</li>
+<li>
+<p><code>"text/plain"</code> - Introduced by HTML5 for debugging purposes.</p>
+</li>
+<li>
+<p><code>target=</code> - this property specifies where the Response object should load; that is, after the form is submitted and there's a response from the other page, site, or server where should the response go? The option you have are:</p>
+</li>
+<li>
+<p><code>_self</code>: Load the response into the same browsing context(window/tab) as the current one. This is the default if the attribute is not specified.</p>
+</li>
+<li><code>_blank</code>: Load the response into a new unnamed browsing context — usually a new tab or window, depending on the user’s browser settings.</li>
+<li><code>_parent</code>: Load the response into the parent browsing context of the current one. If there is no parent, this option behaves the same way as <code>_self</code>.</li>
+<li><code>_top</code>: Load the response into the top-level browsing context (that is, the browsing context that is an ancestor of the current one, and has no parent). If there is no parent, this option behaves the same way as <code>_self</code>.</li>
+</ul>
+<blockquote>
+<p>NOTE: later on we'll override this behavior with a <code>.preventDefault()</code> but more on that later.</p>
+</blockquote>
+<ul>
+<li><code>novalidate</code> - The default attribute is <code>validate</code> which translate to <code>validate=true</code>. The reason this is defaulted to <code>validate</code> is because form validation is the first step in preventing hackers’ attacks. It's not the end-all-be-all but it is the first layer of security in building apps. <strong>Form Validation</strong> is part of a larger practice called <strong>Client-side Validation</strong> and HTML comes with built-in measures that we'll get into when we learn about the Input Element. For now, in the code example notice <code>required</code> and <code>type=email</code> and <code>type=password</code>. These are form validation measures built into HTML because they require the human-user to fill them out and the Email Type Inputs require a <code>@</code> and <code>.com</code> while the Password Type Inputs mask the password with <code>••••••</code>. Try it. Throw the code into a new HTML file and serve it up. Do you see the <code>•s</code>? Try submitting an email with the <code>@</code>.</li>
+</ul>
+<p>Most of the time you do want to <code>validate</code> so you won't type <code>novalidate</code> and don't need to specify <code>validate</code> because its default value is implied.</p>
+<h3 id="optional-form-attributesproperties">Optional Form Attributes/Properties</h3>
+<ul>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion#the_autocomplete_attribute_and_login_fields">autocomplete=</a></strong> - allows the human-user's browser to auto-fill the form if they have their information stored in their browser. You can toggle this with the values: <code>"on"</code> and <code>"off"</code> however many browsers are opting to not read <code>"off"</code> for login fields.</li>
+</ul>
+<blockquote>
+<p>NOTE: If you are building a page that allows the human-user to update their password you can use the third value: <code>autocomplete="new-password"</code> to prevent the browser from auto-filling the inputs on that form.</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>accept-charset=</strong> - sets the language/<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Localizations_and_character_encodings">Character Set</a> the form can take like German, Cyrillic, Japanese, so forth. For most languages, including English this is "utf-8" as in: <code>&lt;form accept-charset="utf-8"&gt;</code>. However, you don't have to set this property/attribute because it defaults to the character set/<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding">Content Encoding</a> you have in the Head Element to set the character set of your page: <code>&lt;meta charset="utf-8"&gt;</code></p>
+</li>
+<li>
+<p><strong>rel=</strong> - this gives you a place to give an annotation or explanation of the form is something is unclear. Most of the time you won't use this property.</p>
+</li>
+</ul>
+<!-- ! END OF VIDEO 101.1.10.2 - Form Element Attributes -->
+
+<h2 id="inputs">Inputs</h2>
+<p>The Form element has many elements that go inside of it but, by far, the most common elements are the Label and Input Element:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;password&quot;</span><span class="p">&gt;</span>Password<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>This is because the Input element is a versatile element that can be used for all sorts of inputs from text and numbers to files and colors.</p>
+<blockquote>
+<p>NOTE: The HTML snippet above has a Label element with a <code>for</code> attribute set to <code>"password"</code>. In this way it is now tied to the Input element <code>id="password"</code> and NOT the <code>name</code> or <code>type</code> attributes. You see that? The label is <code>for</code> the <code>id</code> of the input.</p>
+</blockquote>
+<p>The list below tells you most of the values you can give to the <code>type</code> attribute of an Input element.</p>
+<p><code>&lt;input type="text"&gt;</code>: defines a one-line text input field. If you need a bigger area for lots of text you'll use a TextArea element.
+<code>&lt;input type="password"&gt;</code>: defines a password field.
+<code>&lt;input type="submit"&gt;</code>: defines a button for submitting form data.
+<code>&lt;input type="radio"&gt;</code>: defines a radio button.
+<code>&lt;input type="checkbox"</code>&gt;: defines a checkbox.
+<code>&lt;input type="button"&gt;</code>: defines a button.
+<code>&lt;input type="date"&gt;</code>: creates a date selector
+<code>&lt;input type="color"&gt;</code>: provides a color picker wheel
+<code>&lt;input type="submit" value="Submit"&gt;</code>: creates a button that is registered automatically with its parent form element as a "submit" button AND it doesn't need a partner Label element.
+<code>&lt;input type="reset" value="Reset"&gt;</code> - creates a button that defaults to call the Form's <code>.reset()</code> method to clear all of it's fields.</p>
+<!-- ! END OF VIDEO 101.1.10.3 - The Input and Label Elements -->
+
+<h3 id="other-attributes-of-the-input-element">Other Attributes of the Input Element</h3>
+<p>**Form validation means we're verifying the data a user puts in, such as the type, length, validity, and shape we want so we can properly save it to a database.</p>
+<blockquote>
+<p>NOTE: Later in this full-stack program you'll see that data must be in the same format, or shape, as the other bits of data being saved with it else the computer can't read it. It is costly both in time and money to send the data from the user to our databases only for it to be in the wrong format. A shorter, safer, and cheaper first filter we can use is HTML's built-in form validation, and you've actually already seen one of the tools, <code>type</code>, which specifies the type of data that can go into an input.</p>
+</blockquote>
+<p>We'll not cover them all in extreme detail because you'll have docs to reference later. But because you need a good introduction of <strong>form validation</strong> and some tools to do it, let's look at a few of the other attributes we can leverage on Input elements.</p>
+<ul>
+<li><code>maxlength=</code>: limits the maximum number of characters that can go into the input</li>
+<li><code>minlength=</code>: limits the minimum number of characters that can go into the input</li>
+<li><code>max=</code> and <code>min=</code>: creates upper and lower limits on a data input</li>
+<li><code>required</code>: forces the user to fill out the input</li>
+<li><code>type="email"</code>: verifies that the input has a @ and .com</li>
+<li><code>type="phone"</code>: verifies that it is a legit phone number</li>
+<li><code>autocomplete="on"</code>: let's the browser offer autocompletion of the form</li>
+<li><code>type="password"</code>: blots out the characters in this field automatically</li>
+<li><code>placeholder=</code>: isn't a validation attribute but it does give the user a hint about what goes in the field</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;price&quot;</span><span class="p">&gt;</span>Price ($)<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;price&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;price&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;$10.00&quot;</span> <span class="na">onkeyup</span><span class="o">=</span><span class="s">&quot;updateNewProduct(this)&quot;</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;100000&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN Docs - Input Element</a></li>
+</ul>
+<!-- ! END OF VIDEO 101.1.10.4 - The Attributes of the Input Element -->
+
+<h3 id="other-elements-that-belong-to-the-form-element">Other Elements That Belong to the Form Element</h3>
+<p>Besides Input, there are a few other form elements you should know about but don't concern yourself with them <em>too much</em>. Remember, there are a lot of tools built into HTML that were developed over years of trial and error and there is no way for us to learn every detail to perfection right now. Take this as a very superficial survey of these other elements:</p>
+<ul>
+<li><code>&lt;fieldset&gt;</code> &amp; <code>&lt;legend&gt;</code>: The fieldset groups related data together and the legend acts the same way as the Label does for the Input. In this way, <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> always go together.</li>
+<li><code>&lt;textarea&gt;</code>: As mentioned before, it is for large sections of text like this page you're reading now!!! ;)</li>
+<li><code>&lt;datalist&gt;</code>: gives you a "pre-fill" menu for your inputs</li>
+<li><code>&lt;output&gt;</code>: of course, shows you the output of some script you've built. You might try using this in your calculator app.</li>
+<li><code>&lt;select&gt;</code>: offers a dropdown menu to your user.</li>
+</ul>
+<p>The last thing we'll say about the HTML Form elements is that they can all be styled just like your other HTML elements. Have fun, let your creativity run wild, and enjoy building!!</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/elements">MDN Docs - All Form Elements</a></li>
+</ul>
+<!-- ! END OF VIDEO 101.1.10.5 - More Elements of the Form Element -->
+
+<!-- TODO tell them the better way to handle submission is through the onclick -->
+
+<h2 id="practice-it-forms">Practice It - Forms</h2>
+<ol>
+<li>You have two projects to do in class. Go ahead and start on one of them now.</li>
+<li>If you want something more to work with try fiddling with this <a href="https://codepen.io/austincoding/pen/awBGPx/">Example Form CodePen</a>.</li>
+</ol>
+<p>Next class you'll be building a Contact Me Page &amp; a Calculator. Look ahead to see the specifications for it and wireframe it tonight.</p>
+<h2 id="know-your-docs">Know Your Docs</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/elements">MDN Docs - All Form Elements</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN Docs - Input Element</a></li>
+</ul>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=2ACrHs5o9LM">YT, Richard Barkinskiy - Styling Form Elements</a>]</li>
+<li><a href="https://youtu.be/fNcJuPIZ2WE">YT, Web Dev Simplified - Learn HTML Form Elements</a></li>
+<li><a href="https://youtu.be/bb4NqVycr-4">YT, InfoQ - Styling Form Validation Messages</a></li>
+<li><a href="https://codepen.io/austincoding/pen/awBGPx/">CodePen, Code Snippet - Example Form Starter</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../htmlElements/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              HTML Elements
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../theButtonElement/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              The Button Element
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>

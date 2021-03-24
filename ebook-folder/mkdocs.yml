@@ -60,10 +60,19 @@ nav:
         - The DOM + JS Intro pt.2: module-2/theDOM-jsIntro-pt2.md
         - Table and nth Child: module-2/table-nthChild.md
         - Class 5 TicTacToe + About: module-2/class-5.md
+      - 'Pre-Class 6 Lessons':
+        # TODO Develop Series
+        - HTTProtocol: module-2/HTTP-req-res.md
+        - HTML Elements: module-2/htmlElements.md
+        - The Form Element: module-2/formElement.md
+        - The Button Element: module-2/theButtonElement.md
+        - Event Listeners: module-2/commonEventListeners.md
+        - Class 6 Contact Page: module-2/class-6.md
       #   - HTTP + Elements as Blocks: module-1/lesson-2.md
       #   - Events & Methods: module-1/lesson-3.md
-      # - Class 6 Dry Todo List: module-1/class-6.md
       # - 'Class 7 Pre-Lessons': 
+      #   - Window Methods: module-2/windowMethods.md
+      #   - Document Methods: module-2/documentMethods.md
       #   - The Three Actions of Data: module-1/lesson-4.md
       #   - Get Data: module-1/lesson-5.md
       #   - Store Data: module-1/lesson-6.md
@@ -71,8 +80,6 @@ nav:
       #   - Reading Docs: module-1/lesson-8.md
         # https://vimeo.com/manage/folders/1059416
         # https://studio.zollege.com/container/block-v1:Circle+Web101+2020_101_Online+type@vertical+block@0c257a4efe8a4e43aab8b1368abcefb9
-        # - Class 5 TITLE: module-2/classOutlineTemplate.md
-        # - 'Pre-Class 6 Lessons': 
         # - 'Pre-Class 7 Lessons': 
         # - 'Pre-Class 8 Lessons': 
       # - 'Module Three: TITLE': 

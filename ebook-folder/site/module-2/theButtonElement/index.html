@@ -1,0 +1,1636 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>The Button Element - Web 101 - Intro to the Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-button-element" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-header__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web 101 - Intro to the Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Button Element
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-nav__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    Web 101 - Intro to the Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Module One: Page Layout
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module One: Page Layout" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Module One: Page Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Pre-Class 1 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 1 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 1 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/theBoxModel/" class="md-nav__link">
+        The Box Model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-width%26height/" class="md-nav__link">
+        Width & Height
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-padding/" class="md-nav__link">
+        Padding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-border/" class="md-nav__link">
+        Border
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-margin/" class="md-nav__link">
+        Margin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-1/" class="md-nav__link">
+        Class 1 Hosting Your Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Pre-Class 2 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 2 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 2 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayProperty/" class="md-nav__link">
+        Display Property
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayFlexProperties/" class="md-nav__link">
+        Display Flex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/flexItemProperties/" class="md-nav__link">
+        Flex Item
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-selfMotivation/" class="md-nav__link">
+        Develop - Self-Motivation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-2/" class="md-nav__link">
+        Class 2 NASA Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Pre-Class 3 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 3 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 3 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-mindfulness/" class="md-nav__link">
+        Develop - Mindfulness
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/wireframing-pt1/" class="md-nav__link">
+        Wireframing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayGrid/" class="md-nav__link">
+        Display Grid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreGridProperties/" class="md-nav__link">
+        Grid Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-3/" class="md-nav__link">
+        Class 3 Resume
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Pre-Class 4 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 4 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 4 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/responsiveLayouts-gridAreas/" class="md-nav__link">
+        Responsive Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/mediaQueries/" class="md-nav__link">
+        Media Queries
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreCssSelectors/" class="md-nav__link">
+        More CSS Selectors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/specificityAndCombinators/" class="md-nav__link">
+        CSS Specificity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-4/" class="md-nav__link">
+        Class 4
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Module Two: Interactions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module Two: Interactions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Module Two: Interactions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Pre-Class 5 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 5 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 5 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introToJavaScript/" class="md-nav__link">
+        Intro to JavaScript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howTheInternetWorks/" class="md-nav__link">
+        How the Internet Works
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ourJobAsWebDevelopers/" class="md-nav__link">
+        Our Job
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../waysOfThinking/" class="md-nav__link">
+        Ways Of Thinking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../twoPerspectives/" class="md-nav__link">
+        Two Perspectives
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theDOM-jsIntro-pt2/" class="md-nav__link">
+        The DOM + JS Intro pt.2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../table-nthChild/" class="md-nav__link">
+        Table and nth Child
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-5/" class="md-nav__link">
+        Class 5 TicTacToe + About
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Pre-Class 6 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 6 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 6 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTTP-req-res/" class="md-nav__link">
+        HTTProtocol
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../htmlElements/" class="md-nav__link">
+        HTML Elements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../formElement/" class="md-nav__link">
+        The Form Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          The Button Element
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        The Button Element
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#try-it-yourself" class="md-nav__link">
+    Try it Yourself
+  </a>
+  
+    <nav class="md-nav" aria-label="Try it Yourself">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-onclick-event-inline-javascript" class="md-nav__link">
+    The "onclick" Event + Inline JavaScript
+  </a>
+  
+    <nav class="md-nav" aria-label="The "onclick" Event + Inline JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-word-clarification" class="md-nav__link">
+    New Word Clarification
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-better-way-to-write-javascript" class="md-nav__link">
+    A Better Way to Write JavaScript
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-creating-objects" class="md-nav__link">
+    Input &amp; Creating Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Input &amp; Creating Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-variables-to-hold-values" class="md-nav__link">
+    Using Variables To Hold Values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commonEventListeners/" class="md-nav__link">
+        Event Listeners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-6/" class="md-nav__link">
+        Class 6 Contact Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Additional Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Additional Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Additional Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/interviewChallenges/" class="md-nav__link">
+        Interview Training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/studentPresentations/" class="md-nav__link">
+        Student Presentations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/developSeries/" class="md-nav__link">
+        Develop Series Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        Questions for Discussion Collections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Questions for Discussion Collections" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Questions for Discussion Collections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-1/" class="md-nav__link">
+        Day 1 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-2/" class="md-nav__link">
+        Day 2 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-3/" class="md-nav__link">
+        Day 3 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-4/" class="md-nav__link">
+        Day 4 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-5/" class="md-nav__link">
+        Day 5 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-6/" class="md-nav__link">
+        Day 6 QFD
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/blogPrompts/" class="md-nav__link">
+        Blog Prompts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/keyboardShortcuts/" class="md-nav__link">
+        Keyboard Shortcuts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/gitCommands/" class="md-nav__link">
+        Git & CLI Commands
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/graduationPrerequisites/" class="md-nav__link">
+        Graduation Prerequisites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/presentationsQualifications/" class="md-nav__link">
+        Presentations Qualifications
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#try-it-yourself" class="md-nav__link">
+    Try it Yourself
+  </a>
+  
+    <nav class="md-nav" aria-label="Try it Yourself">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-onclick-event-inline-javascript" class="md-nav__link">
+    The "onclick" Event + Inline JavaScript
+  </a>
+  
+    <nav class="md-nav" aria-label="The "onclick" Event + Inline JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-word-clarification" class="md-nav__link">
+    New Word Clarification
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-better-way-to-write-javascript" class="md-nav__link">
+    A Better Way to Write JavaScript
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-creating-objects" class="md-nav__link">
+    Input &amp; Creating Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Input &amp; Creating Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-variables-to-hold-values" class="md-nav__link">
+    Using Variables To Hold Values
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="the-button-element">The Button Element</h1>
+<p><em>“Hold fast to dreams,</em><br/>
+<em>For if dreams die</em><br/>
+<em>Life is a broken-winged bird,</em><br/>
+<em>That cannot fly.”</em><br/>
+<em>―Langston Hughes</em><br/></p>
+<h2 id="overview">Overview</h2>
+<p>As you learned in the Form Elements lesson earlier, <code>input</code> elements can be changed to accept all sorts of data including <em>buttons</em> by changing the value of their <code>type=</code> attribute. Here we'll cover the actual <code>&lt;button&gt;</code> element because the real reason to use it over a <code>&lt;input type="button"&gt;</code> element is for styling.</p>
+<p>If you're wanting to but content or images inside of a button then you'll have to use the <code>&lt;button&gt;&lt;/button&gt;</code> element. Plain and simple, that's it!</p>
+<p>However, if you want to use a <code>&lt;button&gt;</code> element on a form you have to set its <code>type=</code>attribute to "submit": <code>type="submit"</code> and <em>poof</em>, you have a submission button.</p>
+<p>But learning about this new element brings us closer to a topic we've only briefly covered so far, Event Listeners.</p>
+<iframe src="https://player.vimeo.com/video/395038529" width="655" height="368" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="try-it-yourself">Try it Yourself</h2>
+<p>To learn more about Event Listeners we'll use the familiar Button Element as a leaping off point. Go ahead and create fil</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>Turn on your <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> and see what's on the screen. Is there a tiny grey button at the top-left of your white screen? Good, that's how it should look. Your browser comes with "<a href="https://gist.github.com/ambidexterich/34828a904dd97dd2a345">Default Visual Styles</a>" of content created in HTML. So all elements will come with some sort of, albeit, ugly styling. Button styling is defaulted to grey and is as wide and tall as the content inside them, the <strong>innerText</strong>.</p>
+<blockquote>
+<p><strong>innerText</strong> is a property on ALL HTML elements. It holds the value of the text inside. When we learn how to build with <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, and all the <code>&lt;h*&gt;</code> elements, we'll see they all have a property on them called innerText. Write that down and draw it for yourself. This is part of your Object Modeling in your own mind.</p>
+</blockquote>
+<!-- TODO INSERT IMAGE of Button Element table with 3 rows: properties, methods, events that includes innerText as a property -->
+
+<p>Let's now add some "innerText" to this button. Between the opening tag and the closing tag type "Click Me".</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>When we learn a little more JavaScript we'll be able to change this <code>innerText</code> property dynamically by writing some JS code like <code>button.innerText = "Oh, Click Me Again!"</code> For now, we'll <strong>statically</strong> set it in HTML by putting the text between the opening and closing tags.</p>
+<p>Now that we have the first <strong>property</strong> of ALL HTML elements including the <code>button</code> element let's play with one of its events! Again, all elements have Properties, Methods, and <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">Events</a> we get to use to build with. By reading the documentation of these <strong>members</strong> we learn more about them and how to use them.</p>
+<p><a href="https://www.w3schools.com/tags/tag_button.asp">W3S Docs - Button Element</a></p>
+<!-- ! END OF VIDEO 101.1.3.1 - The Button Element -->
+<!-- ? Video Numbering and Title system: CourseNumber.ModuleNumber.LessonNumber.VideoNumber -->
+<!-- * VIDEO 101.2.4.3 - "CSS Selectors" === 101 Course, Module 2, Lesson 4, Video 3 - "CSS Selectors" -->
+
+<h3 id="the-onclick-event-inline-javascript">The "onclick" Event + Inline JavaScript</h3>
+<p>Most HTML elements have the <code>onclick</code> event as one of their <strong>members</strong> but Button depends on this <strong>event</strong> because what else do you do with a button besides clicking it?</p>
+<p>As mentioned before, <strong>Events</strong> are like triggers that fire each time the interactions happens. But until we add a function to that trigger the Event is firing a blank. Even though we don't see code that represents it, our <code>button</code> object currently has an <strong>undefined</strong> function attached to its <code>onclick</code> event. We don't typically write undefined events, but if we did write it in code it would look like this:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>Notice the <strong>empty quotes</strong>? Inside those quotes, after the <code>=</code> sign is the value of this event. This is a <strong>key/value</strong> pair. the key is <code>onclick</code> and the value is <code>""</code>.</p>
+</blockquote>
+<p>Let's write a value for this button's <code>onclick</code> key. Type this in and run it to see what happens in the browser.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;function sayHello(){ alert(&#39;Hello!&#39;) }; sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>The line of code we just added between the <code>""</code> marks is actually JavaScript but it's written <strong>inline</strong> with HTML code. This isn't a common practice anymore but it's the way developers wrote it back in the day and a good way for us to begin to learn what's going on. Take a close look at this new code and spend time trying to understand it. The best place to start is dividing it in half at the <code>;</code>.</p>
+<blockquote>
+<p>NOTE: Traditionally, lines of JavaScript are ended with <code>;</code>(semi-colons) although the latest versions of the language don't require it. Nevertheless, we'll use them in our first lessons as we get acquainted with the language.</p>
+</blockquote>
+<p>Before the first semi-colon we see <code>function sayHello(){ alert('Hello!') }</code>. With the <strong>keyword</strong>, <strong>function</strong> we are declaring a function named "sayHello()" and defining what it's supposed to do when called, which is: <code>{ alert('Hello')}</code>. This segment of code is called a <strong>Declaration Block</strong>, it's where we declare to the computer the instructions we want for it to run when the function is run/executed/called/invoked. We can put any set of instructions we want between the <code>{ }</code> but this one's pretty simple, it calls another function named <code>alert</code>.</p>
+<blockquote>
+<p>NOTE: These words: run, execute, call, invoke all mean the same thing: "The perform the instructions of a particular function." You can interchange them as much as you like but this digital book will try to use the words "called" and "invoke".</p>
+</blockquote>
+<p><code>alert()</code> is a function that opens a drop-down window that "alerts" you of something. It's typically used to forewarn the user they are about to submit a form or override a security measure, etc. <em>Actually</em>, the alert is a <a href="https://www.w3schools.com/jsref/met_win_alert.asp">Method of the Window object</a> which means we could have written the code like, <code>{ window.alert('Hello')}</code> as well. We don't have to do this because "alert" isn't a method on the Button object, the Body object, or the Document object, only on the Window object so when we call it, the browser will keep going up the levels of objects until it finds the first "alert" method it comes to. We'll learn more about these <a href="https://www.w3schools.com/jsref/obj_window.asp">Window Object Methods</a>, known also as <strong>Global Methods</strong>, as we build more and more.</p>
+<p>The last two parts of this code are: <code>'Hello!'</code> and <code>sayHello();</code>. The first of these is easy. It's an <strong>argument</strong> just like the ones you passed into the <code>querySelectorAll()</code> method in the last lesson. <strong>Arguments</strong> are values we, as developers, get to decide to pass into functions and the functions return different things based on what we pass into them. Try it.</p>
+<p>Change the <code>'Hello!'</code> argument to something like: <code>'Hello, Clayton!'</code>. Did you see the change?</p>
+<p>What about that last part? <code>sayHello();</code>. This is what's called a <strong>Function Invocation</strong>. It invokes/runs the function. The way it works is by naming the function we want to invoke/call. In this case, it's <code>sayHello</code> then we add those trailing parenthesis afterward <code>()</code> to communicate to the computer we want it to run the instructions inside the <strong>Declaration Block</strong> of the function we just named. See how this is written the same as <code>alert()</code>? ...<code>sayHello()</code>...<code>alert()</code>...? Name the function and then invoke the function</p>
+<!-- ! END OF VIDEO 101.1.3.2 - onclick + Function Breakdown -->
+
+<h4 id="new-word-clarification">New Word Clarification</h4>
+<p>We just covered a lot of new terms so let's take a moment to revisit some of those tricksters.</p>
+<ul>
+<li><strong>Function Declaration</strong> - This is where a function is declared and defined. Until it's called/invoked, it isn't doing anything except taking up memory like a recipe in your cookbook.</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="kd">function</span> <span class="nx">myFunctionExample</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+   <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span>
+   <span class="k">return</span> <span class="nx">sum</span>
+ <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>
+<p>The <strong>Declaration Block</strong> is the part between the <code>{}</code> where the step-by-step instruction goes.</p>
+</li>
+<li>
+<p><strong>Function Invocation</strong> - This the code that calls/invokes the Function Declaration. It tells the computer to execute the instructions in the Declaration Block.</p>
+</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="nx">myFunctionExample</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>
+<p><strong>Function Arguments</strong> - These are values you can pass into functions. In the example above <code>2</code> and <code>3</code> are two arguments passed into the <code>myFunctionExample</code> function. Based on the instructions in the Function Declaration and the arguments passed into it, the result would be 5.</p>
+</li>
+<li>
+<p><strong>Attribute/Property/Method</strong> - If you visited the <a href="https://www.w3schools.com/tags/tag_button.asp">Button Element Docs page</a> your probably saw the use the word <strong>Attributes</strong> instead of <strong>Property</strong>, <strong>Event</strong> or <strong>Method</strong>. This is because HTML was created to represent visual Elements on a screen so all of the properties and their values were originally written together, in line with the elements like the line of JavaScript we just broke down. The word <strong>Attribute</strong> means the same thing as <strong>Property</strong>, <strong>Event</strong> or <strong>Method</strong> but specifically refers to something written in HTML rather than in CSS or JavaScript. Anything you see written inside the opening tag of an element is an <strong>Attribute</strong> but it refers to the <strong>Properties</strong>, <strong>Events</strong>, and <strong>Methods</strong> of that object. Example:</p>
+</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;fish-fry&quot;</span> <span class="p">&gt;</span>Example Title<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>The H3 Element above has an <code>id</code> attribute. This attribute assigns the value of  <code>"fish-fry"</code> the the <code>id</code> property of that object.</p>
+<blockquote>
+<p>NOTE: If this all doesn't gel right now, don't worry. With practice and in time it'll all come together.</p>
+</blockquote>
+<!-- ! END OF VIDEO 101.1.3.3 - New Word Clarification -->
+
+<h3 id="a-better-way-to-write-javascript">A Better Way to Write JavaScript</h3>
+<p>The line of JavaScript we just broke down was a little hard to read because it was all on one line. Thankfully there's a better way to write it, with the <code>&lt;script&gt;</code> Element!</p>
+<p>All Document Objects have a <code>scripts</code> property. When we create a Script Element we are giving the <code>scripts</code> property a value. And just like with our Human object, if we want them to be able to do new things we need to give them new functions like: <code>rideBicycle()</code> or <code>cutWatermelon()</code>. With the <code>&lt;script&gt;</code> element we can give our Document Object new values inside of its <code>scripts</code> property.</p>
+<p>Let's move our current <strong>inline JavaScript</strong> into our <code>&lt;script&gt;</code> element.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+     <span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(){</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span> <span class="p">};</span>
+
+   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>Make these changes and run your page again. It should be working just as before. Now let's create another button and have it also call <code>sayHello</code> when its <code>onclick</code> event is ...clicked.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me Too<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+     <span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(){</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span> <span class="p">};</span>
+
+   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>Now build another function called <code>sayHi</code> but this time call the Console object's method named <code>log()</code> and pass into it a different <strong>string</strong>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHi();&quot;</span><span class="p">&gt;</span>Click Me Too<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+     <span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(){</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, Window.alert Method!&#39;</span><span class="p">)</span> <span class="p">};</span>
+     <span class="kd">function</span> <span class="nx">sayHi</span><span class="p">(){</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hi, Console.log Method!&#39;</span><span class="p">)</span> <span class="p">};</span>
+
+   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>NOTE: In order to see this you'll have to open your DevTools and go to the Console Tab. Click on both buttons and see what happens.</p>
+</blockquote>
+<!-- ! END OF VIDEO 101.1.3.4 - Inline JavaScript + Script Element -->
+
+<h2 id="input-creating-objects">Input &amp; Creating Objects</h2>
+<p>With this new knowledge, you are able to build some pretty awesome stuff already, even if you don't recognize that yet. Yet, before you take on the world let's learn just two more skills: Input elements and how to create new Elements.</p>
+<p>The first is actually very easy and will boost your skillset tremendously! The <code>input</code> element is by far the most used element on the web simply because it can be for so many things: checkboxes, radio buttons, email, password, paragraph, sliders, file uploaders, color pickers, and more!! The full list can be found at <a href="https://www.w3schools.com/tags/tag_input.asp">W3S Docs - Input Element</a>.</p>
+<p>Its default mode is a short input box: <code>&lt;input /&gt;</code>. But using the <code>type=</code> attribute we can change it to be any of the types of input listed above including a button! Try it.</p>
+<blockquote>
+<p>In the same file create an <code>&lt;input type="submit"&gt;&lt;/button</code> element.</p>
+</blockquote>
+<p>The reason we have this option is that Input Elements normally go inside the Form Element and we need to distinguish them as submit buttons &amp; reset buttons versus input type inputs. We'll get into the Form Element soon but for right now let's figure out how we can use the Input Element to take input from a human to later do something with it!</p>
+<p>The Input element, just like the Button element has many Events we can use to capture interactions and pass along data. The event we'll use for this example is the <code>onkeydown</code> event which gets fired when a human-user presses any key down while inside the input field. Other events get fired including <code>onkeyup</code> &amp; <code>onkeypress</code>, you can study the full list of <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">Global Events here</a>.</p>
+<p>In the same fashion, we made our Buttons call a function when they were clicked let's make our input element call a function when a human-user's key is pressed down.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+     <span class="c">&lt;!-- ...more code here.. --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">onkeyup</span><span class="o">=</span><span class="s">&quot;setValue(this.value)&quot;</span><span class="p">/&gt;</span>
+
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+     <span class="c1">// and more JS code is here...</span>
+
+     <span class="kd">function</span> <span class="nx">setValue</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">{</span>
+       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span><span class="nx">input</span><span class="p">})</span>
+     <span class="p">}</span>
+   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>Everything works well? Can you see your input in the Console? The only new bits of syntax you see here are <code>this.</code>, <code>value="</code>, and <code>{input}</code>.</p>
+<ul>
+<li>
+<p><code>this</code> is actually pretty easy, it refers to the exact object that is calling the function. If we created a new input and it called the same function the computer wouldn't know what to do because it wouldn't know how to call it. So we use the keyword <code>this</code> to communicate that the context were calling the function from is this object and not that object or any other object besides <code>this</code> object.</p>
+</li>
+<li>
+<p><code>value=</code> is also easy because it's an attribute just like the other attributes we've been writing and refers to the property <code>value</code> on that object. Its current value is an <strong>empty string</strong>, <code>""</code> but as we type, the value will change under-the-hood. To see this change we need to pass that value along to a function to do something with it.</p>
+</li>
+<li>
+<p>The last bit is super easy. You can see the input appear in the console without the <code>{}</code> but with the <strong>curly-braces</strong> we just see the data in a cleaner format: an object with a key called <code>input</code> that has a value of whatever the <code>input</code> is. If this is confusing, just remove the <code>{}</code> around <code>{input}</code>.</p>
+</li>
+</ul>
+<h3 id="using-variables-to-hold-values">Using Variables To Hold Values</h3>
+<p>We already know how to create variables with the <code>let</code> keyword and we know that we need to use variables to hold on to pieces of data. Let's create a variable that can hold onto our user's input so we can do other things besides logging it in the Console object...</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+     <span class="c">&lt;!-- more code is here.. --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">onkeyup</span><span class="o">=</span><span class="s">&quot;setValue(this.value)&quot;</span><span class="p">/&gt;</span>
+
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+     <span class="kd">let</span> <span class="nx">usersInput</span><span class="p">;</span>
+     <span class="c1">// and more JS code is here...</span>
+
+     <span class="kd">function</span> <span class="nx">setValue</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">{</span>
+       <span class="nx">usersInput</span> <span class="o">=</span> <span class="nx">input</span>
+       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span><span class="nx">usersInput</span><span class="p">})</span>
+     <span class="p">}</span>
+   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>Note the changes in the code. We're now saving our data to a variable and logging the value of the variable, <code>usersInput</code> instead of directly logging what comes into the function's <strong>parameter</strong>, <code>input</code>.</p>
+<!-- ! END OF VIDEO 101.1.3.6 - Input Element + <code>let</code> Variable -->
+<h2 id="additional-resources">Additional Resources</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> <a href="https://www.geeksforgeeks.org/button-tag-vs-input-typebutton-attribute/">Article, Geeks4Geeks - Button vs Input</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../formElement/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              The Form Element
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../commonEventListeners/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Event Listeners
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>

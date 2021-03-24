@@ -1,0 +1,1495 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>HTML Elements - Web 101 - Intro to the Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-body-object-the-elements-of-web-pages" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-header__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web 101 - Intro to the Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HTML Elements
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-nav__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    Web 101 - Intro to the Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Module One: Page Layout
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module One: Page Layout" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Module One: Page Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Pre-Class 1 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 1 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 1 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/theBoxModel/" class="md-nav__link">
+        The Box Model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-width%26height/" class="md-nav__link">
+        Width & Height
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-padding/" class="md-nav__link">
+        Padding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-border/" class="md-nav__link">
+        Border
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-margin/" class="md-nav__link">
+        Margin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-1/" class="md-nav__link">
+        Class 1 Hosting Your Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Pre-Class 2 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 2 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 2 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayProperty/" class="md-nav__link">
+        Display Property
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayFlexProperties/" class="md-nav__link">
+        Display Flex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/flexItemProperties/" class="md-nav__link">
+        Flex Item
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-selfMotivation/" class="md-nav__link">
+        Develop - Self-Motivation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-2/" class="md-nav__link">
+        Class 2 NASA Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Pre-Class 3 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 3 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 3 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-mindfulness/" class="md-nav__link">
+        Develop - Mindfulness
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/wireframing-pt1/" class="md-nav__link">
+        Wireframing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayGrid/" class="md-nav__link">
+        Display Grid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreGridProperties/" class="md-nav__link">
+        Grid Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-3/" class="md-nav__link">
+        Class 3 Resume
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Pre-Class 4 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 4 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 4 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/responsiveLayouts-gridAreas/" class="md-nav__link">
+        Responsive Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/mediaQueries/" class="md-nav__link">
+        Media Queries
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreCssSelectors/" class="md-nav__link">
+        More CSS Selectors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/specificityAndCombinators/" class="md-nav__link">
+        CSS Specificity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-4/" class="md-nav__link">
+        Class 4
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Module Two: Interactions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module Two: Interactions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Module Two: Interactions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Pre-Class 5 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 5 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 5 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introToJavaScript/" class="md-nav__link">
+        Intro to JavaScript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howTheInternetWorks/" class="md-nav__link">
+        How the Internet Works
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ourJobAsWebDevelopers/" class="md-nav__link">
+        Our Job
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../waysOfThinking/" class="md-nav__link">
+        Ways Of Thinking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../twoPerspectives/" class="md-nav__link">
+        Two Perspectives
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theDOM-jsIntro-pt2/" class="md-nav__link">
+        The DOM + JS Intro pt.2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../table-nthChild/" class="md-nav__link">
+        Table and nth Child
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-5/" class="md-nav__link">
+        Class 5 TicTacToe + About
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Pre-Class 6 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 6 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 6 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTTP-req-res/" class="md-nav__link">
+        HTTProtocol
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          HTML Elements
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        HTML Elements
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indexhtml" class="md-nav__link">
+    index.html
+  </a>
+  
+    <nav class="md-nav" aria-label="index.html">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#doctype-tag" class="md-nav__link">
+    DOCTYPE Tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-element" class="md-nav__link">
+    html Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-element" class="md-nav__link">
+    Head Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body-element" class="md-nav__link">
+    Body Element
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indentation" class="md-nav__link">
+    Indentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-summary-the-building-blocks-of-a-web-developer" class="md-nav__link">
+    In Summary: The Building Blocks of a Web Developer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-docs" class="md-nav__link">
+    Know Your Docs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../formElement/" class="md-nav__link">
+        The Form Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theButtonElement/" class="md-nav__link">
+        The Button Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commonEventListeners/" class="md-nav__link">
+        Event Listeners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-6/" class="md-nav__link">
+        Class 6 Contact Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Additional Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Additional Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Additional Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/interviewChallenges/" class="md-nav__link">
+        Interview Training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/studentPresentations/" class="md-nav__link">
+        Student Presentations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/developSeries/" class="md-nav__link">
+        Develop Series Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        Questions for Discussion Collections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Questions for Discussion Collections" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Questions for Discussion Collections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-1/" class="md-nav__link">
+        Day 1 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-2/" class="md-nav__link">
+        Day 2 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-3/" class="md-nav__link">
+        Day 3 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-4/" class="md-nav__link">
+        Day 4 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-5/" class="md-nav__link">
+        Day 5 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-6/" class="md-nav__link">
+        Day 6 QFD
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/blogPrompts/" class="md-nav__link">
+        Blog Prompts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/keyboardShortcuts/" class="md-nav__link">
+        Keyboard Shortcuts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/gitCommands/" class="md-nav__link">
+        Git & CLI Commands
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/graduationPrerequisites/" class="md-nav__link">
+        Graduation Prerequisites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/presentationsQualifications/" class="md-nav__link">
+        Presentations Qualifications
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indexhtml" class="md-nav__link">
+    index.html
+  </a>
+  
+    <nav class="md-nav" aria-label="index.html">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#doctype-tag" class="md-nav__link">
+    DOCTYPE Tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-element" class="md-nav__link">
+    html Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-element" class="md-nav__link">
+    Head Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body-element" class="md-nav__link">
+    Body Element
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indentation" class="md-nav__link">
+    Indentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-summary-the-building-blocks-of-a-web-developer" class="md-nav__link">
+    In Summary: The Building Blocks of a Web Developer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-docs" class="md-nav__link">
+    Know Your Docs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="the-body-object-the-elements-of-web-pages">The Body Object &amp; The Elements of Web Pages</h1>
+<p>Now that we understand our a bit about Requests and Response and have our Req/Res Drawing handy let's examine where we've been working for these past few weeks.</p>
+<p>We'll be referencing the code below because it is the minimum amount of code needed to build a web page. All other HTML elements/objects and their properties, methods, &amp; events will stem from this basic code. </p>
+<p>You can quickly generate this <strong>boilerplate code</strong> by going to VS Code, then creating an <code>index.html</code> file and typing on the first line: <code>html:5</code> + <span class="keys"><kbd class="key-enter">Enter</kbd></span>. Go ahead and try it. Create folder called <code>101-onlineClothingStore</code> and create an <code>index.html</code> file you can use to follow along with in these next few lessons. <em>I'll wait.</em></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html --&gt;</span>
+
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="indexhtml">index.html</h2>
+<p>In most of the  projects you've built, you've been working in a file called <code>index.html</code>. The name of this file is incredibly important because it is the default file that is served FIRST. <code>index.html</code> is the <strong>root</strong> file for ALL websites. When you navigate to Facebook.com or Target.com you will receive their <code>index.html</code> file. If you click on links to go to other page you'll be given other pages like: <code>about.html</code> or <code>termsofagreement.html</code>. You are allowed to name your <code>.html</code> files whatever you want but the very first file you want served must be named: <code>index.html</code> and in the <strong>root</strong> directory/folder, meaning it can not be hidden in another folder, it must be at the top-level of the entire project's folder.</p>
+<p>Furthermore, the <code>.html</code> extension denotes a file written in HTML code while <code>.css</code> denotes CSS code and <code>.js</code> denotes JavaScript code.</p>
+<blockquote>
+<p>There's no requirement for you to use the name <code>index</code> for CSS or JS files but it may be helpful to you as a developer to name your files similarly so they can be grouped together in your mind and organized in folders. For instance, <code>index-styles.css</code> and <code>index-scripts.js</code> might be styles and scripts used only on the <code>index.html</code> file while <code>about-styles.css</code> and <code>about-scripts.js</code> might be used only on the <code>about.html</code> file. You'll figure it out as you go!</p>
+</blockquote>
+<!-- ! END OF VIDEO 101.1.2.3 - The File `index.html` & Its Structure -->
+
+<h3 id="doctype-tag">DOCTYPE Tag</h3>
+<p>At the very top of all HTML files we see this strange looking, <strong>self-closing tag</strong>: <code>&lt;!DOCTYPE html&gt;</code>. This is a hold-over from older versions of the HTML language. It was originally used to declare the type of this document is ("HTML" and not "XML"), as well as, the version of HTML it's written in but now everyone uses HTML5+ so we only have to write <code>html</code> to declare that the document the computer is going to read is in HTML5.</p>
+<p>It also communicates to the browser to build a Document object. Remember, code is used for communication. In this case, this bit of code is communicating to the browser, "Hey, inside your Window object go ahead and create a Document object so we can build some more objects inside of it." To us humans, we can read this code and visually imagine a Document object being built with other objects to be added as we go along. See a version of this object modeling below!!</p>
+<!-- TODO INSERT IMAGE OF WINDOW and DOCUMENT OBJECTS  images/Window-Document-Objects-101-1-2.png HERE -->
+
+<p><img alt="Window-Document-Objects-101-1-2" src="../../images/Window-Document-Objects-101-1-2.png" /></p>
+<ul>
+<li><a href="https://www.w3schools.com/tags/tag_doctype.asp">W3S Docs - doctype Element</a></li>
+</ul>
+<h3 id="html-element">html Element</h3>
+<p>The next bit of code we see in <code>&lt;html&gt;&lt;/html&gt;</code>. This code represents the <code>html</code> object. It is what's know as the <strong>root element/object</strong>. It's the actual <strong>Document Object</strong> that's being rendered on your screen. We call it the <strong>root</strong> element because all other elements/objects are children or descendants of it including Head and Body and all the elements we'll build inside them. This is the beginning(the <strong>root</strong>) of our <strong>Document Object Model</strong>, the first object that all other objects get put inside of; hence the moniker: "Mother of all Objects".</p>
+<p>The second takeaway here is to make sure you define the human speaking language you're page is written in. For instances, <code>&lt;html lang="en"&gt;</code> stands for English while <code>&lt;html lang="fr"&gt;</code> would stand for French. You can find <a href="https://www.w3schools.com/tags/ref_language_codes.asp">all the Global Languages codes here</a>.</p>
+<ul>
+<li><a href="https://www.w3schools.com/tags/tag_html.asp">W3S Docs - html Element</a></li>
+</ul>
+<p><img alt="WinDocHead-Object-101-1-2" src="../../images/WinDocHead-Object-101-1-2.png" /></p>
+<!-- ! END OF VIDEO 101.1.2.4 - The Elements: DOCTYPE & html -->
+
+<h3 id="head-element">Head Element</h3>
+<p>As discussed earlier, the <code>&lt;head&gt;</code> element contains machine-readable information (<strong>metadata</strong>) about the documents content, like its title(the bit you see in the tab of your browser), scripts(JS)<em>see note</em>, and style sheets(CSS).</p>
+<p>The elements/objects that go inside <code>&lt;head&gt;</code> are:</p>
+<ul>
+<li><code>&lt;base&gt;</code> - create base URLs for all links on a page (we'll learn about this later)</li>
+<li><code>&lt;link&gt;</code> - used to tell the browser where to find CSS files that define styles/the way our page is supposed to look</li>
+<li><code>&lt;meta&gt;</code> - multi-purpose including viewport sizing, Search Engine keywords, web services, and data about data (metadata); it contains information about the page. This includes information about styles, scripts, and data to help software (search engines, browsers, etc.) use and render the page.</li>
+<li><code>&lt;style&gt;</code> - an older and abandoned way of including styling to a page; use <code>&lt;link&gt;</code> element instead</li>
+<li><code>&lt;title&gt;</code> - the words that are displayed in the tab at the top of your browser</li>
+</ul>
+<p>Aside from the content between the opening and closing tags of the <code>&lt;title&gt;&lt;/title&gt;</code> element/object, none of the code in the <code>&lt;head&gt;</code> element/object is displayed to the user. It is only read by the browser to know how to display the <code>&lt;body&gt;</code> and its content.</p>
+<blockquote>
+<p>NOTE: Before going any further we need to clear up some terminology so we're all on the same page and can stop reading multiple words that refer to the same thing.
+So far we know that computers use objects to store information. So to a computer, everything is an object. But in the HTML language, we often say the word "element". As in the <code>&lt;body&gt;&lt;/body&gt;</code> element has an <strong>opening-tag</strong>: <code>&lt;body&gt;</code> and a <strong>closing-tag</strong>: <code>&lt;/body&gt;</code>. Together they create an HTML Element called the Body. This is just a language-specific way to describe an object. In HTML we say <em>element</em> instead of <em>object</em>. But as we dig into JavaScript and other languages we only say the word <strong>Object</strong>. Both are one and the same as far as the computer knows, they're just building blocks with their own properties, methods, and events.
+"Element" is the HTML way of saying "Object" but because Elements are Objects that have visual representations on the screen we call them, Elements. From now on, if we're talking in HTML we'll use the word "<strong>Element</strong>" but just know in your mind it's the same thing as an <strong>Object</strong>. Just a thing with properties, methods, and events.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.w3schools.com/tags/tag_head.asp">W3S Docs - Head Element</a></li>
+</ul>
+<p><img alt="WinDocHead-Object-101-1-2" src="../../images/WinDocHead-Object-101-1-2.png" /></p>
+<blockquote>
+<p>** NOTE: Usually scripts(.js files) are linked to HTML files at the bottom of the Body with a <code>&lt;script href=""&gt;</code> element but with the new <code>defer</code> keyword it is acceptable to link your scripts in the Head element now.</p>
+</blockquote>
+<!-- ! END OF VIDEO 101.1.2.5 - The Head Element -->
+
+<h3 id="body-element">Body Element</h3>
+<p>Finally, we come to the exciting element: The Body Element!</p>
+<p>Inside the Body Element is where ALL of the contents of a page live. Whatever page you navigate to on the web, you are viewing the contents of the page.</p>
+<p><strong>Try it.</strong> Go to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a> and open the Chrome Developer Tools (DevTools). Right-click &gt; inspect &gt; then click on the Console tab. Where the cursor's flashing, type or copy/paste this line of code: <code>document.head.parentNode.removeChild(document.head);</code> and press ENTER.</p>
+<p><img alt="removeHead" src="../../images/removeHead.png" /></p>
+<blockquote>
+<p>You should see a significant change in the appearance of the page. This is because you just removed the Head Element from the document and the Head Element contains links to stylesheets. The code you just wrote is a line of JavaScript that says, "Hey Console, go the document object and access its Head object, then find the property parentNode on the Head object. From there, invoke the removeChild method so the Head removes itself." It's a little lengthy but it gets the job done.</p>
+</blockquote>
+<p>Now that we can see the content clearly without all that CSS in the way. Let's talk about it.</p>
+<p>Click on the tiny button in the top-left with the arrow or type CMD + SHIFT + C (mac)/Ctrl + SHIFT + C(Windows). Now move your mouse along the page to see all the elements of the page highlight as you hover over them.</p>
+<blockquote>
+<p>NOTE: If the elements are not highlighting repeat the previous instructions. You may have turned them off when they were already on.</p>
+</blockquote>
+<p><img alt="ElementSelector" src="../../images/elementSelector2.png" /></p>
+<p>Move your cursor around until you can find the Header Element. How many Article Elements can you find? Can you find the HTML element? All of these elements are various building blocks (Objects) that were arranged in a certain way to build this page. Check it out:</p>
+<p>Back in the Console type: <code>document.querySelectorAll("h1").length</code> + ENTER. What number was returned?</p>
+<p>You should have gotten 1 because there is only 1 <code>&lt;h1&gt;</code> element and there should only ever be 1 <code>&lt;h1&gt;</code> on any page! Try it again. Type: <code>document.querySelectorAll("a").length</code> How many Anchor elements are there? What about <code>document.querySelectorAll("article").length</code>? Go ahead and change the <strong>argument</strong> between the <code>()</code> to any of the elements you see on the page or currently know about to see how many there are on the entire page.</p>
+<p>Do you know what this script is doing? Can you read it?</p>
+<p>It goes like this: "Hey Console, ask the Document object to invoke its "querySelectorAll" method with <code>"a"</code> as its argument to find all Anchor elements, then give us the value of the length property on the object that method returns." The <code>querySelectorAll</code> method selects/finds all elements that match the <strong>argument</strong> you pass into. Give it <code>"h1"</code> and it'll return 1, give it <code>"section"</code> and it'll return 1, <code>"a"</code> will return 481. Go ahead and try any or all of the <a href="https://eastmanreference.com/complete-list-of-html-tags">115 different HTML elements</a> to see what you find!</p>
+<ul>
+<li><a href="https://www.w3schools.com/tags/tag_body.asp">W3S Docs - Body Element</a></li>
+<li><a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp">W3S Docs - .querySelectorAll() Method</a></li>
+</ul>
+<p><img alt="images/WinDocHeadBody-Objects-101-1-2" src="../../images/WinDocHeadBody-Objects-101-1-2.png" /></p>
+<!-- ! END OF VIDEO 101.1.2.6 - The Body Element -->
+
+<h2 id="indentation">Indentation</h2>
+<p>Code is used to communicate programming intentions to a computer but the computer doesn't have eyes it just has 0s and 1s so space/whitespace doesn't matter to it. In fact, when your HTML, CSS, and JS code files are prepared for a <strong>production environment</strong>(open for the world to see) they are <strong>minified</strong> which means all of the <strong>whitespace</strong> is removed including space between words, space between lines of code, and indentations. Your files will be minified/compress so they are faster for the computer to run and lighter for the internet to transfer. So why indentation?</p>
+<p>Because code is also used to communicate to humans, we use indentation to organize objects; or rather representation of objects in our code. When you auto-generated your <strong>boilerplate</strong> HTML earlier there likely wasn't any indentation before the <code>head</code> and <code>body</code> elements/objects but in this code example there is. This extra <strong>whitespace</strong> is to help you start seeing these different objects using different vertical layers, <strong>indentation</strong>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html --&gt;</span>
+
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
+<p>The <code>html</code> element is the the top-level/root element so it is slammed up against the far-left side of file. But <code>head</code> and <code>body</code> are direct descendants of <code>html</code> and siblings to one-another; therefore they are indented one tab (2-4 spaces). Objects directly inside the <code>head</code> and <code>body</code> are thusly tabbed in again: <code>meta</code>, <code>meta</code>, and <code>title</code>. These element can be described as <strong>Siblings Elements</strong>.</p>
+<p>In the <code>body</code> we see some new elements. Can you guess which elements are direct descendants of the <code>body</code> element and siblings to one another?</p>
+<!-- ! END OF VIDEO 101.1.2.7 - Indentation -->
+
+<h2 id="in-summary-the-building-blocks-of-a-web-developer">In Summary: The Building Blocks of a Web Developer</h2>
+<p>All web pages and sites are built with the same HTML Elements(objects). These are our building blocks as web developers. Learning about them and their properties, methods, and events is what we will be doing in this course. In the next lesson we'll break the surface of how to capture interactions between humans and computers and how to give instructions to the computer when those Events/interactions occur.</p>
+<ul>
+<li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp">W3S Docs - HTML Events</a></li>
+</ul>
+<blockquote>
+<p>NOTE: When you see these links ^ saying something about "Docs" or "Know Your Docs" you should bookmark them in a bookmarks folder called HTML Docs or CSS Docs or JS Docs for the language they relate to. Documentation is one of the top three tools of developers. Every developer depends on them because there's so much "invisible" stuff to learn we mere-humans can't remember it all. What we can do is spend our energy creatively building with these technologies and relying on documentation(docs) to help us find the path when we're lost and exploring.</p>
+</blockquote>
+<!-- ! END OF VIDEO 101.1.2.8 - Summary: The Building Blocks of a Web Developer -->
+
+<h2 id="know-your-docs">Know Your Docs</h2>
+<ul>
+<li><a href="https://www.w3schools.com/tags/tag_doctype.asp">W3S Docs - doctype Element</a></li>
+<li><a href="https://www.w3schools.com/tags/tag_html.asp">W3S Docs - html Element</a></li>
+<li><a href="https://www.w3schools.com/tags/tag_head.asp">W3S Docs - Head Element</a></li>
+<li><a href="https://www.w3schools.com/tags/tag_body.asp">W3S Docs - Body Element</a></li>
+<li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp">W3S Docs - HTML Events</a></li>
+<li><a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp">W3S Docs - .querySelectorAll() Method</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../HTTP-req-res/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              HTTProtocol
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../formElement/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              The Form Element
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>
