@@ -23,9 +23,7 @@ Today we're going to:
 - [ ] Questions for Student Led Discussion
 - [ ] Interview Challenge
 - [ ] Student Presentations
-- [ ] Creation Time
-    * [ ] Part 1 - Calculator App - 60 mins
-    * [ ] Part 2 - Contact Page - 60 mins
+- [ ] Creation Time - Contact Page - 60 mins
 - [ ] Push Yourself Further
 - [ ] Interview Questions: Blog to Show You Know
 - [ ] Exit Recap, Attendance, and Reminders
@@ -46,18 +44,7 @@ Today we're going to:
 
 [See Student Presentations List](./../additionalResources/studentPresentations.md)
 
-## Creation Time, 60-90 mins
-
-### Part One: Calculator App
-
-As a class,
-
-- [ ] Fork and clone the [Calculator App Repo](https://github.com/AustinCodingAcademy/calculator-app-101) into your `devFolder` or wherever you've been building your projects: `git clone https://github.com/AustinCodingAcademy/calculator-app-101.git`
-- [ ] Go to the `README.md` file to find the rest of your instructions.
-
-> NOTE: Here is an [Overview Video of the repo](https://vimeo.com/395247060/835ad9038f).
-
-### Part 2: Contact Page
+## Creation Time, Contact Page
 
 * Group Students in pairs
   * plan and implements
@@ -85,10 +72,9 @@ Just like the About Page you built for your Portfolio Website last class, tonigh
 
 ### Push Yourself Further
 
-- [ ] Next class, you'll be building a small business's website
+- [ ] For your checkpoint, you'll be building a small business's website
 - [ ] Look ahead and start wireframing what that will look like.
 - [ ] Look ahead and see if you can get a jump on git branching.
-- [ ] Rebuild another [Calculator](https://codepen.io/lalwanivikas/pen/eZxjqo) if you're up for it!
 
 ## Blogs to Show You Know
 

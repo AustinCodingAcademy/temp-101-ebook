@@ -2,10 +2,10 @@
 
 <!-- ! HIDE FROM STUDENT; INSTRUCTOR ONLY CONTENT -->
 <!-- ## Instructor Only Content - HIDE FROM STUDENTS -->
-
+cp workspace/resources/classOutlineTemplate.md docs/module-
 <!-- ! END INSTRUCTOR ONLY CONTENT -->
 
-**
+*quote*
 
 ## Greet, Outline, and Objectify
 
@@ -14,7 +14,7 @@
 
 Today we're going to:
   
-*OBJECTIVE: By re-engaging with previously learned knowledge and applying it to a new challenge the student will deepen their understanding and be prepared to creatively reuse these techniques in new ways.*
+*OBJECTIVE:*
 
 - [ ] Questions for Student Led Discussion
 - [ ] Interview Challenge
@@ -43,25 +43,13 @@ Today we're going to:
 
 ## Creation Time, 60-90 mins
 
-<!-- 
-* Instructor to Demonstrate with Examples, Explain and Set Expectations
-* Group Students in pairs
-  * plan and implements
-* Partner with other groups for elaboration
-* Share with the class for evaluation (potentially carry into the next class)
+- [ ]
 
-![PIC](./../images/pic.png)
-
-*****
--->
-
-- [ ] 
-
+<!-- ! Video Content:  (width="655" height="368", ratio 1.77) -->
 
 ### Push Yourself Further
 
-- [ ] 
-
+- [ ]
 
 <!-- 
 ## Blogs to Show You Know
@@ -79,14 +67,8 @@ Today we're going to:
 <!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
 <script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script> -->
 
-
 <!-- TODO Create 3 question exit questions -->
 
 <!-- TODO INSERT Student Feedback From -->
 
-<!-- TODO INSERT *HIDDEN* Instruc tor Feedback Form -->
-
-<!-- 
-height/width = 1.777 ---- width="655" height="368"
-cp workspace/resources/classOutlineTemplate.md docs/module-
- -->
+<!-- TODO INSERT *HIDDEN* Instructor Feedback Form -->

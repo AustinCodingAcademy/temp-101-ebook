@@ -73,13 +73,15 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 6
 
-- [ ] **Prompt 1: Code Plan** - *As a class, what problem do we need to solve in the Calculator App? How do we solve it? Let's create a list of actions we need to take to complete it.*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: Title** - *Wireframe the Image Gallery Mockup below. How do you get the text to appear when the user's cursor is over the top of it?*
+
+![image-gallery-wireframing-challenge](./../images/image-gallery-wireframing-challenge.png)
 
 ### Class 7
 
-- [ ] **Prompt 1: Title** - *description*
+- [ ] **Prompt 1: Code Plan** - *As a class, what problem do we need to solve in the Calculator App? How do we solve it? Let's create a list of actions we need to take to complete it.*
 <!-- - [ ] **Prompt 2: Title** - *description* -->
+
 
 ### Class 8
 

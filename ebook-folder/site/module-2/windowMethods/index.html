@@ -14,7 +14,7 @@
     
     
       
-        <title>windowMethods - Web 101 - Intro to the Web</title>
+        <title>Window Methods - Web 101 - Intro to the Web</title>
       
     
     
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              windowMethods
+              Window Methods
             
           </span>
         </div>
@@ -578,12 +578,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Module Two: Interactions
@@ -770,7 +772,7 @@
   
     <li class="md-nav__item">
       <a href="../formElement/" class="md-nav__link">
-        The Form Element
+        Form Element
       </a>
     </li>
   
@@ -781,8 +783,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../theButtonElement/" class="md-nav__link">
-        The Button Element
+      <a href="../buttonElement/" class="md-nav__link">
+        Button Element
       </a>
     </li>
   
@@ -807,6 +809,136 @@
     <li class="md-nav__item">
       <a href="../class-6/" class="md-nav__link">
         Class 6 Contact Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Pre-Class 7 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 7 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 7 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developSeries-brainBuilding/" class="md-nav__link">
+        Develop - Your Brain
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Window Methods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Window Methods
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windowopen-windowclose-methods" class="md-nav__link">
+    Window.open &amp; Window.close Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windowclose" class="md-nav__link">
+    Window.Close
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentMethods/" class="md-nav__link">
+        Document Methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../imageElement/" class="md-nav__link">
+        Image Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-7/" class="md-nav__link">
+        Class 7 Calculator App
       </a>
     </li>
   
@@ -977,6 +1109,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-7/" class="md-nav__link">
+        Day 7 QFD
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1098,10 +1242,9 @@
               
                 
                 
-                  <h1>windowMethods</h1>
+                  <h1>Window Methods</h1>
                 
                 <h3 id="windowopen-windowclose-methods">Window.open &amp; Window.close Methods</h3>
-<p>Let's play with two more Window object methods before we move into the fun stuff.</p>
 <p>The Window object has more properties than the Console object and far more methods than just <code>alert()</code>, in fact, it has 31 properties, 26 methods, and 80 events in total. You can learn to use each of them by <a href="https://www.w3schools.com/jsref/obj_window.asp">reading the documentation</a> on them. For now, let's look at two of them <code>.open()</code> and <code>.close()</code>.</p>
 <p>These methods, respectively, open and close a new window. Check it out.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -1192,6 +1335,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../developSeries-brainBuilding/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Develop - Your Brain
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../documentMethods/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Document Methods
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

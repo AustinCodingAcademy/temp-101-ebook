@@ -1,7 +1,5 @@
 # Document Methods
 
-#### The Document Methods
-
 With all this talk of the Window, Buttons, and Input Elements it feels as if we kicked the Document object to the curb. "It has feelings too, guys!"
 
 Check it, the document has access to all elements because it is the **root** element. It is the Mother of All Elements, it creates elements, removes elements, and changes their contents. The Document is THE OBJECT. It's why we call there is a **Document Object Model**, because all objects are born, live, and die with the Document object.

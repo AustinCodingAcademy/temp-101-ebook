@@ -1,33 +1,26 @@
-# Intro to JavaScript
+# TITLE
 
 cp workspace/resources/templateFile.md docs/module-
 
 *quote*
 
 ## Overview
+<!-- ! Video Contents:  (width="655" height="368", ratio 1.77) -->
 
+## Practice It
 
-
-
-## The Document
-
-The Document, as in the Document Object Model
-
-```javascript
-
-```
+<!-- [Try it yourself](https://replit.com)! -->
 
 ## Additional Resources
 
 - [ ] [YT, tuber - title]()
 
-<!-- [Try it yourself](https://replit.com)! -->
-
 ## Know Your Docs
 
-* [MDN Docs - title]()
+- [ ] [MDN Docs - title]()
 
 <!-- 
+
 ```javascript
 
 ```
@@ -39,18 +32,12 @@ The Document, as in the Document Object Model
 | `DELETE`    | Delete resource |
 
 
-- [ ] [MDN Docs - ...]()
-
     `line numbers`
 :do you like 'em?
 
 
 ++slash++
 https://facelessuser.github.io/pymdown-extensions/extensions/keys/
-
-cp workspace/resources/templateFile.md docs/module-
-
-! height/width = 1.777 ---- width="655" height="368"
 
 === "Javascript"
 

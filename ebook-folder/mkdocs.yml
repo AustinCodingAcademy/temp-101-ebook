@@ -48,7 +48,7 @@ nav:
         - Media Queries: module-1/mediaQueries.md  
         - More CSS Selectors: module-1/moreCssSelectors.md
         - CSS Specificity: module-1/specificityAndCombinators.md
-        # TODO Develop Series
+        # TODO - Develop - TITLE: module-1/.md
         - Class 4: module-1/class-4.md
     - 'Module Two: Interactions': 
       - 'Pre-Class 5 Lessons': 
@@ -61,27 +61,28 @@ nav:
         - Table and nth Child: module-2/table-nthChild.md
         - Class 5 TicTacToe + About: module-2/class-5.md
       - 'Pre-Class 6 Lessons':
-        # TODO Develop Series
+        # TODO - Develop - TITLE: module-2/.md
         - HTTProtocol: module-2/HTTP-req-res.md
         - HTML Elements: module-2/htmlElements.md
-        - The Form Element: module-2/formElement.md
-        - The Button Element: module-2/theButtonElement.md
+        - Form Element: module-2/formElement.md
+        - Button Element: module-2/buttonElement.md
         - Event Listeners: module-2/commonEventListeners.md
         - Class 6 Contact Page: module-2/class-6.md
-      #   - HTTP + Elements as Blocks: module-1/lesson-2.md
-      #   - Events & Methods: module-1/lesson-3.md
-      # - 'Class 7 Pre-Lessons': 
-      #   - Window Methods: module-2/windowMethods.md
-      #   - Document Methods: module-2/documentMethods.md
+      - 'Pre-Class 7 Lessons': 
+          - Develop - Your Brain: module-2/developSeries-brainBuilding.md
+          - Window Methods: module-2/windowMethods.md
+          - Document Methods: module-2/documentMethods.md
+          - Image Element: module-2/imageElement.md
+          - Class 7 Calculator App: module-2/class-7.md
+          # TODO Review Window and Document lessons and refine to make them fit in this place
+        # https://vimeo.com/manage/folders/1059416
+        # https://studio.zollege.com/container/block-v1:Circle+Web101+2020_101_Online+type@vertical+block@0c257a4efe8a4e43aab8b1368abcefb9
+        # - 'Pre-Class 8 Lessons': 
       #   - The Three Actions of Data: module-1/lesson-4.md
       #   - Get Data: module-1/lesson-5.md
       #   - Store Data: module-1/lesson-6.md
       #   - Render Data: module-1/lesson-7.md
       #   - Reading Docs: module-1/lesson-8.md
-        # https://vimeo.com/manage/folders/1059416
-        # https://studio.zollege.com/container/block-v1:Circle+Web101+2020_101_Online+type@vertical+block@0c257a4efe8a4e43aab8b1368abcefb9
-        # - 'Pre-Class 7 Lessons': 
-        # - 'Pre-Class 8 Lessons': 
       # - 'Module Three: TITLE': 
         # - 'Pre-Class 9 Lessons': 
         # - 'Pre-Class 10 Lessons': 
@@ -103,6 +104,7 @@ nav:
         - Day 4 QFD: additionalResources/questionsForDiscussion/qfd-class-4.md
         - Day 5 QFD: additionalResources/questionsForDiscussion/qfd-class-5.md
         - Day 6 QFD: additionalResources/questionsForDiscussion/qfd-class-6.md
+        - Day 7 QFD: additionalResources/questionsForDiscussion/qfd-class-7.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - Git & CLI Commands: additionalResources/gitCommands.md
