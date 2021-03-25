@@ -2,7 +2,7 @@
 
 *Be a self-starter. Do it now! When you don't know how to do something, start. Beware of the paralysis of analysis. Be a person of action. —Mamie McCullough*
 
-The Form Element is used to create, you guessed it, forms! Or as defined by [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form):
+Let's zoom in a little from those higher-level view and talk about a specific element we haven't worked with yet, the Form Element. As you might have guessed it's used to create forms! Or as defined by [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form):
 
  > "The HTML `<form>` element represents a document section containing interactive controls for submitting information."
 
@@ -23,6 +23,7 @@ Like all other HTML Elements, the Form Element has all the [Global Attributes](h
 These properties are required to be defined for your forms to work properly so let's look at them and how they're used. We'll be using the following code as a reference point.
 
 ```html
+<!-- index.html -->
  <form action="https://www.singlesingerssite.com/signin.htm" method="post" autocomplete="off">
    <div>
      <label for="email">Email</label>
@@ -48,6 +49,8 @@ These properties are required to be defined for your forms to work properly so l
 * `method=` - If you choose to use the `action=` attribute to define the URL that will process your forms data, then you have to define the method as a POST. Later in this lesson, you'll learn about the multiple values you can use here to send different types of Requests over HTTP(S). For now, the two values you can use here are `"post"` and `"get"`. If you use the preferred `fetch` alternative then you will need to declare the Request as a POST in the `fetch` because the default value of the Form Element's `method=` is `get`, see below:
 
 ```js
+// inside a <script> element or in .js file
+
  fetch('https://fakestoreapi.com/products', {
    method:"POST",
    body: {}
@@ -116,7 +119,7 @@ The list below tells you most of the values you can give to the `type` attribute
 
 ### Other Attributes of the Input Element
 
-**Form validation means we're verifying the data a user puts in, such as the type, length, validity, and shape we want so we can properly save it to a database.
+**Form validation** means we're verifying the data a user puts in, such as the type, length, validity, and shape we want so we can properly save it to a database.
 
 > NOTE: Later in this full-stack program you'll see that data must be in the same format, or shape, as the other bits of data being saved with it else the computer can't read it. It is costly both in time and money to send the data from the user to our databases only for it to be in the wrong format. A shorter, safer, and cheaper first filter we can use is HTML's built-in form validation, and you've actually already seen one of the tools, `type`, which specifies the type of data that can go into an input.
 

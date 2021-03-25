@@ -795,6 +795,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../inputElement/" class="md-nav__link">
+        Input Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../commonEventListeners/" class="md-nav__link">
         Event Listeners
       </a>
@@ -915,16 +927,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#using-the-image-element" class="md-nav__link">
+    Using the Image Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the Image Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#styling-images" class="md-nav__link">
     Styling Images
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#image-as-background" class="md-nav__link">
-    Image as Background
+        
+          <li class="md-nav__item">
+  <a href="#image-as-background-technique" class="md-nav__link">
+    Image as Background Technique
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1236,16 +1261,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#using-the-image-element" class="md-nav__link">
+    Using the Image Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the Image Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#styling-images" class="md-nav__link">
     Styling Images
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#image-as-background" class="md-nav__link">
-    Image as Background
+        
+          <li class="md-nav__item">
+  <a href="#image-as-background-technique" class="md-nav__link">
+    Image as Background Technique
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1277,14 +1315,15 @@
                 
                 
                 <h1 id="the-image-element">The Image Element</h1>
-<p><em>“Hope can be a powerful force. Maybe there's no actual magic in it, but when you know what you hope for most and hold it like a light within you, you can make things happen, almost like magic.” ―Laini Taylor, </em><em>Daughter of Smoke &amp; Bone</em>**</p>
+<p><em>“Hope can be a powerful force. Maybe there's no actual magic in it, but when you know what you hope for most and hold it like a light within you, you can make things happen, almost like magic.” ―Laini Taylor,</em> <strong>Daughter of Smoke &amp; Bone</strong></p>
 <p>HTML is the only language that web content is encoded in. No matter what programming language you work in, if you're serving your software through the web you'll be encoding that software's content to the user in HTML. Because HTML is the only language for the web, it has to be super flexible to handle all of the crazy cool stuff we see on the web. Just stop and think for a moment about <a href="https://www.awwwards.com/">some of the coolest websites</a> you've seen. All of that was built in HTML!!</p>
 <p>So when you're wondering when you'll know everything there is to know about HTML, well maybe never...but the upside is that there is always something to learn! In this lesson, we'll spend time on the Image Element, <code>&lt;img /&gt;</code> because during class and your upcoming career you'll need to display the images.</p>
 <p>We won't cover all of the "special HTML elements" a.k.a <strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element">Replaced Elements</a></strong>: in this lesson like: <code>&lt;video&gt;</code>, <code>&lt;embed&gt;</code> and <code>&lt;iframe&gt;</code> but just know if you're wanting to build videos into a web page you can read the docs on these two elements and all the other HTML elements!!</p>
 <!-- Video Subject: Special HTML Elements -->
 <iframe src="https://player.vimeo.com/video/395992193" width="655" height="368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<p>You've probably already recognized the Image Element, <code>&lt;img /&gt;</code>, from a Learn-to-Code event or from your Portfolio Landing page. This takes the fear out of learning yet another Object-Thing!</p>
+<h2 id="using-the-image-element">Using the Image Element</h2>
+<p>You've probably already recognized the Image Element, <code>&lt;img /&gt;</code>, from a Learn-to-Code event or from your Portfolio Landing page. This takes the fear out of learning yet another <em>Object-Thing</em>!</p>
 <p>To begin, the <code>&lt;img /&gt;</code> known as a <strong>self-closing</strong> or <strong>void</strong> element because it doesn't keep its content between the opening- and closing-tags like most other HTML elements do, instead it uses two properties/<strong>attributes</strong> to <em>source</em> its content:</p>
 <ul>
 <li><code>src=""</code> - the source of the actual image in the form of a URL or pathname</li>
@@ -1308,7 +1347,7 @@
 <ul>
 <li><a href="https://www.w3schools.com/tags/tag_img.asp">W3S Docs - Image Element</a></li>
 </ul>
-<h2 id="styling-images">Styling Images</h2>
+<h3 id="styling-images">Styling Images</h3>
 <p>Styling Images can be tricky because they are a "special element" known as a <strong>Replaced Element</strong>. This means they don't quite follow the same CSS rules as most other elements. So the best way style an image is to put it inside a Div element and style the Div:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">The HTML</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1359,7 +1398,7 @@
 </code></pre></div>
 </td></tr></table>
 <p>Try it. Go to the MDN Docs on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position">object-position</a> &amp; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">object-fit</a> and play!</p>
-<h2 id="image-as-background">Image as Background</h2>
+<h3 id="image-as-background-technique">Image as Background Technique</h3>
 <p>An alternative to styling an Image Element is setting the background of a Div Element to the image you want displayed:</p>
 <div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">The HTML</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>

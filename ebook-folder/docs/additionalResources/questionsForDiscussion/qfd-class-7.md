@@ -39,3 +39,14 @@
 - [ ] How do you think you can use Open-source code to facilitate the building of your Capstone Project?
 - [ ] Where do you find open-source code?
 - [ ] Does anyone have some interesting open-code they'd like to share with the class?
+
+## Various Object Methods & Event Listeners
+
+- [ ] Can you name 3 properties, 3 methods, 3 events of each of these objects:
+  * [ ] Window
+  * [ ] Document
+  * [ ] Console
+  * [ ] Body
+- [ ] How do they look to you in your mind? What does your Object Model look like?
+- [ ] What questions do you have? Is code starting to mean something to you yet?
+- [ ] What is inheritance?

@@ -1,6 +1,6 @@
 # The Image Element
 
-*“Hope can be a powerful force. Maybe there's no actual magic in it, but when you know what you hope for most and hold it like a light within you, you can make things happen, almost like magic.” ―Laini Taylor, **Daughter of Smoke & Bone***
+*“Hope can be a powerful force. Maybe there's no actual magic in it, but when you know what you hope for most and hold it like a light within you, you can make things happen, almost like magic.” ―Laini Taylor,* **Daughter of Smoke & Bone**
 
 HTML is the only language that web content is encoded in. No matter what programming language you work in, if you're serving your software through the web you'll be encoding that software's content to the user in HTML. Because HTML is the only language for the web, it has to be super flexible to handle all of the crazy cool stuff we see on the web. Just stop and think for a moment about [some of the coolest websites](https://www.awwwards.com/) you've seen. All of that was built in HTML!!
 
@@ -11,7 +11,9 @@ We won't cover all of the "special HTML elements" a.k.a **[Replaced Elements](ht
 <!-- Video Subject: Special HTML Elements -->
 <iframe src="https://player.vimeo.com/video/395992193" width="655" height="368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-You've probably already recognized the Image Element, `<img />`, from a Learn-to-Code event or from your Portfolio Landing page. This takes the fear out of learning yet another Object-Thing!
+## Using the Image Element
+
+You've probably already recognized the Image Element, `<img />`, from a Learn-to-Code event or from your Portfolio Landing page. This takes the fear out of learning yet another *Object-Thing*!
 
 To begin, the `<img />` known as a **self-closing** or **void** element because it doesn't keep its content between the opening- and closing-tags like most other HTML elements do, instead it uses two properties/**attributes** to *source* its content:
 
@@ -35,7 +37,7 @@ Similar to `src=` attribute on the Script Element, `<script src="">`, the Image 
 
 * [W3S Docs - Image Element](https://www.w3schools.com/tags/tag_img.asp)
 
-## Styling Images
+### Styling Images
 
 Styling Images can be tricky because they are a "special element" known as a **Replaced Element**. This means they don't quite follow the same CSS rules as most other elements. So the best way style an image is to put it inside a Div element and style the Div:
 
@@ -78,7 +80,7 @@ The following code snippet would be paired with the code snippets you just saw a
 
 Try it. Go to the MDN Docs on [object-position](https://developer.mozilla.org/en-US/docs/Web/CSS/object-position) & [object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) and play!
 
-## Image as Background
+### Image as Background Technique
 
 An alternative to styling an Image Element is setting the background of a Div Element to the image you want displayed:
 

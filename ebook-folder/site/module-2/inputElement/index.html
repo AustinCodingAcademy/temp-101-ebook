@@ -14,7 +14,7 @@
     
     
       
-        <title>Document Methods - Web 101 - Intro to the Web</title>
+        <title>Input Element - Web 101 - Intro to the Web</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-document-object" class="md-skip">
+        <a href="#the-input-creating-objects" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Document Methods
+              Input Element
             
           </span>
         </div>
@@ -724,12 +724,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       <label class="md-nav__link" for="__nav_3_2">
         Pre-Class 6 Lessons
@@ -793,11 +795,63 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../inputElement/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Input Element
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Input Element
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-input-element" class="md-nav__link">
+    Using the Input Element
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-variables-to-hold-values" class="md-nav__link">
+    Using Variables To Hold Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -835,14 +889,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
       <label class="md-nav__link" for="__nav_3_3">
         Pre-Class 7 Lessons
@@ -882,110 +934,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Document Methods
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../documentMethods/" class="md-nav__link">
         Document Methods
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#document-methods" class="md-nav__link">
-    Document Methods
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-createelement-method" class="md-nav__link">
-    The createElement() Method
-  </a>
-  
-    <nav class="md-nav" aria-label="The createElement() Method">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#quick-review" class="md-nav__link">
-    Quick Review
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-the-data-in-the-variable" class="md-nav__link">
-    Use the Data in the Variable
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#know-your-docs" class="md-nav__link">
-    Know Your Docs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-resources" class="md-nav__link">
-    Additional Resources
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-challenge-yourself" class="md-nav__link">
-    Summary &amp; Challenge Yourself
-  </a>
-  
-    <nav class="md-nav" aria-label="Summary &amp; Challenge Yourself">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    Challenge
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1288,42 +1241,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#document-methods" class="md-nav__link">
-    Document Methods
+  <a href="#using-the-input-element" class="md-nav__link">
+    Using the Input Element
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-createelement-method" class="md-nav__link">
-    The createElement() Method
-  </a>
-  
-    <nav class="md-nav" aria-label="The createElement() Method">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#quick-review" class="md-nav__link">
-    Quick Review
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-the-data-in-the-variable" class="md-nav__link">
-    Use the Data in the Variable
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#know-your-docs" class="md-nav__link">
-    Know Your Docs
+  <a href="#using-variables-to-hold-values" class="md-nav__link">
+    Using Variables To Hold Values
   </a>
   
 </li>
@@ -1332,26 +1258,6 @@
   <a href="#additional-resources" class="md-nav__link">
     Additional Resources
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-challenge-yourself" class="md-nav__link">
-    Summary &amp; Challenge Yourself
-  </a>
-  
-    <nav class="md-nav" aria-label="Summary &amp; Challenge Yourself">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    Challenge
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1368,64 +1274,17 @@
               
                 
                 
-                <h1 id="the-document-object">The Document Object</h1>
-<p>With all this talk of the Window, Buttons, and Input Elements it feels as if we kicked the Document object to the curb. "It has feelings too, guys!"</p>
-<h2 id="document-methods">Document Methods</h2>
-<p>Check it, the document has access to all elements because it is the <strong>root</strong> element. It is the <em>Mother of All Elements</em>, it creates elements, removes elements, and changes their contents. The Document is THE OBJECT. It's why there is a <strong>Document Object Model</strong>, because all objects are born, live, and die with the Document Object.</p>
-<p>To begin learning the powers of this omnipotent goddess let's create yet another button we can call a function with. Go ahead and do this by yourself in that <code>101-onlineClothingStore</code> folder we've been in and out of.</p>
-<p>You got this, just create a new button with "Create New Object" as its innerText. Then give the <code>onclick=</code> attribute the value of <code>createNewObject()</code>.</p>
-<p>In JavaScript create a new function called <code>createNewObject</code> and write a <code>console.log("TESTING")</code> to make sure it's working before we move on.</p>
-<!-- NEXT PAGE -->
-
-<h2 id="the-createelement-method">The <code>createElement()</code> Method</h2>
-<p>Now that you got that in order let's build out that function's declaration block. Let's first create a variable to hold a reference to an object:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
-<span class="c">&lt;!-- more code up here... --&gt;</span>
- <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-   <span class="c1">// and more JS code here...</span>
-
-   <span class="kd">function</span> <span class="nx">createNewObject</span><span class="p">()</span> <span class="p">{</span>
-     <span class="kd">let</span> <span class="nx">newObject</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;H3&quot;</span><span class="p">)</span>
-
-   <span class="p">}</span>
- <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
-<p>The variable is called <code>newObject</code> and its value is a new H3 object/element the Document created with its <code>createElement()</code> method. That's right! We're now using properties, events, and methods!!!</p>
-<p>Now let's create another variable that will hold a reference to a Text Object/Node. We'll give it some basic text for now.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
-<span class="c">&lt;!-- more code up here... --&gt;</span>
- <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-   <span class="c1">// and more JS code here...</span>
-
-   <span class="kd">function</span> <span class="nx">createNewObject</span><span class="p">()</span> <span class="p">{</span>
-     <span class="kd">let</span> <span class="nx">newObject</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;H3&quot;</span><span class="p">)</span>
-     <span class="kd">let</span> <span class="nx">text</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s2">&quot;THIS IS A TEST.&quot;</span><span class="p">)</span>
-
-   <span class="p">}</span>
- <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
-<p>Now we need to append that Text Node/Object to our <code>newObject</code>.</p>
+                <h1 id="the-input-creating-objects">The Input &amp; Creating Objects</h1>
+<p>With this new knowledge, you are able to build some pretty awesome stuff already, even if you don't recognize that yet. Yet, before you take on the world let's learn just two more skills: Input elements and how to create new Elements.</p>
+<h2 id="using-the-input-element">Using the Input Element</h2>
+<p>The first is actually very easy and will boost your skillset tremendously! The <code>input</code> element is by far the most used element on the web simply because it can be for so many things: checkboxes, radio buttons, email, password, paragraph, sliders, file uploaders, color pickers, and more!! The full list can be found at <a href="https://www.w3schools.com/tags/tag_input.asp">W3S Docs - Input Element</a>.</p>
+<p>Its default mode is a short input box: <code>&lt;input /&gt;</code>. But using the <code>type=</code> attribute we can change it to be any of the types of input listed above including a button! Try it.</p>
+<blockquote>
+<p>In the same file create an <code>&lt;input type="submit"&gt;&lt;/button</code> element.</p>
+</blockquote>
+<p>The reason we have this option is that Input Elements normally go inside the Form Element and we need to distinguish them as submit buttons &amp; reset buttons versus input type inputs. We'll get into the Form Element soon but for right now let's figure out how we can use the Input Element to take input from a human to later do something with it!</p>
+<p>The Input element, just like the Button element has many Events we can use to capture interactions and pass along data. The event we'll use for this example is the <code>onkeydown</code> event which gets fired when a human-user presses any key down while inside the input field. Other events get fired including <code>onkeyup</code> &amp; <code>onkeypress</code>, you can study the full list of <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">Global Events here, aka Event Listeners</a>.</p>
+<p>In the same fashion, we made our Buttons call a function when they were clicked let's make our input element call a function when a human-user's key is lifted.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1439,21 +1298,37 @@
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
-<span class="c">&lt;!-- more code up here... --&gt;</span>
- <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-   <span class="c1">// and more JS code here...</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+     <span class="c">&lt;!-- ...more code here.. --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">onkeyup</span><span class="o">=</span><span class="s">&quot;setValue(this.value)&quot;</span><span class="p">/&gt;</span>
 
-   <span class="kd">function</span> <span class="nx">createNewObject</span><span class="p">()</span> <span class="p">{</span>
-     <span class="kd">let</span> <span class="nx">newObject</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;H3&quot;</span><span class="p">)</span>
-     <span class="kd">let</span> <span class="nx">text</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s2">&quot;THIS IS A TEST.&quot;</span><span class="p">)</span>
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+     <span class="c1">// and more JS code is here...</span>
 
-     <span class="nx">newObject</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span>
-
-   <span class="p">}</span>
- <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+     <span class="kd">function</span> <span class="nx">setValue</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">{</span>
+       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span><span class="nx">input</span><span class="p">})</span>
+     <span class="p">}</span>
+   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></div>
 </td></tr></table>
-<p>Notice that the <code>newObject</code> has this <code>.appendChild()</code> method on it as if by magic! It's not magic it <strong>inheritance</strong>. Even though it's a brand-spankin’ new H3 object, it's inheriting all of the Global Methods that are available to all HTML elements. The last step is to append our <code>newObject</code> to our Body object.</p>
+<blockquote>
+<p>NOTE: To view your <a href="https://developer.chrome.com/docs/devtools/shortcuts/">Browser's Console</a> object you'll need to open your DevTools (Mac) <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-option">Option</kbd><span>+</span><kbd class="key-j">J</kbd></span> ; (Windows) <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-j">J</kbd></span> ; or just right-click &gt;&gt; Inspect &gt;&gt; Console</p>
+</blockquote>
+<p>Everything works well? Can you see your input in the Console? The only new bits of syntax you see here are <code>this.</code>, <code>value="</code>, and <code>{input}</code>.</p>
+<ul>
+<li>
+<p><code>this</code> is actually pretty easy, it refers to the exact object that is calling the function. If we created a new input and it called the same function the computer wouldn't know what to do because it wouldn't know how to call it. So we use the keyword <code>this</code> to communicate that the context were calling the function from is <em>this object</em> and not <em>that object</em> or any other object besides <code>this</code> object.</p>
+</li>
+<li>
+<p><code>value=</code> is also easy because it's an attribute just like the other attributes we've been writing and refers to the property <code>value</code> on that object. Its current value is an <strong>empty string</strong>, <code>""</code> but as we type, the value will change under-the-hood. To see this change we need to pass that value along to a function to do something with it.</p>
+</li>
+<li>
+<p>The last bit is super easy. You can see the input appear in the console without the <code>{}</code> but with the <strong>curly-braces</strong> we just see the data in a cleaner format: an object with a key called <code>input</code> that has a value of whatever the <code>input</code> is. If this is confusing, just remove the <code>{}</code> around <code>{input}</code>.</p>
+</li>
+</ul>
+<h2 id="using-variables-to-hold-values">Using Variables To Hold Values</h2>
+<p>We already know how to create variables with the <code>let</code> keyword and we know that we need to use variables to hold on to pieces of data. Let's create a variable that can hold onto our user's input so we can do other things besides logging it in the Console object...</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1469,60 +1344,31 @@
 <span class="normal">13</span>
 <span class="normal">14</span>
 <span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
-<span class="c">&lt;!-- more code up here... --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+     <span class="c">&lt;!-- more code is here.. --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">onkeyup</span><span class="o">=</span><span class="s">&quot;setValue(this.value)&quot;</span><span class="p">/&gt;</span>
+
    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-     <span class="c1">// and more JS code here...</span>
+     <span class="kd">let</span> <span class="nx">usersInput</span><span class="p">;</span>
+     <span class="c1">// and more JS code is here...</span>
 
-     <span class="kd">function</span> <span class="nx">createNewObject</span><span class="p">()</span> <span class="p">{</span>
-       <span class="kd">let</span> <span class="nx">newObject</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;h3&quot;</span><span class="p">)</span>
-       <span class="kd">let</span> <span class="nx">text</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s2">&quot;THIS IS A TEST.&quot;</span><span class="p">)</span>
-
-       <span class="nx">newObject</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span>
-       <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newObject</span><span class="p">)</span>
-
+     <span class="kd">function</span> <span class="nx">setValue</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">{</span>
+       <span class="nx">usersInput</span> <span class="o">=</span> <span class="nx">input</span>
+       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span><span class="nx">usersInput</span><span class="p">})</span>
      <span class="p">}</span>
    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></div>
 </td></tr></table>
-<h3 id="quick-review">Quick Review</h3>
-<p>Wow!! That was a lot, let's slow this train down and look at it more closely. Inside our functions declaration block, we declared 4 steps for the computer to do.</p>
-<ol>
-<li>Create a new variable and use the Document's <code>createElement</code> method to place a new H3 element at its value</li>
-<li>Then create another variable and use the Document's <code>createTextNode</code> method to place a Text Node/Object with <code>"THIS IS A TEST"</code> as dummy data.</li>
-<li>Use the Global method, <code>appendChild()</code> to stick the Text Node/Object into the new H3 Object.</li>
-<li>Use the same method to stick the new H3 Object into the Body of the Document object.</li>
-</ol>
-<p>That wasn't so bad, was it?</p>
-<h2 id="use-the-data-in-the-variable">Use the Data in the Variable</h2>
-<p>Instead of using that dummy data, <code>"THIS IS A TEST"</code> let's instead use the data our user would put in. Replace that <strong>argument</strong> with <code>usersInput</code>. Now that line of code will read: <code>let text = document.createTextNode(usersInput)</code>. Test it out. How's it working?</p>
-<p>Annoying that you have to manually delete your input? This is why we use Input Elements and Button Elements inside Form Elements. But we'll have to get to that in a later lesson.</p>
-<p>For now, you have a challenge!</p>
-<!-- ! END OF VIDEO 101.1.3.7 - Document Methods + Creating New Elements -->
-
-<!-- TODO @CLAYTON section on ids and getElementById -->
-
-<h2 id="know-your-docs">Know Your Docs</h2>
-<ul>
-<li><a href="https://www.w3schools.com/js/js_if_else.asp">W3S Docs - if Statement</a></li>
-<li><a href="https://www.w3schools.com/tags/att_name.asp">W3S Docs - Name Attribute</a></li>
-<li><a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp">W3S Docs - getElementById()</a></li>
-</ul>
-<h2 id="additional-resources">Additional Resources</h2>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">Wikipedia - D.R.Y Principle</a></li>
-<li><a href="https://medium.com/dailyjs/dot-notation-vs-bracket-notation-eedea5fa8572">Medium - AirBNB Code Style</a></li>
-</ul>
-<h2 id="summary-challenge-yourself">Summary &amp; Challenge Yourself</h2>
-<p>We've covered a lot of information in this lesson from Button Elements and their methods like <code>onclick</code> to JavaScript keywords like <code>let</code> that communicates to our computer when we want to hold data in a variable or the keyword <code>function</code> that tells the computer to create a function and remember the instructions inside its declaration block and how to invoke a function with the trailing <code>()</code>. We began working with methods of the Window, Console, and Document Object to create new windows, logs, and elements.</p>
-<p>I know this is a lot, but I hope this quick but deeper dive into the building blocks of web pages and the properties, methods, and events that compose them helps you start seeing this stuff as less "computer-sciency" and more practical. Sure, you have JavaScript and HTML syntax to learn, but that WILL come with practice. Just keep reading, studying, and saving your docs and do your Challenges!!</p>
-<h3 id="challenge">Challenge</h3>
-<p>What can you create with this handful of new methods? Show us and impress up. In the next class we'll invite everyone to share what they created.</p>
-<p>Feel free to use this repo for an idea/starting point: <a href="https://github.com/AustinCodingAcademy/101-important-to-do-list">https://github.com/AustinCodingAcademy/101-important-to-do-list</a>.</p>
-<p>If you want, start with the <code>README.md</code> file, read the entire instructions, then clone it and begin completing it.</p>
 <blockquote>
-<p>NOTE: There's curveball: there's a new method introduced in this code, <code>getElementById()</code>. Just read the comments and look up the documentation if you don't understand it.</p>
+<p>Note the changes in the code: We're now saving our data to a variable and logging the value of the variable, <code>usersInput</code> instead of directly logging what comes into the function's <strong>parameter</strong>, <code>input</code>.</p>
 </blockquote>
+<!-- ! END OF VIDEO 101.1.3.6 - Input Element + `let` Variable -->
+
+<h2 id="additional-resources">Additional Resources</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> <a href="https://www.geeksforgeeks.org/button-tag-vs-input-typebutton-attribute/">Article, Geeks4Geeks - Button vs Input</a></li>
+</ul>
                 
               
               
@@ -1540,7 +1386,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../windowMethods/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../buttonElement/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1549,19 +1395,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Window Methods
+              Button Element
             </div>
           </div>
         </a>
       
       
-        <a href="../imageElement/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../commonEventListeners/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Image Element
+              Event Listeners
             </div>
           </div>
           <div class="md-footer__button md-icon">

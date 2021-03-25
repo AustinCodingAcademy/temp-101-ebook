@@ -1,10 +1,10 @@
 # The Body Object & The Elements of Web Pages
 
-Now that we understand our a bit about Requests and Response and have our Req/Res Drawing handy let's examine where we've been working for these past few weeks.
+Now that we understand a bit about Requests and Response objects and have our Req/Res Drawing handy let's examine where we've been working for these past few weeks.
 
-We'll be referencing the code below because it is the minimum amount of code needed to build a web page. All other HTML elements/objects and their properties, methods, & events will stem from this basic code. 
+We'll be referencing the code below because it is the minimum amount of code needed to build a web page. All other HTML elements/objects and their properties, methods, & events will stem from this basic code.
 
-You can quickly generate this **boilerplate code** by going to VS Code, then creating an `index.html` file and typing on the first line: `html:5` + ++enter++. Go ahead and try it. Create folder called `101-onlineClothingStore` and create an `index.html` file you can use to follow along with in these next few lessons. *I'll wait.*
+You can quickly generate this **boilerplate code** by going to VS Code, then creating an `index.html` file and typing on the first line: `html:5` + ++enter++. Go ahead and try it. Create folder called `101-onlineClothingStore` and create an `index.html` file you can use to follow along with in this lesson and revisit in a few upcoming lessons. *I'll wait.*
 
 ```html
 <!-- index.html -->
@@ -24,7 +24,7 @@ You can quickly generate this **boilerplate code** by going to VS Code, then cre
 
 ## index.html
 
-In most of the  projects you've built, you've been working in a file called `index.html`. The name of this file is incredibly important because it is the default file that is served FIRST. `index.html` is the **root** file for ALL websites. When you navigate to Facebook.com or Target.com you will receive their `index.html` file. If you click on links to go to other page you'll be given other pages like: `about.html` or `termsofagreement.html`. You are allowed to name your `.html` files whatever you want but the very first file you want served must be named: `index.html` and in the **root** directory/folder, meaning it can not be hidden in another folder, it must be at the top-level of the entire project's folder.
+In most of the  projects you've built, you've been working in a file called `index.html`. The name of this file is incredibly important because it is the default file that is served FIRST. `index.html` is the **root** file for ALL websites. When you navigate to Facebook.com or Target.com you will receive their `index.html` file. If you click on links to go to other page you'll be given other pages like: `about.html` or `termsofagreement.html`. You are allowed to name your `.html` files whatever you want but **the very first file** you want served must be named: `index.html` and in the **root** directory/folder, meaning it can not be hidden in another folder, it must be at the top-level of the entire project's folder.
 
 Furthermore, the `.html` extension denotes a file written in HTML code while `.css` denotes CSS code and `.js` denotes JavaScript code.
 
@@ -36,9 +36,7 @@ Furthermore, the `.html` extension denotes a file written in HTML code while `.c
 
 At the very top of all HTML files we see this strange looking, **self-closing tag**: `<!DOCTYPE html>`. This is a hold-over from older versions of the HTML language. It was originally used to declare the type of this document is ("HTML" and not "XML"), as well as, the version of HTML it's written in but now everyone uses HTML5+ so we only have to write `html` to declare that the document the computer is going to read is in HTML5.
 
-It also communicates to the browser to build a Document object. Remember, code is used for communication. In this case, this bit of code is communicating to the browser, "Hey, inside your Window object go ahead and create a Document object so we can build some more objects inside of it." To us humans, we can read this code and visually imagine a Document object being built with other objects to be added as we go along. See a version of this object modeling below!!
-
-<!-- TODO INSERT IMAGE OF WINDOW and DOCUMENT OBJECTS  images/Window-Document-Objects-101-1-2.png HERE -->
+It also communicates to the browser to build a Document object. *Remember, code is used for communication*. In this case, this bit of code is communicating to the browser, "Hey, inside your Window object go ahead and create a Document object so we can build some more objects inside of it." To us, humans, we can read this code and visually imagine a Document object being built with other objects to be added as we go along. See a version of this object modeling below!!
 
 ![Window-Document-Objects-101-1-2](./../images/Window-Document-Objects-101-1-2.png)
 
@@ -46,7 +44,7 @@ It also communicates to the browser to build a Document object. Remember, code i
 
 ### html Element
 
-The next bit of code we see in `<html></html>`. This code represents the `html` object. It is what's know as the **root element/object**. It's the actual **Document Object** that's being rendered on your screen. We call it the **root** element because all other elements/objects are children or descendants of it including Head and Body and all the elements we'll build inside them. This is the beginning(the **root**) of our **Document Object Model**, the first object that all other objects get put inside of; hence the moniker: "Mother of all Objects".
+The next bit of code we see in `<html></html>`. This code represents the `html` object. It is what's know as the **root element/object**. It's the actual **Document Object** that's being rendered on your screen. We call it the **root** element because all other elements/objects are children or descendants of it including Head and Body and all the elements we'll build inside them. This is the beginning(the **root**) of our **Document Object Model**, the first object that all other objects get put inside of; hence the moniker: "Mother of All Objects".
 
 The second takeaway here is to make sure you define the human speaking language you're page is written in. For instances, `<html lang="en">` stands for English while `<html lang="fr">` would stand for French. You can find [all the Global Languages codes here](https://www.w3schools.com/tags/ref_language_codes.asp).
 

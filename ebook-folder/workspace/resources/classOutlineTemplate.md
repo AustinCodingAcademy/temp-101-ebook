@@ -16,6 +16,8 @@ Today we're going to:
   
 *OBJECTIVE:*
 
+*****
+
 - [ ] Questions for Student Led Discussion
 - [ ] Interview Challenge
 - [ ] Student Presentations

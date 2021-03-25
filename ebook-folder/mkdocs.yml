@@ -66,14 +66,15 @@ nav:
         - HTML Elements: module-2/htmlElements.md
         - Form Element: module-2/formElement.md
         - Button Element: module-2/buttonElement.md
+        - Input Element: module-2/inputElement.md
         - Event Listeners: module-2/commonEventListeners.md
         - Class 6 Contact Page: module-2/class-6.md
       - 'Pre-Class 7 Lessons': 
-          - Develop - Your Brain: module-2/developSeries-brainBuilding.md
-          - Window Methods: module-2/windowMethods.md
-          - Document Methods: module-2/documentMethods.md
-          - Image Element: module-2/imageElement.md
-          - Class 7 Calculator App: module-2/class-7.md
+        - Develop - Your Brain: module-2/developSeries-brainBuilding.md
+        - Window Methods: module-2/windowMethods.md
+        - Document Methods: module-2/documentMethods.md
+        - Image Element: module-2/imageElement.md
+        - Class 7 Calculator App: module-2/class-7.md
           # TODO Review Window and Document lessons and refine to make them fit in this place
         # https://vimeo.com/manage/folders/1059416
         # https://studio.zollege.com/container/block-v1:Circle+Web101+2020_101_Online+type@vertical+block@0c257a4efe8a4e43aab8b1368abcefb9

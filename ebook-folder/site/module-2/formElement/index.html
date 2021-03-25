@@ -916,6 +916,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../inputElement/" class="md-nav__link">
+        Input Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../commonEventListeners/" class="md-nav__link">
         Event Listeners
       </a>
@@ -1398,7 +1410,7 @@
                 
                 <h1 id="the-form-element">The Form Element</h1>
 <p><em>Be a self-starter. Do it now! When you don't know how to do something, start. Beware of the paralysis of analysis. Be a person of action. —Mamie McCullough</em></p>
-<p>The Form Element is used to create, you guessed it, forms! Or as defined by <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN</a>:</p>
+<p>Let's zoom in a little from those higher-level view and talk about a specific element we haven't worked with yet, the Form Element. As you might have guessed it's used to create forms! Or as defined by <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN</a>:</p>
 <blockquote>
 <p>"The HTML <code>&lt;form&gt;</code> element represents a document section containing interactive controls for submitting information."</p>
 </blockquote>
@@ -1429,7 +1441,9 @@
 <span class="normal">15</span>
 <span class="normal">16</span>
 <span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;https://www.singlesingerssite.com/signin.htm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span><span class="p">&gt;</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html --&gt;</span>
+ <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;https://www.singlesingerssite.com/signin.htm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span>Email<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
@@ -1460,7 +1474,11 @@
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://fakestoreapi.com/products&#39;</span><span class="p">,</span> <span class="p">{</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// inside a &lt;script&gt; element or in .js file</span>
+
+ <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://fakestoreapi.com/products&#39;</span><span class="p">,</span> <span class="p">{</span>
    <span class="nx">method</span><span class="o">:</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
    <span class="nx">body</span><span class="o">:</span> <span class="p">{}</span>
  <span class="p">})</span>
@@ -1533,7 +1551,7 @@
 <!-- ! END OF VIDEO 101.1.10.3 - The Input and Label Elements -->
 
 <h3 id="other-attributes-of-the-input-element">Other Attributes of the Input Element</h3>
-<p>**Form validation means we're verifying the data a user puts in, such as the type, length, validity, and shape we want so we can properly save it to a database.</p>
+<p><strong>Form validation</strong> means we're verifying the data a user puts in, such as the type, length, validity, and shape we want so we can properly save it to a database.</p>
 <blockquote>
 <p>NOTE: Later in this full-stack program you'll see that data must be in the same format, or shape, as the other bits of data being saved with it else the computer can't read it. It is costly both in time and money to send the data from the user to our databases only for it to be in the wrong format. A shorter, safer, and cheaper first filter we can use is HTML's built-in form validation, and you've actually already seen one of the tools, <code>type</code>, which specifies the type of data that can go into an input.</p>
 </blockquote>

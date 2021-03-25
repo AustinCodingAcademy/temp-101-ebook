@@ -890,6 +890,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../inputElement/" class="md-nav__link">
+        Input Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../commonEventListeners/" class="md-nav__link">
         Event Listeners
       </a>
@@ -1345,9 +1357,9 @@
                 
                 
                 <h1 id="the-body-object-the-elements-of-web-pages">The Body Object &amp; The Elements of Web Pages</h1>
-<p>Now that we understand our a bit about Requests and Response and have our Req/Res Drawing handy let's examine where we've been working for these past few weeks.</p>
-<p>We'll be referencing the code below because it is the minimum amount of code needed to build a web page. All other HTML elements/objects and their properties, methods, &amp; events will stem from this basic code. </p>
-<p>You can quickly generate this <strong>boilerplate code</strong> by going to VS Code, then creating an <code>index.html</code> file and typing on the first line: <code>html:5</code> + <span class="keys"><kbd class="key-enter">Enter</kbd></span>. Go ahead and try it. Create folder called <code>101-onlineClothingStore</code> and create an <code>index.html</code> file you can use to follow along with in these next few lessons. <em>I'll wait.</em></p>
+<p>Now that we understand a bit about Requests and Response objects and have our Req/Res Drawing handy let's examine where we've been working for these past few weeks.</p>
+<p>We'll be referencing the code below because it is the minimum amount of code needed to build a web page. All other HTML elements/objects and their properties, methods, &amp; events will stem from this basic code.</p>
+<p>You can quickly generate this <strong>boilerplate code</strong> by going to VS Code, then creating an <code>index.html</code> file and typing on the first line: <code>html:5</code> + <span class="keys"><kbd class="key-enter">Enter</kbd></span>. Go ahead and try it. Create folder called <code>101-onlineClothingStore</code> and create an <code>index.html</code> file you can use to follow along with in this lesson and revisit in a few upcoming lessons. <em>I'll wait.</em></p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1376,7 +1388,7 @@
 </code></pre></div>
 </td></tr></table>
 <h2 id="indexhtml">index.html</h2>
-<p>In most of the  projects you've built, you've been working in a file called <code>index.html</code>. The name of this file is incredibly important because it is the default file that is served FIRST. <code>index.html</code> is the <strong>root</strong> file for ALL websites. When you navigate to Facebook.com or Target.com you will receive their <code>index.html</code> file. If you click on links to go to other page you'll be given other pages like: <code>about.html</code> or <code>termsofagreement.html</code>. You are allowed to name your <code>.html</code> files whatever you want but the very first file you want served must be named: <code>index.html</code> and in the <strong>root</strong> directory/folder, meaning it can not be hidden in another folder, it must be at the top-level of the entire project's folder.</p>
+<p>In most of the  projects you've built, you've been working in a file called <code>index.html</code>. The name of this file is incredibly important because it is the default file that is served FIRST. <code>index.html</code> is the <strong>root</strong> file for ALL websites. When you navigate to Facebook.com or Target.com you will receive their <code>index.html</code> file. If you click on links to go to other page you'll be given other pages like: <code>about.html</code> or <code>termsofagreement.html</code>. You are allowed to name your <code>.html</code> files whatever you want but <strong>the very first file</strong> you want served must be named: <code>index.html</code> and in the <strong>root</strong> directory/folder, meaning it can not be hidden in another folder, it must be at the top-level of the entire project's folder.</p>
 <p>Furthermore, the <code>.html</code> extension denotes a file written in HTML code while <code>.css</code> denotes CSS code and <code>.js</code> denotes JavaScript code.</p>
 <blockquote>
 <p>There's no requirement for you to use the name <code>index</code> for CSS or JS files but it may be helpful to you as a developer to name your files similarly so they can be grouped together in your mind and organized in folders. For instance, <code>index-styles.css</code> and <code>index-scripts.js</code> might be styles and scripts used only on the <code>index.html</code> file while <code>about-styles.css</code> and <code>about-scripts.js</code> might be used only on the <code>about.html</code> file. You'll figure it out as you go!</p>
@@ -1385,15 +1397,13 @@
 
 <h3 id="doctype-tag">DOCTYPE Tag</h3>
 <p>At the very top of all HTML files we see this strange looking, <strong>self-closing tag</strong>: <code>&lt;!DOCTYPE html&gt;</code>. This is a hold-over from older versions of the HTML language. It was originally used to declare the type of this document is ("HTML" and not "XML"), as well as, the version of HTML it's written in but now everyone uses HTML5+ so we only have to write <code>html</code> to declare that the document the computer is going to read is in HTML5.</p>
-<p>It also communicates to the browser to build a Document object. Remember, code is used for communication. In this case, this bit of code is communicating to the browser, "Hey, inside your Window object go ahead and create a Document object so we can build some more objects inside of it." To us humans, we can read this code and visually imagine a Document object being built with other objects to be added as we go along. See a version of this object modeling below!!</p>
-<!-- TODO INSERT IMAGE OF WINDOW and DOCUMENT OBJECTS  images/Window-Document-Objects-101-1-2.png HERE -->
-
+<p>It also communicates to the browser to build a Document object. <em>Remember, code is used for communication</em>. In this case, this bit of code is communicating to the browser, "Hey, inside your Window object go ahead and create a Document object so we can build some more objects inside of it." To us, humans, we can read this code and visually imagine a Document object being built with other objects to be added as we go along. See a version of this object modeling below!!</p>
 <p><img alt="Window-Document-Objects-101-1-2" src="../../images/Window-Document-Objects-101-1-2.png" /></p>
 <ul>
 <li><a href="https://www.w3schools.com/tags/tag_doctype.asp">W3S Docs - doctype Element</a></li>
 </ul>
 <h3 id="html-element">html Element</h3>
-<p>The next bit of code we see in <code>&lt;html&gt;&lt;/html&gt;</code>. This code represents the <code>html</code> object. It is what's know as the <strong>root element/object</strong>. It's the actual <strong>Document Object</strong> that's being rendered on your screen. We call it the <strong>root</strong> element because all other elements/objects are children or descendants of it including Head and Body and all the elements we'll build inside them. This is the beginning(the <strong>root</strong>) of our <strong>Document Object Model</strong>, the first object that all other objects get put inside of; hence the moniker: "Mother of all Objects".</p>
+<p>The next bit of code we see in <code>&lt;html&gt;&lt;/html&gt;</code>. This code represents the <code>html</code> object. It is what's know as the <strong>root element/object</strong>. It's the actual <strong>Document Object</strong> that's being rendered on your screen. We call it the <strong>root</strong> element because all other elements/objects are children or descendants of it including Head and Body and all the elements we'll build inside them. This is the beginning(the <strong>root</strong>) of our <strong>Document Object Model</strong>, the first object that all other objects get put inside of; hence the moniker: "Mother of All Objects".</p>
 <p>The second takeaway here is to make sure you define the human speaking language you're page is written in. For instances, <code>&lt;html lang="en"&gt;</code> stands for English while <code>&lt;html lang="fr"&gt;</code> would stand for French. You can find <a href="https://www.w3schools.com/tags/ref_language_codes.asp">all the Global Languages codes here</a>.</p>
 <ul>
 <li><a href="https://www.w3schools.com/tags/tag_html.asp">W3S Docs - html Element</a></li>

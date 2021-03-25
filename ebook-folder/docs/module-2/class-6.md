@@ -20,6 +20,8 @@ Today we're going to:
   * *Use Event Listener Methods like getElementById*
   * *Use the fundamental pieces of JavaScript: variables and functions*
 
+*****
+
 - [ ] Questions for Student Led Discussion
 - [ ] Interview Challenge
 - [ ] Student Presentations
@@ -88,7 +90,9 @@ Just like the About Page you built for your Portfolio Website last class, tonigh
 - [ ] Complete the feedback survey(if applicable)
 - [ ] Bring pencil and paper to class for wireframing!
 
-Next week we'll slow down a bit by going deeper into `img`, `video`, block/inline elements and animations to build a small business website for our 1st Checkpoint and a Contact & About Page for our personal Portfolio Website.
+In the next few lessons we'll slow down a bit but keep deepening our understand of building in HTML, CSS, JS, and HTTP. The pass will be a little different but it all leads to the same place, you as an excellent developer!!
+
+<!-- Your small business website for our 1st Checkpoint and a Contact & About Page for our personal Portfolio Website. -->
 
 <!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
 <script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script> -->

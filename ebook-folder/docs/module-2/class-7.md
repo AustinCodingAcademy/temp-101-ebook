@@ -13,10 +13,13 @@
 
 Today we're going to:
   
-*OBJECTIVE:*
+*OBJECTIVE: slow down a bit, and review our JavaScript understanding with a new project.*
+
+*****
 
 - [ ] Gravatar Check
 - [ ] Questions for Student Led Discussion
+- [ ] Challenge Show-and-Tell
 - [ ] Interview Challenge
 - [ ] Student Presentations
 - [ ] Creation Time - Calculator App
@@ -34,6 +37,10 @@ The instructor will now walk the room to see all students have created a Gravata
 <!-- This section should be structured with the 5E model: https://lesley.edu/article/empowering-students-the-5e-model-explained -->
 
 [Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-7.md)
+
+### Challenge Show-and-Tell
+
+Would anyone like to share something they built during the challenge of the Document Object lesson?
 
 ### Interview Challenge, 15 mins
 <!-- The last two E happen here: elaborate and evaluate  -->

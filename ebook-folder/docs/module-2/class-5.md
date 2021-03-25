@@ -20,6 +20,8 @@ Today we're going to:
 2. *How to access & use Element Properties like `innerHTML`*
 3. *Use Event Listener Methods like `getElementById`*
 
+*****
+
 - [ ] Questions for Student Led Discussion
 - [ ] Interview Challenge
 - [ ] Student Presentations
