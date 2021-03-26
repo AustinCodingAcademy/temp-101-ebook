@@ -2,17 +2,31 @@
 
 <!-- Explain the purpose of presentations -->
 
-* **Class 1** - *Teach purpose of presentations and mentally prepare the class.*
-* **Class 2** - *Organize and Coordinate who and when students are presenting.*
-* **Class 3, 4, and 5** - *33% of the class will properly teach the class about themselves in less than 4 minutes. Include the following as guidelines:*
+## Class 1
 
-    - [ ] Who you are (How do you describe your history, experience, and character...)
-    - [ ] Your current understanding of life, your work, your hobbies, and your family...
-    - [ ] What it is you want to do with the skills you're learning...
-    - [ ] What is important to you outside of school, work, family, and hobbies...
-    - [ ] And lastly, a problem you currently have/see that you'd like to solve with technology.
+*Teach purpose of presentations and mentally prepare the class.*
 
-* **Class 6** - *25% of the class will teach the class about something they know well in less than 3 minutes. i.e. A special skill, talent or task.*
+## Class 2
+
+*Organize and Coordinate who and when students are presenting.*
+
+## Class 3, 4, and 5
+
+*Each of these class days, 33% of the class will properly teach the class about themselves in less than 3 minutes. Include the following as guidelines:*
+
+- [ ] Who you are (How do you describe your history, experience, and character... what's the story that brought you to this class?)
+- [ ] Your current understanding of life, your work, your hobbies, and your family...
+- [ ] What it is you want to do with the skills you're learning...
+- [ ] What is important to you outside of school, work, family, and hobbies...
+- [ ] And lastly, a problem you currently have/see that you'd like to solve with technology.
+
+## Class 6, 7, 8
+
+*Each of these class days, 33% of the class will teach the class about something they know well in less than 3 minutes. i.e. A special skill, talent or task, not coding/programming related.*
+
+## Class 9, 10, 11
+
+*Each of these class days, 33% of the class will pitch your graduation app idea to the class in less than 3 minutes. What’s the problem? How does this app solve it?*
 
 By the end of this Full-Stack Program you will have the tools to build a mobile app with a server, database, and a front-end app. To prove this to you, your family, and your future employers you will build an app of your design as a Capstone Project upon graduation. Think of it as your thesis for web development.
 
@@ -22,26 +36,45 @@ Next class you'll deliver your first [pitch](https://hbr.org/2003/09/how-to-pitc
 
 In less than three mins:
 
-    - [ ] "Have you ever...." present the problem to the class
-    - [ ] "But what if we had ...." offer a solution to the problem
-    - [ ] "I am building this very ...." commit yourself to the solution
-    - [ ] Then be prepared for questions from your classmates and instructor.
+- [ ] **Present the problem to the class**: "Have you ever...." present the problem to the class
+- [ ] **Offer a solution to the problem**: "But what if we had ...." offer a solution to the problem
+- [ ] **Commit yourself to the solution:**: "I am building this very ...." commit yourself to the solution
+- [ ] Then be prepared for questions from your classmates and instructor.
 
 **Organize it!!** The instructor will take a few minutes now to divide students up similarly to the way your last round of presentations have been with 3 students presenting each class for the next 6 classes, starting next class.
 
-* **Class 7, 8, and 9** - *25% of the class will teach the class about something they know well in less than 3 minutes. i.e. A special skill, talent or task.*
+## Class 12
 
-* **Class 10, 11, and 12** - *33% of the class will pitch your graduation app idea to the class in less than 3 minutes. What’s the problem? How does this app solve it?*
-* **Class 13** -
-    1. *todo*
-    1. *todo*
-    <!-- TODO Need 5 per class... @CLAYTON -->
-* **Class 14** -
-    1. *todo*
-    1. *todo*
-* **Class 15** -
-    1. *todo*
-    1. *todo*
-* **Class 16** -
-    1. *todo*
-    1. *todo*
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+<!-- TODO Need presentations from W3S's How To @CLAYTON -->
+
+## Class 13
+
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+
+## Class 14
+
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+
+## Class 15
+
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+
+## Class 16
+
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*
+- [ ] *todo*

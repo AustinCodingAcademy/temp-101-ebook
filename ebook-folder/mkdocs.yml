@@ -75,10 +75,11 @@ nav:
         - Document Methods: module-2/documentMethods.md
         - Image Element: module-2/imageElement.md
         - Class 7 Calculator App: module-2/class-7.md
-          # TODO Review Window and Document lessons and refine to make them fit in this place
+      - 'Pre-Class 8 Lessons': 
+        - Video & Iframe Elements: module-2/video-iframe-elements.md
+        - Class 8 Checkpoint: module-2/class-8.md
         # https://vimeo.com/manage/folders/1059416
         # https://studio.zollege.com/container/block-v1:Circle+Web101+2020_101_Online+type@vertical+block@0c257a4efe8a4e43aab8b1368abcefb9
-        # - 'Pre-Class 8 Lessons': 
       #   - The Three Actions of Data: module-1/lesson-4.md
       #   - Get Data: module-1/lesson-5.md
       #   - Store Data: module-1/lesson-6.md
@@ -106,6 +107,7 @@ nav:
         - Day 5 QFD: additionalResources/questionsForDiscussion/qfd-class-5.md
         - Day 6 QFD: additionalResources/questionsForDiscussion/qfd-class-6.md
         - Day 7 QFD: additionalResources/questionsForDiscussion/qfd-class-7.md
+        - Day 8 QFD: additionalResources/questionsForDiscussion/qfd-class-8.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - Git & CLI Commands: additionalResources/gitCommands.md

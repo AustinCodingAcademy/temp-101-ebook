@@ -22,20 +22,22 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
   // optional code example
 ``` -->
 
+******
+
 ## The Prompts
 
 ### Class 1
 
-- [ ] **Prompt 1: NONE**
+**NONE**
 
 ### Class 2
 
-- [ ] **Prompt 1: Wireframe & Plan** - *What is wireframing? How do we plan the construction of a web page? How can we use paper and pencil to guide us while coding? As a class, talk through and develop a plan to build the NASA Contact Page.*
+**Wireframe & Plan** - *What is wireframing? How do we plan the construction of a web page? How can we use paper and pencil to guide us while coding? As a class, talk through and develop a plan to build the NASA Contact Page.*
 <!-- - [ ] **Prompt 2: Title** - *description* -->
 
 ### Class 3
 
-- [ ] **Prompt 1: Title** - *Two students, at-a-time, will come up to the board at a time to work with their instructor to wireframe the following website mockups:*
+**Title** - *Two students, at-a-time, will come up to the board at a time to work with their instructor to wireframe the following website mockups:*
 
   > NOTE: please use the time to create meaningful wireframes with semantic elements and maybe useful CSS pseudo code that can guide your coding for today's project.
 
@@ -47,7 +49,7 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 4
 
-- [ ] **Prompt 1: Title** - *Two students at a time will come up to the board to work with their instructor to wireframe each of the the three [website](https://www.sodgod.com/composting/) mockups below. 3 views = 6 students total.*
+**Title** - *Two students at a time will come up to the board to work with their instructor to wireframe each of the the three [website](https://www.sodgod.com/composting/) mockups below. 3 views = 6 students total.*
 
 === "Mobile View"
     ![sod-god-wireframing-mobileView](./../images/sod-god-wireframing-mobileView.png)
@@ -60,7 +62,7 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 5
 
-- [ ] **Prompt 1: Title** - *Two students(6 total) will come up to the board at a time to work with their instructor to wireframe each of the the three mockups from the [Scientific American](https://www.scientificamerican.com/article/co2-levels-just-hit-another-record-heres-why-it-matters/). While the students work at the board, the rest of the class should be following along with pencil and paper at their own desks.*
+**Title** - *Two students(6 total) will come up to the board at a time to work with their instructor to wireframe each of the the three mockups from the [Scientific American](https://www.scientificamerican.com/article/co2-levels-just-hit-another-record-heres-why-it-matters/). While the students work at the board, the rest of the class should be following along with pencil and paper at their own desks.*
 
 === "Mobile View"
     ![scientific-american-wireframing-mobileView](./../images/scientific-american-wireframing-mobileView.png)
@@ -73,20 +75,24 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 6
 
-- [ ] **Prompt 1: Title** - *Wireframe the Image Gallery Mockup below. How do you get the text to appear when the user's cursor is over the top of it?*
+**Title** - *Wireframe the Image Gallery Mockup below. How do you get the text to appear when the user's cursor is over the top of it?*
 
 ![image-gallery-wireframing-challenge](./../images/image-gallery-wireframing-challenge.png)
 
 ### Class 7
 
-- [ ] **Prompt 1: Code Plan** - *As a class, what problem do we need to solve in the Calculator App? How do we solve it? Let's create a list of actions we need to take to complete it.*
+**Code Plan** - *As a class, what problem do we need to solve in the Calculator App? How do we solve it? Let's create a list of actions we need to take to complete it.*
 <!-- - [ ] **Prompt 2: Title** - *description* -->
-
 
 ### Class 8
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+*Using one of the website examples below, the instructor will lead a discussion and demonstration about breaking down this large project into smaller manageable pieces so you can finish it before the due date next week.*
+
+1. [https://freewebsitetemplates.com/preview/hairstylesalon/index.html](https://freewebsitetemplates.com/preview/hairstylesalon/index.html)
+
+2. [https://freewebsitetemplates.com/preview/mustacheenthusiast/contact.html](https://freewebsitetemplates.com/preview/mustacheenthusiast/contact.html)
+
+> Remember, this is your first BIG project. You're now learning how to break big problems in to smaller pieces: websites into web pages, web pages into web elements, web elements into element properties. This is how you develop a plan.
 
 ### Class 9
 
