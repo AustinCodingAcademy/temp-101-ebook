@@ -2,6 +2,7 @@
 
 <!-- ! HIDE FROM STUDENT; INSTRUCTOR ONLY CONTENT -->
 <!-- ## Instructor Only Content - HIDE FROM STUDENTS -->
+cp workspace/resources/classOutlineTemplate.md docs/module-
 
 <!-- ! END INSTRUCTOR ONLY CONTENT -->
 

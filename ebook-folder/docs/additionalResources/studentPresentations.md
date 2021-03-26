@@ -45,36 +45,81 @@ In less than three mins:
 
 ## Class 12
 
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
-<!-- TODO Need presentations from W3S's How To @CLAYTON -->
+With each of these Demonstrations the presenter should:
+
+- [ ] Explain the reason/need for such a technique.
+- [ ] Discuss the workings of the code and how it's actually happening.
+- [ ] Lead the class to ask where & why could this technique be used?
+
+*****
+
+- [ ] *Learn, Master, Teach & Demo how to: [Image Slideshow with JS](https://www.w3schools.com/howto/howto_js_slideshow.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Animated Menu Icon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Build an Accordion](https://www.w3schools.com/howto/howto_js_accordion.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Build Tabs for a Single Page](https://www.w3schools.com/howto/howto_js_tabs.asp)*
 
 ## Class 13
 
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
+With each of these Demonstrations the presenter should:
+
+- [ ] Explain the reason/need for such a technique.
+- [ ] Discuss the workings of the code and how it's actually happening.
+- [ ] Lead the class to ask where & why could this technique be used?
+
+*****
+
+- [ ] *Learn, Master, Teach & Demo how to: [Build a Search Menu](https://www.w3schools.com/howto/howto_js_search_menu.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Create an Off-Canvas Menu](https://www.w3schools.com/howto/howto_js_off-canvas.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Create a Fixed Menu](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [NavBar Slide Down](https://www.w3schools.com/howto/howto_js_navbar_slide.asp)*
+
+Where could you use these techniques?
 
 ## Class 14
 
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
+With each of these Demonstrations the presenter should:
+
+- [ ] Explain the reason/need for such a technique.
+- [ ] Discuss the workings of the code and how it's actually happening.
+- [ ] Lead the class to ask where & why could this technique be used?
+
+*****
+
+- [ ] *Learn, Master, Teach & Demo how to: [Shrink NavBar on Scroll](https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Make a Sticky NavBar](https://www.w3schools.com/howto/howto_js_navbar_sticky.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Make a Return to Top Button](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top)*
+- [ ] *Learn, Master, Teach & Demo how to: [Create a Login Modal](https://www.w3schools.com/howto/howto_css_login_form.asp)*
 
 ## Class 15
 
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
+With each of these Demonstrations the presenter should:
+
+- [ ] Explain the reason/need for such a technique.
+- [ ] Discuss the workings of the code and how it's actually happening.
+- [ ] Lead the class to ask where & why could this technique be used?
+
+*****
+
+- [ ] *Learn, Master, Teach & Demo how to: [Multi-step Form](https://www.w3schools.com/howto/howto_js_form_steps.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Detect Caps Lock](https://www.w3schools.com/howto/howto_js_detect_capslock.asp) & [Toggle Password Visibility](https://www.w3schools.com/howto/howto_js_toggle_password.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Maintain Aspect Ratio](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp ) & [Show Tree View](https://www.w3schools.com/howto/howto_js_treeview.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Copy Text to Clipboard](https://www.w3schools.com/howto/howto_js_copy_clipboard.asp) & [Create a Download Link](https://www.w3schools.com/howto/howto_html_download_link.asp)*
 
 ## Class 16
 
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
-- [ ] *todo*
+With each of these Demonstrations the presenter should:
+
+- [ ] Explain the reason/need for such a technique.
+- [ ] Discuss the workings of the code and how it's actually happening.
+- [ ] Lead the class to ask where & why could this technique be used?
+
+*****
+
+- [ ] *Learn, Master, Teach & Demo how to: [Create a Snackbar/Toast](https://www.w3schools.com/howto/howto_js_snackbar.asp) & [Create a Gradient Scrolling Background](https://www.w3schools.com/howto/howto_css_bg_gradient_scroll.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Toggle Dark Mode](https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp) & [How to Create the TypeWriter effect](https://www.w3schools.com/howto/howto_js_typewriter.asp)*
+- [ ] *Learn, Master, Teach & Demo how to: [Make a Syntax Highlighter](https://www.w3schools.com/howto/howto_syntax_highlight.asp)*
+- [ ] *Learn, Master, Teach & Demo how to Use Window Properties like:*
+    * [Get Current Window Size](https://www.w3schools.com/howto/howto_js_get_current_window.asp)
+    * [Get Current URL](https://www.w3schools.com/howto/howto_js_get_url.asp)
+    * [Find Hidden Element](https://www.w3schools.com/howto/howto_js_check_hidden.asp)
+    * [Detect Offline](https://www.w3schools.com/howto/howto_js_offline_detection.asp)

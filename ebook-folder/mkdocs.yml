@@ -75,22 +75,27 @@ nav:
         - Document Methods: module-2/documentMethods.md
         - Image Element: module-2/imageElement.md
         - Class 7 Calculator App: module-2/class-7.md
-      - 'Pre-Class 8 Lessons': 
+      - 'Pre-Class 8 Lessons':
+        # TODO - Develop - TITLE: module-2/.md
         - Video & Iframe Elements: module-2/video-iframe-elements.md
         - Class 8 Checkpoint: module-2/class-8.md
+    - 'Module Three: Programming': 
+      - 'Pre-Class 9 Lessons':
+        - Develop - Cure Imposter Syndrome: module-3/developSeries-cureImposterSyndrome.md
+        - The Console Object: module-3/consoleObject.md
+        - JS Function Syntax: module-3/jsFunctionSyntax.md
+        - Class 9: module-3/class-9.md
         # https://vimeo.com/manage/folders/1059416
-        # https://studio.zollege.com/container/block-v1:Circle+Web101+2020_101_Online+type@vertical+block@0c257a4efe8a4e43aab8b1368abcefb9
+        # https://studio.zollege.com/course/course-v1:Circle+Web101+2020_101_Online?show=block-v1%3ACircle%2BWeb101%2B2020_101_Online%2Btype%40sequential%2Bblock%40871bb976daf8497aa84dbd503ec70123
       #   - The Three Actions of Data: module-1/lesson-4.md
       #   - Get Data: module-1/lesson-5.md
       #   - Store Data: module-1/lesson-6.md
       #   - Render Data: module-1/lesson-7.md
       #   - Reading Docs: module-1/lesson-8.md
-      # - 'Module Three: TITLE': 
-        # - 'Pre-Class 9 Lessons': 
         # - 'Pre-Class 10 Lessons': 
         # - 'Pre-Class 11 Lessons': 
         # - 'Pre-Class 12 Lessons': 
-      # - 'Module Four: TITLE':
+      # - 'Module Four: APIs & Animations':
         # - 'Pre-Class 13 Lessons': 
         # - 'Pre-Class 14 Lessons': 
         # - 'Pre-Class 15 Lessons': 
@@ -108,6 +113,7 @@ nav:
         - Day 6 QFD: additionalResources/questionsForDiscussion/qfd-class-6.md
         - Day 7 QFD: additionalResources/questionsForDiscussion/qfd-class-7.md
         - Day 8 QFD: additionalResources/questionsForDiscussion/qfd-class-8.md
+        - Day 9 QFD: additionalResources/questionsForDiscussion/qfd-class-9.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - Git & CLI Commands: additionalResources/gitCommands.md

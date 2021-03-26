@@ -79,6 +79,7 @@ You should know there are some security risks involved with the `<iframe>` eleme
 
 - [ ] [MDN Docs - iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
 - [ ] [MDN Docs - Video Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
+- [ ] [W3S Docs - Getting Elements from inside an IFrame Element](https://www.w3schools.com/howto/howto_js_element_iframe.asp)
 
 <!-- ! END OF VIDEO 101.1.3.1 - TITLE-->
 <!-- ? Video Numbering and Title system: CourseNumber.ModuleNumber.LessonNumber.VideoNumber -->

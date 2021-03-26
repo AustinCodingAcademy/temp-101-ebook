@@ -19,15 +19,16 @@ cp workspace/resources/templateFile.md docs/module-
 
 - [ ] [MDN Docs - title]()
 
+
+<!-- ! END OF VIDEO 101.1.3.1 - TITLE-->
+<!-- ? Video Numbering and Title system: CourseNumber.ModuleNumber.LessonNumber.VideoNumber -->
+<!-- * (VIDEO 101.2.4.3 - "CSS Selectors") === 101 Course, Module 2, Lesson 4, Video 3 - "CSS Selectors" -->
+
 <!-- 
 
 ```javascript
 
 ```
-
-<!-- ! END OF VIDEO 101.1.3.1 - TITLE-->
-<!-- ? Video Numbering and Title system: CourseNumber.ModuleNumber.LessonNumber.VideoNumber -->
-<!-- * (VIDEO 101.2.4.3 - "CSS Selectors") === 101 Course, Module 2, Lesson 4, Video 3 - "CSS Selectors" -->
 
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
