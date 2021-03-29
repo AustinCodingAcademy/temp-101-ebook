@@ -3,10 +3,9 @@ site_name: Web 101 - Intro to the Web
 
 # TODO inside `ebook-folder/`
 # TODO run `git clone https://github.com/squidfunk/mkdocs-material.git`
-# TODO run `pip install -r requirements.txt`
+# TODO run `pip install -r requirements.txt` (see inside mkdocs-material/)
 # TODO run `mkdocs build` to build the static files into "/site"
-# TODO run `mkdocs serve` to serve those files 
-# TODO view at http://127.0.0.1:8000
+# TODO run `mkdocs serve` to serve those files to http://127.0.0.1:8000
 # TODO replace all CAPITALIZED words with appropriate titles
 # ! Use the files in workspace/resources to quickly generate class and lesson templates, see `cp ...` script at bottom of each file
 # ! Use the folder workspace/developmentDocumentation to record thoughts and future improvements
@@ -84,7 +83,9 @@ nav:
         - Develop - Cure Imposter Syndrome: module-3/developSeries-cureImposterSyndrome.md
         - The Console Object: module-3/consoleObject.md
         - JS Function Syntax: module-3/jsFunctionSyntax.md
-        - Class 9: module-3/class-9.md
+        - Type Array: module-3/typeArray.md
+        - Intro To Loops: module-3/introToLoops.md
+        - Class 9 Interactive Resume: module-3/class-9.md
         # https://vimeo.com/manage/folders/1059416
         # https://studio.zollege.com/course/course-v1:Circle+Web101+2020_101_Online?show=block-v1%3ACircle%2BWeb101%2B2020_101_Online%2Btype%40sequential%2Bblock%40871bb976daf8497aa84dbd503ec70123
       #   - The Three Actions of Data: module-1/lesson-4.md
@@ -119,7 +120,8 @@ nav:
       - Git & CLI Commands: additionalResources/gitCommands.md
       - Graduation Prerequisites: additionalResources/graduationPrerequisites.md
       - Presentations Qualifications: additionalResources/presentationsQualifications.md
-      # - 'Bonus Materials':
+      - 'Bonus Materials':
+        - additionalResources/bonusMaterial/evenOddFollowAlong.md
 
 
 # defines the styles, usually just a single name but `custom_dir` overrides this behavior

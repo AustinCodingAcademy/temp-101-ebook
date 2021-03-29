@@ -96,8 +96,28 @@ Speak aloud every thought you have. THIS IS THE MOST IMPORTANT PART!
 
 ### Class 9
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: Fizz Buzz** - Today we'll switch our interview training to something a little different, programming. This will take a slightly different form than what we've seen before but it a very nice introduction to what some of your future interviews will look like.
+
+Your instructor will lead this exercise, writing on the board only what you tell them to write. Before you begin you might need to know a few things:
+
+1. FizzBuzz is a right-of-passage in the software development world. It's like the "Hello World" of programming. It goes like this:
+
+    * [ ] Create a function that lists all numbers between 1 - 1000;
+    * [ ] but instead of printing the numbers that are evenly divisible by 3, print `"fizz"`;
+    * [ ] and instead of printing the numbers that are evenly divisible by 5, print `"buzz"`;
+    * [ ] also, if the number is evenly divisible by both 3 and 5, print `"fizzBuzz"`.
+
+2. You'll need a few things from your past pre-lessons:
+
+    * [ ] `%` modulus
+    * [ ] `while` loop
+    * [ ] `++` incrementor
+    * [ ] **And something you have covered in depth yet:** `if(){} if else(){} else {}`
+
+    > NOTE: Take some time to think about the logic of the solution before you begin, but begin soon!
+
+3. Test it by putting it into a computer.
+4. Any questions?
 
 ### Class 10
 

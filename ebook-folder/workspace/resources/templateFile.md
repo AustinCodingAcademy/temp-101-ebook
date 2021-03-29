@@ -10,6 +10,7 @@ cp workspace/resources/templateFile.md docs/module-
 ## Practice It
 
 <!-- [Try it yourself](https://replit.com)! -->
+<!-- [Try it yourself](https://codepen.io)! -->
 
 ## Additional Resources
 
