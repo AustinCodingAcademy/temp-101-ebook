@@ -26,3 +26,8 @@
 - [ ] Data Structure
 - [ ] What is a data structure? Why do we need dependable data structures?
 - [ ] Why do you think we would choose a nested array as a data structure rather than multiple arrays?
+
+## Develop - Feelings
+
+- [ ] As you've worked through the class lesson and pre-homeworks you've most certainly felt some sort of frustration. How would you describe the feelings that are flowing underneath? What did you do to be with them?
+- [ ] In relation to the speech, why do you think we're talking about feelings here?

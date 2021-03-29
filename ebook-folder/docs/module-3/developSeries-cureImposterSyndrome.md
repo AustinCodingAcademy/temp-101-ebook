@@ -4,6 +4,7 @@ You might have heard of this at some point in your life and maybe you don't/didn
 
 See how [Dr. Alia Crum](https://mbl.stanford.edu/people) describes and PROVES it!!
 
+<!-- !Video Content: TEDTALK - Change Your Mindset, Change The Game -->
 <iframe width="655" height="368" src="https://www.youtube.com/embed/0tqq66zwa7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## You're Not an Imposter
@@ -14,6 +15,7 @@ Look, right now you're learning a skill that you might have zero familiarity wit
 
 In the talk below, Lou Solomon discusses how she first learned that anxiety, perfectionism, fear of failure, and self-doubt are the triggers and symptoms of Imposter Syndrome but moreover, she discusses why it's important to overcome this negative self-image and **HOW** she works on it everyday for herself.
 
+<!-- !Video Content: The Surprising Solution to Imposter Syndrome -->
 <iframe width="655" height="368" src="https://www.youtube.com/embed/whyUPLJZljE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You're not an imposter. You're not in-over-your-head. And you're not a failure. And you're not a finished product! You're a human that is constantly being shaped, changed, improved, and currently learning something new and that always comes with challenges. Breathe, give yourself a break and later, when you need a reminder read this article on [How To Deal with Imposter Syndrome](http://time.com/5312483/how-to-deal-with-impostor-syndrome/).

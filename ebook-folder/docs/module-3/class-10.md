@@ -61,8 +61,8 @@ Before we begin, let's create a new branch on our TicTacToe-101 repo.
 
     > When you finish your TTT board you were able to add "X"s and "O"s as well as clear the board. But now we'll need to compare the data inside those boxes to a set of "rules" to know if there is a win. To do this we have two problems to overcome:
 
-        1. We have to access the data.
-        2. We have to know the rules.
+    1. We have to access the data.
+    2. We have to know the rules.
 
     > Let's start with the rules. The "set of rules" might look something like this:
 

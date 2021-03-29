@@ -128,7 +128,16 @@ Example: `rotate(['a', 'b', 'c'])` should return `['b', 'c', 'a']`.
 
 ### Class 11
 
-- [ ] **Prompt 1: Title** - *description*
+- [ ] **Prompt 1: isGreaterThanFifty** - *Write a JavaScript program to check two given numbers and return true if one of the numbers is 50 or if their sum is 50.*
+
+```javascript
+// Example input and expected output
+
+checkSum(50, 12) // => true
+checkSum(10, 11) // => false
+checkSum(26, 24) // => true
+checkSum(49, 2) // => false 
+```
 
 <!-- - [ ] **Prompt 2: Title** - *description* -->
 

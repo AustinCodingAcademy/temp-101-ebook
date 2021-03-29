@@ -87,12 +87,17 @@ nav:
         - Intro To Loops: module-3/introToLoops.md
         - Class 9 EvenOdd List: module-3/class-9.md
       - 'Pre-Class 10 Lessons': 
-        # TODO - Develop - TITLE: module-3/.md
+        - Develop - Handle Your Feeling: module-3/developSeries-handleFeelings.md
         - Git Branch Review: module-3/gitBranchReview.md
         - Nested Arrays: module-3/nestedArrays.md
         - Class 10 TicTacToe: module-3/class-10.md
-        # - 'Pre-Class 11 Lessons': 
-
+      - 'Pre-Class 11 Lessons':
+        - Develop - Attention & Collaborators: module-3/developSeries-attentionAndCollaboration.md
+        - Intro to APIs: module-3/introToAPIs.md
+        - HTML Fetch API: module-3/html-FetchAPI.md
+        - Asynchronous Code: module-3/asynchronousCode.md
+        - Type Object-Literal: module-3/objectLiterals.md
+        - Class 11 ToDo List: module-3/class-11.md
         # https://vimeo.com/manage/folders/1059416
         # https://studio.zollege.com/course/course-v1:Circle+Web101+2020_101_Online?show=block-v1%3ACircle%2BWeb101%2B2020_101_Online%2Btype%40sequential%2Bblock%40871bb976daf8497aa84dbd503ec70123
       #   - The Three Actions of Data: module-1/lesson-4.md
@@ -121,6 +126,7 @@ nav:
         - Day 8 QFD: additionalResources/questionsForDiscussion/qfd-class-8.md
         - Day 9 QFD: additionalResources/questionsForDiscussion/qfd-class-9.md
         - Day 10 QFD: additionalResources/questionsForDiscussion/qfd-class-10.md
+        - Day 11 QFD: additionalResources/questionsForDiscussion/qfd-class-11.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - Git & CLI Commands: additionalResources/gitCommands.md
