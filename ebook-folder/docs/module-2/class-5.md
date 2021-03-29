@@ -84,7 +84,7 @@ Your Portfolio Website has been up for a couple weeks now but doesn't have an Ab
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create TicTacToe Assignment for a [pull request](https://youtu.be/rgbCcBNZcdQ?t=54) link.
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Bring pencil and paper to class for wireframing!
 - [ ] Complete the feedback survey(if applicable)
 

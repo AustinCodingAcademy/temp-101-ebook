@@ -121,12 +121,15 @@ Your instructor will lead this exercise, writing on the board only what you tell
 
 ### Class 10
 
-- [ ] **Prompt 1: Title** - *description*
+- [ ] **Prompt 1: Rotate** - *Write a function named `rotateArray` that rotates the elements of an array. All elements should be moved one position to the left. The 0th element should be placed at the end of the array. The rotated array should be returned.*
+
+Example: `rotate(['a', 'b', 'c'])` should return `['b', 'c', 'a']`.
 <!-- - [ ] **Prompt 2: Title** - *description* -->
 
 ### Class 11
 
 - [ ] **Prompt 1: Title** - *description*
+
 <!-- - [ ] **Prompt 2: Title** - *description* -->
 
 ### Class 12

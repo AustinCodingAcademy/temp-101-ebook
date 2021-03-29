@@ -1,0 +1,2002 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>Class 10 TicTacToe - Web 101 - Intro to the Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-10-tictactoe" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-header__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web 101 - Intro to the Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class 10 TicTacToe
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web 101 - Intro to the Web" class="md-nav__button md-logo" aria-label="Web 101 - Intro to the Web">
+      
+  <img src="../../CE_WhiteBlue_Icon.png" alt="logo">
+
+    </a>
+    Web 101 - Intro to the Web
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Module One: Page Layout
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module One: Page Layout" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Module One: Page Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Pre-Class 1 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 1 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 1 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/theBoxModel/" class="md-nav__link">
+        The Box Model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-width%26height/" class="md-nav__link">
+        Width & Height
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-padding/" class="md-nav__link">
+        Padding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-border/" class="md-nav__link">
+        Border
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/boxModel-margin/" class="md-nav__link">
+        Margin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-1/" class="md-nav__link">
+        Class 1 Hosting Your Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      <label class="md-nav__link" for="__nav_2_2">
+        Pre-Class 2 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 2 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 2 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayProperty/" class="md-nav__link">
+        Display Property
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayFlexProperties/" class="md-nav__link">
+        Display Flex
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/flexItemProperties/" class="md-nav__link">
+        Flex Item
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-selfMotivation/" class="md-nav__link">
+        Develop - Self-Motivation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-2/" class="md-nav__link">
+        Class 2 NASA Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      <label class="md-nav__link" for="__nav_2_3">
+        Pre-Class 3 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 3 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 3 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/developSeries-mindfulness/" class="md-nav__link">
+        Develop - Mindfulness
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/wireframing-pt1/" class="md-nav__link">
+        Wireframing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/displayGrid/" class="md-nav__link">
+        Display Grid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreGridProperties/" class="md-nav__link">
+        Grid Properties
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-3/" class="md-nav__link">
+        Class 3 Resume
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        Pre-Class 4 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 4 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 4 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/responsiveLayouts-gridAreas/" class="md-nav__link">
+        Responsive Layouts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/mediaQueries/" class="md-nav__link">
+        Media Queries
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/moreCssSelectors/" class="md-nav__link">
+        More CSS Selectors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/specificityAndCombinators/" class="md-nav__link">
+        CSS Specificity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-1/class-4/" class="md-nav__link">
+        Class 4
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Module Two: Interactions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module Two: Interactions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Module Two: Interactions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Pre-Class 5 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 5 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 5 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/introToJavaScript/" class="md-nav__link">
+        Intro to JavaScript
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/howTheInternetWorks/" class="md-nav__link">
+        How the Internet Works
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/ourJobAsWebDevelopers/" class="md-nav__link">
+        Our Job
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/waysOfThinking/" class="md-nav__link">
+        Ways Of Thinking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/twoPerspectives/" class="md-nav__link">
+        Two Perspectives
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/theDOM-jsIntro-pt2/" class="md-nav__link">
+        The DOM + JS Intro pt.2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/table-nthChild/" class="md-nav__link">
+        Table and nth Child
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/class-5/" class="md-nav__link">
+        Class 5 TicTacToe + About
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Pre-Class 6 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 6 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 6 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/HTTP-req-res/" class="md-nav__link">
+        HTTProtocol
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/htmlElements/" class="md-nav__link">
+        HTML Elements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/formElement/" class="md-nav__link">
+        Form Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/buttonElement/" class="md-nav__link">
+        Button Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/inputElement/" class="md-nav__link">
+        Input Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/commonEventListeners/" class="md-nav__link">
+        Event Listeners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/class-6/" class="md-nav__link">
+        Class 6 Contact Page
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Pre-Class 7 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 7 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 7 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/developSeries-brainBuilding/" class="md-nav__link">
+        Develop - Your Brain
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/windowMethods/" class="md-nav__link">
+        Window Methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/documentMethods/" class="md-nav__link">
+        Document Methods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/imageElement/" class="md-nav__link">
+        Image Element
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/class-7/" class="md-nav__link">
+        Class 7 Calculator App
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
+        Pre-Class 8 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 8 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 8 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/video-iframe-elements/" class="md-nav__link">
+        Video & Iframe Elements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module-2/class-8/" class="md-nav__link">
+        Class 8 Checkpoint
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Module Three: Programming
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Module Three: Programming" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Module Three: Programming
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      <label class="md-nav__link" for="__nav_4_1">
+        Pre-Class 9 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 9 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 9 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developSeries-cureImposterSyndrome/" class="md-nav__link">
+        Develop - Cure Imposter Syndrome
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../consoleObject/" class="md-nav__link">
+        The Console Object
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jsFunctionSyntax/" class="md-nav__link">
+        JS Function Syntax
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typeArray/" class="md-nav__link">
+        Type Array
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introToLoops/" class="md-nav__link">
+        Intro To Loops
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-9/" class="md-nav__link">
+        Class 9 EvenOdd List
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        Pre-Class 10 Lessons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pre-Class 10 Lessons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pre-Class 10 Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitBranchReview/" class="md-nav__link">
+        Git Branch Review
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nestedArrays/" class="md-nav__link">
+        Nested Arrays
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Class 10 TicTacToe
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Class 10 TicTacToe
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#greet-outline-and-objectify" class="md-nav__link">
+    Greet, Outline, and Objectify
+  </a>
+  
+    <nav class="md-nav" aria-label="Greet, Outline, and Objectify">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questions-for-student-led-discussion-15-mins" class="md-nav__link">
+    Questions for Student Led Discussion, 15 mins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interview-challenge-15-mins" class="md-nav__link">
+    Interview Challenge, 15 mins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#student-presentations-15-mins" class="md-nav__link">
+    Student Presentations, 15 mins
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-time-60-90-mins" class="md-nav__link">
+    Creation Time, 60-90 mins
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation Time, 60-90 mins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tictactoe" class="md-nav__link">
+    TicTacToe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up" class="md-nav__link">
+    Follow Up
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blogs-to-show-you-know" class="md-nav__link">
+    Blogs to Show You Know
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exit-recap-attendance-and-reminders-5-mins" class="md-nav__link">
+    Exit Recap, Attendance, and Reminders, 5 mins
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Additional Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Additional Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Additional Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/interviewChallenges/" class="md-nav__link">
+        Interview Training
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/studentPresentations/" class="md-nav__link">
+        Student Presentations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/developSeries/" class="md-nav__link">
+        Develop Series Collection
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      <label class="md-nav__link" for="__nav_5_4">
+        Questions for Discussion Collections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Questions for Discussion Collections" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Questions for Discussion Collections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-1/" class="md-nav__link">
+        Day 1 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-2/" class="md-nav__link">
+        Day 2 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-3/" class="md-nav__link">
+        Day 3 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-4/" class="md-nav__link">
+        Day 4 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-5/" class="md-nav__link">
+        Day 5 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-6/" class="md-nav__link">
+        Day 6 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-7/" class="md-nav__link">
+        Day 7 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-8/" class="md-nav__link">
+        Day 8 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-9/" class="md-nav__link">
+        Day 9 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-10/" class="md-nav__link">
+        Day 10 QFD
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/blogPrompts/" class="md-nav__link">
+        Blog Prompts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/keyboardShortcuts/" class="md-nav__link">
+        Keyboard Shortcuts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/gitCommands/" class="md-nav__link">
+        Git & CLI Commands
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/graduationPrerequisites/" class="md-nav__link">
+        Graduation Prerequisites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/presentationsQualifications/" class="md-nav__link">
+        Presentations Qualifications
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_10" type="checkbox" id="__nav_5_10" >
+      
+      <label class="md-nav__link" for="__nav_5_10">
+        Bonus Materials
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bonus Materials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_10">
+          <span class="md-nav__icon md-icon"></span>
+          Bonus Materials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/bonusMaterial/evenOddFollowAlong/" class="md-nav__link">
+        Even/Odd List Follow-Along
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#greet-outline-and-objectify" class="md-nav__link">
+    Greet, Outline, and Objectify
+  </a>
+  
+    <nav class="md-nav" aria-label="Greet, Outline, and Objectify">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questions-for-student-led-discussion-15-mins" class="md-nav__link">
+    Questions for Student Led Discussion, 15 mins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interview-challenge-15-mins" class="md-nav__link">
+    Interview Challenge, 15 mins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#student-presentations-15-mins" class="md-nav__link">
+    Student Presentations, 15 mins
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-time-60-90-mins" class="md-nav__link">
+    Creation Time, 60-90 mins
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation Time, 60-90 mins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tictactoe" class="md-nav__link">
+    TicTacToe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up" class="md-nav__link">
+    Follow Up
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blogs-to-show-you-know" class="md-nav__link">
+    Blogs to Show You Know
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exit-recap-attendance-and-reminders-5-mins" class="md-nav__link">
+    Exit Recap, Attendance, and Reminders, 5 mins
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="class-10-tictactoe">Class 10: TicTacToe</h1>
+<!-- ! HIDE FROM STUDENT; INSTRUCTOR ONLY CONTENT -->
+<!-- ## Instructor Only Content - HIDE FROM STUDENTS -->
+
+<!-- ! END INSTRUCTOR ONLY CONTENT -->
+
+<p><em>“There is no royal road to anything. One thing at a time, all things in succession. That which grows fast, withers as rapidly. That which grows slowly, endures.” –Josiah Gilbert Holland</em></p>
+<h2 id="greet-outline-and-objectify">Greet, Outline, and Objectify</h2>
+<!-- SMART: Specific, Measurable, Attainable, Relevant, and Timely. -->
+<!-- https://examples.yourdictionary.com/well-written-examples-of-learning-objectives.html -->
+
+<p>Today we're going to:</p>
+<p><em>OBJECTIVE: After this class students will have a firm understanding of:</em></p>
+<ul>
+<li><em>Multi-Dimensional Arrays</em></li>
+<li><em>Representational Data</em></li>
+<li><em>Conditional Programming</em></li>
+</ul>
+<hr />
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Questions for Student Led Discussion</li>
+<li class="task-list-item"><input type="checkbox"/> Interview Challenge</li>
+<li class="task-list-item"><input type="checkbox"/> Student Presentations</li>
+<li class="task-list-item"><input type="checkbox"/> Creation Time<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> TTT Fun Time - 60 mins</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox"/> Interview Questions: Blog to Show You Know</li>
+<li class="task-list-item"><input type="checkbox"/> Exit Recap, Attendance, and Reminders</li>
+</ul>
+<h3 id="questions-for-student-led-discussion-15-mins">Questions for Student Led Discussion, 15 mins</h3>
+<!-- This section should be structured with the 5E model: https://lesley.edu/article/empowering-students-the-5e-model-explained -->
+
+<p><a href="../../additionalResources/questionsForDiscussion/qfd-class-10/">Questions to prompt discussion</a></p>
+<h3 id="interview-challenge-15-mins">Interview Challenge, 15 mins</h3>
+<!-- The last two E happen here: elaborate and evaluate  -->
+<!-- this sections should have a challenge that can be solved with the skills they've learned since their last class. -->
+<!-- ! HIDDEN CONTENT: INSTRUCTOR ONLY -->
+<p><a href="../../additionalResources/interviewChallenges/">See Your Challenge Here</a></p>
+<!-- ! END HIDDEN CONTENT: INSTRUCTOR ONLY -->
+
+<h3 id="student-presentations-15-mins">Student Presentations, 15 mins</h3>
+<p><a href="../../additionalResources/studentPresentations/">See Student Presentations List</a></p>
+<h2 id="creation-time-60-90-mins">Creation Time, 60-90 mins</h2>
+<h3 id="tictactoe">TicTacToe</h3>
+<p>Back in <a href="../../module-2/class-5/">Class 5</a> you built a simple <a href="https://github.com/AustinCodingAcademy/TicTacToe-101">TicTacToe Game</a>. If you remember, it didn't have logic that told who or when someone won. Today, let's have some fun playing with JavaScript and let's see if we can all learn how to think a little more programmatically!!</p>
+<p>Before we begin, let's create a new branch on our TicTacToe-101 repo.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Go find its directory.</li>
+<li class="task-list-item"><input type="checkbox"/> Make sure you're on the <code>master</code>/<code>main</code> branch.</li>
+<li class="task-list-item"><input type="checkbox"/> Use the proper command to create a new branch named <code>TTT-Logic</code> and switch to it.</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Once you've done that let's move ahead!</p>
+<blockquote>
+<p>When you finish your TTT board you were able to add "X"s and "O"s as well as clear the board. But now we'll need to compare the data inside those boxes to a set of "rules" to know if there is a win. To do this we have two problems to overcome:</p>
+</blockquote>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>1. We have to access the data.
+2. We have to know the rules.
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>Let's start with the rules. The "set of rules" might look something like this:</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Horizontal Win, a.k.a, If row 0 equals all "X"s or "O"s:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">)</span> 
+        <span class="o">||</span> <span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>This could be repeated for rows 1 and 2.</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Vertical Wins, a.k.a, if column 0 equals all "X"s or "O"s: </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">)</span> 
+        <span class="o">||</span> <span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>This could be repeated for the next two columns.</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Diagonal Wins, a.k.a, If there is a line created diagonally across the board with "X"s or with "O"s:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">)</span> 
+        <span class="o">||</span> <span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>This would be reversed for the opposite direction.</p>
+<p>NOTE: You just saw new characters: <code>==</code>, <code>||</code> and <code>&amp;&amp;</code>. If you look at the docs on W3S about <a href="https://www.w3schools.com/js/js_comparisons.asp">Comparison Operators</a> you'll see that <code>==</code> means "is-equal-to", <code>||</code> means "or" while <code>&amp;&amp;</code> means "and".</p>
+<p>Now back to the first problem: Accessing the Data. We could use the <code>getElementById</code> method to access each box on the screen by it's <code>value</code> or <code>innerHTML</code> but this would be very expensive for computing power. So instead let's create a multi-dimensional array that can hold a <strong>representational data structure</strong> for our TTT board.</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Go to the top your <code>scripts.js</code> file and create an array called board with three arrays inside of it. Each of these inner arrays should have three places held with empty quotes: <code>""</code>, separated by commas, <code>,</code>.</p>
+<blockquote>
+<p>If you look back up at those <code>if</code> statements you might be able to interpret that each one is checking to see what is inside each of the indexes of the arrays.</p>
+<p>How do you create the representation of the data? In your <code>addMarker</code> function in <code>scripts.js</code> can you use the following code to set the value of each index in the board array to match what's on the screen? So in the end your <code>addMarker</code> function will insert an "X" or "O" in the DOM for the user to see as well as in the multi-dimensional array, board for your JavaScript to easily access.</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Inside <code>addMarker</code> add this line: <code>board[row][column] = currentMarker</code></p>
+<blockquote>
+<p>But how do you get the <code>row</code> and <code>column</code>?</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> If you change the <code>ids</code> of each of the <code>&lt;td&gt;</code>s in the TTT board from <code>top-left</code> to say <code>0-0</code> &amp; <code>middle-middle</code> to maybe <code>1-1</code>, etc... You could create <code>id</code>s that match their bracket-notation location in the board array. Then you could use the <code>parseInt</code> method to create numbers that you could use to access the arrays and indexes of board:</p>
+</li>
+</ul>
+<p>These variables hold the first and third letters in the element's id.</p>
+<ul class="task-list">
+<li><code>const row = parseInt(element.id.charAt(0))</code></li>
+<li>
+<p><code>const column = parseInt(element.id.charAt(2))</code></p>
+<blockquote>
+<p>What's <code>charAt()</code> doing?</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> But now you might have another problem, you're <code>onclick</code> might not work with your <code>addMarker</code> function because you've changed class names. If it's not, stop here and make sure you do get it working before moving on. Why isn't it working?</p>
+<blockquote>
+<p>Now for the <code>checkForWin</code>. This bit will seem a little complicated at first but stay cool and breath.</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Copy/Paste the following code snippet into the bottom of your <code>scripts.js</code> file:</p>
+</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>   <span class="kd">const</span> <span class="nx">checkForWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+     <span class="k">if</span><span class="p">(</span><span class="nx">horizontalWin</span><span class="p">()</span> <span class="o">||</span> <span class="nx">verticalWin</span><span class="p">()</span> <span class="o">||</span> <span class="nx">diagonalWin</span><span class="p">())</span> <span class="p">{</span>
+       <span class="nb">window</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="sb">`Player </span><span class="si">${</span><span class="nx">currentMarker</span><span class="si">}</span><span class="sb"> won!`</span><span class="p">)</span>
+     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+       <span class="nx">changeMarker</span><span class="p">()</span>
+     <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="kd">const</span> <span class="nx">horizontalWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+     <span class="c1">// Your code here to check for horizontal wins</span>
+   <span class="p">}</span>
+
+   <span class="kd">const</span> <span class="nx">verticalWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+     <span class="c1">// Your code here to check for vertical wins</span>
+   <span class="p">}</span>
+
+   <span class="kd">const</span> <span class="nx">diagonalWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+     <span class="c1">// Your code here to check for diagonal wins</span>
+   <span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<ul class="task-list">
+<li class="task-list-item">
+<p><input type="checkbox"/> Currently, at the end of your <code>addMarker</code> function you tell the computer to change the <code>currentMarker</code> from <code>"X"</code> to <code>"O"</code> or <code>"O"</code> to <code>"X"</code>. But you wouldn't want to do that if the game was won. So before telling the computer to change the <code>currentMarker</code> you would want it to first <code>checkForWin</code>.</p>
+<blockquote>
+<p>The code snippet you copy/pasted has a function called <code>checkForWin</code> which you'll notice calls <code>changeMarker</code> if none of the winning rules(see above), are met.</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> So inside <code>addMarker</code> you can replace the <code>changeMarker</code> call out for <code>checkForWin</code> because <code>changeMarker</code> will still be called if the other functions don't return <code>true</code>.</p>
+<blockquote>
+<p>Now for the last part...</p>
+</blockquote>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox"/> Look back at the <em>rules</em> laid out above in those long <code>if</code> statements. Can you figure out how to write the if statements that will go inside <code>horizontalWin</code>, <code>verticalWin</code>, and <code>diagonalWin</code> using the <strong>exact</strong> code given to you in the rules and the code snippet? You'll have to expand upon these <em>rules</em> to make multiple <code>if/if else/else</code> statements for each to work.</p>
+</li>
+</ul>
+<p><strong>HAVE FUN and DON'T STRESS if you don't figure it out yet.</strong></p>
+<!-- ! Video Content:  (width="655" height="368", ratio 1.77) -->
+
+<h3 id="follow-up">Follow Up</h3>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Can a group show their code off to the class?</li>
+<li class="task-list-item"><input type="checkbox"/> Can one of the groups walk us through how this app works?</li>
+</ul>
+<h2 id="blogs-to-show-you-know">Blogs to Show You Know</h2>
+<p><a href="../../additionalResources/blogPrompts/">Blog Prompts</a> </p>
+<h2 id="exit-recap-attendance-and-reminders-5-mins">Exit Recap, Attendance, and Reminders, 5 mins</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Create TTT-Logic Assignment</li>
+<li class="task-list-item"><input type="checkbox"/> Create 105 Blog Assignment</li>
+<li class="task-list-item"><input type="checkbox"/> Prepare for next class by completing all of your pre-class lessons</li>
+<li class="task-list-item"><input type="checkbox"/> Complete the feedback survey(if applicable)</li>
+<li class="task-list-item"><input type="checkbox"/> You've been working on your Barbershop Capstone Projects for a week now but if you have a little bit of time you should jump back on it! It's due this Sunday!</li>
+</ul>
+<p>Next week we'll take our JavaScript skills to a whole new level when we start fetching data and rendering it on our web pages!!!</p>
+<!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
+<script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script> -->
+
+<!-- TODO Create 3 question exit questions -->
+
+<!-- TODO INSERT Student Feedback From -->
+
+<!-- TODO INSERT *HIDDEN* Instructor Feedback Form -->
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../nestedArrays/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Nested Arrays
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../additionalResources/interviewChallenges/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Interview Training
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -86,7 +86,7 @@ Just like the About Page you built for your Portfolio Website last class, tonigh
 
 - [ ] Create Contact Page Assignment
 - [ ] Create 103 Blog Assignment
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 - [ ] Bring pencil and paper to class for wireframing!
 

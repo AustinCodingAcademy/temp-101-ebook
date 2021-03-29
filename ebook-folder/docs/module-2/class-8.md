@@ -109,7 +109,7 @@ While these websites aren't built in this video, you can certainly use its flow 
 
 - [ ] Create Checkpoint1-Small Business Site Assignment
 - [ ] Create 104 Blog Assignment
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 
 This project isn't due *this* Sunday, it's due *next* Sunday, but that doesn't mean you shouldn't begin working on it now! Get going tonight by wireframing, copy/pasting code from other projects, and draw up a plan of action to break this large project into smaller projects.

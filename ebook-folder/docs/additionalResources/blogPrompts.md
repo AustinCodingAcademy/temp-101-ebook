@@ -31,11 +31,16 @@
 
 ## Class 8 - Prompt 104
 
-- [ ]
+NONE
 
 ## Class 10 - Prompt 105
 
-- [ ]
+- [ ] How do you describe the feeling of Imposter Syndrome? When does it affect you the most? Why?
+- [ ] What have you learned about the tech world that you are happy to know?
+- [ ] Why is the way we talk to ourselves in our inner mind so important? What effect can it have on our well-being?
+- [ ] What about this course is challenging you the most? How do you think you are growing through it?
+- [ ] How has podcast listening influenced the way you think?
+- [ ] What has your spare time looked like in-comparison to what it looked like a year ago?
 
 ## Class 12 - Prompt 106
 

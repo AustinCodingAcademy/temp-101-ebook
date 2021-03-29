@@ -79,7 +79,7 @@ As a class,
 
 - [ ] Create Calculator App Assignment
 - [ ] Create a Checkpoint Assignment for the Small Business Page
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 
 This week will mostly be review of the tools and concepts you've learned in the form of practice, practice, practice. Be sure you play with all code snippets you get in your homework and prepare yourself for the building a small business website for your first checkpoint project!

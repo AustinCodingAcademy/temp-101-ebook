@@ -85,7 +85,7 @@ Our company needs this website up really soon, please make judgments about color
 
 - [ ] Create Responsive Website Assignment
 - [ ] Create BlogPost_102 Blog Assignment
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 
 Next week we'll be digging into the surface of JavaScript to make our web pages interactive. We'll start by building a calculator but we'll soon be fetching data from remote sources and rendering it on our pages with the CSS and HTML we've learned so far. Keep reading, watching, and practicing all of the concepts you learn about.

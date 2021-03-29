@@ -85,7 +85,14 @@ nav:
         - JS Function Syntax: module-3/jsFunctionSyntax.md
         - Type Array: module-3/typeArray.md
         - Intro To Loops: module-3/introToLoops.md
-        - Class 9 Interactive Resume: module-3/class-9.md
+        - Class 9 EvenOdd List: module-3/class-9.md
+      - 'Pre-Class 10 Lessons': 
+        # TODO - Develop - TITLE: module-3/.md
+        - Git Branch Review: module-3/gitBranchReview.md
+        - Nested Arrays: module-3/nestedArrays.md
+        - Class 10 TicTacToe: module-3/class-10.md
+        # - 'Pre-Class 11 Lessons': 
+
         # https://vimeo.com/manage/folders/1059416
         # https://studio.zollege.com/course/course-v1:Circle+Web101+2020_101_Online?show=block-v1%3ACircle%2BWeb101%2B2020_101_Online%2Btype%40sequential%2Bblock%40871bb976daf8497aa84dbd503ec70123
       #   - The Three Actions of Data: module-1/lesson-4.md
@@ -93,8 +100,6 @@ nav:
       #   - Store Data: module-1/lesson-6.md
       #   - Render Data: module-1/lesson-7.md
       #   - Reading Docs: module-1/lesson-8.md
-        # - 'Pre-Class 10 Lessons': 
-        # - 'Pre-Class 11 Lessons': 
         # - 'Pre-Class 12 Lessons': 
       # - 'Module Four: APIs & Animations':
         # - 'Pre-Class 13 Lessons': 
@@ -115,6 +120,7 @@ nav:
         - Day 7 QFD: additionalResources/questionsForDiscussion/qfd-class-7.md
         - Day 8 QFD: additionalResources/questionsForDiscussion/qfd-class-8.md
         - Day 9 QFD: additionalResources/questionsForDiscussion/qfd-class-9.md
+        - Day 10 QFD: additionalResources/questionsForDiscussion/qfd-class-10.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - Git & CLI Commands: additionalResources/gitCommands.md

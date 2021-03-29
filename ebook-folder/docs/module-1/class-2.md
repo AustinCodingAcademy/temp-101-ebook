@@ -94,7 +94,7 @@ Today we're going to:
 
 - [ ] Create NASA Contact Page Assignment
 - [ ] Create BlogPost_102 Assignment
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 <!-- * Complete the feedback survey -->
 - [ ] Over the next few days you'll learn about CSS Grid and how to wireframe so that you can build more efficiently and confidently!
 

@@ -1,4 +1,4 @@
-# Class 9: ToDo List
+# Class 9: Even-Odd List
 
 <!-- ! HIDE FROM STUDENT; INSTRUCTOR ONLY CONTENT -->
 <!-- ## Instructor Only Content - HIDE FROM STUDENTS -->
@@ -63,7 +63,7 @@ Today we're going to:
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create EvenOdd Assignment
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 
 <!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>

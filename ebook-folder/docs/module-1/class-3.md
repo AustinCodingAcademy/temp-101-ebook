@@ -94,7 +94,7 @@ First plan, then code. Trust this process; it will save you **so** much time!
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create Resume Assignment
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Remind students to bring paper and pencils to all future classes.
   > **Wireframes are required for all future projects**! You'll turn these in via pictures that are added to your code base so they get turned in with your code.
 - [ ] Complete the feedback survey(if applicable)

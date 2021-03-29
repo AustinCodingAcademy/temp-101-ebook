@@ -64,7 +64,7 @@ Today we're going to:
 
 - [ ] Create *** Assignment
 <!-- - [ ] Create *** Blog Assignment -->
-- [ ] Prepare for next by completing all of your pre-class lessons
+- [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 
 <!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
