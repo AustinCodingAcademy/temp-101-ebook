@@ -1,5 +1,11 @@
 # Class 4 - Questions for Discussion
 
+## Develop - Letting Go of Self-Importance and Shame
+
+- [ ] What three things can you do right now to pull yourself out from boredom or from boredom of yourself?
+- [ ] What does the painting, "Altogether, And All At Once" mean to you? How do you describe its meaning?
+- [ ] What good is it to understand how large the world is and how small we are?
+
 ## Grid Area
 
 - [ ] Define the following:

@@ -1,5 +1,12 @@
 # Class 12 - Questions for Discussion
 
+## Develop - Build Your Network
+
+- [ ] Why do you think "networking" is scary for some people?
+- [ ] How do you feel about "networking"?
+- [ ] How does "building a network" change your feelings about it?
+- [ ] What can you do to be with those nervous feelings?
+
 ## Website Planning
 
 - [ ] Why do you think planning is so foreign to some of us?

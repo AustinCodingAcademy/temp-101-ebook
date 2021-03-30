@@ -1,4 +1,4 @@
-# Class #: Filtering ToDo List
+# Class 12: Filtering ToDo List
 
 <!-- ! HIDE FROM STUDENT; INSTRUCTOR ONLY CONTENT -->
 <!-- ## Instructor Only Content - HIDE FROM STUDENTS -->

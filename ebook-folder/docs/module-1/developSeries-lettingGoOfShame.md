@@ -1,0 +1,6 @@
+# Letting Go Of Self-Importance and Shame
+
+Beyond our inner emotions it's important to understand how interconnected we are to each other. COVID-19 is/has painted a picture right of how physically connected we are from air particles, virus and bacteria exchange, to financial vulnerabilities across the globe. And with this sudden crisis it's opening us up to understanding how mentally, socially, spiritually, and emotionally connected we are. We are one. We are one people, not separate sovereign countries. From San Francisco to New Delhi and Cape Town to St. Petersburg, we are all human, connected by our air, water, ground, food, birth, and death. Now, how does that affect you? How can you pull yourself up from yourself and into that enormous and beautiful world so that we can experience these things together?
+
+<!-- ! Video Contents: TedTalk - Polly Young-Eisendrath - Getting Free of Self-Importance (width="655" height="368", ratio 1.77) -->
+<iframe width="655" height="368" src="https://www.youtube.com/embed/mgBs_W5CFnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
