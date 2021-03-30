@@ -1,8 +1,6 @@
 # TITLE
 
-cp workspace/resources/templateFile.md docs/module-
-
-*quote*
+**
 
 ## Overview
 <!-- ! Video Contents:  (width="655" height="368", ratio 1.77) -->
@@ -26,6 +24,8 @@ cp workspace/resources/templateFile.md docs/module-
 <!-- * (VIDEO 101.2.4.3 - "CSS Selectors") === 101 Course, Module 2, Lesson 4, Video 3 - "CSS Selectors" -->
 
 <!-- 
+
+cp workspace/resources/templateFile.md docs/module- 
 
 ```javascript
 

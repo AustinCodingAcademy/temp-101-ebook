@@ -139,12 +139,14 @@ checkSum(26, 24) // => true
 checkSum(49, 2) // => false 
 ```
 
-<!-- - [ ] **Prompt 2: Title** - *description* -->
-
 ### Class 12
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: withinLimits** - *Given two numbers, say `x` and `y`, write a program that determines if the numbers are between the ranges of `0-20` or `80-100`, which includes the edges of the limit: `0`, `20`, `80`, and `100`.*
+
+```javascript
+    withinLimits(10, 99) // => true
+    withinLimits(21, 81) // => false
+```
 
 ### Class 13
 
