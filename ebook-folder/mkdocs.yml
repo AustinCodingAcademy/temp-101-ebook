@@ -113,12 +113,16 @@ nav:
         - Intro to Animations: module-4/animationIntro.md
         - Intro to Transformations: module-4/introToTransformations.md
         - Intro to Transitions: module-4/introToTransitions.md
-        # https://studio.zollege.com/course/course-v1:Circle+Web101+2020_101_Online?show=block-v1%3ACircle%2BWeb101%2B2020_101_Online%2Btype%40sequential%2Bblock%4012bfaa00268447ef969b0a77a5ad2277
         - Class 13: module-4/class-13.md
       - 'Pre-Class 14 Lessons': 
+        - Parallax: module-4/introToParallax.md
+        - Bootstrap: module-4/introToBootstrap.md
+        - Bootstrap Modals: module-4/modalsWithBootstrap.md
+        - HTML API - Canvas pt.1: module-4/htmlAPI-canvas-pt1.md
         - Class 14: module-4/class-14.md
       - 'Pre-Class 15 Lessons': 
         - Class 15: module-4/class-15.md
+        # https://studio.zollege.com/course/course-v1:Circle+Web101+2020_101_Online?show=block-v1%3ACircle%2BWeb101%2B2020_101_Online%2Btype%40sequential%2Bblock%4012bfaa00268447ef969b0a77a5ad2277
       - 'Pre-Class 16 Lessons':  
         - Class 16: module-4/class-16.md
           # cp workspace/resources/templateFile.md docs/module-
@@ -147,6 +151,7 @@ nav:
         - Day 11 QFD: additionalResources/questionsForDiscussion/qfd-class-11.md
         - Day 12 QFD: additionalResources/questionsForDiscussion/qfd-class-12.md
         - Day 13 QFD: additionalResources/questionsForDiscussion/qfd-class-13.md
+        - Day 14 QFD: additionalResources/questionsForDiscussion/qfd-class-14.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - Git & CLI Commands: additionalResources/gitCommands.md

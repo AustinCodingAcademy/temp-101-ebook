@@ -150,8 +150,16 @@ checkSum(49, 2) // => false
 
 ### Class 13
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: Trello Training - 30 mins** - *Splitting up into groups(breakout rooms) of **three** students, each group will build a Trello board and layout the task required to build a website the following mockups describe. Afterward, groups will discuss what steps they found and what order. The purpose of this challenge is practice breaking down large projects into smaller steps.*
+
+=== "Laptop"
+    ![taylorist-view-laptop](./../images/taylorist-view-laptop.png)
+
+=== "Tablet"
+    ![taylorist-view-tablet](./../images/taylorist-view-tablet.png)
+
+=== "Mobile"
+    ![taylorist-view-mobile](./../images/taylorist-view-mobile.png)
 
 ### Class 14
 
