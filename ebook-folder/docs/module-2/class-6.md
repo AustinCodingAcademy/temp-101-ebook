@@ -85,7 +85,7 @@ Just like the About Page you built for your Portfolio Website last class, tonigh
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create Contact Page Assignment
-- [ ] Create 103 Blog Assignment
+- [ ] Create Class 6 Blog Assignment
 - [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 - [ ] Bring pencil and paper to class for wireframing!

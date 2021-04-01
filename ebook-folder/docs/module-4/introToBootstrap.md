@@ -111,14 +111,13 @@ Bootstrap is an incredibly useful tool to jump start your app or website. You ca
 Have fun and keep coding!
 
 ## Additional Resources
-s
 
 - [ ] [YT, Academind - Bootstrap 4 Concepts](https://youtu.be/7g8Gg2QVdeU)
   
-  > NOTE: the video from BlondieBytes below is on an older version of Bootstrap but the basics are still the same.
+  > NOTE: the video from BlondieBytes below is of an older version of Bootstrap but the basics are still the same.
 
 - [ ] [YT, BlondieBytes - Learn Bootstrap in 5 mins](https://youtu.be/yalxT0PEx8c)
 
 ## Know Your Docs
 
-- [ ] [Obviously Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/).
+- [ ] *...Obviously...* the [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) docs.

@@ -169,12 +169,12 @@ These variables hold the first and third letters in the element's id.
 
 ## Blogs to Show You Know
 
-[Blog Prompts](./../additionalResources/blogPrompts.md) 
+[Blog Prompts](./../additionalResources/blogPrompts.md)
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create TTT-Logic Assignment
-- [ ] Create 105 Blog Assignment
+- [ ] Create Class 10 Blog Assignment
 - [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 - [ ] You've been working on your Barbershop Capstone Projects for a week now but if you have a little bit of time you should jump back on it! It's due this Sunday!

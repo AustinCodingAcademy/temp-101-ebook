@@ -1,12 +1,11 @@
-# Class 15: Title
+# Class 15: Final Portfolio Work Day 2/2 Sprint
 
 <!-- ! HIDE FROM STUDENT; INSTRUCTOR ONLY CONTENT -->
 <!-- ## Instructor Only Content - HIDE FROM STUDENTS -->
-cp workspace/resources/classOutlineTemplate.md docs/module-
 
 <!-- ! END INSTRUCTOR ONLY CONTENT -->
 
-*quote*
+*"It does not matter how slowly you go as long as you do not stop." —Confucius*
 
 ## Greet, Outline, and Objectify
 
@@ -15,57 +14,52 @@ cp workspace/resources/classOutlineTemplate.md docs/module-
 
 Today we're going to:
   
-*OBJECTIVE:
+*OBJECTIVE - After this class students will have an understanding of:*
+
+* *Sprint planning as it relates to small tasks*
+* *HTML5 APIs*
+* *Using HTML5 APIs like Drag-and-Drop and Geolocation*
 
 *****
 
 - [ ] Questions for Student Led Discussion
-- [ ] Interview Challenge
 - [ ] Student Presentations
 - [ ] Creation Time
-    * [ ] ...
-- [ ] Push Yourself Further
-<!-- - [ ] Interview Questions: Blog to Show You Know -->
+    * [ ] Partners Working on Final Portfolio
 - [ ] Exit Recap, Attendance, and Reminders
 
 ### Questions for Student Led Discussion, 15 mins
 <!-- This section should be structured with the 5E model: https://lesley.edu/article/empowering-students-the-5e-model-explained -->
 
-[Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-0.md)
-
-### Interview Challenge, 15 mins
-<!-- The last two E happen here: elaborate and evaluate  -->
-<!-- this sections should have a challenge that can be solved with the skills they've learned since their last class. -->
-<!-- ! HIDDEN CONTENT: INSTRUCTOR ONLY -->
-[See Your Challenge Here](./../additionalResources/interviewChallenges.md)
-<!-- ! END HIDDEN CONTENT: INSTRUCTOR ONLY -->
+[Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-15.md)
 
 ### Student Presentations, 15 mins
 
 [See Student Presentations List](./../additionalResources/studentPresentations.md)
 
-## Creation Time, 60-90 mins
+## Creation Time, 110+ mins
 
-- [ ]
+Now that you have your Trello board broken up into large steps can you sit for 15 mins to break your next page down? Do it with your partner.
 
-<!-- ! Video Content:  (width="655" height="368", ratio 1.77) -->
+### Sprint Planning - 15 mins
 
-### Push Yourself Further
+If Partner A is working on Contact Page and Partner B is working on the Portfolio Page can you help each other list out what the steps of each of those will be? Go.
 
-- [ ]
+### Sprint - 95 mins
 
-<!-- 
-## Blogs to Show You Know
-
-[Blog Prompts](./../additionalResources/blogPrompts.md) 
--->
+Use this time to jump into a breakout room with your project partner and work hard!! Your instructor is here for any questions and support you need.
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
-- [ ] Create *** Assignment
-<!-- - [ ] Create *** Blog Assignment -->
 - [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
+- [ ] If you haven't already, turn in a live URL for your project.
+- [ ] Keep wireframing and planning.
+- [ ] Keep up with your Trello board so you stay mentally organized as well!
+
+Next class we'll be holding retrospectives, essentially short presentations of everyone's work and discussions about your challenges and learning milestones. Bring your A game, work smartly over the next two days and have fun.
+
+The final project still isn't due until this Sunday after class so don't stress about finishing by next class!
 
 <!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
 <script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script> -->

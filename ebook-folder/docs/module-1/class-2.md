@@ -93,7 +93,7 @@ Today we're going to:
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create NASA Contact Page Assignment
-- [ ] Create BlogPost_102 Assignment
+- [ ] Create Class 2 Assignment
 - [ ] Prepare for next class by completing all of your pre-class lessons
 <!-- * Complete the feedback survey -->
 - [ ] Over the next few days you'll learn about CSS Grid and how to wireframe so that you can build more efficiently and confidently!

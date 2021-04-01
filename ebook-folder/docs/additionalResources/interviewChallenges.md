@@ -163,13 +163,11 @@ checkSum(49, 2) // => false
 
 ### Class 14
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: None** - *Focus on your Final Portfolio Project*
 
 ### Class 15
 
-- [ ] **Prompt 1: Title** - *description*
-<!-- - [ ] **Prompt 2: Title** - *description* -->
+- [ ] **Prompt 1: None** - *Focus on your Final Portfolio Project*
 
 ### Class 16
 

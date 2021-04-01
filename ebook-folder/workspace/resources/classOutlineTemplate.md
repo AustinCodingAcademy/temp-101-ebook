@@ -15,7 +15,7 @@ cp workspace/resources/classOutlineTemplate.md docs/module-
 
 Today we're going to:
   
-*OBJECTIVE:
+*OBJECTIVE - 
 
 *****
 

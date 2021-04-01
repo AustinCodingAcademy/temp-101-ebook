@@ -121,9 +121,15 @@ nav:
         - HTML API - Canvas pt.1: module-4/htmlAPI-canvas-pt1.md
         - Class 14: module-4/class-14.md
       - 'Pre-Class 15 Lessons': 
+        - Develop Your Goals: module-4/developSeries-achievingGoals.md
+        - The HTML5 APIs: module-4/html5-apis.md
+        - Geolocation API: module-4/geolocationAPI.md
+        - Drag & Drop API: module-4/dragAndDropAPI.md
         - Class 15: module-4/class-15.md
-        # https://studio.zollege.com/course/course-v1:Circle+Web101+2020_101_Online?show=block-v1%3ACircle%2BWeb101%2B2020_101_Online%2Btype%40sequential%2Bblock%4012bfaa00268447ef969b0a77a5ad2277
       - 'Pre-Class 16 Lessons':  
+        - Develop Teaching Yourself: module-4/developSeries-TeachingYourself.md
+        - HTML API - Canvas pt.2: module-4/htmlAPI-canvas-pt2.md
+        - Talking Code: module-4/talkingCode.md
         - Class 16: module-4/class-16.md
           # cp workspace/resources/templateFile.md docs/module-
         # https://vimeo.com/manage/folders/1059416
@@ -152,6 +158,8 @@ nav:
         - Day 12 QFD: additionalResources/questionsForDiscussion/qfd-class-12.md
         - Day 13 QFD: additionalResources/questionsForDiscussion/qfd-class-13.md
         - Day 14 QFD: additionalResources/questionsForDiscussion/qfd-class-14.md
+        - Day 15 QFD: additionalResources/questionsForDiscussion/qfd-class-15.md
+        - Day 16 QFD: additionalResources/questionsForDiscussion/qfd-class-16.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - Git & CLI Commands: additionalResources/gitCommands.md

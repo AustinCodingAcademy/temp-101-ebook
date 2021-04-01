@@ -1622,9 +1622,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#drawing-on-the-canvas" class="md-nav__link">
-    Drawing on the Canvas
+  <a href="#getting-context-to-draw-on-the-canvas" class="md-nav__link">
+    Getting Context to Draw on the Canvas
   </a>
+  
+    <nav class="md-nav" aria-label="Getting Context to Draw on the Canvas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drawing-rectangles" class="md-nav__link">
+    Drawing Rectangles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-lines" class="md-nav__link">
+    Drawing Lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-circles" class="md-nav__link">
+    Drawing Circles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programmatically-drawing" class="md-nav__link">
+    Programmatically Drawing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1694,6 +1728,54 @@
   
   
     <li class="md-nav__item">
+      <a href="../developSeries-achievingGoals/" class="md-nav__link">
+        Develop Your Goals
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html5-apis/" class="md-nav__link">
+        The HTML5 APIs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geolocationAPI/" class="md-nav__link">
+        Geolocation API
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dragAndDropAPI/" class="md-nav__link">
+        Drag & Drop API
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../class-15/" class="md-nav__link">
         Class 15
       </a>
@@ -1727,6 +1809,42 @@
           Pre-Class 16 Lessons
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developSeries-TeachingYourself/" class="md-nav__link">
+        Develop Teaching Yourself
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../htmlAPI-canvas-pt2/" class="md-nav__link">
+        HTML API - Canvas pt.2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../talkingCode/" class="md-nav__link">
+        Talking Code
+      </a>
+    </li>
+  
+
           
             
   
@@ -2001,6 +2119,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-15/" class="md-nav__link">
+        Day 15 QFD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additionalResources/questionsForDiscussion/qfd-class-16/" class="md-nav__link">
+        Day 16 QFD
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -2151,9 +2293,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#drawing-on-the-canvas" class="md-nav__link">
-    Drawing on the Canvas
+  <a href="#getting-context-to-draw-on-the-canvas" class="md-nav__link">
+    Getting Context to Draw on the Canvas
   </a>
+  
+    <nav class="md-nav" aria-label="Getting Context to Draw on the Canvas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drawing-rectangles" class="md-nav__link">
+    Drawing Rectangles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-lines" class="md-nav__link">
+    Drawing Lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-circles" class="md-nav__link">
+    Drawing Circles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programmatically-drawing" class="md-nav__link">
+    Programmatically Drawing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2187,14 +2363,16 @@
                 <h1 id="canvas-an-html-api-part-one">Canvas, an HTML API, Part One</h1>
 <p><em>“A question that sometimes drives me hazy: am I or are the others crazy?” ―Albert Einstein</em></p>
 <h2 id="overview">Overview</h2>
-<p>Continuing on with these "Quick Tip" types of lessons, let's learn how to build moving backgrounds with the the <code>canvas</code> HTML element!</p>
+<p>Continuing on with these "Quick Tip" type of lessons, let's learn how to build moving backgrounds with the the <code>canvas</code> HTML element!</p>
 <p>Again, these section of the course is not only intended to give you new tools to work with but also to provide you with context on finding new tools and learning new techniques using your own curiosity. With that said, this lesson is going to follow along with <a href="https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA">Chris Courses</a> a YouTuber that puts together some insanely clear videos. Let's go!</p>
 <h2 id="creating-and-resizing-a-canvas">Creating and Resizing a Canvas</h2>
 <p>To start let's either create a new repo or clone the <a href="https://github.com/AustinCodingAcademy/101-canvas-practice">101-canvas-practice repo</a>.</p>
-<p>Then let's create three files: <code>index.html</code>, <code>canvas-style.css</code>, and <code>canvas.js</code>.</p>
-<p>Then build our HTML file and link the other two files to it.</p>
-<p>Next create an empty canvas element inside the body with an <code>id: "my-canvas"</code>: <code>&lt;canvas id="my-canvas"&gt;&lt;/canvas&gt;</code></p>
-<p>Go to your JS file and save the canvas element in a variable called canvas:</p>
+<p>Take a look at the three files: <code>index.html</code>, <code>canvas-style.css</code>, and <code>canvas.js</code>.</p>
+<ul>
+<li>The HTML file already has links to the other two files to it.</li>
+<li>And there's an empty canvas element inside the body with an <code>id: "my-canvas"</code>: <code>&lt;canvas id="my-canvas"&gt;&lt;/canvas&gt;</code></li>
+</ul>
+<p>In the <code>canvas.js</code> file you'll see the canvas element is saved in a variable called canvas:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -2206,6 +2384,9 @@
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">canvas</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Test it. Check it out in your browser's console to see the object saved in the <code>canvas</code> variable.</li>
+</ul>
 <p>Now, we can resize the canvas with JS to equal the height of the whole screen:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">;</span>
@@ -2231,41 +2412,42 @@
 </code></pre></div>
 </td></tr></table>
 <ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox"/> Test it. Open it up in your browser to make sure you have a fully grey screen.</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox"/> Before we can draw we have to capture the drawing context within the canvas element. <code>.getContext()</code> is a method built on every canvas element, and yes, we can call it every time we want to use it but that would be a lot of typing on our part and an inefficient use of memory for the computer. So instead let's capture what this method returns in a variable we'll call <code>c</code>!</p>
-</li>
+<li class="task-list-item"><input type="checkbox"/> Test it. Open it up in your browser to make sure you have a fully grey screen.</li>
 </ul>
+<h2 id="getting-context-to-draw-on-the-canvas">Getting Context to Draw on the Canvas</h2>
+<p>Before we can draw we have to capture the drawing context within the canvas element. <code>.getContext()</code> is a method built on every canvas element, and yes, we can call it every time we want to use it but that would be a lot of typing on our part and an inefficient use of memory for the computer. So instead let's capture what this method returns in a variable we'll call <code>c</code>!</p>
 <blockquote>
 <p>NOTE: Paste these code snippets into your repo and run the code in the browser.</p>
 </blockquote>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+  <span class="c1">// line 5+</span>
   <span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-<p>Now let's draw. The object-thing the <code>.getContext()</code> method returns has multiple properties like: <code>.ellipse()</code>, <code>.lineTo()</code>, <code>.createPattern()</code>, etc. The first method we'll use is .fillRect() a method that draws and fills in a rectangle shape on the canvas. It requires 4 arguments to know where to begin the top-left corner and how wide and tall the shape should be: <code>.fillRect(x, y, width, height)</code>.</p>
+<blockquote>
+<p>What <code>c</code> ends up being here is an <em>object-thing</em> that now has lots of useful properties and methods we can call to do certain tasks (see below)...now let's draw.
+To see ALL of the properties and methods on the object returned by <code>.getContext('2d')</code> just <code>console.log(c)</code> and check it out in your console!</p>
+</blockquote>
+<h3 id="drawing-rectangles">Drawing Rectangles</h3>
+<p>The first method we'll use is <code>.fillRect()</code>, a method that draws and fills in a rectangle shape on the canvas. It requires 4 arguments to know where to begin (the top-left corner) and how wide and tall the shape should be: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect"><code>.fillRect(x, y, width, height)</code></a>.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+  <span class="c1">// line 7+</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="mf">75</span><span class="p">,</span> <span class="mf">75</span><span class="p">,</span> <span class="mf">100</span><span class="p">,</span> <span class="mf">100</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 <blockquote>
-<p>NOTE: You can find <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect">all of the methods on the 2D Canvas Drawing Context at MDN</a>.</p>
+<p>NOTE: You can find all of the methods and the arguments they take on the documentation of <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">2D Canvas Drawing Context at MDN</a>.</p>
 </blockquote>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox"/> To see ALL of the properties and methods on the object returned by <code>.getContext('2d')</code> just <code>console.log(c)</code> and check it out in your console!</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox"/> Notice how the rectangle is black? That's because the property: <code>fillStyle</code> is defaulted to <code>#000000</code> or black. Let's change that by adding these two lines below:</p>
-</li>
-</ul>
+<p>Notice how the rectangle is black? That's because the property: <code>fillStyle</code> is defaulted to <code>#000000</code> or black. Let's change that by adding these two lines below:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+  <span class="c1">// line 8+</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">;</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="mf">125</span><span class="p">,</span> <span class="mf">125</span><span class="p">,</span> <span class="mf">200</span><span class="p">,</span> <span class="mf">40</span><span class="p">)</span>
 </code></pre></div>
@@ -2276,19 +2458,23 @@
 <li class="task-list-item"><input type="checkbox"/> Change the color and draw another just below the black rectangle.</li>
 </ul>
 <p>More can be found at <a href="https://www.youtube.com/watch?v=EO6OkltgudE">HTML5 Canvas Tutorial - Ep.1</a></p>
-<h2 id="drawing-on-the-canvas">Drawing on the Canvas</h2>
+<h3 id="drawing-lines">Drawing Lines</h3>
 <p>Now that we can draw and change the color or rectangles let see some of the other methods that can be drawn including: Lines, Arcs &amp; Circles, Bezier Curves, Images, and Text.</p>
 <p>Let's start with Lines:</p>
 <p>The first thing we have to do is invoke a method called: <code>.beginPath()</code>. This simply tells the canvas element to get ready for a line to be drawn:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+  <span class="c1">// line 11+</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
 </code></pre></div>
 </td></tr></table>
 <p>Now we have to tell the canvas where to begin and end the line. The start the line we use the method: <code>.moveTo()</code> as in, "Canvas, move your pencil to the place I tell you. .<code>moveTo()</code> takes to arguments: <code>.moveTo(x, y)</code></p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+  <span class="c1">// line 11+</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mf">20</span><span class="p">,</span> <span class="mf">100</span><span class="p">)</span>
 </code></pre></div>
@@ -2297,7 +2483,9 @@
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+  <span class="c1">// line 11+</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mf">20</span><span class="p">,</span> <span class="mf">100</span><span class="p">)</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">1000</span><span class="p">,</span> <span class="mf">500</span><span class="p">)</span>
@@ -2308,7 +2496,9 @@
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+  <span class="c1">// line 11+</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mf">20</span><span class="p">,</span> <span class="mf">100</span><span class="p">)</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">1000</span><span class="p">,</span> <span class="mf">500</span><span class="p">)</span>
@@ -2319,21 +2509,22 @@
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// canvas.js</span>
+  <span class="c1">// line 11+</span>
   <span class="c1">// . . . continued on</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mf">1500</span><span class="p">,</span> <span class="mf">200</span><span class="p">)</span>
   <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> You can also change the color of the line the same way you did with the rectangle but with: <code>c.strokeStyle= "pink"</code>.</li>
+<li class="task-list-item"><input type="checkbox"/> You can also change the color of the line the same way you did with the rectangle but with: <code>c.strokeStyle="pink"</code>.</li>
 </ul>
 <blockquote>
 <p>NOTE: <em>For the rest of this section it might be good for you to follow along with with video below starting at 7:10</em>.</p>
 </blockquote>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> To draw arc and circle we use the same techniques but, obviously, a different method: <code>.arc()</code>. This method takes multiple arguments with two that will be a little mathy but I think you can figure it out. They go in this order:</li>
-</ul>
+<h3 id="drawing-circles">Drawing Circles</h3>
+<p>To draw arc and circle we use the same techniques but, obviously, a different method: <code>.arc()</code>. This method takes multiple arguments with two that will be a little mathy but I think you can figure it out. They go in this order:</p>
 <p><code>.arc(x, y, radius, startAngle, endAngle [, anticlockwise] )</code></p>
 <ul class="task-list">
 <li class="task-list-item">
@@ -2343,13 +2534,9 @@
 <p><code>startAngle</code> - angle at which the arc starts in radians, measured from the positive x-axis.</p>
 </li>
 <li><code>endAngle</code> - angle at which the arc ends in radians, measured from the positive x-axis.</li>
-<li>
-<p><code>anticlockwise</code> - This is an optional argument that will either be <code>true</code> draw anti-clockwise or <code>false</code>(draw clockwise).</p>
-</li>
-<li class="task-list-item">
-<p><input type="checkbox"/> To use this try starting with the following code:</p>
-</li>
+<li><code>anticlockwise</code> - This is an optional argument that will either be <code>true</code> draw anti-clockwise or <code>false</code>(draw clockwise).</li>
 </ul>
+<p>To use this try starting with the following code:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -2364,6 +2551,7 @@
 <blockquote>
 <p>NOTE: If you're curious how to draw arcs checkout <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc">the Arc docs at MDN</a>.</p>
 </blockquote>
+<h3 id="programmatically-drawing">Programmatically Drawing</h3>
 <p>Let's go ahead and program the canvas to draw 50 different circles in different places with a few different colors. We'll start with a for loop, which you've learned about already!!</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -2374,7 +2562,9 @@
   <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p>Inside the for loop let's create two random coordinate each time the loop runs:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Inside the for loop let's create two random coordinate each time the loop runs:</li>
+</ul>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -2386,7 +2576,9 @@
   <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p>Then we can use those random coordinates to start a new circle:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Then we can use those random coordinates to start a new circle:</li>
+</ul>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2410,7 +2602,9 @@
   <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p>Next we can create a list of colors to randomly selected from:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Next we can create a list of colors to randomly selected from:</li>
+</ul>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2435,10 +2629,12 @@
     <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span><span class="p">;</span>
     <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="mf">50</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
     <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
-   <span class="p">}</span>
+  <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p>Now we need to generate a random number to use to select a color from the list and replace "black" with this random number:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Now we need to generate a random number to use to select a color from the list and replace "black" with this random number:</li>
+</ul>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2478,7 +2674,7 @@
 <p><input type="checkbox"/> Try it yourself. Create a variable that can <a href="https://www.w3schools.com/js/js_random.asp">randomly generate</a> a new size for the circle!</p>
 </li>
 <li class="task-list-item">
-<p><input type="checkbox"/> Now try using the <code>window.onclick</code> event to run this for loop each time the user clicks on the screen!</p>
+<p><input type="checkbox"/> Now try using the <code>window.onclick</code> event to run this for loop each time the user clicks on the screen instead on the automatic <code>onload</code>!</p>
 </li>
 </ul>
 <p>More can be found at <a href="https://www.youtube.com/watch?v=83L6B13ixQ0">HTML5 Canvas Tutorial - Ep.2</a>.</p>

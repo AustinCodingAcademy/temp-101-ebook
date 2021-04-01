@@ -21,7 +21,7 @@ Today we're going to:
 - [ ] Student Presentations
 - [ ] Creation Time: Responsive Website
 - [ ] Push Yourself Further
-<!-- - [ ] Interview Questions: Blog to Show You Know -->
+- [ ] Interview Questions: Blog to Show You Know
 - [ ] Exit Recap, Attendance, and Reminders
 
 ### Questions for Student Led Discussion, 15 mins
@@ -84,7 +84,7 @@ Our company needs this website up really soon, please make judgments about color
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create Responsive Website Assignment
-- [ ] Create BlogPost_102 Blog Assignment
+- [ ] Create Class 4 Blog Assignment
 - [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 

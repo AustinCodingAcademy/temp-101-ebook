@@ -27,7 +27,7 @@ Today we're going to:
 - [ ] Creation Time
     * [ ] Small Business Website - 85 mins
 - [ ] Push Yourself Further
-<!-- - [ ] Interview Questions: Blog to Show You Know -->
+- [ ] Interview Questions: Blog to Show You Know
 - [ ] Exit Recap, Attendance, and Reminders
 
 ### Questions for Student Led Discussion, 15 mins
@@ -99,16 +99,16 @@ While these websites aren't built in this video, you can certainly use its flow 
 - [ ] Build the *other* site, the one you *didn't* choose the first time.
 - [ ] Teach yourself [how to add a form to an image](https://www.w3schools.com/howto/howto_css_form_on_image.asp).
 
-<!-- 
+
 ## Blogs to Show You Know
 
 [Blog Prompts](./../additionalResources/blogPrompts.md) 
--->
+
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create Checkpoint1-Small Business Site Assignment
-- [ ] Create 104 Blog Assignment
+- [ ] Create Class 8 Blog Assignment
 - [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 

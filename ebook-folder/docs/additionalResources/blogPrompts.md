@@ -12,7 +12,7 @@
 
 ## Class 4
 
-  > NOTE: Title your blog something other than "BlogPost_102". Give it a fitting name for the things you're learning or your experience with code.
+  > NOTE: Title your blog something other than "Class 4". Give it a fitting and fun name for the concepts you're learning or your experience with code.
 
 - [ ] What has your experience learning to code been like so far? What would you change about it?
 - [ ] How do you describe the DOM, as you know it so far?
@@ -53,8 +53,16 @@ NONE
 
 ## Class 14
 
-- [ ]
+*None*. Focus on your Portfolio Project.
 
 ## Class 16
 
-- [ ]
+- [ ] Think back on your first day of class. How did you think website were built? Now how do you think they're built? What's the difference in your thinking?
+- [ ] What have you gained through this course beyond code? Beyond technical savvy?
+- [ ] Where do you think you're headed? Why? How? What are you going to do to encourage that?
+- [ ] What kinds of projects do you see yourself working on in 10 months?
+- [ ] Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s, just before `</body>`? Do you know of any exceptions?
+- [ ] Consider HTML5 as an open web platform. What are the building blocks of HTML5?
+- [ ] What's the difference between the `:nth-of-type()` and `:nth-child()` selectors?
+- [ ] What is CSS-selector specificity, and how does it work?
+- [ ] What resources do you use to learn about the latest in front-end development and design?

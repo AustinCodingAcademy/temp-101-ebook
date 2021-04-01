@@ -11,7 +11,7 @@ Wikipedia describes a [Modal Window](https://en.wikipedia.org/wiki/Modal_window)
 
   > ".... a graphical control element subordinate to an application's main window. It creates a mode that disables the main window but keeps it visible, with the modal window as a child window in front of it. Users must interact with the modal window before they can return to the parent application."
 
-In short, it's a window/**** that pops up over another window. You've definitely seen a modal pop up when you're repop-upading a Medium article or a reputable newspaper article usually asking you to subscribe. These are annoying for sure and this is why we'll plan to use them sparingly and think about what they are actually accomplishing in our user's story.
+In short, it's a window that pops up over another window. You've definitely seen a modal pop up when you're trying to read a Medium article or a reputable newspaper article usually asking you to subscribe. These are annoying for sure and this is why we'll plan to use them sparingly and think about what they are actually accomplishing in our user's story. *lookin' at you NYT!*
 
 For our coding purposes a modal is simply an element in the file whose `display`: property is set to `hidden`; but when an event happens such as a page load or a button is clicked the value is set to block; so it appears. It's then reverted back to `hidden`; after the "x" is clicked, -or the user clicks outside the modal.
 
@@ -55,67 +55,7 @@ In the `index.html` file you'll see that Bootstrap's CSS and JS CDNs have alread
 
 If you completed all of these steps you are well on your way to proving you can work in the tech world!!! Let's keep going so you can can build some killer websites!
 
-## Practice It
-
-<!-- [Try it yourself](https://replit.com)! -->
-<!-- [Try it yourself](https://codepen.io)! -->
-
-## Additional Resources
-
-- [ ] [YT, tuber - title]()
-
 ## Know Your Docs
 
 - [ ] [W3S How To - Modal](https://www.w3schools.com/howto/howto_css_modals.asp)
 - [ ] [Bootstrap.Components.Modal](https://getbootstrap.com/docs/4.4/components/modal/)
-
-
-<!-- ! END OF VIDEO 101.1.3.1 - TITLE-->
-<!-- ? Video Numbering and Title system: CourseNumber.ModuleNumber.LessonNumber.VideoNumber -->
-<!-- * (VIDEO 101.2.4.3 - "CSS Selectors") === 101 Course, Module 2, Lesson 4, Video 3 - "CSS Selectors" -->
-
-<!-- 
-
-cp workspace/resources/templateFile.md docs/module- 
-
-```javascript
-
-```
-
-| Method      | Description                          |
-| ----------- | ------------------------------------ |
-| `GET`       | Fetch resource                       |
-| `PUT`       | Update resource |
-| `DELETE`    | Delete resource |
-
-
-    `line numbers`
-:do you like 'em?
-
-
-++slash++
-https://facelessuser.github.io/pymdown-extensions/extensions/keys/
-
-=== "Javascript"
-
-    ```javascript
-    ```
-
-=== "Python"
-
-  ```python
-  ```
-
-=== "Example"
-    ```console
-      .
-    ```
-
-=== "Instructions"
-    ```markdown
-      .
-    ```
-
-=== "Result"
-    ![PIC](./../images/pic.png)
--->
