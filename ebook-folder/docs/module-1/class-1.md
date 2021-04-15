@@ -1,4 +1,4 @@
-# Class One: Hosting Your Landing Pag
+# Class One: Hosting Your Landing Page
 
 <!-- *A journey of a thousand miles begins with a single step. – Lao Tzu* -->
 
