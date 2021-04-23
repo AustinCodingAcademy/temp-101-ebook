@@ -22,6 +22,54 @@ site_name: Web 101 - Intro to the Web
 
 nav:
     - Home: 'index.md'
+    - 'Pre-Course Prep':
+      - 'Day 1':
+        - Building our first web page: preCourse/ourFirstWebPage.md
+        - Let's Write Some Code: preCourse/letsWriteSomeCode.md
+        # - : preCourse/
+      # - 'Context & Learning Structure':
+      #   - How to Succeed: preCourse/succeedInThisCourse.md
+      #   # - How to Succeed: preCourse/howToSucceed.md
+      #   - Programming vs Coding: preCourse/codingVsProgramming.md
+      #   - Intro to the Web: preCourse/introToTheWeb.md
+      #   - What is Web Development: preCourse/whatIsWebDev.md
+      #   - Front-End & Back-End: preCourse/frontVsBackEnd.md
+      #   - Focus of 101: preCourse/web101Focus.md
+      #   - Develop Series: preCourse/theDevelopSeries.md
+      # - 'Tools of the Trade':
+      #   # - Prepare Your Machine: preCourse/prepareYourMachine-Prep.md
+      #   - Prepare Your Machine: preCourse/setupInstructions.md
+      #   - Git & GitHub: preCourse/gitAndGitHub.md
+      #   - CodePen: preCourse/codeSandboxes.md
+  
+      # - "Let's Code":
+  
+        # - 'HTML':
+        #   - HTML Structure: preCourse/06PrepHTML_Semantics.md
+        #   - Semantic Elements: preCourse/semanticHTML.md
+        #   - Special Elements: preCourse/specialElements-intro.md
+  
+        # - 'CSS':
+        #   - Cascading Style Sheets: preCourse/10PrepCSS_Intro.md
+        #   - Syntax of CSS: preCourse/CSS-syntax.md
+        #   - Linking Style Sheets: preCourse/linkingCSSfile.md
+  
+        # - 'Your First Website':
+        #   - Build Your First Web Page!: preCourse/11PrepFirstWebPage.md
+        #   - Accessibility: preCourse/ARIA_Accessibility.md
+        #   - Git & GitHub: preCourse/12PrepGit.md
+        #   - Your Blog Habit: preCourse/whyBlogging.md
+        #   - First Blog: preCourse/firstBlog.md
+        #   - RocketChat: preCourse/howToRocketChat.md
+  
+      # - 'Pre-Course Lessons - Learning Structures':
+        
+        # - Flipped Classroom: preCourse/03PrepFlippedClassroom.md
+        # - S.P.L.A.T. Method: preCourse/07PrepSPLAT.md
+        # - HackOverFlow: preCourse/howToHackOverflow.md
+
+        # - Submitting Homework: preCourse/howToSubmitHomework.md
+    # cp workspace/resources/templateFile.md docs/module-
     - 'Module One: Page Layout':
       - 'Pre-Class 1 Lessons': 
         - The Box Model: module-1/theBoxModel.md
@@ -130,7 +178,7 @@ nav:
         - HTML API - Canvas pt.2: module-4/htmlAPI-canvas-pt2.md
         - Talking Code: module-4/talkingCode.md
         - Class 16: module-4/class-16.md
-      # cp workspace/resources/templateFile.md docs/module-
+      
       # https://vimeo.com/manage/folders/1059416
       #   - The Three Actions of Data: module-1/lesson-4.md
       #   - Get Data: module-1/lesson-5.md

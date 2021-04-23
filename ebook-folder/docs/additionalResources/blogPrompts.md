@@ -4,6 +4,16 @@
   > - Remember, you will be graded for the completion of your blog but also this will be a place you can return to when preparing for interviews in a few months!
   > - **When publishing your blogs, make sure you "@AustinCodingAcademy" and tag "Coding" and "Web Development" in your story.**
 
+## Class 1
+
+- [ ] What excites you about coding? How do you think it can change the world?
+- [ ] What does `doctype` do at the top of your html file do? Why does this need to be specified?
+- [ ] Explain how a browser determines what HTML Elements match a CSS selector.
+- [ ] What's the difference between and HTML Element and and HTML Tag?
+- [ ] In your own words, explain the Cascade of CSS?
+- [ ] Explain, to someone you know, the 3 ways to link/use CSS in an HTML file to style a web page.
+- [ ] Create a clever title for your blog so that it isn't "BlogPost_100". Instead, name it something personal, something that matches your current experience like: "Dazed & Confused", "Wonderful Fun in Code Land", "We're Not in Kansas Anymore", etc.
+
 ## Class 2
 
 - [ ] Describe one thing you learned in class today.

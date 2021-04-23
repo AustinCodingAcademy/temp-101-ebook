@@ -13,3 +13,27 @@
 - [ ] CSS class selector
 - [ ] Shorthand code
 - [ ] CSS length units (as values)
+- [ ] Server
+- [ ] API
+- [ ] Front-End/Client-Side
+- [ ] Back-End/Server-Side
+- [ ] URL
+- [ ] Data
+- [ ] Database
+- [ ] Browser
+- [ ] Internet
+- [ ] Local Hosting
+- [ ] Local Machine
+- [ ] CD-ROM
+- [ ] Flash Drive
+- [ ] Website vs Web page
+- [ ] Web App
+- [ ] Web Development
+- [ ] Software vs Hardware
+- [ ] Mobile App - *React-Native*
+- [ ] DOM
+- [ ] 508 Accessibility
+- [ ] Element Selectors
+- [ ] Git software
+- [ ] sandbox
+- [ ] file structure

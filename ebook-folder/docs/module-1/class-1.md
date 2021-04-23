@@ -24,7 +24,7 @@ Today we're going to:
     * [ ] Downloads Review - 10 mins
 - [ ] Creation Time
     * [ ] Host Your Landing Page - 45 mins
-<!-- - [ ] Interview Questions: Blog to Show You Know -->
+- [ ] Interview Questions: Blog to Show You Know
 - [ ] Exit Recap, Attendance, and Reminders
     * [ ] Learning Structure and Expectations - 10 mins
     * [ ] What's next? - 2 mins
@@ -111,17 +111,20 @@ We'll be using these two programs tonight and for the rest of class. If you didn
 
 2. The version control software: Git
 
-    * For Windows:
-      1. [How To Install Git on Windows](https://www.youtube.com/embed/J_Clau1bYco)
-      2. Install [Git](https://git-scm.com/download/windows)
-    * For Mac:
-      1. Install [HomeBrew](https://brew.sh/) - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-      2. Install [Git](https://git-scm.com/download/mac) - `brew install git`
+=== "For Windows"
+    
+    1. [How To Install Git on Windows](https://www.youtube.com/embed/J_Clau1bYco)
+    2. Install [Git](https://git-scm.com/download/windows)
 
-    > NOTE: (There is no icon for this program, just go to your terminal/shell/commandPrompt/bash and type git + ENTER)
+=== "For Mac"
 
-    > **Pause and Partner:**
-      > Did anyone NOT get these downloaded? Did anyone not get them opened? Partner up and help each other.
+    1. Install [HomeBrew](https://brew.sh/) - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+    2. Install [Git](https://git-scm.com/download/mac) - `brew install git`
+
+  > NOTE: There is no icon for this program, just go to your terminal/shell/commandPrompt/bash and type git + ++enter++
+
+  > **Pause and Partner:**
+    > Did anyone NOT get these downloaded? Did anyone not get them opened? Partner up and help each other.
 
 *****
 
@@ -368,21 +371,22 @@ Git software is powerful but confusing for beginners. If something goes wrong wh
 *****
 *****
 
+## Blogs to Show You Know
+
+[Blog Prompts](./../additionalResources/blogPrompts.md)
+
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
-1. Review [Class Structure & Expectations of Students](./../index.md#class-structure-and-expectations)
-2. Answer the following questions:
+- [ ] Create Class One Blog assignment
+- [ ] Review [Class Structure & Expectations of Students](./../index.md#class-structure-and-expectations)
+- [ ] Answer the following questions:
     * [ ] How would you describe programming?
     * [ ] How would you describe coding?
     * [ ] What does Clone mean?
     * [ ] What's a Local Machine?
     * [ ] What's a Repo?
-3. Mentally prepare for [your presentations](./../additionalResources/studentPresentations.md).
-4. Next class we'll be adding an image gallery to your website so make sure you study CSS Grid & Box Model tonight and tomorrow. We'll see you then!
-
-<!-- ## Blogs to Show You Know
-
-[Blog Prompts](./../additionalResources/blogPrompts.md) -->
+- [ ] Mentally prepare for [your presentations](./../additionalResources/studentPresentations.md).
+- [ ] Next class we'll be adding an image gallery to your website so make sure you study CSS Grid & Box Model tonight and tomorrow. We'll see you then!
 
 <!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
 <script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script> -->
