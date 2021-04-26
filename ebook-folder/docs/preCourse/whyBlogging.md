@@ -1,7 +1,7 @@
 # Blogging on Medium
 
 <!-- ! Video Content: Vimeo, Clayton@ACA - Blogging -->
-<iframe content-data="101-blogging" brand="circle" src="https://player.vimeo.com/video/387543415" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe content-data="101-blogging" brand="circle" src="https://player.vimeo.com/video/387543415" width="655" height="368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 Many benefits spring from starting your own blog! To enumerate a few:
 

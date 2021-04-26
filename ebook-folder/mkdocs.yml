@@ -45,6 +45,14 @@ nav:
         - GitHub Overview: preCourse/gitOverhere.md
         - Git & GitHub Setup: preCourse/gitAndGitHub.md
         - Portfolio Landing Page: preCourse/project-LandingPage.md
+        - Develop Series: preCourse/theDevelopSeries.md
+        - S.A.T.: preCourse/theSATmethod.md
+        - Blogging Habit: preCourse/whyBlogging.md
+        - Git Basics: preCourse/gitBasics.md
+        - Submitting Homework: preCourse/submittingHomework.md
+
+        # - : preCourse/
+        # - : preCourse/
         # - : preCourse/
   
       #   - Programming vs Coding: preCourse/codingVsProgramming.md
@@ -231,6 +239,7 @@ nav:
       - Graduation Prerequisites: additionalResources/graduationPrerequisites.md
       - Presentations Qualifications: additionalResources/presentationsQualifications.md
       - 'Bonus Materials':
+      # add these resources in https://studio.zollege.com/container/block-v1:ACA+PW101+2021-Feb2+type@vertical+block@9e36b68dc98048238efe59e87cc619d1
         - additionalResources/bonusMaterial/evenOddFollowAlong.md
 
 # defines the styles, usually just a single name but `custom_dir` overrides this behavior
