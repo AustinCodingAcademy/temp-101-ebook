@@ -1,4 +1,4 @@
-# Let's Write Some Code.
+# Let's Write Some Code
 
 ## HTML is for Content
 
@@ -30,7 +30,7 @@ The title looks good, so now we need to create the structure for our countdown c
 
   > Notice the new **ID**s we are adding. It's important to note that IDs like these have to be typed exactly as we show them here. Typos, or making the first letter upper-case *instead of lower-case* will confuse the browser and it will not work.
 
-=== "HTML Code"
+=== "the HTML"
 
     ```html
     <main id="box">
@@ -43,7 +43,7 @@ The title looks good, so now we need to create the structure for our countdown c
     </main>
     ```
 
-=== "Result"
+=== "the Result"
 
     ![surfIO-countdown-page-title](./../images/surfIO-countdown-page-title.png)
 
@@ -51,7 +51,7 @@ Now we're going to add two more tags. A **br** tag which adds a **line-break** t
 
 We will use this space to ask if our users would like to join the mailing list.
 
-=== "HTML Code"
+=== "the HTML"
 
     ```html
     <main id="box">
@@ -69,7 +69,7 @@ We will use this space to ask if our users would like to join the mailing list.
     </main>
     ```
 
-<!-- === "Result"
+<!-- === "the Result"
 
   ![surfIO-countdown-page-](./../images/surfIO-countdown-page-.png) -->
 
@@ -77,7 +77,7 @@ Now we come to the **Form** tag. Every time you've given your email address, log
 
 **Form** tags are how we accept information from our users and they are critically important to most web sites. The form is just a content container though, and inside the container we can design it to look any way we like, but in order to accept data from the user, we need to add at least one **Input** tag.
 
-=== "HTML Code"
+=== "the HTML"
 
     ```html
     <main id="box">
@@ -100,7 +100,7 @@ Now we come to the **Form** tag. Every time you've given your email address, log
     </main>
     ```
 
-=== "Result"
+=== "the Result"
 
     ![surfIO-countdown-page-form](./../images/surfIO-countdown-page-form.png)
 
@@ -110,7 +110,7 @@ The second input is a little different. It has its `type` property/attribute set
 
   > Notice: we also give Input elements a `name=` property. This gives us a way to access the value stored in that input via thing called a **key**. This input's **key** will be `email` and its **value** will be whatever the user inputs. You'll here the term **key:value pairs**; this describes the relationship of these pieces of data.
 
-=== "HTML Code"
+=== "the HTML"
 
     ```html
     <main id="box">
@@ -135,7 +135,7 @@ The second input is a little different. It has its `type` property/attribute set
     </main>
     ```
 
-=== "Result"
+=== "the Result"
 
     ![surfIO-countdown-page-formWithEmailInput](./../images/surfIO-countdown-page-formWithEmailInput.png)
 
@@ -143,9 +143,9 @@ Ok, we're almost done with the HTML, but our friend, the client, just called to 
 
 The Img tag just needs the `src=` property filled in with a URL so that it knows where find the image.
 
-That's it! We're done with the HTML. It still looks a little plain, but now we need to transform the look of it with CSS...
+That's it! We're done with the HTML. It still looks a little plain...let's learn how to use CSS to transform the look of it!!
 
-=== "HTML Code"
+=== "the HTML"
 
     ```html
     <main id="box">
@@ -176,7 +176,7 @@ That's it! We're done with the HTML. It still looks a little plain, but now we n
     </div>
     ```
 
-=== "Result"
+=== "the Result"
 
     ![surfIO-countdown-page-social-media-icons](./../images/surfIO-countdown-page-social-media-icons.png)
 

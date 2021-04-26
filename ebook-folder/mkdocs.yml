@@ -26,6 +26,7 @@ nav:
       - 'Day 1':
         - Building our first web page: preCourse/ourFirstWebPage.md
         - Let's Write Some Code: preCourse/letsWriteSomeCode.md
+        - CSS For Looks: preCourse/cssForLooks.md
         # - : preCourse/
       # - 'Context & Learning Structure':
       #   - How to Succeed: preCourse/succeedInThisCourse.md
