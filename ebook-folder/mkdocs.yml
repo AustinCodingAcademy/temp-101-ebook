@@ -27,6 +27,18 @@ nav:
         - Building our first web page: preCourse/ourFirstWebPage.md
         - Let's Write Some Code: preCourse/letsWriteSomeCode.md
         - CSS For Looks: preCourse/cssForLooks.md
+        - Day One Homework: preCourse/day1-homework.md
+      - 'Day 2':
+        - Code Sandboxes : preCourse/codeSandboxes.md
+        - HTML Tags: preCourse/htmlTags.md
+        - Characters To Know: preCourse/charactersToKnow.md
+        - Keyboard Quiz: preCourse/keyboardQuiz.md
+        - HTML Attributes: preCourse/htmlAttributes.md
+        - Day Two Homework: preCourse/day2-homework.md
+      - 'Day 3':  
+        - CSS Getting Started: preCourse/cssGettingStarted.md
+        - CSS Intro : preCourse/cssIntro.md
+        - Day Three Homework: preCourse/moreCSStechniques.md
         # - : preCourse/
       # - 'Context & Learning Structure':
       #   - How to Succeed: preCourse/succeedInThisCourse.md
