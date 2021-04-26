@@ -23,26 +23,30 @@ site_name: Web 101 - Intro to the Web
 nav:
     - Home: 'index.md'
     - 'Pre-Course Prep':
-      - 'Day 1':
+      - 'Day 1 Getting Started':
         - Building our first web page: preCourse/ourFirstWebPage.md
         - Let's Write Some Code: preCourse/letsWriteSomeCode.md
         - CSS For Looks: preCourse/cssForLooks.md
         - Day One Homework: preCourse/day1-homework.md
-      - 'Day 2':
+      - 'Day 2 HTML':
         - Code Sandboxes : preCourse/codeSandboxes.md
         - HTML Tags: preCourse/htmlTags.md
         - Characters To Know: preCourse/charactersToKnow.md
         - Keyboard Quiz: preCourse/keyboardQuiz.md
         - HTML Attributes: preCourse/htmlAttributes.md
         - Day Two Homework: preCourse/day2-homework.md
-      - 'Day 3':  
+      - 'Day 3 CSS':  
         - CSS Getting Started: preCourse/cssGettingStarted.md
         - CSS Intro : preCourse/cssIntro.md
         - Day Three Homework: preCourse/moreCSStechniques.md
+      - 'Day 4 Program Prep':
+        - Flipped Classroom: preCourse/succeedInThisCourse.md
+        - Prepare Your Machine: preCourse/setupInstructions.md
+        - GitHub Overview: preCourse/gitOverhere.md
+        - Git & GitHub Setup: preCourse/gitAndGitHub.md
+        - Portfolio Landing Page: preCourse/project-LandingPage.md
         # - : preCourse/
-      # - 'Context & Learning Structure':
-      #   - How to Succeed: preCourse/succeedInThisCourse.md
-      #   # - How to Succeed: preCourse/howToSucceed.md
+  
       #   - Programming vs Coding: preCourse/codingVsProgramming.md
       #   - Intro to the Web: preCourse/introToTheWeb.md
       #   - What is Web Development: preCourse/whatIsWebDev.md
@@ -50,8 +54,10 @@ nav:
       #   - Focus of 101: preCourse/web101Focus.md
       #   - Develop Series: preCourse/theDevelopSeries.md
       # - 'Tools of the Trade':
+
       #   # - Prepare Your Machine: preCourse/prepareYourMachine-Prep.md
-      #   - Prepare Your Machine: preCourse/setupInstructions.md
+      #   
+
       #   - Git & GitHub: preCourse/gitAndGitHub.md
       #   - CodePen: preCourse/codeSandboxes.md
   

@@ -27,7 +27,7 @@ You'll need 3 essential tools on your machine (*computer*):
 
 * We will use these terminals or terminal emulators later in the course. For now, just make sure you have them and are able to access them.
 
-### See It - Prepare Your Machine
+<!-- ### See It - Prepare Your Machine -->
 <!-- Can be a video on youTube as long as it doesn't go to another code school. Eventually all video content should come from ACA. -->
 
 <!-- ! Video Content: Vimeo, Clayton@ACA - Prepare Your Machine: Chrome, VS Code, Node -->

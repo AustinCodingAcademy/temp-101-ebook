@@ -53,13 +53,13 @@ All colors on a computer are different combinations of values of red, green, and
 
 All of these codes are for the exact same color!
 
-#### Tools for Colors
+### Tools for Colors
 
 There are tools like:
 
 - [ ] **[ColorPick EyeDropper](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en)** that can help you choose a color off your screen and it will give you the code for you to copy/paste.
 - [ ] [Color Picker](https://www.google.com/search?q=color+picker) the provides a color palette to choose colors and their codes from.
-- [ ] [Scheme Colore](https://www.schemecolor.com/) provides you with pre-made color schemes.
+- [ ] [Scheme Color](https://www.schemecolor.com/) provides you with pre-made color schemes.
 - [ ] **[Mycolor Space](https://mycolor.space/)** that helps you create a well designed scheme of colors around one color.
 - [ ] [Adobe Color Wheel](https://color.adobe.com/create/color-wheel) where you can create a custom color scheme for any project.
 - [ ] **[Color Book Value Converter](https://www.colorbook.io/hexcolors/view/FF919C)** will convert any color into any code you need!
@@ -91,3 +91,39 @@ Be sure to reference the official documentation on CSS on W3Schools Tutorials. D
 - [ ] What are the different ways to assign a color value to an element?
 - [ ] How do you make sure that the HTML file and CSS file are linked together?
 - [ ] Can you change more than one property in a declaration block?
+
+## Terms to Know
+
+Take a look at these terms. If you don't know or can't describe any of them, take some time to teach yourself. You're a developer, which means you're also learning to develop yourself.
+
+
+- [ ] **CSS** - "Cascading Style Sheets" is a Rule-based language that is used to style the HTML.
+
+
+- [ ] **Declaration** - A statement that shows the property and value that is changed from its default value.
+
+
+- [ ] **Selector** - Part of the CSS Rule that shows the element selected to have styles applied. There are many more selector techniques that will be covered more in the course.
+
+
+- [ ] **Property** - A specific style you are trying to add/change about the element selected.
+
+
+- [ ] **Value** - The chosen option for the property.
+
+  ```css
+  p {
+    color: red;
+    text-align: center;
+  }
+  ```
+
+- [ ] *`p` is the selector*
+- [ ] *`color` and `text-align `are properties*
+- [ ] *`red` and `center` are values for the properties.*
+
+   > (Note: there are other possible values for each property)
+
+- [ ] **Link** - To link your stylesheet to your HTML you will need to put the following line of code in the `<head>` section of your HTML file.
+
+`<link rel="stylesheet" href="styles.css">`
