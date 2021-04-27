@@ -13,6 +13,8 @@ You'll need a designated folder to keep all your projects together on your compu
 
 *You will only need to create one folder for all of your coding projects to go into for the entirety of the program. When you graduate and get a job you will want to create a new folder to organize that work in.*
 
+*****
+
 ## Create a Repo for Each Assignment
 
 - [ ] Open your web browser and sign in to your GitHub account.
@@ -43,24 +45,28 @@ You'll need a designated folder to keep all your projects together on your compu
 
 *You will need to create a repo for most assignments and every time you want to start a new project on your own, for a friend or whenever you want to build something new. Keep this instructions handy as they will be the same in the future.*
 
+*****
+
 ## Move Your Project Files
 
 For the first assignment, you've already been working in a folder that is **NOT** a Git repo. And, you have a new repo with nothing but a `README` file in it.
 
-To continue, you need to move your myPortfolio folder into your ACA_web101_yourname folder so Git can move your project to GitHub.
+To continue, you need to move the files of `myPortfolio` folder into your `ACA_web101_yourname` folder so Git can move your project to GitHub.
 
 - [ ] Navigate to your finder/file explorer on your computer and open two separate windows.
 - [ ] Navigate to your **ACA_web101_yourname** folder in the first window.
 - [ ] Navigate to your **myPortfolio** folder in the other window.
-- [ ] Drag the **myPortfolio** folder into the **ACA_web101_yourname** folder in the first window.
+- [ ] Drag the files of **myPortfolio** folder into the **ACA_web101_yourname** folder in the first window.
 
-Your folder structure should look like this:
-
-![initial-folder-structure](./../images/initial-folder-structure.png)
+<!-- Your folder structure should look like this: -->
+<!-- TODO NO!! the files should be in the root directory of the git repo not in a folder. The `index.html` file needs to be exposed! -->
+<!-- ![initial-folder-structure](./../images/initial-folder-structure.png) -->
 
 <!-- https://studio.zollege.com/container/block-v1:ACA+PW101+2021-Feb2+type@vertical+block@4b74efe2a5064ffb97f882fc3007ae31 -->
 
 *There is a way to turn a folder on your computer into a git repo using `git init` but that's an abstract lesson for where we are in your learning journey now. In the future, we will walk you through that method but for now, just copy/paste or drag and drop the files into the newly cloned folder/repo.*
+
+*****
 
 ## Push to GitHub
 
@@ -100,8 +106,9 @@ You've created a new repo, cloned it to your local machine, and moved your `myPo
 
 ![git-push-steps-five-push](./../images/git-push-steps-five-push.png)
 
-  > If you get a DENIED error you may need to redo your Git Configurations with the proper email/username and password
-  > If you get a fatal message:
+- [ ] **IF** *you get a DENIED error you may need to redo your Git Configurations with the proper email/username and password*
+
+- [ ] **IF** *you get a fatal message:*
   
   ```console
     fatal: The current branch example-branch has no upstream branch.
@@ -110,16 +117,54 @@ You've created a new repo, cloned it to your local machine, and moved your `myPo
 
   > simply copy/paste the command it gives you: `git push --set-upstream origin <example-branch>`
 
+
+- [ ] See [Git & Terminal Commands](./../additionalResources/gitCommands.md) for a full list of commands.
+
+  > NOTE: All over the web and in this ebook when you see `<yourName>` or `<example-branch>` this means you should type in the name of your file or folder **WITHOUT** the wrapping `<` and `>`.
+
 *You will do this step over, and over and OVER throughout the rest of your career. So write it down now, ask questions, understand what's happening and remember, **git status**, **git add**, **git commit**, and **git push**. Over and over and over again.*
 
-| Command | Function |
-| - | - |
-| `git status`	| show the status of the working tree |
-| `git add <file(s)>	`| add only select file(s) to be staged for commit |
-| `git add -A`	| add ALL files to be staged for commit |
-| `git commit -m "description of changes"`	| commit changes to staged for push |
-| `git push`	| push changes to the remote repo |
-| `git clone <repoURL>`	| clone a repo into a new directory |
-| for more see | [Git & Terminal Commands](./../additionalResources/gitCommands.md) |
+*****
 
-> NOTE: All over the web and in this ebook when you see `<yourName>` or `<example-branch>` this means you should type in the name of your file or folder **WITHOUT** the wrapping `<` and `>`.
+## Host Your Webpage
+
+Before you can view your web page in a browser and turn in your assignment, you need to set your repository as a GitHub page. This tells GitHub you want to display this repo to the web.
+
+- [ ] Go to your GitHub account and open your **ACA_web101_yourname** repo.
+- [ ] Click the Settings icon in the top navigation menu.
+
+![github-pages-steps-one-settings](./../images/github-pages-steps-one-settings.png)
+
+- [ ] Scroll down almost to the bottom of the page to the **GitHub Pages** section.
+- [ ] Click the **Source** dropdown and select the `main` or `master` branch (the first option).
+
+![github-pages-steps-two-source](./../images/github-pages-steps-two-source.png)
+
+- [ ] Click the **Save** button. The page will automatically refresh.
+- [ ] Scroll back down to the **GitHub Pages** section, and you will see a message and link that says *“Your site is published at https://yourusername.github.io/ACA_web101_yourname."*.
+
+![github-pages-steps-three-save](./../images/github-pages-steps-three-save.png)
+
+Click the link. This is the **Root** of your live site.
+
+![github-pages-steps-four-url](./../images/github-pages-steps-four-url.png)
+
+- [ ] Always test your site to make sure everything is working. You can make and push changes as many times as you need.
+- [ ] **Bookmark this link** so you can find it throughout the course. This will be the link you turn in for your assignments.
+
+*You will only use GitHub pages when you want to host a page to the world. Most of our assignments won't require you to do this but it's a darn handy tool for when you want to get something up on the cheap.*
+
+*****
+
+<!-- 
+
+TODO @ROB or @CLAYTON, create steps to turn in on Canvas.
+
+## Turn in Your Assignment
+
+Follow these steps when you're ready to submit your assignment:
+
+- [ ] Log in to the learning portal and open your Course.
+- [ ] Click the **Discussion** link in the top navigation menu.
+
+![](./../images/.png) -->

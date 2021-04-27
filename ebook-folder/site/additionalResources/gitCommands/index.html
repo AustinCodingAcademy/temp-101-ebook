@@ -2528,22 +2528,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list-cli-commands" class="md-nav__link">
-    List CLI Commands
+  <a href="#cliterminal-commands" class="md-nav__link">
+    CLI/Terminal Commands
   </a>
-  
-    <nav class="md-nav" aria-label="List CLI Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#other-useful-commands-to-research" class="md-nav__link">
-    Other useful commands to research
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2656,22 +2643,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list-cli-commands" class="md-nav__link">
-    List CLI Commands
+  <a href="#cliterminal-commands" class="md-nav__link">
+    CLI/Terminal Commands
   </a>
-  
-    <nav class="md-nav" aria-label="List CLI Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#other-useful-commands-to-research" class="md-nav__link">
-    Other useful commands to research
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2690,42 +2664,155 @@
                 
                 <h1 id="git-cli-commands">Git &amp; CLI Commands</h1>
 <h2 id="useful-git-commands"><a href="https://medium.com/flawless-app-stories/useful-git-commands-for-everyday-use-e1a4de64037d">Useful Git Commands</a></h2>
-<ul>
-<li><code>git init</code> &gt;&gt; initialize a local folder as a git repo to be tracked and push to the cloud</li>
-<li><code>git branch feature-1-berger</code> &gt;&gt; Create the branch on your local machine called "feature-1-berger".</li>
-<li><code>git checkout -b feature-1-berger</code> &gt;&gt; Create the branch on your local machine <strong>and</strong> switch into this branch.</li>
-<li><code>git checkout feature-1-berger</code> &gt;&gt; Switch into this branch.</li>
-<li><code>git branch</code> &gt;&gt; return the current branch you are working in.</li>
-<li><code>git status</code> &gt;&gt; Check the status of tracked/untracked changed files</li>
-<li><code>git add fileName.js</code> &gt;&gt; Add the file "fileName.js" to be tracked for the next commit.</li>
-<li><code>git add -A</code> &gt;&gt; Add all changed files to be tracked.</li>
-<li><code>git commit -m "message"</code> &gt;&gt; Make a commit with the message "message".</li>
-<li><code>git push</code> - Push the commit to the current working branch</li>
-<li><code>git push origin branch_name</code> &gt;&gt; Push the commit to the branch "branch_name"</li>
-<li><code>git pull</code> &gt;&gt; Pulls down changes from the repo to bring your local codebase up-to-date</li>
-<li><code>git push —set-upstream origin resume</code> &gt;&gt;  set the initial push to know where all future pushes need to go in the gitHub cloud.</li>
-</ul>
-<p>cd =&gt; // change directories
-cd workspace =&gt; // will change to a new folder/directory called workspace
-ls =&gt; // list out the files in that directory</p>
-<h2 id="list-cli-commands">List CLI Commands</h2>
-<ul>
-<li><code>mkdir jsDev</code> &gt;&gt; will make a folder(aka, directory) called "jsDev"</li>
-<li><code>cd</code> &gt;&gt;  change directories</li>
-<li><code>cd workspace</code> &gt;&gt;  will change to a new folder(aka, directory) called "workspace"</li>
-<li><code>pwd</code> &gt;&gt; Print Working Directory, will return the name of the current directory you are in.</li>
-<li><code>ls</code> &gt;&gt;  list out the files in that directory</li>
-<li><code>code .</code> &gt;&gt; open the current directory in VS Code (Macs have to install the PATH)</li>
-<li><code>touch index.html</code> &gt;&gt; will create a file inside the current directory called "index.html"</li>
-<li><code>echo "USERNAME=meathead" &gt;&gt; .env</code> &gt;&gt; create a file called <code>.env</code> and writes "USERNAME=meathead" inside of it.</li>
-</ul>
-<h3 id="other-useful-commands-to-research">Other useful commands to research</h3>
-<ul>
-<li><code>mv</code> &gt;&gt; move directory</li>
-<li><code>cp</code> &gt;&gt; copy file</li>
-<li><code>rm</code> &gt;&gt; remove file or directory</li>
-<li><code>tree</code> &gt;&gt; Must install with brew or bash, but is a very useful command to see your entire working directory's tree.</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git init</code></td>
+<td>initialize a local folder as a git repo to be tracked and push to the cloud</td>
+</tr>
+<tr>
+<td><code>git branch feature-1-berger</code></td>
+<td>Create the branch on your local machine called "feature-1-berger".</td>
+</tr>
+<tr>
+<td><code>git checkout -b feature-1-berger</code></td>
+<td>Create the branch on your local machine <strong>and</strong> switch into this branch.</td>
+</tr>
+<tr>
+<td><code>git checkout feature-1-berger</code></td>
+<td>Switch into this branch.</td>
+</tr>
+<tr>
+<td><code>git branch</code></td>
+<td>return the current branch you are working in.</td>
+</tr>
+<tr>
+<td><code>git status</code></td>
+<td>show the status of the working tree</td>
+</tr>
+<tr>
+<td><code>git add &lt;file(s)&gt;</code></td>
+<td>add only select file(s) to be staged for commit</td>
+</tr>
+<tr>
+<td><code>git add -A</code></td>
+<td>add ALL files to be staged for commit</td>
+</tr>
+<tr>
+<td><code>git commit -m "description of changes"</code></td>
+<td>commit changes to staged for push</td>
+</tr>
+<tr>
+<td><code>git push</code></td>
+<td>push changes to the remote repo</td>
+</tr>
+<tr>
+<td><code>git clone &lt;repoURL&gt;</code></td>
+<td>clone a repo into a new directory</td>
+</tr>
+<tr>
+<td><code>git push origin branch_name</code></td>
+<td>Push the commit to the branch "branch_name"</td>
+</tr>
+<tr>
+<td><code>git pull</code></td>
+<td>Pulls down changes from the repo to bring your local codebase up-to-date</td>
+</tr>
+<tr>
+<td><code>git push —set-upstream origin resume</code></td>
+<td>set the initial push to know where all future pushes need to go in the gitHub cloud.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cliterminal-commands"><a href="https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855">CLI/Terminal Commands</a></h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pwd</code></td>
+<td>Print Working Directory, will return the name of the current directory you are in.</td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td>list files in the current directory</td>
+</tr>
+<tr>
+<td><code>cd &lt;directoryname&gt;</code></td>
+<td>change to a new directory</td>
+</tr>
+<tr>
+<td>As in</td>
+<td>this example</td>
+</tr>
+<tr>
+<td><code>cd workspace</code></td>
+<td>will change to a new folder(aka, directory) called "workspace"</td>
+</tr>
+<tr>
+<td><code>cd ..</code></td>
+<td>move up to the parent folder</td>
+</tr>
+<tr>
+<td><code>mkdir &lt;directoryname&gt;</code></td>
+<td>make a new directory in the current directory</td>
+</tr>
+<tr>
+<td>As in</td>
+<td>this example</td>
+</tr>
+<tr>
+<td><code>mkdir jsDev</code></td>
+<td>will make a folder(aka, directory) called "jsDev"</td>
+</tr>
+<tr>
+<td><code>touch &lt;filename&gt;</code></td>
+<td>create a new file in the current directory</td>
+</tr>
+<tr>
+<td>As in</td>
+<td>this example</td>
+</tr>
+<tr>
+<td><code>touch index.html</code></td>
+<td>will create a file inside the current directory called "index.html"</td>
+</tr>
+<tr>
+<td><code>code .</code></td>
+<td>open the current directory in VS Code (Macs have to install the PATH)</td>
+</tr>
+<tr>
+<td><code>echo "USERNAME=meathead" &gt;&gt; .env</code></td>
+<td>create a file called <code>.env</code> and write <code>"USERNAME=meathead"</code> inside of it.</td>
+</tr>
+<tr>
+<td><code>mv</code></td>
+<td>move directory</td>
+</tr>
+<tr>
+<td><code>cp &lt;path-to-file-to-copy&gt; &lt;name-of-new-file&gt;</code></td>
+<td>copy file</td>
+</tr>
+<tr>
+<td><code>rm</code></td>
+<td>remove file or directory</td>
+</tr>
+<tr>
+<td><code>tree</code></td>
+<td>Must install with brew or bash, but is a very useful command to see your entire working directory's tree.</td>
+</tr>
+</tbody>
+</table>
                 
               
               

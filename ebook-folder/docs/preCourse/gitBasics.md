@@ -31,6 +31,7 @@ Be sure to write down all of your questions, thoughts, and epiphanies to bring i
 
 ## Additional Resources
 
+- [ ] [Reference, Git & Terminal Commands](./../additionalResources/gitCommands.md)
 - [ ] [YT, Paul Programming - What is Git?](https://youtu.be/OqmSzXDrJBk)
 - [ ] [YT, Code Insights - Learn Git in 20 mins](https://youtu.be/Y9XZQO1n_7c)
 - [ ] [YT, Traversy Media - Git Crash Course](https://youtu.be/SWYqp7iY_Tc)
