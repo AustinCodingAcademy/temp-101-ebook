@@ -46,28 +46,18 @@ nav:
         - Git & GitHub Setup: preCourse/gitAndGitHub.md
         - Portfolio Landing Page: preCourse/project-LandingPage.md
         - Develop Series: preCourse/theDevelopSeries.md
-        - S.A.T.: preCourse/theSATmethod.md
+        - SAT Method: preCourse/theSATmethod.md
         - Blogging Habit: preCourse/whyBlogging.md
         - Git Basics: preCourse/gitBasics.md
         - Submitting Homework: preCourse/submittingHomework.md
+  
 
-        # - : preCourse/
-        # - : preCourse/
-        # - : preCourse/
   
       #   - Programming vs Coding: preCourse/codingVsProgramming.md
       #   - Intro to the Web: preCourse/introToTheWeb.md
       #   - What is Web Development: preCourse/whatIsWebDev.md
       #   - Front-End & Back-End: preCourse/frontVsBackEnd.md
       #   - Focus of 101: preCourse/web101Focus.md
-      #   - Develop Series: preCourse/theDevelopSeries.md
-      # - 'Tools of the Trade':
-
-      #   # - Prepare Your Machine: preCourse/prepareYourMachine-Prep.md
-      #   
-
-      #   - Git & GitHub: preCourse/gitAndGitHub.md
-      #   - CodePen: preCourse/codeSandboxes.md
   
       # - "Let's Code":
   
@@ -82,20 +72,10 @@ nav:
         #   - Linking Style Sheets: preCourse/linkingCSSfile.md
   
         # - 'Your First Website':
-        #   - Build Your First Web Page!: preCourse/11PrepFirstWebPage.md
         #   - Accessibility: preCourse/ARIA_Accessibility.md
-        #   - Git & GitHub: preCourse/12PrepGit.md
-        #   - Your Blog Habit: preCourse/whyBlogging.md
         #   - First Blog: preCourse/firstBlog.md
         #   - RocketChat: preCourse/howToRocketChat.md
   
-      # - 'Pre-Course Lessons - Learning Structures':
-        
-        # - Flipped Classroom: preCourse/03PrepFlippedClassroom.md
-        # - S.P.L.A.T. Method: preCourse/07PrepSPLAT.md
-        # - HackOverFlow: preCourse/howToHackOverflow.md
-
-        # - Submitting Homework: preCourse/howToSubmitHomework.md
     # cp workspace/resources/templateFile.md docs/module-
     - 'Module One: Page Layout':
       - 'Pre-Class 1 Lessons': 

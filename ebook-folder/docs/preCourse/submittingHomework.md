@@ -2,7 +2,7 @@
 
 ## Create Your Development Folder
 
-You'll need a designated folder to keep all your projects together on your computer.
+For sanity and organization sake, you'll need a designated folder to keep all your coding projects together on your computer. This isn't a special folder just one that will be dedicated to keeping up with coding project.
 
 - [ ] Open your terminal program and navigate to Documents: `cd Documents`
 - [ ] Make a new folder named `devFolder`: `mkdir devFolder`
@@ -156,15 +156,27 @@ Click the link. This is the **Root** of your live site.
 
 *****
 
-<!-- 
-
-TODO @ROB or @CLAYTON, create steps to turn in on Canvas.
-
 ## Turn in Your Assignment
 
 Follow these steps when you're ready to submit your assignment:
 
-- [ ] Log in to the learning portal and open your Course.
-- [ ] Click the **Discussion** link in the top navigation menu.
+- [ ] Step 1. Click "Assignments" on the left hand nav
 
-![](./../images/.png) -->
+![submitting-assignment-in-canvas-step-1-nav](./../images/submitting-assignment-in-canvas-step-1-nav.png)
+
+- [ ] Step 2. Click on the name of assignment you're submitting
+
+![submitting-assignment-in-canvas-step-2-select](./../images/submitting-assignment-in-canvas-step-2-select.png)
+
+- [ ] Step 3. Click "Submit Assignment"
+
+![submitting-assignment-in-canvas-step-3-submit](./../images/submitting-assignment-in-canvas-step-3-submit.png)
+
+- [ ] Step 4. Enter the URL for the website you're submitting
+- [ ] Step 5. Click "Submit Assignment"
+
+![submitting-assignment-in-canvas-step-4-enter-url](./../images/submitting-assignment-in-canvas-step-4-enter-url.png)
+
+- [ ] And that's it! You can re-submit if for whatever reason you need to turn in a different URL.
+
+![submitting-assignment-in-canvas-step-5-resubmit](./../images/submitting-assignment-in-canvas-step-5-resubmit.png)
