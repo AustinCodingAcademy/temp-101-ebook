@@ -27,6 +27,7 @@ Today we're going to:
 - [ ] Creation Time
     * [ ] Retro Presentation & Work Time - 110 mins
 - [ ] Push Yourself Further
+- [ ] End Of Course Evaluation
 - [ ] Interview Questions: Blog to Show You Know
 - [ ] Exit Recap, Attendance, and Reminders
 
@@ -68,6 +69,20 @@ You only have to host one website for both of the partners. Later you will want 
 - [ ] **10pt Bonus** - Use Canvas to animate something.
 - [ ] **10pt Bonus** - Use any HTML5 API.
 - [ ] **10pt Bonus** - Use another HTML5 API.
+
+*****
+
+## End of Course Feedback
+
+Take 5 - 10 minutes now to complete the End of Course Evaluation. This information is incredibly important to our organization to improve, grow our instructors, textbooks, and community.
+
+- [ ] [End of Course Evaluation](https://docs.google.com/forms/d/e/1FAIpQLScSN8i3bPtmSH5KzpRDtH7RBUO0y4sgIji2t2vZ9N4VueYqdg/viewform)
+
+<!-- TODO find this form and where it's collecting data -->
+<!-- TODO Improve this FORM!!!  https://docs.google.com/forms/d/1d99ZNONx6Y2XC8DCv_yisiwDUXL1CM5EuV4md1OVyv8/edit -->
+<!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/end-of-course-survey" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
+<script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script>  -->
+*****
 
 ## Blogs to Show You Know
 
