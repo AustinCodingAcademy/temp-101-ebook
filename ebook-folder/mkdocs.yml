@@ -192,6 +192,7 @@ nav:
       #   - Store Data: module-1/lesson-6.md
       #   - Render Data: module-1/lesson-7.md
       #   - Reading Docs: module-1/lesson-8.md
+    - Report A Bug: additionalResources/reportABug.md
     - 'Additional Resources':
       - Interview Training: additionalResources/interviewChallenges.md
       - Student Presentations: additionalResources/studentPresentations.md
