@@ -163,15 +163,15 @@ checkSum(49, 2) // => false
 
 ### Class 14
 
-- [ ] **Prompt 1: None** - *Focus on your Final Portfolio Project*
+- [ ] **Prompt 1: None** - *Focus on your Portfolio Project*
 
 ### Class 15
 
-- [ ] **Prompt 1: None** - *Focus on your Final Portfolio Project*
+- [ ] **Prompt 1: None** - *Focus on your Portfolio Project*
 
 ### Class 16
 
-- [ ] **Prompt 1: Title** - *description*
+- [ ] **Prompt 1: None** - *Focus on your Portfolio Project*
 <!-- - [ ] **Prompt 2: Title** - *description* -->
 
 <!-- Two students(6 total) will come up to the board at a time to work with their instructor to wireframe each of the the three mockups from the [Bite](https://bitetoothpastebits.com/). While the student work at the board, the rest of the class should be following along with pencil and paper at their own desks. Choose one site and start wireframing it. Make sure to include class and ids. -->
