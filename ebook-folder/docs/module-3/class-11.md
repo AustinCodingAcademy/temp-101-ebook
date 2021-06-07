@@ -139,6 +139,10 @@ Today you're going to use the Fetch API on the browser to fetch data from the [J
 - [ ] Now that you have one element created and showing up on the screen, put the same code inside a `for` loop and iterate over the `length` of the array. But now just change out `[0]` for `[i]`! (Refer back to your for loop lesson if needed)
 - [ ] Remember to `commit` often.
 
+## Student Feedback
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjuL10i2xFGMWRwkjtgAL8F1Y5ipMPPjtTCDzkO1ZBcxUYZA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create JS-ToDo List Assignment

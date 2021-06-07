@@ -49,6 +49,10 @@ If Partner A is working on Contact Page and Partner B is working on the Portfoli
 
 Use this time to jump into a breakout room with your project partner and work hard!! Your instructor is here for any questions and support you need.
 
+## Student Feedback
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjuL10i2xFGMWRwkjtgAL8F1Y5ipMPPjtTCDzkO1ZBcxUYZA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Prepare for next class by completing all of your pre-class lessons

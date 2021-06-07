@@ -71,6 +71,10 @@ Clone and follow the instructions in the `README.md` file of the [101-Portfolio-
 
 The remainder of class time is reserved for students to partner up, brainstorm, plan, design, and project plan how they'll use the remaining three classes!
 
+## Student Feedback
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjuL10i2xFGMWRwkjtgAL8F1Y5ipMPPjtTCDzkO1ZBcxUYZA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Prepare for next class by completing all of your pre-class lessons
