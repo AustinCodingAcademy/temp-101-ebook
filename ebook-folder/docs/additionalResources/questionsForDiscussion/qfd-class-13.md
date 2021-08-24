@@ -8,11 +8,11 @@
 
 ## CSS Reset
 
-- [ ]Third-Party
-- [ ]The Cascade
-- [ ]Parsed
-- [ ]Why do we need to use a CSS reset?
-- [ ]How do you think you'll organize multiple CSS files?
+- [ ] Third-Party
+- [ ] The Cascade
+- [ ] Parsed
+- [ ] Why do we need to use a CSS reset?
+- [ ] How do you think you'll organize multiple CSS files?
 
 ## Merge Conflicts
 
@@ -54,7 +54,7 @@
 
 ## Transitions
 
-- [ ] Vendor Prefix
+- [ ] [Vendor Prefix](https://simplecss.eu/prefix.html)
 - [ ] What does the transition property do? When is it used?
 - [ ] What are the possible values for the `transition-timing` function property?
 - [ ] If you want to use the `transition` short-hand instead of all of the long-hand properties, what is the order of values?

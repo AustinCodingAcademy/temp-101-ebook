@@ -2,7 +2,6 @@
 
 <!-- ! HIDE FROM STUDENT; INSTRUCTOR ONLY CONTENT -->
 <!-- ## Instructor Only Content - HIDE FROM STUDENTS -->
-cp workspace/resources/classOutlineTemplate.md docs/module-
 
 <!-- ! END INSTRUCTOR ONLY CONTENT -->
 
@@ -15,7 +14,7 @@ cp workspace/resources/classOutlineTemplate.md docs/module-
 
 Today we're going to:
   
-*OBJECTIVE: After this class students will have a firm understanding of:
+*OBJECTIVE: After this class students will have a firm understanding of:*
 
 * *Resolving merge conflicts through git*
 * *Using the CSS properties: `transition`, `animation-` and `transform`*
