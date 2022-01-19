@@ -15,7 +15,7 @@
 - [ ] [Class 11 - Craving Attention Makes You Less Creative](https://youtu.be/3VTsIju1dLI)
 <!-- - [ ] [Class 12 - ]() -->
 <!-- - [ ] [Class 13 - ]() -->
-<!-- - [ ] [Class 14 - ]() -->
+- [ ] [Class 14 - Develop, Life Happens For You](https://www.youtube.com/watch?v=Fo_lDTDSO-M)
 <!-- - [ ] [Class 15 - ]() -->
 <!-- - [ ] [Class 16 - ]() -->
 
