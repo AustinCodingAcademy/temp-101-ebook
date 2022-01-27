@@ -53,7 +53,7 @@ One of the most common Event Listeners to use is `onclick`. It, of course, liste
 
 === "HTML"
     ```html
-      <button onlick="sayHello()">Click To See a Greeting</button>
+      <button onclick="sayHello()">Click To See a Greeting</button>
     ```
 
 === "JS"
