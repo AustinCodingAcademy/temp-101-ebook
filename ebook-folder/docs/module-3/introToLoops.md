@@ -4,7 +4,7 @@
 
 ## Overview
 
-By now you've probably understood that we write/build functions as sets of instructions that sit in storage until the computer needs to use/execute them. These sets of instructions are very useful because we can ** our web pages to do specific actions when a user interact with it. And so far, we've built simple actions, however, if we want to build more complex sets of instructions we'll need to learn why and how to use **.
+By now you've probably understood that we write/build functions as sets of instructions that sit in storage until the computer needs to use/execute them. These sets of instructions are very useful because we can ** our web pages to do specific actions when a user interacts with it. And so far, we've built simple actions, however, if we want to build more complex sets of instructions we'll need to learn why and how to use **.
 
 Loo**ps are just like what they sound like. Under certain conditions, the tasks detailed inside the set of instruction should loop until the conditions have changed.
 
@@ -28,7 +28,7 @@ If you arrive at an intersection and the light is red then the condition is `lig
   checkLight()
 ```
 
-In the code snippet above, we see a simple JS function that does one of three things based on a certain condition, the color of the `light`! We are getting a little ahead of ourselves right now because today we're going to cover two different loops: `while()` and `for()`. These do loops are commonly used in programming. But to use either of these loops you'll need to have a basic understanding of **conditional statements**. Now that you do, let's get to it.
+In the code snippet above, we see a simple JS function that does one of three things based on a certain condition, the color of the `light`! We are getting a little ahead of ourselves right now because today we're going to cover two different loops: `while()` and `for()`. Both of these loops are commonly used in programming. But to use either of these loops you'll need to have a basic understanding of **conditional statements**. Now that you do, let's get to it.
 
 ### While Loop
 

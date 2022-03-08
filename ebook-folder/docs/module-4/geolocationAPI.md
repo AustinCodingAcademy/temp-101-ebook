@@ -9,7 +9,7 @@ Now that you have a handle on what HTML5 APIs are available for you to use, let'
 
 ## The Geolocation API
 
-The HTML5 Geolocation API lets you communicate with a user's device to obtain their relative location using the [Global Positioning System, launched in 1960 for Dept. of Defense](https://www.geotab.com/blog/what-is-gps/) use only until it was released for civilian you in 1983. With this incredible technology, you can share data specific to the location of the device viewing the websites and apps you've built. *Ever wondered how Pokemon Go or Uber works*?
+The HTML5 Geolocation API lets you communicate with a user's device to obtain their relative location using the [Global Positioning System, launched in 1960 for Dept. of Defense](https://www.geotab.com/blog/what-is-gps/) use only until it was released for civilian use in 1983. With this incredible technology, you can share data specific to the location of the device viewing the websites and apps you've built. *Ever wondered how Pokemon Go or Uber works*?
 
 By writing just a little bit of JavaScript, you can capture [latitudinal and longitudinal coordinates](https://www.latlong.net/). After you have this coordinates data you can do simple tasks like offer the user the local weather or greet them with a city specific phrase: "Good Morning Dallas, TX!" AND later on, when you learn to build servers & databases, you could send this Lat/Long coordinates to a back-end web server to perform location-aware tasks, such as finding & suggesting local businesses or sharing the user's location with friends, etc.
 

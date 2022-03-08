@@ -8,7 +8,7 @@ Animations & Transformations are nice, but to really control the movements of ou
 
 ## Transitions with CSS
 
-CSS transitions specify how Animations, Transforms, and pseudo selections will happen. So instead of say what will happen in the change, the `transition` property details how something will change like how long the change will take place or the rate at which the change will take place.
+CSS transitions specify how Animations, Transforms, and pseudo selections will happen. So instead of saying *what* will happen in the change, the `transition` property details *how* something will change as in: how long the change will take place or at what rate the change will take place.
 
   > NOTE: *This does not replace Animation or Transform but instead is used together to enhance the change.*
 

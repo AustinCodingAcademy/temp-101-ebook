@@ -158,7 +158,7 @@ To draw arc and circle we use the same techniques but, obviously, a different me
 
 `.arc(x, y, radius, startAngle, endAngle [, anticlockwise] )`
 
-- [ ] You know what `x` and `y` are for and can guess what rad`ius is for but let's look quickly at those last three:
+- [ ] You know what `x` and `y` are for and can guess what radius is for but let's look quickly at those last three:
 
   * `startAngle` - angle at which the arc starts in radians, measured from the positive x-axis.
   * `endAngle` - angle at which the arc ends in radians, measured from the positive x-axis.

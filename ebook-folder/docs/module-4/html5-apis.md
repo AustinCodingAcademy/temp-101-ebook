@@ -6,7 +6,7 @@
 
 Again, there are SO many options for you to learn and the great thing about learning web development is there is SO much to learn!! Seriously, everyday you could be deepening and/or broadening your knowledge base just by going to work. Wouldn't that be cool!?!
 
-Today we're going to learn about the built-in APIs of HTML5. Already you've been working with some of them like Fetch and Canvas. But before we can learn how to use any more of theme we should first learn a bit of the history of HTML and how we got to this moment you're in now, able to use these built-in APIs!!
+Today we're going to learn about the built-in APIs of HTML5. Already you've been working with some of them like Fetch and Canvas. But before we can learn how to use any more of them we should first learn a bit of the history of HTML and how we got to this moment you're in now, able to use these built-in APIs!!
 
 To do this we'll start with an extraordinary [NebraskaJS conference](https://nejsconf.com/) talk where [Zeno Rocha](https://zenorocha.com/zip-code-and-happiness/) breaks down the history of HTML, the changes with HTML5, why/what/how to use some of the best HTML APIs as well as how to step out of your comfort zone to experiment and make magic happen!
 

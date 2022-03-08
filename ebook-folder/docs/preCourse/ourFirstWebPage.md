@@ -61,11 +61,21 @@ Once it loads, you will see two parts, a section where you write the code, and a
 
 In either case, we are ready to get started on building the page.
 
-=== "Option 1"
+=== "Potential View 1"
     ![code-pen-button-start-coding](./../images/code-pen-button-start-coding.png)
 
-=== "Option 2"
+=== "Potential View 2"
     ![code-pen-button-try-the-editor](./../images/code-pen-button-try-the-editor.png)
+
+## Short-Cut of the Day - Opening Tabs in Chrome
+
+Macs ++command++ = Windows ++control++
+
+- [ ] Open a link in a new tab ++command++ + click
+- [ ] Close a tab ++command++ + ++w++
+- [ ] Open a new blank tab ++command++ + ++t++
+- [ ] Re-open a recently closed tab ++command++ + ++shift++ + ++t++
+- [ ] Go to a specific tab ++command++ + ++1++ , or ++2++ - ++9++. ++0++ is always your last tab
 
 <!-- ## Additional Resources
 

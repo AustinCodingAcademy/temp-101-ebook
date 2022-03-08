@@ -4,7 +4,7 @@
 
 ## Overview
 
-CSS transformations are a lot like CSS Animations but instead of use the `@keyframe` function to execute on specific animation-names you can use specific functions within with declaration blocks of an element's CSS rule to change is properties from within on a specific DOM event or timing. These specific transform functions include: `translate()`, `rotate()`, `scale()`, and `skew()`.
+CSS transformations are a lot like CSS Animations but instead of use the `@keyframe` function to execute on specific animation-names you can use specific functions within the declaration block of an element's CSS rules to change is properties from within on a specific DOM event or timing. These specific transform functions include: `translate()`, `rotate()`, `scale()`, and `skew()`.
 
 With these transformation functions you can change an element's shape, size, position and even duplicate itself!!!
 

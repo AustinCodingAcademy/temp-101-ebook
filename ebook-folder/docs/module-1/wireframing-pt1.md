@@ -68,8 +68,7 @@ Here's a mobile version of the same website. Can you turn it into code, as well?
 
 ## Mockups
 
-We've talked about [Mockups]((https://en.wikipedia.org/wiki/Mockup)
-) coming down from a design team and landing on your desk but what are they in the first place? Think of a mock up as a non functional web page. It's a design, a complete layout of a web page but the buttons don't work and the picture & videos are static. It's meant to be a direct representation of what the web page will look like when you, the Front-End Dev, gets done with it.
+We've talked about [Mockups](https://en.wikipedia.org/wiki/Website_wireframe) coming down from a design team and landing on your desk but what are they in the first place? Think of a mock up as a non functional web page. It's a design, a complete layout of a web page but the buttons don't work and the picture & videos are static. It's meant to be a direct representation of what the web page will look like when you, the Front-End Dev(you), gets done making it functional.
 
 ![mockup-example](./../images/mockup-example.png)
 ![mockup-example-mobile](./../images/mockup-example-mobile.png){ :align=left}
