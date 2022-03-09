@@ -29,6 +29,7 @@ The short? You read and study **outside of class** and apply that knowledge **in
 ******
 
 <!-- ! Video Content: YT, Peter Lane - Penguins - Flipping the Classroom: Explained -->
+
 <iframe width="655" height="368" src="https://www.youtube.com/embed/tSCN9nDNw_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ******
