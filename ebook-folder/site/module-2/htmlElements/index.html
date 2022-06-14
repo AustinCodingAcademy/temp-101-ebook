@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2791,7 +2791,7 @@
 <p>Now that we understand a bit about Requests and Response objects and have our Req/Res Drawing handy let's examine where we've been working for these past few weeks.</p>
 <p>We'll be referencing the code below because it is the minimum amount of code needed to build a web page. All other HTML elements/objects and their properties, methods, &amp; events will stem from this basic code.</p>
 <p>You can quickly generate this <strong>boilerplate code</strong> by going to VS Code, then creating an <code>index.html</code> file and typing on the first line: <code>html:5</code> + <span class="keys"><kbd class="key-enter">Enter</kbd></span>. Go ahead and try it. Create folder called <code>101-onlineClothingStore</code> and create an <code>index.html</code> file you can use to follow along with in this lesson and revisit in a few upcoming lessons. <em>I'll wait.</em></p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2803,7 +2803,7 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html --&gt;</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- index.html --&gt;</span>
 
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
@@ -2816,8 +2816,7 @@
 
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <h2 id="indexhtml">index.html</h2>
 <p>In most of the  projects you've built, you've been working in a file called <code>index.html</code>. The name of this file is incredibly important because it is the default file that is served FIRST. <code>index.html</code> is the <strong>root</strong> file for ALL websites. When you navigate to Facebook.com or Target.com you will receive their <code>index.html</code> file. If you click on links to go to other page you'll be given other pages like: <code>about.html</code> or <code>termsofagreement.html</code>. You are allowed to name your <code>.html</code> files whatever you want but <strong>the very first file</strong> you want served must be named: <code>index.html</code> and in the <strong>root</strong> directory/folder, meaning it can not be hidden in another folder, it must be at the top-level of the entire project's folder.</p>
 <p>Furthermore, the <code>.html</code> extension denotes a file written in HTML code while <code>.css</code> denotes CSS code and <code>.js</code> denotes JavaScript code.</p>
@@ -2896,7 +2895,7 @@ So far we know that computers use objects to store information. So to a computer
 <h2 id="indentation">Indentation</h2>
 <p>Code is used to communicate programming intentions to a computer but the computer doesn't have eyes it just has 0s and 1s so space/whitespace doesn't matter to it. In fact, when your HTML, CSS, and JS code files are prepared for a <strong>production environment</strong>(open for the world to see) they are <strong>minified</strong> which means all of the <strong>whitespace</strong> is removed including space between words, space between lines of code, and indentations. Your files will be minified/compress so they are faster for the computer to run and lighter for the internet to transfer. So why indentation?</p>
 <p>Because code is also used to communicate to humans, we use indentation to organize objects; or rather representation of objects in our code. When you auto-generated your <strong>boilerplate</strong> HTML earlier there likely wasn't any indentation before the <code>head</code> and <code>body</code> elements/objects but in this code example there is. This extra <strong>whitespace</strong> is to help you start seeing these different objects using different vertical layers, <strong>indentation</strong>.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2914,7 +2913,7 @@ So far we know that computers use objects to store information. So to a computer
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html --&gt;</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- index.html --&gt;</span>
 
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
@@ -2933,8 +2932,7 @@ So far we know that computers use objects to store information. So to a computer
    <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>The <code>html</code> element is the the top-level/root element so it is slammed up against the far-left side of file. But <code>head</code> and <code>body</code> are direct descendants of <code>html</code> and siblings to one-another; therefore they are indented one tab (2-4 spaces). Objects directly inside the <code>head</code> and <code>body</code> are thusly tabbed in again: <code>meta</code>, <code>meta</code>, and <code>title</code>. These element can be described as <strong>Siblings Elements</strong>.</p>
 <p>In the <code>body</code> we see some new elements. Can you guess which elements are direct descendants of the <code>body</code> element and siblings to one another?</p>
 <!-- ! END OF VIDEO 101.1.2.7 - Indentation -->
@@ -3025,7 +3023,7 @@ So far we know that computers use objects to store information. So to a computer
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

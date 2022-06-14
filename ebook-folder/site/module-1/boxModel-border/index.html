@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2718,34 +2718,31 @@
                 <h2 id="box-model-border">Box Model: Border</h2>
 <p>The border of an element sits just outside the padding and before the margin, usually invisible. In fact, all HTML Elements have a border but have a default value of <code>null</code>, meaning you won't see them (See, <a href="https://www.w3schools.com/cssref/css_default_values.asp">Default CSS Values Reference</a>).</p>
 <p>To make a border visible you need to set three values: <code>border-style</code>, <code>border-width</code>, and <code>border-color</code>. <a href="https://codepen.io/">Try it</a>!</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello World<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello World<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nt">p</span> <span class="p">{</span>
-    <span class="k">border-style</span><span class="p">:</span> <span class="kc">groove</span><span class="p">;</span>
-    <span class="k">border-width</span><span class="p">:</span> <span class="mi">12</span><span class="kt">pt</span><span class="p">;</span>
-    <span class="k">border-color</span><span class="p">:</span> <span class="mh">#FF9633</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-style</span><span class="p">:</span><span class="w"> </span><span class="kc">groove</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#FF9633</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>Just like padding (and margin) there is a short-hand, <code>border</code>:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nt">p</span> <span class="p">{</span>
-    <span class="k">border</span><span class="p">:</span> <span class="kc">groove</span> <span class="mi">12</span><span class="kt">pt</span> <span class="mh">#AA9933</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="kc">groove</span><span class="w"> </span><span class="mi">12</span><span class="kt">pt</span><span class="w"> </span><span class="mh">#AA9933</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: Again, this short-hand comes with a warning: it is less readable than the long-hand form.</p>
 </blockquote>
 <h2 id="more-long-hand">More Long-Hand</h2>
 <p>To complicate things a little more there are properties that allow us to style each side of the border differently. This isn't all that common but it becomes VERY useful when you're creating strange and interesting shapes on the screen. <a href="https://codepen.io/">Try it</a>!</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2757,21 +2754,20 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nt">p</span> <span class="p">{</span>
-    <span class="k">border-style</span><span class="p">:</span> <span class="kc">groove</span><span class="p">;</span>
-    <span class="k">border-top-color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
-    <span class="k">border-top-width</span><span class="p">:</span> <span class="mi">75</span><span class="kt">pt</span><span class="p">;</span>
-    <span class="k">border-right-color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
-    <span class="k">border-right-width</span><span class="p">:</span> <span class="mi">40</span><span class="kt">pt</span><span class="p">;</span>
-    <span class="k">border-right-style</span><span class="p">:</span> <span class="kc">dotted</span><span class="p">;</span>
-    <span class="k">border-bottom-color</span><span class="p">:</span> <span class="kc">purple</span><span class="p">;</span>
-    <span class="k">border-bottom-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">pt</span><span class="p">;</span>
-    <span class="k">border-left-color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-    <span class="k">border-left-width</span><span class="p">:</span> <span class="mi">60</span><span class="kt">pt</span><span class="p">;</span>
-    <span class="k">border-left-style</span><span class="p">:</span> <span class="kc">dotted</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-style</span><span class="p">:</span><span class="w"> </span><span class="kc">groove</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-top-color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-top-width</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-right-color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-right-width</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-right-style</span><span class="p">:</span><span class="w"> </span><span class="kc">dotted</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-bottom-color</span><span class="p">:</span><span class="w"> </span><span class="kc">purple</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-bottom-width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-left-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-left-width</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">border-left-style</span><span class="p">:</span><span class="w"> </span><span class="kc">dotted</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>Above you can see there are properties for each side so you are able to control <code>-style</code>, <code>-color</code>, and <code>-width</code> of each side as you please!!</p>
 <h2 id="border-counts-for-total-width">Border Counts for Total Width</h2>
 <p>There's a small "gotcha" with borders. Because borders are often invisible they don't have a value on the screen which means that count in the total amount of "available space". But, when you start add value to the <code>border-width</code>, it will start to push outward affecting the element's neighbor(s). The docs will say: "Although an element's border is bound to the element itself, border settings will affect neighboring elements."</p>
@@ -2853,7 +2849,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

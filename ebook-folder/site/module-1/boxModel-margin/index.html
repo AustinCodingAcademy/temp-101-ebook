@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2719,51 +2719,47 @@
 <p>Continuing on with our Box Model properties, we arrive now at <code>margin</code>.</p>
 <p>Beyond the edge of the <code>border</code> lies the <code>margin</code>. If you add margin to any side of an element, it will push against other elements near it and create an invisible barrier between the elements. If you were looking at an image gallery, the margins would create the <strong>gutter</strong> between each column and row of images.</p>
 <p>Just like <code>padding</code> and <code>border</code> we can set the values of all four margins like the following:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">p</span> <span class="p">{</span>
-  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">10</span><span class="kt">%</span><span class="p">;</span>
-  <span class="k">margin-right</span><span class="p">:</span> <span class="mi">15</span><span class="kt">%</span><span class="p">;</span>
-  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">%</span><span class="p">;</span>
-  <span class="k">margin-left</span><span class="p">:</span> <span class="mi">15</span><span class="kt">%</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-right</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-left</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">%</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h2 id="the-margin-short-hand">The Margin Short-Hand</h2>
 <p>Again, like <code>padding</code> and <code>border</code> there are short-hands versions that are harder to read. However, if you have uniform margin on all for side it maybe be easier to just write something like this:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">/* In this example, 15pt of margin will be applied to all four sides of the element */</span>
-<span class="p">.</span><span class="nc">margin-on-all-sides</span> <span class="p">{</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="mi">15</span><span class="kt">pt</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">/* In this example, 15pt of margin will be applied to all four sides of the element */</span><span class="w"></span>
+<span class="p">.</span><span class="nc">margin-on-all-sides</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>And if you have equal margins on the left and right and equal margins on the top &amp; bottom you could right it like this:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">/* In this example, 15pt will be applied to the TOP and BOTTOM margins, 30pt to the LEFT and RIGHT margins*/</span>
-<span class="p">.</span><span class="nc">TopBottom-LeftRight</span> <span class="p">{</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="mi">15</span><span class="kt">pt</span> <span class="mi">30</span><span class="kt">pt</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">/* In this example, 15pt will be applied to the TOP and BOTTOM margins, 30pt to the LEFT and RIGHT margins*/</span><span class="w"></span>
+<span class="p">.</span><span class="nc">TopBottom-LeftRight</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">pt</span><span class="w"> </span><span class="mi">30</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>This is a very common form of the short-hand to center an element:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">topBottom-leftRight-centered</span> <span class="p">{</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="mi">15</span><span class="kt">pt</span> <span class="kc">auto</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">.</span><span class="nc">topBottom-leftRight-centered</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">pt</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h2 id="the-worst-short-hand">The Worst Short-Hand</h2>
 <p>The last two short-hands are so confusing they're not really worth mentioning but just so you have them as a reference here they are:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2775,39 +2771,37 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">/* the TOP margin will be 15pt, the RIGHT 30pt, the BOTTOM 25pt, the LEFT 20pt (clockwise)*/</span>
-<span class="p">.</span><span class="nc">T-R-B-L</span> <span class="p">{</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="mi">15</span><span class="kt">pt</span> <span class="mi">30</span><span class="kt">pt</span> <span class="mi">25</span><span class="kt">pt</span> <span class="mi">20</span><span class="kt">pt</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">/* the TOP margin will be 15pt, the RIGHT 30pt, the BOTTOM 25pt, the LEFT 20pt (clockwise)*/</span><span class="w"></span>
+<span class="p">.</span><span class="nc">T-R-B-L</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">pt</span><span class="w"> </span><span class="mi">30</span><span class="kt">pt</span><span class="w"> </span><span class="mi">25</span><span class="kt">pt</span><span class="w"> </span><span class="mi">20</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="c">/* :yuck: */</span>
+<span class="c">/* :yuck: */</span><span class="w"></span>
 
-<span class="c">/* In this example, 15pt on the TOP margin, 30pt on LEFT and RIGHT margins, 45pt on BOTTOM margin*/</span>
-<span class="p">.</span><span class="nc">Top-LeftRight-Bottom</span> <span class="p">{</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="mi">15</span><span class="kt">pt</span> <span class="mi">30</span><span class="kt">pt</span> <span class="mi">45</span><span class="kt">pt</span><span class="p">;</span>
+<span class="c">/* In this example, 15pt on the TOP margin, 30pt on LEFT and RIGHT margins, 45pt on BOTTOM margin*/</span><span class="w"></span>
+<span class="p">.</span><span class="nc">Top-LeftRight-Bottom</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">pt</span><span class="w"> </span><span class="mi">30</span><span class="kt">pt</span><span class="w"> </span><span class="mi">45</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
 
-  <span class="c">/* :barf: */</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="c">/* :barf: */</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>You can do the same thing but with a little more typing that results in <strong>far more readable code</strong>!</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">T-R-B-L</span> <span class="p">{</span>
-  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">15</span><span class="kt">pt</span><span class="p">;</span>
-  <span class="k">margin-right</span><span class="p">:</span> <span class="mi">30</span><span class="kt">pt</span><span class="p">;</span>
-  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">25</span><span class="kt">pt</span><span class="p">;</span>
-  <span class="k">margin-left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">pt</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">.</span><span class="nc">T-R-B-L</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-right</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-left</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="c">/* YAY, MUCH MORE READABLE CODE WE&#39;LL GET HIRED FOR!!!!! */</span>
-</code></pre></div>
-</td></tr></table>
+<span class="c">/* YAY, MUCH MORE READABLE CODE WE&#39;LL GET HIRED FOR!!!!! */</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <!-- ! END OF VIDEO 101.1.23.1 - Box Model: Margin -->
 
 <h2 id="additional-resources">Additional Resources</h2>
@@ -2883,7 +2877,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

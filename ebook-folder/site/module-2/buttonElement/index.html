@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2786,15 +2786,14 @@
 
 <h2 id="follow-along">Follow Along</h2>
 <p>We're about to learn how to use Event Listeners in the next lesson. To get familiar with what they are and how to use them, we'll use the familiar Button Element as a leaping off point. Go ahead and open the <code>101-onlineClothingStore</code> folder you started earlier and add this bit of code to the <code>index.html</code> file.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Turn on your <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> and see what's on the screen. Is there a tiny grey button at the top-left of your white screen? Good, that's how it should look. Your browser comes with "<a href="https://gist.github.com/ambidexterich/34828a904dd97dd2a345">Default Visual Styles</a>" of content created in HTML. So all elements will come with some sort of, albeit, ugly styling. Button styling is defaulted to grey and is as wide and tall as the content inside them, the <strong>innerText</strong>.</p>
 <blockquote>
 <p><strong>innerText</strong> is a property on ALL HTML elements. It holds the value of the text inside. When we learn how to build with <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, and all the <code>&lt;h*&gt;</code> elements, we'll see they all have a property on them called innerText. Write that down and draw it for yourself. This is part of your Object Modeling in your own mind.</p>
@@ -2802,15 +2801,14 @@
 <!-- TODO INSERT IMAGE of Button Element table with 3 rows: properties, methods, events that includes innerText as a property -->
 
 <p>Let's now add some "innerText" to this button. Between the opening tag and the closing tag type "Click Me".</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>When we learn a little more JavaScript we'll be able to change this <code>innerText</code> property dynamically by writing some JS code like <code>button.innerText = "Oh, Click Me Again!"</code> For now, we'll <strong>statically</strong> set it in HTML by putting the text between the opening and closing tags.</p>
 <p>Now that we have the first <strong>property</strong> of ALL HTML elements including the <code>button</code> element let's play with one of its events! Again, all elements have Properties, Methods, and <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">Events</a> we get to use to build with. By reading the documentation of these <strong>members</strong> we learn more about them and how to use them.</p>
 <p><a href="https://www.w3schools.com/tags/tag_button.asp">W3S Docs - Button Element</a></p>
@@ -2821,28 +2819,26 @@
 <h3 id="the-onclick-event-inline-javascript">The "onclick" Event + Inline JavaScript</h3>
 <p>Most HTML elements have the <code>onclick</code> event as one of their <strong>members</strong> but Button depends on this <strong>event</strong> because what else do you do with a button besides click it?</p>
 <p>As mentioned before, <strong>Events</strong> are like triggers that fire each time the interactions happens. But until we add a function to that trigger the Event is firing a blank. Even though we don't see code that represents it, our <code>button</code> object currently has an <strong>undefined</strong> function attached to its <code>onclick</code> event. We don't typically write undefined events, but if we did write it in code it would look like this:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>Notice the <strong>empty quotes</strong>? Inside those quotes, after the <code>=</code> sign is the value of this event. This is a <strong>key/value</strong> pair. the key is <code>onclick</code> and the value is <code>""</code>.</p>
 </blockquote>
 <p>Let's write a value for this button's <code>onclick</code> key. Type this in and run it to see what happens in the browser.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;function sayHello(){ alert(&#39;Hello!&#39;) }; sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>The line of code we just added between the <code>""</code> marks is actually JavaScript but it's written <strong>inline</strong> with the HTML code. This isn't a common practice anymore but it's the way developers wrote it <em>back in the day</em> and a good way for us to begin to learn what's going on. Take a close look at this new code and spend time trying to understand it. The best place to start is dividing it in half at the <code>;</code>.</p>
 <blockquote>
 <p>NOTE: Traditionally, lines of JavaScript are ended with <code>;</code>(semi-colons) although the latest versions of the language don't require it. Nevertheless, we'll use them in our first lessons as we get acquainted with the language.</p>
@@ -2862,15 +2858,14 @@
 <ul>
 <li><strong>Function Declaration</strong> - This is where a function is declared and defined. Until it's called/invoked, it isn't doing anything except taking up memory like a recipe in your cookbook.</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="kd">function</span> <span class="nx">myFunctionExample</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
-   <span class="kd">let</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span>
-   <span class="k">return</span> <span class="nx">sum</span>
- <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">myFunctionExample</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="w"></span>
+<span class="w">   </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li>
 <p>The <strong>Declaration Block</strong> is the part between the <code>{}</code> where the step-by-step instruction goes.</p>
@@ -2879,9 +2874,8 @@
 <p><strong>Function Invocation</strong> - This the code that calls/invokes the Function Declaration. It tells the computer to execute the instructions in the Declaration Block.</p>
 </li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="nx">myFunctionExample</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w"> </span><span class="nx">myFunctionExample</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li>
 <p><strong>Function Arguments</strong> - These are values you can pass into functions. In the example above <code>2</code> and <code>3</code> are two arguments passed into the <code>myFunctionExample</code> function. Based on the instructions in the Function Declaration and the arguments passed into it, the result would be 5.</p>
@@ -2890,9 +2884,8 @@
 <p><strong>Attribute/Property/Method</strong> - If you visited the <a href="https://www.w3schools.com/tags/tag_button.asp">Button Element Docs page</a> your probably saw the use the word <strong>Attributes</strong> instead of <strong>Property</strong>, <strong>Event</strong> or <strong>Method</strong>. This is because HTML was created to represent visual Elements on a screen so all of the properties and their values were originally written together, in line with the elements like the line of JavaScript we just broke down. The word <strong>Attribute</strong> means the same thing as <strong>Property</strong>, <strong>Event</strong> or <strong>Method</strong> but specifically refers to something written in HTML rather than in CSS or JavaScript. Anything you see written inside the opening tag of an element is an <strong>Attribute</strong> but it refers to the <strong>Properties</strong>, <strong>Events</strong>, and <strong>Methods</strong> of that object. Example:</p>
 </li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;fish-fry&quot;</span> <span class="p">&gt;</span>Example Title<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code> <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;fish-fry&quot;</span> <span class="p">&gt;</span>Example Title<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
 <p>The H3 Element above has an <code>id</code> attribute. This attribute assigns the value of  <code>"fish-fry"</code> the the <code>id</code> property of that object.</p>
 <blockquote>
 <p>NOTE: If this all doesn't gel right now, don't worry. With practice and in time it'll all come together.</p>
@@ -2903,7 +2896,7 @@
 <p>The line of JavaScript we just broke down was a little hard to read because it was all on one line. Thankfully there's a better way to write it, with the <code>&lt;script&gt;</code> Element!</p>
 <p>The Document Object has a <code>scripts</code> property to hold scripts. When we create a Script Element we are giving the <code>scripts</code> property a value. And just like with our Human object, if we want them to be able to do new things we need to give them new functions like: <code>rideBicycle()</code> or <code>cutWatermelon()</code>. With the <code>&lt;script&gt;</code> element we can give our Document Object new values inside of its <code>scripts</code> property.</p>
 <p>Let's move our current <strong>inline JavaScript</strong> into our <code>&lt;script&gt;</code> element.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2911,19 +2904,18 @@
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 
-   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-     <span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(){</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span> <span class="p">};</span>
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">     </span><span class="kd">function</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">(){</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
 
-   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">   </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Make these changes and run your page again. It should be working just as before. Now let's create another button and have it also call <code>sayHello</code> when its <code>onclick</code> event is ...clicked.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2932,20 +2924,19 @@
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me Too<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 
-   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-     <span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(){</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span> <span class="p">};</span>
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">     </span><span class="kd">function</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">(){</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
 
-   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">   </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Now build another function called <code>sayHi</code> but this time call the Console object's method named <code>log()</code> and pass into it a different <strong>string</strong>.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2955,19 +2946,18 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHi();&quot;</span><span class="p">&gt;</span>Click Me Too<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 
-   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-     <span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(){</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, Window.alert Method!&#39;</span><span class="p">)</span> <span class="p">};</span>
-     <span class="kd">function</span> <span class="nx">sayHi</span><span class="p">(){</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hi, Console.log Method!&#39;</span><span class="p">)</span> <span class="p">};</span>
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">     </span><span class="kd">function</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">(){</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, Window.alert Method!&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="w">     </span><span class="kd">function</span><span class="w"> </span><span class="nx">sayHi</span><span class="p">(){</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hi, Console.log Method!&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
 
-   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">   </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: In order to see this you'll have to open your DevTools and go to the Console Tab. Click on both buttons and see what happens.</p>
 </blockquote>
@@ -3043,7 +3033,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

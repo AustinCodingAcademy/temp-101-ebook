@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2765,7 +2765,7 @@
 <p>"Why so many?" That's a good question that doesn't really need to be answered right now. Suffice it to say that there have been many additions to the CSS language trying to accommodate for designers working on computers. The ones I'd like you to focus your attention on right now are <code>%</code> and <code>pt</code>.</p>
 <h3 id="percentage-is-dynamic">Percentage is Dynamic</h3>
 <p><code>%</code>, or <strong>percentage</strong>, tells the child element to be displayed at a specified percentage, or proportion, of its parent element. Check out the example below:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2781,28 +2781,27 @@
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html file --&gt;</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- index.html file --&gt;</span>
 <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>The red fox jumped over the green turtle.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="c">/* style.css file */</span>
-  <span class="nt">article</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="mi">600</span><span class="kt">px</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="c">/* style.css file */</span><span class="w"></span>
+<span class="w">  </span><span class="nt">article</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="nt">article</span> <span class="o">&gt;</span> <span class="nt">p</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">90</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="nt">article</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>In the example above, the <code>&lt;article&gt;</code> element, or parent element, will be <code>500px</code> by <code>600px</code> while the <code>&lt;p&gt;</code> element, or child element, will be rendered at 450px(<code>90%</code>) by 300px(<code>50%</code>) because it is set to be a percentage of its parent element.</p>
 <p>This is really useful when parent elements are set to be sized in proportion to their parent element like maybe . . . <code>&lt;body&gt;</code>. See the example below:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2827,54 +2826,52 @@
 <span class="normal">23</span>
 <span class="normal">24</span>
 <span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html file --&gt;</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- index.html file --&gt;</span>
 <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>The red fox jumped over the green turtle.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="c">/* style.css file */</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="c">/* style.css file */</span><span class="w"></span>
 
-  <span class="c">/* The &lt;body&gt; element will be automatically set to the height and width of the viewport, or display of the computer, tablet, or phone&#39;s window */</span>
-  <span class="nt">body</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c">/* The &lt;body&gt; element will be automatically set to the height and width of the viewport, or display of the computer, tablet, or phone&#39;s window */</span><span class="w"></span>
+<span class="w">  </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c">/* Then the &lt;article&gt; element will be set to 50% as wide as the whole &lt;body&gt; and 100% as tall as the &lt;body&gt; */</span>
-  <span class="nt">article</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c">/* Then the &lt;article&gt; element will be set to 50% as wide as the whole &lt;body&gt; and 100% as tall as the &lt;body&gt; */</span><span class="w"></span>
+<span class="w">  </span><span class="nt">article</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c">/* Can I assume you can guess what the paragraph element will do? */</span>
-  <span class="nt">article</span> <span class="o">&gt;</span> <span class="nt">p</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">90</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c">/* Can I assume you can guess what the paragraph element will do? */</span><span class="w"></span>
+<span class="w">  </span><span class="nt">article</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Using percentages is advantageous because you will never know all the sizes of screens that will view your web pages; this way you can tell elements to be a specific percentage of the available area instead of <strong>hard coded</strong> pixels!</p>
 <h4 id="follow-it-up-with-min-max-">Follow It Up with Min- &amp; Max-</h4>
 <p>When using percentages as values it's important to include the <code>min-width</code>/<code>max-width</code> and <code>min-height</code>/<code>max-height</code> properties so as to avoid your elements being rendered in sizes that are unmanageable for the user. See below:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">body</span> <span class="p">{</span>
-  <span class="k">width</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-  <span class="k">height</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-  <span class="k">min-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">pt</span><span class="p">;</span> <span class="c">/* &lt;--- Notice the use of the pt unit */</span>
-  <span class="k">max-width</span><span class="p">:</span> <span class="mi">1000</span><span class="kt">pt</span><span class="p">;</span>
-  <span class="k">min-height</span><span class="p">:</span> <span class="mi">150</span><span class="kt">pt</span><span class="p">;</span>
-  <span class="k">max-height</span><span class="p">:</span> <span class="mi">1500</span><span class="kt">pt</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">min-width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">pt</span><span class="p">;</span><span class="w"> </span><span class="c">/* &lt;--- Notice the use of the pt unit */</span><span class="w"></span>
+<span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">max-height</span><span class="p">:</span><span class="w"> </span><span class="mi">1500</span><span class="kt">pt</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>Above you saw the use of <code>pt</code> or <strong>points</strong>. These are a little more reliable than <code>px</code> which are relative to the number of pixels in a user's display and <a href="http://inamidst.com/stuff/notes/csspx">other factors</a>. The <code>pt</code> value is equal to 1/72nd of an inch so you can calculate a little more easily the size of your elements.</p>
 <h3 id="view-height-view-width">View-height &amp; View-Width</h3>
 <p>The last units you should know about are <code>vh</code> and <code>vw</code> which stand for <strong>view-height</strong> and <strong>view-width</strong>, respectively. These are very useful units except for the fact that they are not supported on all previous versions of mobile browsers.</p>
@@ -2961,7 +2958,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

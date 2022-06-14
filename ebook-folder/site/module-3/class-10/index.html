@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2893,39 +2893,36 @@
 </li>
 <li class="task-list-item">
 <p><input type="checkbox"/> Horizontal Win, a.k.a, If row 0 equals all "X"s or "O"s:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">)</span> 
-        <span class="o">||</span> <span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span><span class="p">)</span>
-    <span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">)</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>This could be repeated for rows 1 and 2.</p>
 </blockquote>
 </li>
 <li class="task-list-item">
 <p><input type="checkbox"/> Vertical Wins, a.k.a, if column 0 equals all "X"s or "O"s: </p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">)</span> 
-        <span class="o">||</span> <span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span><span class="p">)</span>
-    <span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">)</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>This could be repeated for the next two columns.</p>
 </blockquote>
 </li>
 <li class="task-list-item">
 <p><input type="checkbox"/> Diagonal Wins, a.k.a, If there is a line created diagonally across the board with "X"s or with "O"s:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span><span class="p">)</span> 
-        <span class="o">||</span> <span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span><span class="p">)</span>
-    <span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="p">((</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="nx">board</span><span class="p">[</span><span class="mf">0</span><span class="p">][</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">1</span><span class="p">][</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">board</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">2</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">)</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>This would be reversed for the opposite direction.</p>
 <p>NOTE: You just saw new characters: <code>==</code>, <code>||</code> and <code>&amp;&amp;</code>. If you look at the docs on W3S about <a href="https://www.w3schools.com/js/js_comparisons.asp">Comparison Operators</a> you'll see that <code>==</code> means "is-equal-to", <code>||</code> means "or" while <code>&amp;&amp;</code> means "and".</p>
@@ -2968,7 +2965,7 @@
 <p><input type="checkbox"/> Copy/Paste the following code snippet into the bottom of your <code>scripts.js</code> file:</p>
 </li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2986,27 +2983,26 @@
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>   <span class="kd">const</span> <span class="nx">checkForWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-     <span class="k">if</span><span class="p">(</span><span class="nx">horizontalWin</span><span class="p">()</span> <span class="o">||</span> <span class="nx">verticalWin</span><span class="p">()</span> <span class="o">||</span> <span class="nx">diagonalWin</span><span class="p">())</span> <span class="p">{</span>
-       <span class="nb">window</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="sb">`Player </span><span class="si">${</span><span class="nx">currentMarker</span><span class="si">}</span><span class="sb"> won!`</span><span class="p">)</span>
-     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-       <span class="nx">changeMarker</span><span class="p">()</span>
-     <span class="p">}</span>
-   <span class="p">}</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">   </span><span class="kd">const</span><span class="w"> </span><span class="nx">checkForWin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">     </span><span class="k">if</span><span class="p">(</span><span class="nx">horizontalWin</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">verticalWin</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">diagonalWin</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">       </span><span class="nb">window</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="sb">`Player </span><span class="si">${</span><span class="nx">currentMarker</span><span class="si">}</span><span class="sb"> won!`</span><span class="p">)</span><span class="w"></span>
+<span class="w">     </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">       </span><span class="nx">changeMarker</span><span class="p">()</span><span class="w"></span>
+<span class="w">     </span><span class="p">}</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
 
-   <span class="kd">const</span> <span class="nx">horizontalWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-     <span class="c1">// Your code here to check for horizontal wins</span>
-   <span class="p">}</span>
+<span class="w">   </span><span class="kd">const</span><span class="w"> </span><span class="nx">horizontalWin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">     </span><span class="c1">// Your code here to check for horizontal wins</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
 
-   <span class="kd">const</span> <span class="nx">verticalWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-     <span class="c1">// Your code here to check for vertical wins</span>
-   <span class="p">}</span>
+<span class="w">   </span><span class="kd">const</span><span class="w"> </span><span class="nx">verticalWin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">     </span><span class="c1">// Your code here to check for vertical wins</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
 
-   <span class="kd">const</span> <span class="nx">diagonalWin</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-     <span class="c1">// Your code here to check for diagonal wins</span>
-   <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">   </span><span class="kd">const</span><span class="w"> </span><span class="nx">diagonalWin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">     </span><span class="c1">// Your code here to check for diagonal wins</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <ul class="task-list">
 <li class="task-list-item">
 <p><input type="checkbox"/> Currently, at the end of your <code>addMarker</code> function you tell the computer to change the <code>currentMarker</code> from <code>"X"</code> to <code>"O"</code> or <code>"O"</code> to <code>"X"</code>. But you wouldn't want to do that if the game was won. So before telling the computer to change the <code>currentMarker</code> you would want it to first <code>checkForWin</code>.</p>
@@ -3121,7 +3117,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2876,11 +2876,10 @@
 <p><img alt="heading-default-styles-example" src="../../images/heading-default-styles-example.png" /></p>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">the code</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>An H1 heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>An H1 heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>An H3 heading<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 <p>These two elements have properties, like the <code>font-size</code>, that start out with different <strong>default values</strong>. In our CSS file, we can change lots of different properties.</p>
@@ -2889,15 +2888,14 @@
 <h3 id="where-does-css-go">Where does CSS go?</h3>
 <p>There are different ways to apply CSS to the HTML. We are going to focus on the <strong>external method</strong>. This means the CSS styles will be contained in a separate file. Just like the example we saw of our front-end code and our back-end code being separate; we'll keep our HTML content and CSS styling in separate files but link them together so the browser knows how to apply the styles to our content.</p>
 <p>Link your CSS file by copying and pasting the following code into the Head Element of your HTML:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Awesome website<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p><code>"style.css"</code> is the name of the file that contains your CSS styles. </p>
 <blockquote>
 <p>This is called a <strong>pathname</strong> because it tells the browser how to find the appropriate file, i.e. <code>./styles/index-styles.css</code> would tell the browser to first find a folder called <code>styles</code> then search it for a file called <code>index-styles.css</code></p>
@@ -2906,28 +2904,26 @@
 <h4 id="alternative-places-to-write-css">Alternative Places to Write CSS</h4>
 <p>These are NOT the preferred way to write CSS but just in case you see it done this way on your learning journey we don't want you to be alarmed:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">In-line Styles</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color:blue; font-size: 20px;&quot;</span><span class="p">&gt;</span>This will have a blue background <span class="err">&amp;</span> be 20px font-size<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color:blue; font-size: 20px;&quot;</span><span class="p">&gt;</span>This will have a blue background <span class="err">&amp;</span> be 20px font-size<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">In-File Styles</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="k">background-color</span><span class="p">:</span><span class="kc">blue</span><span class="p">;</span> 
-      <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-    <span class="p">}</span>
-  <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">background-color</span><span class="p">:</span><span class="kc">blue</span><span class="p">;</span><span class="w"> </span>
+<span class="w">      </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This will have a blue background <span class="err">&amp;</span> be 20px font-size<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 <h2 id="what-does-css-look-like">What Does CSS Look Like?</h2>
@@ -3051,7 +3047,7 @@ The font-size property is being given a value of 12 pixels.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

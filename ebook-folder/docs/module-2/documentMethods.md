@@ -4,7 +4,7 @@ With all this talk of the Window, Buttons, and Input Elements it feels as if we 
 
 ## Document Methods
 
-Check it, the document has access to all elements because it is the **root** element. It is the *Mother of All Elements*, it creates elements, removes elements, and changes their contents. The Document is THE OBJECT. It's why there is a **Document Object Model**, because all objects are born, live, and die with the Document Object.
+Check it, the document has access to all elements because it is the **root** element. It is the *Mother of All Elements*, it creates elements, removes elements, and changes their contents. The Document is THE OBJECT. It's why there is a **Document Object Model**, because all objects are born, live, and die within the Document object.
 
 To begin learning the powers of this omnipotent goddess let's create yet another button we can call a function with. Go ahead and do this by yourself in that `101-onlineClothingStore` folder we've been in and out of.
 
@@ -91,12 +91,14 @@ Notice that the `newObject` has this `.appendChild()` method on it as if by magi
 
 Wow!! That was a lot, let's slow this train down and look at it more closely. Inside our functions declaration block, we declared 4 steps for the computer to do.
 
-1. Create a new variable and use the Document's `createElement` method to place a new H3 element at its value
+1. Create a new variable and use the Document's `createElement` method to place a new H3 element as its value
 2. Then create another variable and use the Document's `createTextNode` method to place a Text Node/Object with `"THIS IS A TEST"` as dummy data.
 3. Use the Global method, `appendChild()` to stick the Text Node/Object into the new H3 Object.
 4. Use the same method to stick the new H3 Object into the Body of the Document object.
 
 That wasn't so bad, was it?
+
+<!--  ! REMOVED at Michael Scoggin's request. This must have been an addition from the other version I was writing in 2021
 
 ## Use the Data in the Variable
 
@@ -104,11 +106,27 @@ Instead of using that dummy data, `"THIS IS A TEST"` let's instead use the data 
 
 Annoying that you have to manually delete your input? This is why we use Input Elements and Button Elements inside Form Elements. But we'll have to get to that in a later lesson.
 
-For now, you have a challenge!
+For now, you have a challenge! -->
 
 <!-- ! END OF VIDEO 101.1.3.7 - Document Methods + Creating New Elements -->
 
 <!-- TODO @CLAYTON section on ids and getElementById -->
+
+## Summary & Challenge Yourself
+
+We've covered a lot of information in this lesson from Button Elements and their methods like `onclick` to JavaScript keywords like `let` that communicates to our computer when we want to hold data in a variable or the keyword `function` that tells the computer to create a function and remember the instructions inside its declaration block and how to invoke a function with the trailing `()`. We began working with methods of the Window, Console, and Document Object to create new windows, logs, and elements.
+
+I know this is a lot, but I hope this quick but deeper dive into the building blocks of web pages and the properties, methods, and events that compose them helps you start seeing this stuff as less "computer-sciency" and more practical. Sure, you have JavaScript and HTML syntax to learn, but that WILL come with practice. Just keep reading, studying, and saving your docs and do your Challenges!!
+
+### Challenge
+
+What can you create with this handful of new methods? Show us and impress us. In the next class we'll invite everyone to share what they created.
+
+Feel free to use this repo for an idea/starting point: [https://github.com/AustinCodingAcademy/101-important-to-do-list](https://github.com/AustinCodingAcademy/101-important-to-do-list).
+
+If you want, start with the `README.md` file, read the entire instructions, then clone it and begin completing it.
+
+ > NOTE: There's curve ball: there's a new method introduced in this code, `getElementById()`. Just read the comments and look up the documentation if you don't understand it.
 
 ## Know Your Docs
 
@@ -120,19 +138,3 @@ For now, you have a challenge!
 
 * [Wikipedia - D.R.Y Principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 * [Medium - AirBNB Code Style](https://medium.com/dailyjs/dot-notation-vs-bracket-notation-eedea5fa8572)
-
-## Summary & Challenge Yourself
-
-We've covered a lot of information in this lesson from Button Elements and their methods like `onclick` to JavaScript keywords like `let` that communicates to our computer when we want to hold data in a variable or the keyword `function` that tells the computer to create a function and remember the instructions inside its declaration block and how to invoke a function with the trailing `()`. We began working with methods of the Window, Console, and Document Object to create new windows, logs, and elements.
-
-I know this is a lot, but I hope this quick but deeper dive into the building blocks of web pages and the properties, methods, and events that compose them helps you start seeing this stuff as less "computer-sciency" and more practical. Sure, you have JavaScript and HTML syntax to learn, but that WILL come with practice. Just keep reading, studying, and saving your docs and do your Challenges!!
-
-### Challenge
-
-What can you create with this handful of new methods? Show us and impress up. In the next class we'll invite everyone to share what they created.
-
-Feel free to use this repo for an idea/starting point: [https://github.com/AustinCodingAcademy/101-important-to-do-list](https://github.com/AustinCodingAcademy/101-important-to-do-list).
-
-If you want, start with the `README.md` file, read the entire instructions, then clone it and begin completing it.
-
- > NOTE: There's curveball: there's a new method introduced in this code, `getElementById()`. Just read the comments and look up the documentation if you don't understand it.

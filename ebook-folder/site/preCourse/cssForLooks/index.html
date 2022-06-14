@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2741,15 +2741,14 @@
 <p>Inside the brackets, we are going to add a <code>border</code> property and set it to <code>15px solid blue</code>. This creates a blue, 15-pixel wide border around all the content inside the element with the ID <code>box</code>.</p>
 <!-- TODO This should be changed to not use the short-hand of the border property -->
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">the CSS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">box</span> <span class="p">{</span>
-  <span class="k">border</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">blue</span><span class="p">;</span>
-  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">the Result</label><div class="tabbed-content">
 <p><img alt="surfCity-io-example-blue-border" src="../../images/surfCity-io-example-blue-border.png" /></p>
@@ -2763,7 +2762,7 @@
 <p>Next, let's center our container by adding, <code>margin: auto;</code>. This tells the browser to put an equal amount of space on either side of the container.</p>
 <p>While we are centering things, let's center that image container we added in HTML. The Img container has an ID of <code>social</code> on it. In order to center it, we need to set its width to be less than its parent's width, the <code>main</code> container, and add another <code>margin: auto;</code>:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">the CSS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2774,20 +2773,19 @@
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">box</span> <span class="p">{</span>
-  <span class="k">border</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="kc">outset</span> <span class="kc">blue</span><span class="p">;</span>
-  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">outset</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
 
-<span class="p">#</span><span class="nn">social</span> <span class="p">{</span>
-  <span class="k">width</span><span class="p">:</span> <span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-<span class="p">}</span> 
-</code></pre></div>
-</td></tr></table>
+<span class="p">#</span><span class="nn">social</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">the Result</label><div class="tabbed-content">
 <p><img alt="surfCity-io-example-margin" src="../../images/surfCity-io-example-margin.png" /></p>
@@ -2797,7 +2795,7 @@
 <p>The next thing we want to do is set a specific <code>height</code> and <code>width</code> on the <code>#box</code> container. Let's set it to <code>width: 500px;</code> and <code>height: 200px;</code></p>
 <p>After that, let's change the font. If you don't specify which font to use, the browser will just use a <a href="https://www.granneman.com/webdev/coding/css/fonts-and-formatting/web-browser-font-defaults">default font</a>. Telling the browser what font to use is a little tricky because not all machines have the same fonts installed. We could tell the browser to download a font, but instead we are just going to assign a category and let the browser pick its default one of that category. We do that with the following key/value pair: <code>font-family: cursive;</code></p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">the CSS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2805,17 +2803,16 @@
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">box</span> <span class="p">{</span>
-  <span class="k">border</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="kc">outset</span> <span class="kc">blue</span><span class="p">;</span>
-  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-  <span class="k">width</span><span class="p">:</span> <span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="kc">cursive</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">outset</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="kc">cursive</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">the Result</label><div class="tabbed-content">
 <p><img alt="surfCity-io-example-width" src="../../images/surfCity-io-example-width.png" /></p>
@@ -2825,7 +2822,7 @@
 <p>Let's add a little more color by setting the <code>background</code> of the <code>body</code> to <code>red</code>. The whole visible area in the browser is inside the body. To change its background color, we add <code>background: red;</code></p>
 <p>Next we want to clean up some of the spacing and formatting in the <code>#box</code> container. We'll do this by changing some font sizes and margin spacing. We're adding a new type of measurement here, the <code>em</code>. The <code>em</code> is similar to the pixel(<code>px</code>), but it's a relative measurement and helps the browser resize the text on different screen sizes.</p>
 <div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">the CSS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2837,21 +2834,20 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">body</span> <span class="p">{</span>
-    <span class="k">background-color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="nt">h1</span> <span class="p">{</span>
-  <span class="k">font-size</span><span class="p">:</span> <span class="mf">2.2</span><span class="kt">em</span><span class="p">;</span>
-  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">2.2</span><span class="kt">em</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="nt">span</span> <span class="p">{</span>
-  <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="nt">span</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">the Result</label><div class="tabbed-content">
 <p><img alt="surfCity-io-example-background" src="../../images/surfCity-io-example-background.png" /></p>
@@ -2860,7 +2856,7 @@
 <p>The black text on the red background is a little harsh. We could change the font color, but instead, we are going to change the background of the <code>#box</code> container. We just saw how we can change the background to a specific color, but we can also change it to a pattern. Creating these pattens can be complicated, but fortunately, someone has created a bunch of them and shared the code with us. You can find them by going to this website <a href="http://lea.verou.me/css3patterns/">CSS3 Patterns Gallery</a>.</p>
 <p>Scroll down until you see a pattern called "Wave" and click it. This will bring up the code, and you can copy the code/paste it into the <code>#box</code> rule as shown below.</p>
 <div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">the CSS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2873,22 +2869,21 @@
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">box</span> <span class="p">{</span>
-  <span class="k">border</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="kc">outset</span> <span class="kc">blue</span><span class="p">;</span>
-  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-  <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-  <span class="k">width</span><span class="p">:</span> <span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="kc">cursive</span><span class="p">;</span>
-  <span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="mh">#ffffff</span> <span class="mi">50</span><span class="kt">%</span><span class="p">,</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="mi">0</span><span class="p">)</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">,</span>
-<span class="nb">radial-gradient</span><span class="p">(</span><span class="kc">circle</span> <span class="n">closest</span><span class="nv">-side</span><span class="p">,</span> <span class="mh">#FFFFFF</span> <span class="mi">53</span><span class="kt">%</span><span class="p">,</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="mi">0</span><span class="p">)</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">,</span>
-<span class="nb">radial-gradient</span><span class="p">(</span><span class="kc">circle</span> <span class="n">closest</span><span class="nv">-side</span><span class="p">,</span> <span class="mh">#FFFFFF</span> <span class="mi">50</span><span class="kt">%</span><span class="p">,</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="mi">0</span><span class="p">)</span> <span class="mi">55</span><span class="kt">px</span> <span class="mi">0</span> <span class="mh">#48B</span><span class="p">;</span>
-  <span class="k">background-size</span><span class="p">:</span> <span class="mi">110</span><span class="kt">px</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">repeat-x</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">outset</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="kc">cursive</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="nb">linear-gradient</span><span class="p">(</span><span class="mh">#ffffff</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">,</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="nb">radial-gradient</span><span class="p">(</span><span class="kc">circle</span><span class="w"> </span><span class="n">closest</span><span class="nv">-side</span><span class="p">,</span><span class="w"> </span><span class="mh">#FFFFFF</span><span class="w"> </span><span class="mi">53</span><span class="kt">%</span><span class="p">,</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="nb">radial-gradient</span><span class="p">(</span><span class="kc">circle</span><span class="w"> </span><span class="n">closest</span><span class="nv">-side</span><span class="p">,</span><span class="w"> </span><span class="mh">#FFFFFF</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">,</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="mi">55</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mh">#48B</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">background-size</span><span class="p">:</span><span class="w"> </span><span class="mi">110</span><span class="kt">px</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">background-repeat</span><span class="p">:</span><span class="w"> </span><span class="kc">repeat-x</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">the Result</label><div class="tabbed-content">
 <p><img alt="surfCity-io-example-wave-patterns" src="../../images/surfCity-io-example-wave-patterns.png" /></p>
@@ -2897,7 +2892,7 @@
 <p>The last thing we need to do is make the countdown clock work. Writing JavaScript is a little more complicated than CSS or HTML, but you did a quick Google search and <a href="https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript">found that someone else had written the code already</a> and like the CSS background patterns, they have shared the code for other developers to use and learn from.</p>
 <p>Copy the code from below and paste it into the JS window in your code pen. And with that working, we are ready to show it to our friend (the customer/client)</p>
 <div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">the JS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2922,34 +2917,33 @@
 <span class="normal">23</span>
 <span class="normal">24</span>
 <span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// set up variable to manage date rules</span>
-<span class="kd">const</span> <span class="nx">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span> <span class="c1">// New Date object</span>
-<span class="nx">date</span><span class="p">.</span><span class="nx">setDate</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()</span> <span class="o">+</span> <span class="mf">30</span><span class="p">)</span> <span class="c1">// Current day plus 30 days</span>
-<span class="kd">const</span> <span class="nx">second</span> <span class="o">=</span> <span class="mf">1000</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">minute</span> <span class="o">=</span> <span class="nx">second</span> <span class="o">*</span> <span class="mf">60</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">hour</span> <span class="o">=</span> <span class="nx">minute</span> <span class="o">*</span> <span class="mf">60</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">day</span> <span class="o">=</span> <span class="nx">hour</span> <span class="o">*</span> <span class="mf">24</span><span class="p">;</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// set up variable to manage date rules</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span><span class="w"> </span><span class="c1">// New Date object</span><span class="w"></span>
+<span class="nx">date</span><span class="p">.</span><span class="nx">setDate</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">30</span><span class="p">)</span><span class="w"> </span><span class="c1">// Current day plus 30 days</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">second</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1000</span><span class="p">;</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">minute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">second</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">60</span><span class="p">;</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">hour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">minute</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">60</span><span class="p">;</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">day</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">hour</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">24</span><span class="p">;</span><span class="w"></span>
 
-<span class="c1">// convert target date to a date object</span>
-<span class="kd">let</span> <span class="nx">targetDate</span> <span class="o">=</span> <span class="nx">date</span><span class="p">;</span>
+<span class="c1">// convert target date to a date object</span><span class="w"></span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">targetDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">date</span><span class="p">;</span><span class="w"></span>
 
-<span class="c1">// set up the loop to update the countdown once a second</span>
-<span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// set up the loop to update the countdown once a second</span><span class="w"></span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-  <span class="c1">// get the current time</span>
-  <span class="kd">let</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="w">  </span><span class="c1">// get the current time</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">();</span><span class="w"></span>
 
-  <span class="c1">// get the time remaining</span>
-  <span class="kd">let</span> <span class="nx">distance</span> <span class="o">=</span> <span class="nx">targetDate</span> <span class="o">-</span> <span class="nx">now</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// get the time remaining</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">targetDate</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">now</span><span class="p">;</span><span class="w"></span>
 
-  <span class="c1">// update the &lt;span&gt; tags with the countdown values</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#days&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">distance</span> <span class="o">/</span> <span class="p">(</span><span class="nx">day</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; days, &quot;</span><span class="p">;</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#hours&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span> <span class="o">%</span> <span class="p">(</span><span class="nx">day</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="nx">hour</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; hours, &quot;</span><span class="p">;</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#minutes&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span> <span class="o">%</span> <span class="p">(</span><span class="nx">hour</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="nx">minute</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; minutes, &quot;</span><span class="p">;</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#seconds&#39;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span> <span class="o">%</span> <span class="p">(</span><span class="nx">minute</span><span class="p">))</span> <span class="o">/</span> <span class="nx">second</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; seconds &quot;</span><span class="p">;</span>
-<span class="p">},</span> <span class="nx">second</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="c1">// update the &lt;span&gt; tags with the countdown values</span><span class="w"></span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#days&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">distance</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">day</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; days, &quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#hours&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">day</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">hour</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; hours, &quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#minutes&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">hour</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">minute</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; minutes, &quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#seconds&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">minute</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">second</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; seconds &quot;</span><span class="p">;</span><span class="w"></span>
+<span class="p">},</span><span class="w"> </span><span class="nx">second</span><span class="p">)</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">result</label><div class="tabbed-content">
 <p><img alt="surfCity-io-example-wave-patterns" src="../../images/surfCity-io-example-wave-patterns.png" /></p>
@@ -3027,7 +3021,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

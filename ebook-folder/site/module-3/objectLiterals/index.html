@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2721,7 +2721,7 @@
 <li>as well as name and catalogID</li>
 </ul>
 <p>To offer an easier way to structure the data we'd need to display on the web page for them we wouldn't want an array because those are for lists, not necessarily related items.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2744,38 +2744,36 @@
 <span class="normal">21</span>
 <span class="normal">22</span>
 <span class="normal">23</span>
-<span class="normal">24</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">const</span> <span class="nx">arrayOfTree</span> <span class="o">=</span> <span class="p">[{</span>
-    <span class="nx">catalogID</span><span class="o">:</span> <span class="mf">38</span><span class="p">,</span>
-    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;American Beech&quot;</span><span class="p">,</span>
-    <span class="nx">growZone</span><span class="o">:</span> <span class="s2">&quot;4-9&quot;</span><span class="p">,</span>
-    <span class="nx">matureHeightFT</span><span class="o">:</span> <span class="mf">40</span><span class="p">,</span>
-    <span class="nx">specialCare</span><span class="o">:</span> <span class="s2">&quot;Full Sun&quot;</span><span class="p">,</span>
-    <span class="nx">soilType</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Acidic&quot;</span><span class="p">,</span> <span class="s2">&quot;Clay&quot;</span><span class="p">,</span> <span class="s2">&quot;Loamy&quot;</span><span class="p">,</span> <span class="s2">&quot;Moist&quot;</span><span class="p">,</span> <span class="s2">&quot;Sandy&quot;</span><span class="p">,</span> <span class="s2">&quot;Well-drained&quot;</span><span class="p">]</span>
-  <span class="p">},</span>
-    <span class="p">{</span>
-    <span class="nx">catalogID</span><span class="o">:</span> <span class="mf">81</span><span class="p">,</span>
-    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;River Birch&quot;</span><span class="p">,</span>
-    <span class="nx">growZone</span><span class="o">:</span> <span class="s2">&quot;4-9&quot;</span><span class="p">,</span>
-    <span class="nx">matureHeightFT</span><span class="o">:</span> <span class="mf">70</span><span class="p">,</span>
-    <span class="nx">specialCare</span><span class="o">:</span> <span class="s2">&quot;Partial Shade&quot;</span>
-    <span class="nx">soilType</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Acidic&quot;</span><span class="p">,</span> <span class="s2">&quot;Clay&quot;</span><span class="p">,</span> <span class="s2">&quot;Drought-Tolerant&quot;</span><span class="p">,</span> <span class="s2">&quot;Loamy&quot;</span><span class="p">,</span> <span class="s2">&quot;Moist&quot;</span><span class="p">,</span> <span class="s2">&quot;Sandy&quot;</span><span class="p">,</span> <span class="s2">&quot;Well-drained&quot;</span><span class="p">,</span> <span class="s2">&quot;Wet&quot;</span><span class="p">]</span>
-  <span class="p">},</span>
-    <span class="p">{</span>
-    <span class="nx">catalogID</span><span class="o">:</span> <span class="mf">90</span><span class="p">,</span>
-    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Northern Catalpa&quot;</span><span class="p">,</span>
-    <span class="nx">growZone</span><span class="o">:</span> <span class="mf">4</span><span class="o">-</span><span class="mf">8</span><span class="p">,</span>
-    <span class="nx">matureHeightFT</span><span class="o">:</span> <span class="mf">60</span><span class="p">,</span>
-    <span class="nx">specialCare</span><span class="o">:</span> <span class="s2">&quot;Partial Shade&quot;</span><span class="p">,</span>
-    <span class="nx">soilType</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Acidic&quot;</span><span class="p">,</span> <span class="s2">&quot;Alkaline&quot;</span><span class="p">,</span> <span class="s2">&quot;Clay&quot;</span><span class="p">,</span> <span class="s2">&quot;Drought-Tolerant&quot;</span><span class="p">,</span> <span class="s2">&quot;Loamy&quot;</span><span class="p">,</span> <span class="s2">&quot;Moist&quot;</span><span class="p">,</span> <span class="s2">&quot;Rich&quot;</span><span class="p">,</span> <span class="s2">&quot;Sandy&quot;</span><span class="p">,</span> <span class="s2">&quot;Well-drained&quot;</span><span class="p">,</span> <span class="s2">&quot;Wet&quot;</span><span class="p">]</span>
-  <span class="p">}]</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">arrayOfTree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">catalogID</span><span class="o">:</span><span class="w"> </span><span class="mf">38</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;American Beech&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">growZone</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;4-9&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">matureHeightFT</span><span class="o">:</span><span class="w"> </span><span class="mf">40</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">specialCare</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Full Sun&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">soilType</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Acidic&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Clay&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Loamy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Moist&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Sandy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Well-drained&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">catalogID</span><span class="o">:</span><span class="w"> </span><span class="mf">81</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;River Birch&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">growZone</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;4-9&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">matureHeightFT</span><span class="o">:</span><span class="w"> </span><span class="mf">70</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">specialCare</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Partial Shade&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">soilType</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Acidic&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Clay&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Drought-Tolerant&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Loamy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Moist&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Sandy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Well-drained&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Wet&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">catalogID</span><span class="o">:</span><span class="w"> </span><span class="mf">90</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Northern Catalpa&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">growZone</span><span class="o">:</span><span class="w"> </span><span class="mf">4</span><span class="o">-</span><span class="mf">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">matureHeightFT</span><span class="o">:</span><span class="w"> </span><span class="mf">60</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">specialCare</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Partial Shade&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">soilType</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Acidic&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Alkaline&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Clay&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Drought-Tolerant&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Loamy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Moist&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Rich&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Sandy&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Well-drained&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Wet&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">}]</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>Above we see an array of three objects that each contain information on three different trees. We can loop over the object themselves but we cannot loop over the keys inside them. However, we can still access the values with dot-notation.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTree</span><span class="p">[</span><span class="mf">2</span><span class="p">].</span><span class="nx">name</span><span class="p">)</span> <span class="c1">// =&gt; Northern Catalpa</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTree</span><span class="p">[</span><span class="mf">1</span><span class="p">].</span><span class="nx">matureHeightFT</span><span class="p">)</span> <span class="c1">// =&gt; 70</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTree</span><span class="p">[</span><span class="mf">2</span><span class="p">].</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="c1">// =&gt; Northern Catalpa</span><span class="w"></span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTree</span><span class="p">[</span><span class="mf">1</span><span class="p">].</span><span class="nx">matureHeightFT</span><span class="p">)</span><span class="w"> </span><span class="c1">// =&gt; 70</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>If you're confused, think of them just like CSS, on the left-side of the <code>:</code> is the <strong>key</strong>/property and on the right-side is <strong>value</strong>.</p>
 <!-- ## Practice It -->
 
@@ -2797,9 +2795,8 @@
 
 <!-- 
 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
@@ -2817,25 +2814,21 @@ https://facelessuser.github.io/pymdown-extensions/extensions/keys/
 
 === "Javascript"
 
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 === "Python"
 
-  <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 === "Example"
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="go">  .</span>
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="go">  .</span>
+</code></pre></div></td></tr></table></div>
 
 === "Instructions"
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  .
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  .
+</code></pre></div></td></tr></table></div>
 
 === "Result"
     ![PIC](./../images/pic.png)
@@ -2907,7 +2900,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/keys/
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

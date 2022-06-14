@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2783,29 +2783,27 @@
 <p>Now we have three types of data: Number, String, and Function. In this lesson we'll add one more type of data, <strong>Array</strong>!</p>
 <h2 id="whats-an-array">What's An Array?</h2>
 <p>The words array and list are interchangeable. In fact, in other languages like C#, they are called lists instead of arrays. If this is true, we can think of the data type, <strong>Array</strong> as a way to group many items together in the form of a list. Let's say we're creating a todo list. We wouldn't want to create a new variable to hold each todo as String types:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// Inefficient way to hold a list of ToDos</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// Inefficient way to hold a list of ToDos</span><span class="w"></span>
 
-  <span class="kd">let</span> <span class="nx">todo1</span> <span class="o">=</span> <span class="s2">&quot;wash the dog.&quot;</span>
-  <span class="kd">let</span> <span class="nx">todo2</span> <span class="o">=</span> <span class="s2">&quot;wash the car.&quot;</span>
-  <span class="kd">let</span> <span class="nx">todo3</span> <span class="o">=</span> <span class="s2">&quot;meditate.&quot;</span>
-  <span class="kd">let</span> <span class="nx">todo4</span> <span class="o">=</span> <span class="s2">&quot;learn to prepare a new healthy meal.&quot;</span>
-  <span class="kd">let</span> <span class="nx">todo5</span> <span class="o">=</span> <span class="s2">&quot;journal my thoughts.&quot;</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">todo1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;wash the dog.&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">todo2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;wash the car.&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">todo3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;meditate.&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">todo4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;learn to prepare a new healthy meal.&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">todo5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;journal my thoughts.&quot;</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>Instead, we could hold a list of items like this in an array/list. Like so...</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// A better way to hold a list of similar or related items</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// A better way to hold a list of similar or related items</span><span class="w"></span>
 
-  <span class="kd">let</span> <span class="nx">myTodos</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;wash the dog.&quot;</span><span class="p">,</span> <span class="s2">&quot;wash the car.&quot;</span><span class="p">,</span> <span class="s2">&quot;meditate.&quot;</span><span class="p">,</span> <span class="s2">&quot;learn to prepare a new healthy meal.&quot;</span><span class="p">,</span> <span class="s2">&quot;journal my thoughts.&quot;</span><span class="p">]</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">myTodos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;wash the dog.&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;wash the car.&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;meditate.&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;learn to prepare a new healthy meal.&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;journal my thoughts.&quot;</span><span class="p">]</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>From the examples above you can deduce:</p>
 <ol>
 <li>Arrays are created in a similar way as the Number, String, or Function types are created. We start by simply using the keyword const, then naming the array something like myTodos then assigning it a value with the = symbol.</li>
@@ -2814,15 +2812,13 @@
 <blockquote>
 <p>But what if we want to hold a list of numbers?</p>
 </blockquote>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">let</span> <span class="nx">aListOfNumbers</span> <span class="o">=</span> <span class="p">[</span><span class="mf">8</span><span class="p">,</span> <span class="mf">45</span><span class="p">,</span> <span class="mf">71</span><span class="p">,</span> <span class="mf">23</span><span class="p">,</span> <span class="mf">75</span><span class="p">,</span> <span class="mf">99</span><span class="p">,</span> <span class="mf">103</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">61</span><span class="p">,</span> <span class="mf">2</span><span class="p">]</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">aListOfNumbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="mf">45</span><span class="p">,</span><span class="w"> </span><span class="mf">71</span><span class="p">,</span><span class="w"> </span><span class="mf">23</span><span class="p">,</span><span class="w"> </span><span class="mf">75</span><span class="p">,</span><span class="w"> </span><span class="mf">99</span><span class="p">,</span><span class="w"> </span><span class="mf">103</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">61</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">]</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>What if we wanted to hold a list of Numbers and Strings?</p>
 </blockquote>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">let</span> <span class="nx">mixedList</span> <span class="o">=</span> <span class="p">[</span><span class="mf">855</span><span class="p">,</span> <span class="s2">&quot;Growth&quot;</span><span class="p">,</span> <span class="mf">2630</span><span class="p">,</span> <span class="mf">7</span><span class="p">,</span> <span class="s2">&quot;Strength&quot;</span><span class="p">,</span> <span class="s2">&quot;Positive Change&quot;</span><span class="p">,</span> <span class="mf">1013</span><span class="p">,</span> <span class="s2">&quot;Laughter&quot;</span><span class="p">]</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">mixedList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">855</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Growth&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">2630</span><span class="p">,</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Strength&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Positive Change&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1013</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Laughter&quot;</span><span class="p">]</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>Great! We can put anything we like in an array as long as we use the proper syntax, but what can we do with an array that we can't do with a String or Number?</p>
 </blockquote>
@@ -2830,7 +2826,7 @@
 <h2 id="what-does-indexed-mean">What Does Indexed Mean?</h2>
 <p>You see, an Array is <strong>indexed</strong> which means every item in the array has a hidden number attached to it. These <em>hidden numbers</em> mark the place in the array the items sits. This means, that every place in the array is marked with a number that ascends from 0 up to the total number of items in the array.</p>
 <p>From left to right, we can count the items in the array as 0, 1, 2, 3, 4, 5, 6, etc, until we reach the end of the array. This is useful because we can access those items just the same way we can access the properties on our HTML Elements! Check out the two code snippets below and see if you can figure out the connection.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2839,31 +2835,29 @@
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c">&lt;!-- HTML  --&gt;</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="cm">&lt;!-- HTML  --&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;parrot&quot;</span><span class="p">&gt;</span>Blue feathers.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
-  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="c1">// JavaScript</span>
-    <span class="kd">let</span> <span class="nx">ourElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;parrot&quot;</span><span class="p">)</span>
-    <span class="kd">let</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">ourElement</span><span class="p">.</span><span class="nx">innerHTML</span>
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// JavaScript</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">ourElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;parrot&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ourElement</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"></span>
 
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="c1">// =&gt; &quot;Blue Feathers.&quot;</span>
-  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span><span class="w"> </span><span class="c1">// =&gt; &quot;Blue Feathers.&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
 <p>In the example above we see some JavaScript inside the <code>&lt;script&gt;</code> element that holds the value of the <code>&lt;p&gt;</code> element in the variable named <code>ourElement</code>. Then we access its <code>innerHTML</code> property and hold it in the <code>text</code> variable. If we log <code>text</code> to the console we should see <code>"Blue Feathers."</code>.</p>
 <p>In this same way, we can access the <strong>items</strong>/<em>properties</em> of an array by using its <strong>indexes</strong>: 0, 1, 2, 3 ... ∞. Below we see an example of JS code that creates an array and logs out a few of its items/properties.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">let</span> <span class="nx">courage</span> <span class="o">=</span> <span class="p">[</span><span class="mf">999</span><span class="p">,</span> <span class="s2">&quot;wonderful&quot;</span><span class="p">,</span> <span class="mf">100</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="s2">&quot;challenge&quot;</span><span class="p">]</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">courage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">999</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;wonderful&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;challenge&quot;</span><span class="p">]</span><span class="w"></span>
 
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">courage</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span> <span class="c1">// =&gt; 999</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">courage</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span> <span class="c1">// =&gt; &quot;wonderful&quot;</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">courage</span><span class="p">[</span><span class="mf">4</span><span class="p">])</span> <span class="c1">// =&gt; &quot;challenge&quot;</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">courage</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// =&gt; 999</span><span class="w"></span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">courage</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span><span class="w"> </span><span class="c1">// =&gt; &quot;wonderful&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">courage</span><span class="p">[</span><span class="mf">4</span><span class="p">])</span><span class="w"> </span><span class="c1">// =&gt; &quot;challenge&quot;</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>In the code snippet above you see a different syntax than what we've used before, [0]. This is called <strong>bracket-notation</strong>. It works the same as dot-notation except that it can accept numbers where dot-notation can only take letters/words that refer to a property name like <code>.innerHTML</code>.</p>
 <blockquote>
 <p>To access the <em>hidden numbers</em>, <strong>indexes</strong>, we use bracket-notation. To access properties with names we know we use dot-notation. We'll use these indexes later when we write loops, as well!</p>
@@ -2893,7 +2887,7 @@
 <p>We'll stop for now on the methods of Arrays but we'll come back to the them soon because they are very useful <strong>types of data</strong>! In the next lesson we'll cover how to <strong>loop</strong> over an array while we cover Loops!!</p>
 <h2 id="practice-it">Practice It</h2>
 <p>Create a new repo or <a href="https://codepen.io">CodePen</a> and paste the following code into the <code>index.html</code> file.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2935,7 +2929,7 @@
 <span class="normal">40</span>
 <span class="normal">41</span>
 <span class="normal">42</span>
-<span class="normal">43</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="cp">&lt;!DOCTYPE html&gt;</span>
   <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
@@ -2946,40 +2940,39 @@
     <span class="p">&lt;</span><span class="nt">article</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;text-box&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;addNewElement()&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 
-    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-      <span class="c1">// Create an array called listOfWords</span>
-      <span class="kd">const</span> <span class="nx">listOfWords</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Beautiful&quot;</span><span class="p">,</span> <span class="s2">&quot;Grand&quot;</span><span class="p">,</span> <span class="s2">&quot;Brave&quot;</span><span class="p">,</span> <span class="s2">&quot;Powerful&quot;</span><span class="p">]</span>
-      <span class="c1">// Create a variable to count the number of clicks</span>
-      <span class="kd">let</span> <span class="nx">clicks</span> <span class="o">=</span> <span class="mf">0</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="c1">// Create an array called listOfWords</span><span class="w"></span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">listOfWords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Beautiful&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Grand&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Brave&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Powerful&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="c1">// Create a variable to count the number of clicks</span><span class="w"></span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">clicks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="w"></span>
 
-      <span class="kd">const</span> <span class="nx">addNewElement</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">addNewElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-        <span class="c1">// Use the document method: .createElement() to create a &lt;p&gt; element</span>
-        <span class="kd">const</span> <span class="nx">newParagraph</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">// Use the document method: .createElement() to create a &lt;p&gt; element</span><span class="w"></span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">newParagraph</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span><span class="w"></span>
 
-        <span class="c1">// Use the .createTextNode() method to create a text node with each of the words of the array</span>
-        <span class="c1">// ON LINE 25 - Replace the &quot;me&quot; to Practice Bracket-Notation and make this function access each element one-at-a-time using the &quot;clicks&quot; as a value for the indexes of the array.</span>
-        <span class="kd">const</span> <span class="nx">newText</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="nx">me</span><span class="p">[</span><span class="nx">me</span><span class="p">])</span>
+<span class="w">        </span><span class="c1">// Use the .createTextNode() method to create a text node with each of the words of the array</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// ON LINE 25 - Replace the &quot;me&quot; to Practice Bracket-Notation and make this function access each element one-at-a-time using the &quot;clicks&quot; as a value for the indexes of the array.</span><span class="w"></span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">newText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="nx">me</span><span class="p">[</span><span class="nx">me</span><span class="p">])</span><span class="w"></span>
 
-        <span class="c1">// Then attach the text node to the new &lt;p&gt; element</span>
-        <span class="nx">newParagraph</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newText</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">// Then attach the text node to the new &lt;p&gt; element</span><span class="w"></span>
+<span class="w">        </span><span class="nx">newParagraph</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newText</span><span class="p">)</span><span class="w"></span>
 
-        <span class="c1">// Next, hold the value of the &lt;article&gt; element</span>
-        <span class="kd">const</span> <span class="nx">myElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;text-box&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">// Next, hold the value of the &lt;article&gt; element</span><span class="w"></span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">myElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;text-box&quot;</span><span class="p">)</span><span class="w"></span>
 
-        <span class="c1">// Then add the new &lt;p&gt; element with the new text node inside it to the &lt;article&gt; element</span>
-        <span class="nx">myElement</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newParagraph</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">// Then add the new &lt;p&gt; element with the new text node inside it to the &lt;article&gt; element</span><span class="w"></span>
+<span class="w">        </span><span class="nx">myElement</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newParagraph</span><span class="p">)</span><span class="w"></span>
 
-        <span class="c1">// Each time this function runs add 1 to the value of clicks so we can iterate over the array</span>
-        <span class="nx">clicks</span><span class="o">++</span>
+<span class="w">        </span><span class="c1">// Each time this function runs add 1 to the value of clicks so we can iterate over the array</span><span class="w"></span>
+<span class="w">        </span><span class="nx">clicks</span><span class="o">++</span><span class="w"></span>
 
-        <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">clicks</span><span class="p">)</span>
-      <span class="p">}</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">clicks</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <ul class="task-list">
 <li class="task-list-item">
 <p><input type="checkbox"/> Read the comment lines to figure out what the code is supposed to be doing.</p>
@@ -3000,9 +2993,8 @@
 
 <!-- 
 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
@@ -3020,25 +3012,21 @@ https://facelessuser.github.io/pymdown-extensions/extensions/keys/
 
 === "Javascript"
 
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 === "Python"
 
-  <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 === "Example"
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="go">  .</span>
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="go">  .</span>
+</code></pre></div></td></tr></table></div>
 
 === "Instructions"
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  .
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  .
+</code></pre></div></td></tr></table></div>
 
 === "Result"
     ![PIC](./../images/pic.png)
@@ -3110,7 +3098,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/keys/
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

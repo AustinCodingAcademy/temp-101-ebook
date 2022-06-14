@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2763,22 +2763,21 @@
 <ol>
 <li>
 <p>In your terminal you can run these commands one at a time:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    cd devFolder
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>    cd devFolder
     cd evenOdd-lists
     touch index.html
     code .
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: You can also just use finder and VS code to do the same thing if it's more comfortable to you.</p>
 </blockquote>
 </li>
 <li>
 <p>In the <code>index.html</code> file create the boilerplate HTML code and inside the Body Element create a Form with an Input for text and a Submit button.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2789,7 +2788,7 @@
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Even Odd Lists<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Even Odd Lists<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">hr</span><span class="p">/&gt;</span> 
 
     <span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;even-odd-form&quot;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>
@@ -2801,22 +2800,21 @@
         <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Even or Odd?&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
       <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </li>
 </ol>
 <h2 id="introducing-ol-ul-elements">Introducing OL &amp; UL Elements</h2>
 <ol>
 <li>
 <p>Now let's add some elements we can show users their inputs. Below the form create two Section elements titled "Even" and "Odd" Inside those sections create to <strong>Unordered Lists (UL)</strong>:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Even<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
@@ -2824,8 +2822,7 @@
       <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Odd<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: In these <strong>Unordered List elements</strong> is where we'll add our words as <strong>List Items (LI)</strong>. You could change these out for <strong>Ordered Lists</strong> if you'd like numbers instead of bullets.</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">MDN Docs - UL Element</a></p>
@@ -2836,17 +2833,16 @@
 <blockquote>
 <p>NOTE: For simplicity sakes we'll put our JS in a Script element but feel free to keep it in a separate .js file you like.</p>
 </blockquote>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-      <span class="kd">let</span> <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="kd">let</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>Then let's create a function that will update this variable when the user types in.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2854,44 +2850,42 @@
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="kd">let</span> <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
 
-    <span class="kd">function</span> <span class="nx">updateWord</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">usersWord</span> <span class="o">=</span> <span class="nx">element</span><span class="p">.</span><span class="nx">value</span>
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">updateWord</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">element</span><span class="p">.</span><span class="nx">value</span><span class="w"></span>
 
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">usersWord</span><span class="p">)</span>
-    <span class="p">}</span>
-  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">usersWord</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: the console.log call is there to prove you're changing the variable as expected. This is a good practice as you're learning but you don't want these statements in <strong>Production Code</strong>.</p>
 </blockquote>
 </li>
 <li>
 <p>Now you'll need attach this function to the <code>onkeyup=</code> event on the Input Element and pass itself to it as <code>this</code>:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c">&lt;!-- ...more code above --&gt;</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="cm">&lt;!-- ...more code above --&gt;</span>
   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;word&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;word&quot;</span>  <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;what&#39;s your word?&quot;</span> <span class="na">onkeyup</span><span class="o">=</span><span class="s">&quot;updateWord(this)&quot;</span><span class="p">&gt;</span> 
-  <span class="c">&lt;!-- ...more code below --&gt;</span>
-</code></pre></div>
-</td></tr></table>
+  <span class="cm">&lt;!-- ...more code below --&gt;</span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: Test it. If it ain't workin' don't move on yet.</p>
 </blockquote>
 </li>
 <li>
 <p>Our next step is to get the word to appear in just one of the lists. Let's, for now, put them all in the Odd list. To do that we'll need to start by creating a reference to our Odd List. First, give the UL Elements <code>id=</code> properties with appropriate values and create a variable to hold a reference to them in:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Even<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;even&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
@@ -2899,36 +2893,33 @@
     <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Odd<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;odd&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">let</span> <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-  <span class="kd">let</span> <span class="nx">oddList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">oddList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>Now create function that will create a new element (<code>&lt;li&gt;</code>), put the input as its <code>innerText</code> and <code>append</code> it to the Odd List:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">function</span> <span class="nx">handleSubmit</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">newListItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span>
-    <span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">usersWord</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSubmit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">newListItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"></span>
 
-    <span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: We could have created the <code>oddList</code> variable at the top of this function but because we'll run this function every time we submit a new word there's no reason to make the computer work hard to re-create a reference every time we re-run the function.</p>
 </blockquote>
 </li>
 <li>
 <p>Don't forget to reset the form and clear the <code>userWord</code> variable:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2936,24 +2927,23 @@
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">function</span> <span class="nx">handleSubmit</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">newListItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span>
-    <span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">usersWord</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSubmit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">newListItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"></span>
 
-    <span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span><span class="w"></span>
 
-    <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even-odd-form&quot;</span><span class="p">).</span><span class="nx">reset</span><span class="p">()</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even-odd-form&quot;</span><span class="p">).</span><span class="nx">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </li>
 </ol>
 <h2 id="introducing-ifelse">Introducing If/Else</h2>
 <ol>
 <li>
 <p>Now the trick is to figure out where to change the logic so the program FIRST counts the letters of the word then decides whether it should be in the Even list or the Odd list. To do this let's look at the code line-by-line:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2966,48 +2956,45 @@
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">function</span> <span class="nx">handleSubmit</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// this line creates a new LI Element. We&#39;ll do this every time a word is submitted so this should stay the same</span>
-    <span class="kd">let</span> <span class="nx">newListItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSubmit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// this line creates a new LI Element. We&#39;ll do this every time a word is submitted so this should stay the same</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">newListItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span><span class="w"></span>
 
-    <span class="c1">// this line sticks the user&#39;s word into the newly create LI Element so we&#39;ll keep this the same, as well.</span>
-    <span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">usersWord</span>
+<span class="w">    </span><span class="c1">// this line sticks the user&#39;s word into the newly create LI Element so we&#39;ll keep this the same, as well.</span><span class="w"></span>
+<span class="w">    </span><span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"></span>
 
-    <span class="c1">// this line attaches/appends the element to the Odd List !!!THIS IS WHERE THE PROGRAM SHOULD DECIDE IF IT&#39;S EVEN OR ODD!!!</span>
-    <span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span>
+<span class="w">    </span><span class="c1">// this line attaches/appends the element to the Odd List !!!THIS IS WHERE THE PROGRAM SHOULD DECIDE IF IT&#39;S EVEN OR ODD!!!</span><span class="w"></span>
+<span class="w">    </span><span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span><span class="w"></span>
 
-    <span class="c1">// these two lines will be the same</span>
-    <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even-odd-form&quot;</span><span class="p">).</span><span class="nx">reset</span><span class="p">()</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="c1">// these two lines will be the same</span><span class="w"></span>
+<span class="w">    </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even-odd-form&quot;</span><span class="p">).</span><span class="nx">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>Okay so here's the line we're looking at:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// this line attaches/appends the element to the Odd List !!!THIS IS WHERE THE PROGRAM SHOULD DECIDE IF IT&#39;S EVEN OR ODD!!!</span>
-  <span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// this line attaches/appends the element to the Odd List !!!THIS IS WHERE THE PROGRAM SHOULD DECIDE IF IT&#39;S EVEN OR ODD!!!</span><span class="w"></span>
+<span class="w">  </span><span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>At this point we're going to need to learn a bit of new JavaScript - If/Else Statements!</p>
 <p>If/Else statements do exactly what they sound like. "If this statement is true then do this thing. Else, so that thing." Syntactically they look like this:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="k">if</span><span class="p">(</span> <span class="mf">1</span> <span class="o">===</span> <span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="kc">true</span>
-  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="kc">false</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>This statement will return "true" every time because 1 will always equal 1! However, we don't have to compare just 1 to 1 we can compare word lengths and even do mathematics in an if/else statement.</p>
 </li>
 <li>
 <p>Add an <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">If/Else Statement</a></strong> to our function:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3021,23 +3008,22 @@
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// ...more code above...</span>
-  <span class="kd">function</span> <span class="nx">handleSubmit</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">newListItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span>
-    <span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">usersWord</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// ...more code above...</span><span class="w"></span>
+<span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSubmit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">newListItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"></span>
 
-    <span class="k">if</span><span class="p">(</span><span class="cm">/*word length is even*/</span><span class="p">)</span> <span class="p">{</span>
-      <span class="cm">/*put word in even lists*/</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="cm">/*put word in odd list*/</span>
-      <span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="cm">/*word length is even*/</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="cm">/*put word in even lists*/</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="cm">/*put word in odd list*/</span><span class="w"></span>
+<span class="w">      </span><span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even-odd-form&quot;</span><span class="p">).</span><span class="nx">reset</span><span class="p">()</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even-odd-form&quot;</span><span class="p">).</span><span class="nx">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: This code isn't going to work because it doesn't have values but make sure you understand what's being told to the computer.</p>
 </blockquote>
@@ -3046,17 +3032,16 @@
 <p>Next we're going to have to have a reference to the Even List the same way we do with the Odd List. Just copy/paste the last variable and change the values:</p>
 </li>
 </ol>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">let</span> <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-  <span class="kd">let</span> <span class="nx">oddList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span>
-  <span class="kd">let</span> <span class="nx">evenList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even&quot;</span><span class="p">)</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">oddList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">evenList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even&quot;</span><span class="p">)</span><span class="w"></span>
 
-  <span class="c1">// ...more code below</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="c1">// ...more code below</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h2 id="introducing-the-modulus-and-data-types-string-and-boolean">Introducing The Modulus and Data Types: String and Boolean</h2>
 <ol>
 <li>
@@ -3087,16 +3072,15 @@
 <li>Truth 2: odd numbers are not evenly divided by 2, aka they have a remainder of not <code>0</code></li>
 </ul>
 <p>What if we divided the length of the word and compared the remainder to 0?</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="nx">usersWord</span><span class="p">.</span><span class="nx">length</span> <span class="o">%</span> <span class="mf">2</span> <span class="o">===</span> <span class="mf">0</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="nx">usersWord</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>This comparison will resolve to <code>true</code> or <code>false</code>. If the word's length is even it will resolve to <code>true</code> if not then it will resolve to <code>false</code>. This is a good thing because the <code>if( )</code> function works on these <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean Values</a></strong> of <code>true</code> and <code>false</code>.</p>
 <p>If we give this comparison to the <code>if( )</code> function we are telling the computer to run ask a few questions:
   * "What's the length of the word?"
   * "What's the remainder when divided by 2?"
   * "Is that remainder equal to 0?"</p>
 <p>Now our <strong>If/Else Statement</strong> should look like this:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3105,22 +3089,21 @@
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// ...more code above...</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// ...more code above...</span><span class="w"></span>
 
-  <span class="k">if</span><span class="p">(</span><span class="nx">usersWord</span><span class="p">.</span><span class="nx">length</span> <span class="o">%</span> <span class="mf">2</span> <span class="o">===</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span> 
-    <span class="cm">/*put word in even lists*/</span>
-  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="cm">/*put word in odd list*/</span>
-    <span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">usersWord</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">    </span><span class="cm">/*put word in even lists*/</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/*put word in odd list*/</span><span class="w"></span>
+<span class="w">    </span><span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c1">// ...more code below...</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="c1">// ...more code below...</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>Now tell the program to insert the word in the even list inside the <code>{ }</code> before the <code>else {</code></p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3141,30 +3124,29 @@
 <span class="normal">19</span>
 <span class="normal">20</span>
 <span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="kd">let</span> <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-  <span class="kd">let</span> <span class="nx">oddList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span>
-  <span class="kd">let</span> <span class="nx">evenList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even&quot;</span><span class="p">)</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">oddList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">evenList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even&quot;</span><span class="p">)</span><span class="w"></span>
 
-  <span class="c1">// ...more code here...updateWord()</span>
+<span class="w">  </span><span class="c1">// ...more code here...updateWord()</span><span class="w"></span>
 
-  <span class="kd">function</span> <span class="nx">handleSubmit</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">newListItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span>
-    <span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">usersWord</span>
+<span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSubmit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">newListItem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;LI&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">newListItem</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usersWord</span><span class="w"></span>
 
-    <span class="cm">/* compare remainder to 0 to see if even or not */</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">usersWord</span><span class="p">.</span><span class="nx">length</span> <span class="o">%</span> <span class="mf">2</span> <span class="o">===</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="cm">/*put word in even lists*/</span>
-        <span class="nx">evenList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span>
-      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="cm">/*put word in odd list*/</span>
-        <span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span>
-        <span class="p">}</span>
+<span class="w">    </span><span class="cm">/* compare remainder to 0 to see if even or not */</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">usersWord</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/*put word in even lists*/</span><span class="w"></span>
+<span class="w">        </span><span class="nx">evenList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/*put word in odd list*/</span><span class="w"></span>
+<span class="w">        </span><span class="nx">oddList</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newListItem</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
 
-    <span class="nx">usersWord</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even-odd-form&quot;</span><span class="p">).</span><span class="nx">reset</span><span class="p">()</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="nx">usersWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;even-odd-form&quot;</span><span class="p">).</span><span class="nx">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </li>
 </ol>
 <h3 id="push-yourself-further">Push Yourself Further</h3>
@@ -3226,7 +3208,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.5cf3e710.min.js"></script>

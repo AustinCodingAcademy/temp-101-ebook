@@ -13,18 +13,24 @@ A dead simple Node Express app that serves static [Material Themed docs](https:/
 
 To be able to edit the ebook you will need to follow these steps first:
 
-1. Install Python 3.7+ on to your computer
-2. Install [pip](https://pip.pypa.io/en/stable/installing/)
+1. [Install Python 3.7+](https://www.python.org/downloads/) on to your computer
+2. pip3 should be installed with Python but if not: install [pip](https://pip.pypa.io/en/stable/installing/) or [`pip3 install pip3`](https://pip.pypa.io/en/stable/installation/)
 3. `cd ebook-folder` to move into the Python package
 4. run `git clone https://github.com/squidfunk/mkdocs-material.git`
-5. Install the Python Packages `pip install -r requirements.txt` (See `requirements.txt`)
+5. Install the Python Packages `pip3 install -r requirements.txt` (See `requirements.txt`) or `pip3 install -r requirements.txt`
 6. Run `mkdocs build` to build the markdown files into static HTML files into the `site/` directory.
+
+  > NOTE1: if you are running Python 2.7 this will not work. You'll need to [update to Python 3.7 or higher](https://phoenixnap.com/kb/upgrade-python).
+
+  > NOTE2: if you are still running into the error your machine may have Python 2.7 set as a default. [Change it to an alias so you always use 3.7+](https://osxdaily.com/2022/02/15/make-python-3-default-macos/) or [change to alternative versions](https://www.skillsugar.com/how-to-change-the-default-python-version).
+
+  > NOTE3: potential updates needed to Python packages, see `requirements.txt`. Upgraded ` pymdown_extensions-8.1.1` to [`pymdown_extensions-9.4`](https://facelessuser.github.io/pymdown-extensions/) & `mkdocs-1.1.2` to `mkdocs-1.3.0` on May 10, 2022. Run `pip3 install <package> --upgrade` to fix.
 
 ## Serve
 
-To serve the files in `site/` to port 8000 **withOUT** `username:password` authentication simply run `mkdocs serve`.
+To serve the files in `site/` to port 8000 **withOUT** `username:password` authentication simply run `mkdocs serve` to see the documentation at `http://127.0.0.1:8000/`
 
-To serve **with authentication** you'll need to add `.env` file with environment variables to the root directory:
+To serve **with** basic `username:password` authentication you'll need to add a `.env` file with environment variables to the root directory:
 
 1. `cd ..`
 2. `echo "STUDENT_USERNAME=a-username STUDENT_PASSWORD=a-password INSTRUCTOR_USERNAME=a-username INSTRUCTOR_PASSWORD=a-password PORT=5500" >> .env`
@@ -67,6 +73,6 @@ How to install Python and pip instructions here:
 
 [Mkdocs](https://www.mkdocs.org/) is a Python package that generates statics web files (HTML, CSS, JS), seen in the `site/` directory, from plain Markdown files, seen in the `docs/` directory.
 
-[Material-Mkdocs](https://squidfunk.github.io/mkdocs-material/) is another Python package that builds on top of Mkdocs to provide design from the Material-UI Theme. The two receive their configuration from the `mkdocs.yaml` file. You'll see the navigation is is provided by the `nav:` property in that file and the Material Theme is the value of `theme:`.
+[Material-Mkdocs](https://squidfunk.github.io/mkdocs-material/) is another Python package that builds on top of Mkdocs to provide design from the Material-UI Theme. The two receive their configuration from the `mkdocs.yaml` file. You'll see the navigation is provided by the `nav:` property in that file and the Material Theme is the value of `theme:`.
 
 The [Express server](https://expressjs.com/) is just an app used to serve the static files from `site/` behind basic authentication thus the Node app is deployed and not the Python code.

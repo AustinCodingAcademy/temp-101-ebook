@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2812,77 +2812,71 @@
 <h3 id="how-to-use-the-dnd-attributes">How to Use The DnD Attributes</h3>
 <p>Go ahead and fork &amp; clone this <a href="https://github.com/AustinCodingAcademy/101-DnD-Demo">101-DnD-Demo repo</a>.</p>
 <p>To begin dragging an element we have to tell the browser that the element can be dragged by giving the element the attribute: <code>draggable="true"</code></p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">draggable</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../image/flower.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;picture of a flower&quot;</span> <span class="p">/&gt;</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">draggable</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../image/flower.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;picture of a flower&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div></td></tr></table></div>
 <p>Many elements already have this property/attribute set to true by default but it's good practice to go ahead and make it true for whatever elements you want to work with as draggable elements.</p>
 <p>Now we'll need a place to drag the element, the <strong>drop zone/target</strong>. Essentially be telling the browser that when our dragged element is taken to a specific location on the screen, let's not <em>prevent</em> it from being dropped. To do this we use a method on the <strong>event</strong> called <code>.preventDefault()</code>.</p>
 <p>What is the <strong>event</strong>? Again, just like an <code>onclick</code> it's the thing that happens between a user and the app, the event, and it's actually data we can access too! So in our DnD example we might be using the attribute <code>ondrag</code> but the <em>event</em> is "Drag" and <code>ondrop</code> attribute is really watching for a "Drop" event. But we don't normally call them by their name instead we use parameter names like <code>event</code>, <code>ev</code>, or simply <code>e</code>. It doesn't matter what we call it because it's always passed into the <strong>Event Handler Function</strong>, the function we built that we want to be fired when the event happens.</p>
 <p>I know that was a lot but I promise it's much simpler than it sounds. Let's see it in action for two places we'd like for the "Draggable" element to be dropped:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- below the previous div element --&gt;</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- below the previous div element --&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">ondragover</span><span class="o">=</span><span class="s">&quot;allowDrop(event)&quot;</span><span class="p">&gt;</span>
 
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">ondragover</span><span class="o">=</span><span class="s">&quot;allowDrop(event)&quot;</span><span class="p">&gt;</span>
 
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Now create a function called <code>allowDrop</code></p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">allowDrop</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">allowDrop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p>NOTE: Notice in the HTML that we pass in <code>event</code> but in the JS we use the parameter name <code>e</code>. This is okay. We can call them whatever we want as long as we know what's going on in the program.</p>
 </blockquote>
 <p>The <code>.preventDefault()</code> method is a special function used to tell the browser to do something different than it is normally supposed to do. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault">MDN has a nice example of preventing the click of a checkbox(its default setting)</a></p>
 <p>Now that we've called the <code>.preventDefault()</code> method the browser will allow an element to be dropped on the element you'd like for it to be dropped on. If you'd like, we can add a visual element to this so we the human can see it happening by adding &amp; removing a class name from the "dropzone" elements:</p>
 <div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">the HTML</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c">&lt;!-- HTML for Adding Visual of Valid Dropzone --&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="cm">&lt;!-- HTML for Adding Visual of Valid Dropzone --&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;div2&quot;</span> <span class="na">ondrop</span><span class="o">=</span><span class="s">&quot;drop(event)&quot;</span> <span class="na">ondragover</span><span class="o">=</span><span class="s">&quot;allowDrop(event)&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">the CSS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c">/* CSS for Adding Visual Cue of Valid Drop Zone </span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c">/* CSS for Adding Visual Cue of Valid Drop Zone </span>
 <span class="c">  by Creating a Rule for an Element with this Class Name</span>
-<span class="c">  */</span>
-  <span class="p">.</span><span class="nc">hovering</span> <span class="p">{</span>
-    <span class="k">background</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">151</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">);</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="c">  */</span><span class="w"></span>
+<span class="w">  </span><span class="p">.</span><span class="nc">hovering</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">151</span><span class="p">,</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mf">0.3</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">the JS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Adding a Visual of a Valid Drop Zone by Adding a Class Name</span>
-  <span class="kd">const</span> <span class="nx">allowDrop</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-    <span class="c1">// add &quot;hovering&quot; to the classList of the targeted drop zone element</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">).</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;hovering&quot;</span><span class="p">)</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Adding a Visual of a Valid Drop Zone by Adding a Class Name</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">allowDrop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// add &quot;hovering&quot; to the classList of the targeted drop zone element</span><span class="w"></span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">).</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;hovering&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 <p>But this isn't everything! We still have to capture the data, set it, get it, then append it to the targeted drop zone!</p>
@@ -2890,46 +2884,43 @@
 <p>Now that we have "Draggable" elements and "Drop Zone" elements let's see how we grab the data of the thing we're actually going to drag!</p>
 <p>Right when we grab an element to be dragged we get access to yet another DOM event: <strong>dragstart</strong>. To use it we simply type the attribute: <code>ondragstart=""</code> then give it an event handler function we've built in JS:</p>
 <p>HTML for Capturing and Passing the Event over to an Event Handler Function</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c">&lt;!-- HTML for Capturing and Passing the Event over to an Event Handler Function --&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="cm">&lt;!-- HTML for Capturing and Passing the Event over to an Event Handler Function --&gt;</span>
   <span class="p">&lt;</span><span class="nt">img</span> <span class="na">draggable</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="na">ondragstart</span><span class="o">=</span><span class="s">&quot;drag(event)&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../image/flower.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;picture of a flower&quot;</span> <span class="p">/&gt;</span>
-</code></pre></div>
-</td></tr></table>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="cm">/* </span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="cm">/* </span>
 <span class="cm">    - JS for Creating an Event Handler Function </span>
 <span class="cm">   that Will Take the Event and Set the Data for the Transfer</span>
-<span class="cm">   - We have to use ES5 not ES6 syntax for this event handler due to the context needed to capture the data. */</span>
+<span class="cm">   - We have to use ES5 not ES6 syntax for this event handler due to the context needed to capture the data. */</span><span class="w"></span>
 
-  <span class="kd">function</span> <span class="nx">drag</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">e</span><span class="p">.</span><span class="nx">dataTransfer</span><span class="p">.</span><span class="nx">setData</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">drag</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">dataTransfer</span><span class="p">.</span><span class="nx">setData</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>Just like the <code>.preventDefault()</code> method, the event also has a property called <code>.dataTransfer</code> which has a method called <code>.setData()</code> which, as you guessed, <em>sets the data</em> to be transferred.</p>
 <p>Imagine the element that's being dragged is being put into a "pseudo state" between the place it's pickup and put down. In this in-between state the browser will have to know the data to store so it can safely put it down where we choose. To set the data to be transferred we use the <code>.setData()</code> method which takes two arguments, <code>format</code> and <code>data</code>.</p>
 <p>In the example above you see the format will be <code>"text"</code>, and the data will be the dragged element's <code>id</code>, as you see in <code>e.target.id</code></p>
 <h3 id="dropping-the-data">Dropping the Data</h3>
 <p>Finally we need to drop the data into the location we choose. To do that we use the same techniques we've been doing except we use a different attribute: <code>ondrop=""</code> and then use the opposite method from <code>.setData()</code>, -<code>.getData()</code>.</p>
 <p><code>.getData()</code> is still on the <code>.dataTransfer</code> <em>object-thing</em> so we just add it to an event handler function that will be fired when an element is dropped on a drop zone element:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- Looking at the attribute: ondrop=&quot;drop(event)&quot; --&gt;</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- Looking at the attribute: ondrop=&quot;drop(event)&quot; --&gt;</span>
 
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;div2&quot;</span> <span class="na">ondrop</span><span class="o">=</span><span class="s">&quot;drop(event)&quot;</span> <span class="na">ondragover</span><span class="o">=</span><span class="s">&quot;allowDrop(event)&quot;</span> <span class="na">ondragleave</span><span class="o">=</span><span class="s">&quot;stopDrop(event)&quot;</span><span class="p">&gt;</span>
 
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2938,18 +2929,17 @@
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// Event Handler Function</span>
-<span class="kd">const</span> <span class="nx">drop</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="c1">// standard preventDefault</span>
-  <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-  <span class="c1">// extract &amp; hold the data we set in the dataTransfer property</span>
-  <span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">dataTransfer</span><span class="p">.</span><span class="nx">getData</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">);</span>
-  <span class="c1">// use the &quot;data&quot; we set as a reference to what dragged element we want to drop.</span>
-  <span class="c1">// then append it to the element we are doing the drop event on</span>
-  <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Event Handler Function</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">drop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// standard preventDefault</span><span class="w"></span>
+<span class="w">  </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// extract &amp; hold the data we set in the dataTransfer property</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">dataTransfer</span><span class="p">.</span><span class="nx">getData</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// use the &quot;data&quot; we set as a reference to what dragged element we want to drop.</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// then append it to the element we are doing the drop event on</span><span class="w"></span>
+<span class="w">  </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h2 id="practice-it">Practice It</h2>
 <p>Go to the <a href="https://github.com/AustinCodingAcademy/101-DnD-Demo">101-DnD-Demo repo</a> you cloned earlier and solve the problems laid out in the comments.</p>
 <h2 id="know-your-docs">Know Your Docs</h2>
@@ -3031,7 +3021,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

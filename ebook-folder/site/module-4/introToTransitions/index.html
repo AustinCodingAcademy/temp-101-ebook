@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2811,7 +2811,7 @@
 <p>To use a transition in your animations or transformation you give the first CSS declaration block the property <code>transition</code>:</p>
 <!-- ! Video Contents:  (width="655" height="368", ratio 1.77) -->
 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2821,19 +2821,18 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c">/* This code tells img elements to be 300px wide and when they change width to follow the rules to do it in 2 seconds, start fast and end slowly(ease-out), and delay by 250ms */</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c">/* This code tells img elements to be 300px wide and when they change width to follow the rules to do it in 2 seconds, start fast and end slowly(ease-out), and delay by 250ms */</span><span class="w"></span>
 
-  <span class="nt">img</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
-    <span class="k">transition</span><span class="p">:</span> <span class="k">width</span> <span class="mi">2</span><span class="kt">s</span> <span class="kc">ease-out</span> <span class="mi">250</span><span class="kt">ms</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="nt">img</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">width</span><span class="w"> </span><span class="mi">2</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease-out</span><span class="w"> </span><span class="mi">250</span><span class="kt">ms</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c">/* Then on a hover event to change the width to 400px */</span>
-  <span class="nt">img</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="c">/* Then on a hover event to change the width to 400px */</span><span class="w"></span>
+<span class="w">  </span><span class="nt">img</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>The transition property takes the following values in this order: "property", "duration", "timing-function", "delay" where:</p>
 <ul>
 <li><a href="https://css-tricks.com/almanac/properties/t/transition-property/">property</a> - details the properties that will change during the animations or transform like width, height, or color, etc. You can also use <code>all</code> to select all the properties on the element.</li>
@@ -2857,11 +2856,10 @@
 <ul>
 <li><a href="https://css-tricks.com/almanac/properties/t/transition-delay/">delay</a> - obviously refers to the time between the event happening on the DOM like an on-hover to the beginning of the movement. It too takes values of <code>s</code> or <code>ms</code>.</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c">/* transition: [property] [duration] [timing-function] [delay]; */</span>
-  <span class="nt">transition</span><span class="o">:</span> <span class="nt">all</span> <span class="nt">0</span><span class="p">.</span><span class="nc">5s</span> <span class="nt">ease-in-out</span> <span class="nt">1s</span><span class="o">;</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c">/* transition: [property] [duration] [timing-function] [delay]; */</span><span class="w"></span>
+<span class="w">  </span><span class="nt">transition</span><span class="o">:</span><span class="w"> </span><span class="nt">all</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">5s</span><span class="w"> </span><span class="nt">ease-in-out</span><span class="w"> </span><span class="nt">1s</span><span class="o">;</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h3 id="transitions-continued">Transitions Continued</h3>
 <p>Think of the pseudo selectors we've been using like :hover. We know the elements change when we hover over them but this currently happens quickly and harshly. What if we wanted the transition to be smoother? That's where the CSS property <code>transition-...</code> comes in.</p>
 <blockquote>
@@ -2871,34 +2869,31 @@
 <p>Now, when the element is hovered on it will change according to how long you told it to do so.</p>
 <p>Let's create another red square and give it the <code>transition</code> property.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">the HTML</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;transition-example&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;transition-example&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">the CSS</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">.</span><span class="nc">transition-example</span> <span class="p">{</span>
-      <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">background</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-      <span class="k">transition</span><span class="p">:</span> <span class="k">width</span> <span class="mi">2</span><span class="kt">s</span> <span class="kc">ease-out</span> <span class="mi">500</span><span class="kt">ms</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="p">.</span><span class="nc">transition-example</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">width</span><span class="w"> </span><span class="mi">2</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease-out</span><span class="w"> </span><span class="mi">500</span><span class="kt">ms</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 <p>Now let's tell it what will look like when someone hovers over it:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">.</span><span class="nc">transition-example</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-    <span class="k">width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="p">.</span><span class="nc">transition-example</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h3 id="behind-the-transition-property">Behind the Transition Property</h3>
 <p><code>transition</code> is actually short-hand for four properties:</p>
 <p><code>transition-property</code>,
@@ -2911,7 +2906,7 @@
 <code>grid-row-end</code>, and
 <code>grid-column-end</code> properties.</p>
 <p><strong>You don't</strong> have to use the short-hand transition. In fact, you should use the long-hand for code readability. Here's an example of what you just saw above, only now in long-hand form:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2921,34 +2916,32 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="p">.</span><span class="nc">transition-example</span> <span class="p">{</span>
-      <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">background</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-      <span class="c">/* transition: width 2s ease-out 500ms;*/</span>
-      <span class="c">/* the following will do the same thing as the line above would do */</span>
-      <span class="k">transition-property</span><span class="p">:</span> <span class="k">width</span><span class="p">;</span>
-      <span class="k">transition-duration</span><span class="p">:</span> <span class="mi">2</span><span class="kt">s</span><span class="p">;</span>
-      <span class="k">transition-timing-function</span><span class="p">:</span> <span class="kc">ease-out</span><span class="p">;</span>
-      <span class="k">transition-delay</span><span class="p">:</span> <span class="mi">500</span><span class="kt">ms</span><span class="p">;</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="p">.</span><span class="nc">transition-example</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="c">/* transition: width 2s ease-out 500ms;*/</span><span class="w"></span>
+<span class="w">      </span><span class="c">/* the following will do the same thing as the line above would do */</span><span class="w"></span>
+<span class="w">      </span><span class="k">transition-property</span><span class="p">:</span><span class="w"> </span><span class="k">width</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">transition-duration</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">s</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">transition-timing-function</span><span class="p">:</span><span class="w"> </span><span class="kc">ease-out</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">transition-delay</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="kt">ms</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>Make sure you study each property in the docs, so you know what you're actually doing when you use <code>transition</code>.</p>
 <blockquote>
 <p>Note 1: <em>If the duration is not specified, the transition will happen instantaneously, because the default value is <code>0</code>.</em></p>
 </blockquote>
 <h4 id="vender-prefixes">Vender Prefixes</h4>
 <p>In the above code example, we see a use of <code>transition</code> that will work in most browsers, but it <em>won't</em> work in Safari, Firefox, Opera if you don't use the <a href="http://prefixr.com/what-are-vendor-prefixes.php">vendor prefixes</a>. To meet the requirements for these browser, you'll also have to include the following rule <strong>before</strong> the traditional rule:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="nt">-webkit-transition</span><span class="o">:</span> <span class="nt">width</span> <span class="nt">2s</span> <span class="nt">ease-in-out</span> <span class="nt">500ms</span><span class="o">;</span> <span class="c">/* Safari Browser*/</span>
-    <span class="nt">-moz-transition</span><span class="o">:</span> <span class="nt">width</span> <span class="nt">2s</span> <span class="nt">ease-in-out</span> <span class="nt">500ms</span><span class="o">;</span> <span class="c">/* Firefox */</span>
-    <span class="nt">-o-transition</span><span class="o">:</span> <span class="nt">width</span> <span class="nt">2s</span> <span class="nt">ease-in-out</span> <span class="nt">500ms</span><span class="o">;</span> <span class="c">/* Opera */</span>
-    <span class="nt">transition</span><span class="o">:</span> <span class="nt">width</span> <span class="nt">2s</span> <span class="nt">ease-in-out</span> <span class="nt">500ms</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="nt">-webkit-transition</span><span class="o">:</span><span class="w"> </span><span class="nt">width</span><span class="w"> </span><span class="nt">2s</span><span class="w"> </span><span class="nt">ease-in-out</span><span class="w"> </span><span class="nt">500ms</span><span class="o">;</span><span class="w"> </span><span class="c">/* Safari Browser*/</span><span class="w"></span>
+<span class="w">    </span><span class="nt">-moz-transition</span><span class="o">:</span><span class="w"> </span><span class="nt">width</span><span class="w"> </span><span class="nt">2s</span><span class="w"> </span><span class="nt">ease-in-out</span><span class="w"> </span><span class="nt">500ms</span><span class="o">;</span><span class="w"> </span><span class="c">/* Firefox */</span><span class="w"></span>
+<span class="w">    </span><span class="nt">-o-transition</span><span class="o">:</span><span class="w"> </span><span class="nt">width</span><span class="w"> </span><span class="nt">2s</span><span class="w"> </span><span class="nt">ease-in-out</span><span class="w"> </span><span class="nt">500ms</span><span class="o">;</span><span class="w"> </span><span class="c">/* Opera */</span><span class="w"></span>
+<span class="w">    </span><span class="nt">transition</span><span class="o">:</span><span class="w"> </span><span class="nt">width</span><span class="w"> </span><span class="nt">2s</span><span class="w"> </span><span class="nt">ease-in-out</span><span class="w"> </span><span class="nt">500ms</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h2 id="additional-resources">Additional Resources</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> <a href="https://zinoui.com/blog/css-transitions">Article, Zinoui - CSS Transitions</a></li>
@@ -2977,9 +2970,8 @@
 
 cp workspace/resources/templateFile.md docs/module- 
 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
@@ -2997,25 +2989,21 @@ https://facelessuser.github.io/pymdown-extensions/extensions/keys/
 
 === "Javascript"
 
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 === "Python"
 
-  <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</td></tr></table>
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>
+</code></pre></div></td></tr></table></div>
 
 === "Example"
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="go">  .</span>
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="go">  .</span>
+</code></pre></div></td></tr></table></div>
 
 === "Instructions"
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  .
-</code></pre></div>
-</td></tr></table>
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  .
+</code></pre></div></td></tr></table></div>
 
 === "Result"
     ![PIC](./../images/pic.png)
@@ -3087,7 +3075,7 @@ https://facelessuser.github.io/pymdown-extensions/extensions/keys/
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

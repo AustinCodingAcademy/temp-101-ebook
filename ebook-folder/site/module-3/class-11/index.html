@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2828,7 +2828,7 @@
 <li class="task-list-item"><input type="checkbox"/> You'll start with some code like this:</li>
 </ul>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">The JavaScript</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2856,52 +2856,50 @@
 <span class="normal">26</span>
 <span class="normal">27</span>
 <span class="normal">28</span>
-<span class="normal">29</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="c1">// We&#39;ll pre-populate this array with a couple objects just so it&#39;s not undefined if your internet connection isn&#39;t working properly.</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="c1">// We&#39;ll pre-populate this array with a couple objects just so it&#39;s not undefined if your internet connection isn&#39;t working properly.</span><span class="w"></span>
 
-<span class="kd">let</span> <span class="nx">arrayOfTodos</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span>
-    <span class="s2">&quot;userId&quot;</span><span class="o">:</span> <span class="mf">14</span><span class="p">,</span>
-    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
-    <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;delectus aut autem&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;completed&quot;</span><span class="o">:</span> <span class="kc">false</span>
-<span class="p">},</span>
-<span class="p">{</span>
-    <span class="s2">&quot;userId&quot;</span><span class="o">:</span> <span class="mf">20</span><span class="p">,</span>
-    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="mf">2</span><span class="p">,</span>
-    <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;delectus aut autem&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;completed&quot;</span><span class="o">:</span> <span class="kc">false</span>
-<span class="p">}]</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">arrayOfTodos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;userId&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">14</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;delectus aut autem&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;completed&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="p">},</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;userId&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;delectus aut autem&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;completed&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="p">}]</span><span class="w"></span>
 
-<span class="kd">const</span> <span class="nx">fetchTodos</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://jsonplaceholder.typicode.com/todos&#39;</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-    <span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="p">(</span><span class="nx">json</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">arrayOfTodos</span> <span class="o">=</span> <span class="nx">json</span><span class="p">)</span>
-<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">fetchTodos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://jsonplaceholder.typicode.com/todos&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="nx">json</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">arrayOfTodos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">json</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kd">const</span> <span class="nx">logTodos</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTodos</span><span class="p">)</span>
-<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">logTodos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTodos</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kd">const</span> <span class="nx">populateTodos</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">populateTodos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">The HTML</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;fetchTodos()&quot;</span><span class="p">&gt;</span>Fetch Todos<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;fetchTodos()&quot;</span><span class="p">&gt;</span>Fetch Todos<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;logTodos()&quot;</span><span class="p">&gt;</span>Log Todos<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;populateTodos()&quot;</span><span class="p">&gt;</span>Populate Todos<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">ol</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;todo-list&quot;</span><span class="p">&gt;</span>
-    <span class="c">&lt;!-- LIs will go here --&gt;</span>
+    <span class="cm">&lt;!-- LIs will go here --&gt;</span>
     <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 <ul class="task-list">
@@ -2913,7 +2911,7 @@
 </li>
 <li class="task-list-item">
 <p><input type="checkbox"/> Notice to that each object comes inside <strong>curly-braces</strong>, <code>{ }</code>. This is called a JavaScript Object. You can access an object's <strong>properties</strong> with <strong>dot-notation</strong>. See the example below:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2929,25 +2927,24 @@
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>    <span class="kd">const</span> <span class="nx">arrayOfTodos1</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="p">{</span>
-        <span class="s2">&quot;userId&quot;</span><span class="o">:</span> <span class="mf">14</span><span class="p">,</span>
-        <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span>
-        <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;delectus aut autem&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;completed&quot;</span><span class="o">:</span> <span class="kc">false</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;userId&quot;</span><span class="o">:</span> <span class="mf">20</span><span class="p">,</span>
-        <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="mf">2</span><span class="p">,</span>
-        <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;delectus aut autem&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;completed&quot;</span><span class="o">:</span> <span class="kc">false</span>
-    <span class="p">}</span>
-    <span class="p">]</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">arrayOfTodos1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;userId&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">14</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;delectus aut autem&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;completed&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;userId&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;delectus aut autem&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;completed&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
 
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTodos</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">userId</span><span class="p">)</span> <span class="c1">// =&gt; 14</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTodos</span><span class="p">[</span><span class="mf">1</span><span class="p">].</span><span class="nx">userId</span><span class="p">)</span> <span class="c1">// =&gt; 20</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTodos</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">userId</span><span class="p">)</span><span class="w"> </span><span class="c1">// =&gt; 14</span><span class="w"></span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arrayOfTodos</span><span class="p">[</span><span class="mf">1</span><span class="p">].</span><span class="nx">userId</span><span class="p">)</span><span class="w"> </span><span class="c1">// =&gt; 20</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 </li>
 <li class="task-list-item">
 <p><input type="checkbox"/> After you've been able to access and console the properties on any object in the array your next step is to insert that data into an <code>li</code> element and insert the <code>li</code> into the <code>ol</code>.</p>
@@ -3053,7 +3050,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

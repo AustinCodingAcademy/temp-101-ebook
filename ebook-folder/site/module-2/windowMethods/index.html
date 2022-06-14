@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2721,7 +2721,7 @@
 <p>A few lesson earlier you used the <code>alert()</code> method on the Window object but the Window object has far more abilities than just signaling an alert! In fact, it has 31 properties, 26 methods, and 80 events in total. You can learn to use each of them by <a href="https://www.w3schools.com/jsref/obj_window.asp">reading the documentation</a> on them. For now, let's look at two of them <code>.open()</code> and <code>.close()</code> just to get familiar with the process of using them.</p>
 <h2 id="windowopen-windowclose-methods">Window.open &amp; Window.close Methods</h2>
 <p>These methods, respectively, open and close a new window. Use that code you've been playing with to follow along:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2737,25 +2737,24 @@
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHello();&quot;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;sayHi();&quot;</span><span class="p">&gt;</span>Click Me Too<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;openANewWindow();&quot;</span><span class="p">&gt;</span>Open<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 
-   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-     <span class="kd">let</span> <span class="nx">secondWindow</span><span class="p">;</span>
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">     </span><span class="kd">let</span><span class="w"> </span><span class="nx">secondWindow</span><span class="p">;</span><span class="w"></span>
 
-     <span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(){</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, Window.alert Method!&#39;</span><span class="p">)</span> <span class="p">};</span>
-     <span class="kd">function</span> <span class="nx">sayHi</span><span class="p">(){</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hi, Console.log Method!&#39;</span><span class="p">)</span> <span class="p">};</span>
-     <span class="kd">function</span> <span class="nx">openANewWindow</span><span class="p">()</span> <span class="p">{</span>
-       <span class="nx">secondWindow</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;myWindow&quot;</span><span class="p">,</span> <span class="s2">&quot;width=400, height=300&quot;</span><span class="p">);</span>
-     <span class="p">}</span>
+<span class="w">     </span><span class="kd">function</span><span class="w"> </span><span class="nx">sayHello</span><span class="p">(){</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, Window.alert Method!&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="w">     </span><span class="kd">function</span><span class="w"> </span><span class="nx">sayHi</span><span class="p">(){</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hi, Console.log Method!&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="w">     </span><span class="kd">function</span><span class="w"> </span><span class="nx">openANewWindow</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">       </span><span class="nx">secondWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;myWindow&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;width=400, height=300&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">     </span><span class="p">}</span><span class="w"></span>
 
-   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">   </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>There are a few more bits of <strong>syntax</strong> to take in. We created a new function called <code>openANewWindow</code> and call it with a new button to <code>onclick</code> event. But there's something new going on at the top of the Script element and inside the <code>openANewWindow</code> function declaration. The <code>let</code> <strong>keyword</strong> you see up there signifies a place to hold a bit of data. We call this a <strong>variable</strong> because the bit of data that's held in these things usually change and we don't always know what value will be there, we just know we'll need to reference it later.</p>
 <blockquote>
 <p>Think of how you might build a calculator. When the user types the first input you only know the number could be between -∞ and ∞; the same goes for the second input. Because of this programming challenge we have to create a place for the values the user inputs to be held until we know if we're going to add, subtract, multiply, or divide the numbers. This "place to hold values" is called a <strong>variable</strong> and we use the keyword <code>let</code> to communicate that in JavaScript.</p>
@@ -2768,23 +2767,22 @@
 <p>You should get "undefined" as a return value. This is because the variable, the space for data, is declared but it has no value. Click the "Open" Button and re-type <code>secondWindow</code> in the console. What do you get? You should get something like: <code>Window {window: Window, self: Window, document: document, name: "myWindow", location: Location, …}</code>- This is another Window object opened by the browser and the properties and values you see listed are the key/value pairs of that new Window Object. The reason you're able to see these properties is because you saved a reference to this new Window object in the variable <code>secondWindow</code> and are now listing that data out in the Console.</p>
 <h3 id="windowclose">Window.Close</h3>
 <p>As you would expect there is an opposite method to the Open method, <code>close()</code>. Go ahead and create a function that calls <code>window.close()</code> and run it</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- 101-onlineClothingStore/index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;closeTheNewWindow();&quot;</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 
- <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-   <span class="kd">function</span> <span class="nx">closeTheNewWindow</span><span class="p">()</span> <span class="p">{</span>
-     <span class="nb">window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
-   <span class="p">}</span>
- <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+ <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">   </span><span class="kd">function</span><span class="w"> </span><span class="nx">closeTheNewWindow</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">     </span><span class="nb">window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
 <p>What happened? Yeah, I tricked you. This code tells our current window to execute its own <code>close()</code> method. But we want instead for this Window to close the other window.</p>
 <blockquote>
 <p>Hold <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-t">T</kbd></span> (Macs) or <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-t">T</kbd></span> (Windows) to reopen that tab or simply relaunch Live Server.</p>
@@ -2867,7 +2865,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

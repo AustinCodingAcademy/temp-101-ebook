@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2825,7 +2825,7 @@
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> We have the basics code to draw a circle on our canvas:</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2838,45 +2838,43 @@
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Drawing a Circle</span>
-  <span class="c1">// define the canvas</span>
-  <span class="kd">let</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;my-canvas&quot;</span><span class="p">)</span>
-  <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">;</span>
-  <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">;</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Drawing a Circle</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// define the canvas</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">canvas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;my-canvas&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">;</span><span class="w"></span>
 
-  <span class="c1">// hold the 2D drawing context in a global variable</span>
-  <span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="c1">// hold the 2D drawing context in a global variable</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">)</span><span class="w"></span>
 
-  <span class="c1">// draw the circle</span>
-  <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-  <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;limegreen&quot;</span><span class="p">;</span>
-  <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mf">600</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span> <span class="mf">50</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
-  <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="c1">// draw the circle</span><span class="w"></span>
+<span class="w">  </span><span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;limegreen&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mf">600</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Now let's build a function that will do that same instructions over and over.</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Drawing a Circle with a Function</span>
-  <span class="kd">const</span> <span class="nx">animate</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;limegreen&quot;</span><span class="p">;</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mf">600</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span> <span class="mf">50</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Drawing a Circle with a Function</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">animate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;limegreen&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mf">600</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>But that function, even if called, will only run once. So inside that function we'll use a method on the Window <em>object-thing</em> that will refresh the page to redraw something new on the canvas called <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame"><code>requestAnimationFrame()</code></a>. This method is special because it gets called <strong>60 times/second</strong> and will automatically stop if the user switches tabs. It's also only focusing on the Canvas so it's pretty efficient. This is what it looks like:</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> <code>requestAnimationFrame()</code></li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2884,17 +2882,16 @@
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Drawing a Circle with a Recursive Function</span>
-  <span class="kd">const</span> <span class="nx">animate</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// use this special Window method to refresh the Window and call `animate` again, and again, and again...</span>
-    <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;limegreen&quot;</span><span class="p">;</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mf">600</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span> <span class="mf">50</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Drawing a Circle with a Recursive Function</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">animate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// use this special Window method to refresh the Window and call `animate` again, and again, and again...</span><span class="w"></span>
+<span class="w">    </span><span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;limegreen&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mf">600</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <blockquote>
 <p><em>Notice the argument passed into the <code>requestAnimationFrame</code> method? It's <code>animate</code>, the parent function! This is recursion. A child function will call it's parent which then calls the child, which then calls the parent, which then calls the child...........you get it.</em></p>
 <p><em>Notice, too, that we didn't have to use empty-parenthesis <code>()</code> to invoke <code>animate</code>. This is because the argument <code>requestAnimationFrame</code> is expecting is a </em><em>callback function</em><em> or a function that is to be called again and again.</em></p>
@@ -2902,7 +2899,7 @@
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> So now we'll need to call/invoke the function:</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2912,25 +2909,24 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Drawing a Circle with a Recursive Function </span>
-  <span class="kd">const</span> <span class="nx">animate</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span>
-    <span class="c1">// Draw Circle Code here....</span>
-    <span class="c1">// .....</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Drawing a Circle with a Recursive Function </span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">animate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Draw Circle Code here....</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// .....</span><span class="w"></span>
 
-    <span class="c1">// add a log statement to see the number and rate of calls.</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;animate function was called...&quot;</span><span class="p">)</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="c1">// add a log statement to see the number and rate of calls.</span><span class="w"></span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;animate function was called...&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="nx">animate</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="nx">animate</span><span class="p">()</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h3 id="moving-the-x-coordinate">Moving the X-Coordinate</h3>
 <p>Sweet! Now if we run that code in our browser with Live-Server we'll see the circle getting thicker and thicker but not moving/animating. That's a problem. How do we solve it? With some quick programming, of course!</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Let's change the <strong>hard-coded</strong> x-coordinate value of <code>600</code> to be a variable that we can change:</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2940,24 +2936,23 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// create a variable to hold this value</span>
-  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">600</span><span class="p">;</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// create a variable to hold this value</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">600</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kd">const</span> <span class="nx">animate</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;limegreen&quot;</span><span class="p">;</span>
-    <span class="c1">// replace the x-coordinate with the variable `x`</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span> <span class="mf">50</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">animate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;limegreen&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// replace the x-coordinate with the variable `x`</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>If you run that code it doesn't change much, so let's make the x value change each time the animate function is run. We could add <code>x = Math.random() * (window.innerWidth - 100)</code> at the top of the <code>animate</code> function but that would just draw a new circle at different points along the <code>250</code> y-coordinate. </p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Instead let's increment from the origin of <code>x = 600</code>.</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2969,27 +2964,26 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Increasing the X-Coordinate by 1 each time the Animate function is called.</span>
-  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">600</span><span class="p">;</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Increasing the X-Coordinate by 1 each time the Animate function is called.</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">600</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kd">const</span> <span class="nx">animate</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;limegreen&quot;</span><span class="p">;</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span> <span class="mf">50</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">animate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;limegreen&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span><span class="w"></span>
 
-    <span class="c1">// increment the value of x by 1 each time the function is called</span>
-    <span class="nx">x</span> <span class="o">+=</span> <span class="mf">1</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="c1">// increment the value of x by 1 each time the function is called</span><span class="w"></span>
+<span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">1</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h3 id="clear-the-first-drawing">Clear the First Drawing</h3>
 <p>Now our circle is re-created on top of it's self, <em>1 pixel to the right</em>. But that's not animation. We want the circle to appear to move. To do that we'll need need to "erase" the previous circle before we draw the next one. We can use a method on the <code>getContext('2d')</code> object-thing called <code>.clearRect()</code>. To use it we can access the <code>getContext('2d')</code>by calling <code>c</code> <em>(Since we saved the <code>getContext</code> in a variable called <code>c</code> at the top of our file) then use dot-notation to get <code>c.clearRect()</code></em>.</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> The <code>.clearRect()</code> method takes 4 arguments: ([start-X], [start-Y], [end-X], [end-Y]) where we'd want to say, "Hey, <code>.clearRect()</code>, I want you to clear every thing from the last drawing between the top-left of the screen, <code>(0,0</code> down to the farthest bottom-right of the screen: <code>,innerWidth, innerHeight)</code>." That in code would look like this:</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3001,27 +2995,26 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Clearing the Canvas from Top-Left to Bottom-Right</span>
-  <span class="c1">// more code....</span>
-    <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span>
-    <span class="c1">// add the clear rectangle before we draw a new one</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">innerWidth</span><span class="p">,</span> <span class="nx">innerHeight</span><span class="p">)</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;limegreen&quot;</span><span class="p">;</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span> <span class="mf">50</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Clearing the Canvas from Top-Left to Bottom-Right</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// more code....</span><span class="w"></span>
+<span class="w">    </span><span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// add the clear rectangle before we draw a new one</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">innerWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">innerHeight</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;limegreen&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span><span class="w"></span>
 
-    <span class="nx">x</span> <span class="o">+=</span> <span class="mf">1</span>
+<span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">1</span><span class="w"></span>
 
-  <span class="c1">// more code here too...</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">  </span><span class="c1">// more code here too...</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h4 id="changing-the-speed-and-direction">Changing the Speed and Direction</h4>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Now we can change the speed of the movement of the circle, or velocity! </li>
 </ul>
 <p>To do this we'll go ahead and create a new variable because, <em>yes</em>, we could just change <code>x += 1</code> to <code>x += 4</code> but we'll want to randomize the velocity at a later point so we might as well throw it into another variable now:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3030,24 +3023,23 @@
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Creating a Velocity Variable</span>
-  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">600</span><span class="p">;</span>
-  <span class="c1">// hold the velocity in a new variable</span>
-  <span class="kd">let</span> <span class="nx">xVelocity</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Creating a Velocity Variable</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">600</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// hold the velocity in a new variable</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">xVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kd">const</span> <span class="nx">animate</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// more code here...</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">animate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// more code here...</span><span class="w"></span>
 
-    <span class="c1">// now `x` will increment by whatever `xVelocity` is</span>
-    <span class="nx">x</span> <span class="o">+=</span> <span class="nx">xVelocity</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="c1">// now `x` will increment by whatever `xVelocity` is</span><span class="w"></span>
+<span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">xVelocity</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>If you haven't already, go ahead and run that code to see the circle speed up.</p>
 <p>Our next problem is that the circle is running off the side of the screen. To fix that all we have to do is us a <strong>Conditional Statement</strong> to say:</p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> <em>"If the x-value becomes higher than the entire window's inner width then reverse the change of new x-coordinate to decrement instead."</em>:</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3067,34 +3059,33 @@
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for Changing the X-Coordinate if it&#39;s Higher than the Width of the Window</span>
-  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">600</span><span class="p">;</span>
-  <span class="kd">let</span> <span class="nx">xVelocity</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for Changing the X-Coordinate if it&#39;s Higher than the Width of the Window</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">600</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">xVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kd">const</span> <span class="nx">animate</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">innerWidth</span><span class="p">,</span> <span class="nx">innerHeight</span><span class="p">)</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;limegreen&quot;</span><span class="p">;</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span> <span class="mf">50</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">animate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">innerWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">innerHeight</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;limegreen&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span><span class="w"></span>
 
-    <span class="c1">// Conditional, if x is greater than innerWidth</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="nx">innerWidth</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// reverse the value to a negative number</span>
-      <span class="nx">xVelocity</span> <span class="o">=</span> <span class="o">-</span><span class="nx">xVelocity</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Conditional, if x is greater than innerWidth</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">innerWidth</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="c1">// reverse the value to a negative number</span><span class="w"></span>
+<span class="w">      </span><span class="nx">xVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="nx">xVelocity</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="c1">// x will still plus-equal xVelocity</span>
-    <span class="nx">x</span> <span class="o">+=</span> <span class="nx">xVelocity</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="c1">// x will still plus-equal xVelocity</span><span class="w"></span>
+<span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">xVelocity</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <p>If you run that new code you'll see that the circle now bumps off the right side when the <strong>CENTER</strong> of the circle gets to the edge and it still goes off the screen on the left. </p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Let's tell the <code>animate</code> function to "Reverse the direction when the <strong>EDGE</strong> of the circle meets the edge of the screen by using the <code>radius</code> of the circle <strong>AND</strong> to go the opposite direction when it meets the left-side of the screen.</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -3115,30 +3106,29 @@
 <span class="normal">19</span>
 <span class="normal">20</span>
 <span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  <span class="c1">// JS for &quot;Bouncing&quot; at Edge of Circle &amp; Reversing To Positive At Left-Side of Screen</span>
-  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">600</span><span class="p">;</span>
-  <span class="kd">let</span> <span class="nx">xVelocity</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
-  <span class="c1">// Move our circle&#39;s radius to a variable we can use in other places</span>
-  <span class="kd">let</span> <span class="nx">radius</span> <span class="o">=</span> <span class="mf">50</span><span class="p">;</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">  </span><span class="c1">// JS for &quot;Bouncing&quot; at Edge of Circle &amp; Reversing To Positive At Left-Side of Screen</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">600</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">xVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Move our circle&#39;s radius to a variable we can use in other places</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">50</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kd">const</span> <span class="nx">animate</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">innerWidth</span><span class="p">,</span> <span class="nx">innerHeight</span><span class="p">)</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;limegreen&quot;</span><span class="p">;</span>
-    <span class="c1">// replace the radius value with the variable `radius`</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span> <span class="nx">radius</span><span class="p">,</span> <span class="mf">0</span><span class="p">,</span> <span class="mf">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span>
-    <span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">animate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">innerWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">innerHeight</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">strokeStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;limegreen&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// replace the radius value with the variable `radius`</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">c</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span><span class="w"></span>
 
-    <span class="c1">// Add the &quot;Or condition&quot;, `||`, that if the circle&#39;s left-side meets the left-side of the screen then add a negative to the already negative velocity to make a positive again.</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">radius</span> <span class="o">&gt;</span> <span class="nx">innerWidth</span> <span class="o">||</span> <span class="nx">x</span> <span class="o">-</span> <span class="nx">radius</span> <span class="o">&lt;</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">xVelocity</span> <span class="o">=</span> <span class="o">-</span><span class="nx">xVelocity</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Add the &quot;Or condition&quot;, `||`, that if the circle&#39;s left-side meets the left-side of the screen then add a negative to the already negative velocity to make a positive again.</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">innerWidth</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nx">xVelocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="nx">xVelocity</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <span class="nx">x</span> <span class="o">+=</span> <span class="nx">xVelocity</span>
-  <span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">xVelocity</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h2 id="practice-it">Practice It</h2>
 <p>At this point you know how to move the x-coordinate now it's time for you to show what you know. Repeat these steps for the y-coordinate so you can have a circle that "bounces" of the top, bottom, and sides of the screen.</p>
 <p>You'll need to:</p>
@@ -3224,7 +3214,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

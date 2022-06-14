@@ -19,7 +19,7 @@ Today we're going to:
 
 - [ ] Gravatar Check
 - [ ] Questions for Student Led Discussion
-- [ ] Challenge Show-and-Tell
+- [ ] Last Night's Challenge Show-and-Tell
 - [ ] Interview Challenge
 - [ ] Student Presentations
 - [ ] Creation Time - Calculator App

@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2855,7 +2855,7 @@
 <p>Like all other HTML Elements, the Form Element has all the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Global Attributes</a> (events and methods) along with a few special ones of its own. Let's break them into two categories: Required and Optional</p>
 <h3 id="required-attributesproperties-action-enctype-method-novalidate-target">Required Attributes/Properties: action, enctype, method, novalidate, target</h3>
 <p>These properties are required to be defined for your forms to work properly so let's look at them and how they're used. We'll be using the following code as a reference point.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2873,7 +2873,7 @@
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html --&gt;</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- index.html --&gt;</span>
  <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;https://www.singlesingerssite.com/signin.htm&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span><span class="p">&gt;</span>
    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span>Email<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
@@ -2888,12 +2888,11 @@
    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 
- <span class="c">&lt;!-- Notes on the unfamiliar part of the code above: --&gt;</span>
- <span class="c">&lt;!-- The Div element is used to divide out the page --&gt;</span>
- <span class="c">&lt;!-- Label Elements are used to label an Input Element --&gt;</span>
- <span class="c">&lt;!-- Input Elements are versatile and can be used for any type of form input --&gt;</span>
-</code></pre></div>
-</td></tr></table>
+ <span class="cm">&lt;!-- Notes on the unfamiliar part of the code above: --&gt;</span>
+ <span class="cm">&lt;!-- The Div element is used to divide out the page --&gt;</span>
+ <span class="cm">&lt;!-- Label Elements are used to label an Input Element --&gt;</span>
+ <span class="cm">&lt;!-- Input Elements are versatile and can be used for any type of form input --&gt;</span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li>
 <p><code>action=</code> - The value of this must be a URL like the one you see above. This tells the form where to send the data when it's submitted by the human-user. However, the preference for this technique has been replaced with creating a function that uses <code>fetch</code> to handle the HTTP request and calling it <code>onclick=</code> of a <code>submit</code> button, i.e. <code>&lt;input type="submit" onclick="handleSubmit()"&gt;,</code></p>
@@ -2902,19 +2901,18 @@
 <p><code>method=</code> - If you choose to use the <code>action=</code> attribute to define the URL that will process your forms data, then you have to define the method as a POST. Later in this lesson, you'll learn about the multiple values you can use here to send different types of Requests over HTTP(S). For now, the two values you can use here are <code>"post"</code> and <code>"get"</code>. If you use the preferred <code>fetch</code> alternative then you will need to declare the Request as a POST in the <code>fetch</code> because the default value of the Form Element's <code>method=</code> is <code>get</code>, see below:</p>
 </li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// inside a &lt;script&gt; element or in .js file</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// inside a &lt;script&gt; element or in .js file</span><span class="w"></span>
 
- <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://fakestoreapi.com/products&#39;</span><span class="p">,</span> <span class="p">{</span>
-   <span class="nx">method</span><span class="o">:</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
-   <span class="nx">body</span><span class="o">:</span> <span class="p">{}</span>
- <span class="p">})</span>
-</code></pre></div>
-</td></tr></table>
+<span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://fakestoreapi.com/products&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nx">method</span><span class="o">:</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="w"> </span><span class="p">})</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 <h4 id="properties-that-are-required-but-have-implied-default-values">Properties that are Required but have Implied Default Values</h4>
 <ul>
 <li><code>enctype=</code> - This defines the type of encoding the data should go through before it's sent over HTTP. The values you can use are:</li>
@@ -2959,11 +2957,10 @@
 
 <h2 id="inputs">Inputs</h2>
 <p>The Form element has many elements that go inside of it but, by far, the most common elements are the Label and Input Element:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;password&quot;</span><span class="p">&gt;</span>Password<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code> <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;password&quot;</span><span class="p">&gt;</span>Password<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>This is because the Input element is a versatile element that can be used for all sorts of inputs from text and numbers to files and colors.</p>
 <blockquote>
 <p>NOTE: The HTML snippet above has a Label element with a <code>for</code> attribute set to <code>"password"</code>. In this way it is now tied to the Input element <code>id="password"</code> and NOT the <code>name</code> or <code>type</code> attributes. You see that? The label is <code>for</code> the <code>id</code> of the input.</p>
@@ -2998,11 +2995,10 @@
 <li><code>type="password"</code>: blots out the characters in this field automatically</li>
 <li><code>placeholder=</code>: isn't a validation attribute but it does give the user a hint about what goes in the field</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;price&quot;</span><span class="p">&gt;</span>Price ($)<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code> <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;price&quot;</span><span class="p">&gt;</span>Price ($)<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;price&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;price&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;$10.00&quot;</span> <span class="na">onkeyup</span><span class="o">=</span><span class="s">&quot;updateNewProduct(this)&quot;</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;100000&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN Docs - Input Element</a></li>
 </ul>
@@ -3110,7 +3106,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>

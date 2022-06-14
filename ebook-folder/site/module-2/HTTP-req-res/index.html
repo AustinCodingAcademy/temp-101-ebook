@@ -10,7 +10,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.0.5">
     
     
       
@@ -2742,7 +2742,7 @@ Draw another box, cut it in half, label them "Head" and "Body"</p>
 </blockquote>
 <p>The drawing you should have is the premise of how the internet works and the basis for everything we will learn in the next few months. All data exchanges are just requests and response objects with two other objects inside of them called <strong>Head</strong> and <strong>Body</strong>. In the <strong>Head</strong> object there is what we call <strong>metadata</strong>. Or just simply, bits of information that tell the receiving computer something about the contents of the <strong>Body</strong> of the request or response object. And the <strong>Body</strong> object is the actual content of the <strong>request</strong> or the <strong>response</strong>.</p>
 <p>When you navigate to a page your browser sends a request object that has a property called <code>method</code> and its value is <code>get</code> as in, get whatever resources are at this address while the body is empty because there's nothing for your browser to send. When the computer in the "Cloud" receives your request it will put together a response object. In this response object, there will be some metadata in the Head like <code>title</code>, <code>charset</code>, and <code>styles</code>. This is information the browser needs to properly render the content in the Body. Take a look at the page you built a few days ago. Notice any similarities?</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2756,7 +2756,7 @@ Draw another box, cut it in half, label them "Head" and "Body"</p>
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">&lt;!-- index.html --&gt;</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cm">&lt;!-- index.html --&gt;</span>
 
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
  <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
@@ -2771,8 +2771,7 @@ Draw another box, cut it in half, label them "Head" and "Body"</p>
 
    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
  <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>In the code above we see a <code>head</code> object and a <code>body</code> object. These two objects/elements represent in the HTML language/code the same <strong>Head</strong> and <strong>Body</strong> objects of our Response object and they serve the same purpose, the Head describes needed information about the content in the Body. But for now, we're going to have to set aside our short exploration of Request and Response objects in HTTP(S) protocol because we don't need to know their details to build web pages and websites. All we really need to know is that this code represents the response object. Plus, we'll be learning and using the finer details of requests and responses in our 311 course: Servers and Databases.</p>
 <p>What we'll do with this information now, though is to assume when we navigate to a URL the <strong>Response</strong> object we get back is the code you see above, from <code>&lt;!DOCTYPE html&gt;</code> to <code>&lt;/html&gt;</code>. In this course, 101: Intro to the Web, we're building the contents of the <strong>Body Object</strong> of the Response Object so that when other people's browsers navigate to our URL they will get the web page we built. Look back at your Req/Res drawing to know where you are and let's get into some code.</p>
 <ul>
@@ -2851,7 +2850,7 @@ Draw another box, cut it in half, label them "Head" and "Body"</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.5cf3e710.min.js"></script>
