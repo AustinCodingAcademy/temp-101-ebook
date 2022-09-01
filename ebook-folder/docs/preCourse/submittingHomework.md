@@ -1,17 +1,23 @@
 # Submitting Coding Homework
 
+When you submit homework you'll be giving your instructor a URL to your codebase. Let's practice moving your code to a repo in GitHub so you're familiar with the process.
+
+> NOTE: During Day 1, you'll be do this exact process with your instructor: creating a repo on GitHub, cloning it, building a website in it, pushing the code up to GitHub and hosting it. If you're up for it, go ahead and attempt it yourself with following along with the lesson below. 
+
 ## Create Your Development Folder
 
-For sanity and organization sake, you'll need a designated folder to keep all your coding projects together on your computer. This isn't a special folder just one that will be dedicated to keeping up with coding project.
+For sanity and organization sake, you'll need a designated folder to keep all your coding projects together on your computer. This isn't a special folder just one that will be dedicated to keeping up with your future coding projects.
 
-- [ ] Open your terminal program and navigate to Documents: `cd Documents`
-- [ ] Make a new folder named `devFolder`: `mkdir devFolder`
-- [ ] Change into the new folder/directory you made in the last class: `cd devFolder`
+- [ ] Open your terminal/Command-Line/Powershell
+- [ ] Run `ls` + ++enter++ to see all of your files and folders.
+- [ ] If you don't see "Documents" somewhere in the list you need to run `cd ~` to get to your "User" folder.
+- [ ] If you haven't already done made this in Prep Class, make a new folder named `devFolder`by running `mkdir devFolder` + ++enter++
+- [ ] Change into the new folder/directory you made in the last class: `cd devFolder` + ++enter++
 
 > NOTE FOR WINDOWS MACHINES USING ONEDRIVE:
 > If you use OneDrive to save your photos, music, and other files, you may run into problems using Git and GitHub to create and manage your repos. If you have any issues, please refer to [How to Configure OneDrive to Sync Only Certain Folders in Windows 10](https://www.howtogeek.com/222817/how-to-configure-onedrive-to-sync-only-certain-folders-in-windows-10/) to unsync your `devFolder`.
 
-*You will only need to create one folder for all of your coding projects to go into for the entirety of the program. When you graduate and get a job you will want to create a new folder to organize that work in.*
+*You will only need to create one folder for all of your coding projects to be stored in for the entirety of the program. When you graduate and get a job you will want to create a new folder to organize that work in.*
 
 *****
 
