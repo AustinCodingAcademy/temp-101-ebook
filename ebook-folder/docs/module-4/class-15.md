@@ -52,11 +52,11 @@ Use this time to jump into a breakout room with your project partner and work ha
 
 ## Special Homework
 
-While you may not feel this just yet, you now have marketable and employable skills. And while you're are moving on to JS211 we want you to understand you can get paid for the skills you have learn up to right now. You are a developer!
+While you may not feel this just yet, you now have marketable and employable skills. And while you're moving on to JS211 we want you to understand you can get paid for the skills you have learned up to now. You are a developer!
 
 Your homework assignment:
 
-1. Reflect upon what you've learned so far. Think about what you knew when you started. How did you feel when you started? How do you feel now? At the beginning of class we'll hold time for you to share with each other what you think and feel about what you've learned and finished with the sentiment: "I am a Freelance Web Developer"!
+1. Reflect upon what you've learned so far. Think about what you knew when you started. How did you feel when you started? How do you feel now? At the beginning of class we'll hold time for you to share with each other what you think and feel about what you've learned and finish with the sentiment: "I am a Freelance Web Developer"!
 
 2. Go to your LinkedIn and change your job title to a "Freelance Web Developer".
 
@@ -69,7 +69,7 @@ Your homework assignment:
 - [ ] Prepare for next class by completing all of your pre-class lessons
 - [ ] Complete the feedback survey(if applicable)
 - [ ] If you haven't already, turn in a live URL for your project.
-- [ ] Keep wireframing and planning.
+- [ ] Keep wire framing and planning.
 - [ ] Keep up with your Trello board so you stay mentally organized as well!
 - [ ] Special Homework - I am a Developer!
 
