@@ -25,6 +25,7 @@ Today we're going to:
 - [ ] Questions for Student Led Discussion
 - [ ] Student Presentations
 - [ ] Creation Time
+    * [ ] Special Homework
     * [ ] Retro Presentation & Work Time - 110 mins
 - [ ] Push Yourself Further
 - [ ] End Of Course Evaluation
@@ -43,6 +44,10 @@ Today we're going to:
 ## Creation Time, 60-90 mins
 
 Remember, your final portfolio isn't due until Sunday but let's have some retros on what you've built so far and what needs to be finished.
+
+## Special Homework
+
+Last night you reflected on your learning journey thus far and changed your LinkedIn title to "Freelance Web Developer". Tonight, let's hear each person's thoughts on this and hear each person say: "I am a Freelance Web Developer"!
 
 ### Quick Retros
 
