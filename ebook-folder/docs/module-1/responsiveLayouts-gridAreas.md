@@ -12,7 +12,7 @@ Now that you have a solid understanding of CSS Grid, let's turn our attention to
 
 Along with being an introduction to responsive design, we'll also be getting a deeper dive into CSS Grid by studying `grid-template-areas`. If you didn't get that far in your latest pre-class lessons, here you go. This property is an incredibly powerful property to use with `display: grid`; because it allows you to shuffle child elements around by just changing the value assigned to the `grid-template-areas` property! If you can imagine, this will make it very easy for us to develop a view for a phone and then a tablet and then a laptop!
 
-Before moving ahead, I'd like you to read [this short article on Grid-Template-Areas](https://alligator.io/css/css-grid-layout-grid-areas/). When you finish, come back and follow along with the examples below.
+Before moving ahead, I'd like you to read [this short article on Grid-Template-Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/). When you finish, come back and follow along with the examples below.
 
 *I'll wait...*
 
@@ -143,7 +143,7 @@ Before we dive into Media Queries in the next pre-class lesson let's first see h
 
 ## Additional Resources
 
-- [ ] [Article, Alligator.io - Grid Areas](https://alligator.io/css/css-grid-layout-grid-areas/)
+- [ ] [Article, Alligator.io - Grid Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/)
 - [ ] [CSS Properties Cheatsheet](https://websitesetup.org/css3-cheat-sheet/)
 
 ## Know Your Docs
