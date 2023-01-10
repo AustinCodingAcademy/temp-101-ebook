@@ -53,7 +53,7 @@ In the next snippet we'll see 4 columns again but now the two on the left will b
 }
 ```
 
-When using frs it's important to make sure the numbers add up to the **whole number equal to the number of columns** just the same way we make sure that our percentages total 100. So if we have 5 columns, our `frs` need to add up to 5, i.e. `1fr 2fr 2fr .5fr .5fr`, `1fr 1fr 1fr 1fr 1fr` or `.5fr 1fr 1fr 2fr .5fr`, etc.
+When using frs it's important to make sure the numbers add up to the **whole number equal to the number of columns** just the same way we make sure that our percentages total 100. So if we have 5 columns, our `frs` need to add up to 5, i.e. `1fr 2fr 1fr .5fr .5fr`, `1fr 1fr 1fr 1fr 1fr` or `.5fr 1fr 1fr 2fr .5fr`, etc.
 
 ## The Short-Hands
 
