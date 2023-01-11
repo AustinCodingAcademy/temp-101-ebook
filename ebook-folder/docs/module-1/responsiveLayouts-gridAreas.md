@@ -143,7 +143,7 @@ Before we dive into Media Queries in the next pre-class lesson let's first see h
 
 ## Additional Resources
 
-- [ ] [Article, Alligator.io - Grid Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/)
+- [ ] [Article, Smashing Magazine - Grid Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/)
 - [ ] [CSS Properties Cheatsheet](https://websitesetup.org/css3-cheat-sheet/)
 
 ## Know Your Docs
