@@ -54,10 +54,10 @@ Since each of you have different friends, the name of the salon or barbershop wi
 
 ### The Mockups
 
-You may choose one of the following websites to build and you may use artistic licensing to make reasonable adjustments to the website. But, you must create all of the pages that are in the website: Landing, About, Contact, Gallery, and Blog/News page.
+Use the following website to build and you may use artistic licensing to make reasonable adjustments to the website. But, you must create all of the pages that are in the website: Landing, About, Contact, Gallery, and Blog/News page.
 
-- [ ] [Zizurz Hair Salon](https://freewebsitetemplates.com/preview/hairstylesalon/index.html)
-- [ ] [Mustacchio](https://freewebsitetemplates.com/preview/mustacheenthusiast/index.html)
+- [ ] [Zizurz Hair Salon](http://demo.html5xcss3.com/demo.php?cat=html5themes&host=freewebsitetemplates&temp=hairstylesalon)
+
 
 ### Instructions
 
