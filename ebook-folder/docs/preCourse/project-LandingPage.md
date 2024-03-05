@@ -159,7 +159,10 @@ Look in the **Head** tag at the top of your `index.html` file. Do you see `<link
   ```css
   body {
       font-family: Arial, Helvetica, sans-serif;
-      background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg");
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JH6eaP22GW7wUyYtfqujCKr0YQzBxwGsXw&usqp=CAU");
+
+      /* background image options: 1. https://pixahive.com/wp-content/uploads/2021/03/music-illustration-387168-pixahive.jpg 2. https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvYTAxMC1tYXJrdXNzcGlza2UtZmViMTktbXNwXzE5MDJfNTAyMy5qcGc.jpg 3. https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JH6eaP22GW7wUyYtfqujCKr0YQzBxwGsXw&usqp=CAU */
+      
       background-repeat: no-repeat;
       background-size: cover;
     }
