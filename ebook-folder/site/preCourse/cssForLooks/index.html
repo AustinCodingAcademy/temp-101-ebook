@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#css-is-for-looks-js-is-for-interactivity" class="md-skip">
+        <a href="#css-is-for-looks" class="md-skip">
           Skip to content
         </a>
       
@@ -291,8 +291,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#border" class="md-nav__link">
-    Border
+  <a href="#selecting-effecting" class="md-nav__link">
+    Selecting + Effecting
   </a>
   
 </li>
@@ -314,6 +314,13 @@
         <li class="md-nav__item">
   <a href="#background" class="md-nav__link">
     Background
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js-is-for-interactivity" class="md-nav__link">
+    JS is for Interactivity
   </a>
   
 </li>
@@ -2686,8 +2693,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#border" class="md-nav__link">
-    Border
+  <a href="#selecting-effecting" class="md-nav__link">
+    Selecting + Effecting
   </a>
   
 </li>
@@ -2714,6 +2721,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#js-is-for-interactivity" class="md-nav__link">
+    JS is for Interactivity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#additional-resources" class="md-nav__link">
     Additional Resources
   </a>
@@ -2733,19 +2747,42 @@
               
                 
                 
-                <h1 id="css-is-for-looks-js-is-for-interactivity">CSS is for Looks, JS is for Interactivity</h1>
-<p>CSS works by targeting, selecting, and changing the HTML content, from basic things like text color to more advanced techniques for placing content on the page.</p>
-<p>You can target and select HTML in a number of ways. Today we're going to select it by the <strong>tag name</strong>, or the <strong>ID</strong> name.</p>
-<h2 id="border">Border</h2>
-<p>Let's start by selecting the ID <code>box</code>. If you look in your HTML you'll see that the <code>box</code> ID is applied to the <code>main</code> tag holding all our content. IDs in CSS always start with a <code>#</code> in front of the ID name. Then, the <strong>properties</strong> &amp; <strong>values</strong> we want to apply to the HTML go inside <code>{}</code> to form a <strong>declaration block</strong>. So we'll write our CSS Rule by typing the ID name then adding curly brackets <code>{}</code>. The curly brackets tell the browser where the rule begins and where it ends.</p>
-<p>Inside the brackets, we are going to add a <code>border</code> property and set it to <code>15px solid blue</code>. This creates a blue, 15-pixel wide border around all the content inside the element with the ID <code>box</code>.</p>
-<!-- TODO This should be changed to not use the short-hand of the border property -->
+                <h1 id="css-is-for-looks">CSS is for Looks</h1>
+<p>CSS works by <strong>selecting &amp; effecting</strong> the HTML content, from basic things like text color to more advanced techniques for placing content on the page you will always <strong>select</strong> an element and then write rules to <strong>effect</strong> the element.</p>
+<p>You can target and select HTML in a number of ways but today you're going to use the <strong>tag name</strong> and the <strong>ID</strong> name methods.</p>
+<h2 id="selecting-effecting">Selecting + Effecting</h2>
+<p>Let's start by selecting the ID <code>box</code>. If you look in your HTML you'll see that the <code>box</code> ID is applied to the <code>main</code> element holding all our content. To select an ID in CSS always start with a <code>#</code> in front of the ID name. </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>Then, you create a <strong>declaration block</strong> by hitting the space bar and adding the <code>{}</code> syntax. </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>You'll write the <strong>rules</strong> you want the HTML to follow inside of these curly-braces <code>{}</code>. </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-style</span><span class="p">:</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>These <strong>rules</strong> are made up of two parts: a <strong>property</strong> and a <strong>value</strong> which are separated by a colon <code>:</code>. The <strong>property</strong> is a part of the element that can be changed and all HTML elements have <em>mostly</em> the same properties. The <strong>value</strong>, on the other hand, is something you decide to give it as long as it's a <strong>valid value</strong>, i.e. a measurement must be in <code>px;</code>, <code>%;</code>, or <code>em;</code> while a color must be in text (<code>purple;</code>) or hexadecimal form (<code>#e942f5;</code>) and so forth.</p>
+<blockquote>
+<p>NOTE: <strong>Valid values</strong> can be found in the documentation of the <a href="https://www.w3schools.com/cssref/index.php">CSS Properties at W3Schools</a>.</p>
+</blockquote>
+<p>The rules you write inside the declaration block will be applied to the HTML element that was selected in-front of the declaration block.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">the CSS</label><div class="tabbed-content">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-style</span><span class="p">:</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
@@ -2773,8 +2810,12 @@
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">outset</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-style</span><span class="p">:</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
@@ -2795,16 +2836,20 @@
 <p>The next thing we want to do is set a specific <code>height</code> and <code>width</code> on the <code>#box</code> container. Let's set it to <code>width: 500px;</code> and <code>height: 200px;</code></p>
 <p>After that, let's change the font. If you don't specify which font to use, the browser will just use a <a href="https://www.granneman.com/webdev/coding/css/fonts-and-formatting/web-browser-font-defaults">default font</a>. Telling the browser what font to use is a little tricky because not all machines have the same fonts installed. We could tell the browser to download a font, but instead we are just going to assign a category and let the browser pick its default one of that category. We do that with the following key/value pair: <code>font-family: cursive;</code></p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">the CSS</label><div class="tabbed-content">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">outset</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-style</span><span class="p">:</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
@@ -2835,7 +2880,7 @@
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -2869,8 +2914,12 @@
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">outset</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">#</span><span class="nn">box</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-width</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">border-style</span><span class="p">:</span><span class="w"> </span><span class="kc">solid</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
@@ -2889,8 +2938,9 @@
 <p><img alt="surfCity-io-example-wave-patterns" src="../../images/surfCity-io-example-wave-patterns.png" /></p>
 </div>
 </div>
+<h2 id="js-is-for-interactivity">JS is for Interactivity</h2>
 <p>The last thing we need to do is make the countdown clock work. Writing JavaScript is a little more complicated than CSS or HTML, but you did a quick Google search and <a href="https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript">found that someone else had written the code already</a> and like the CSS background patterns, they have shared the code for other developers to use and learn from.</p>
-<p>Copy the code from below and paste it into the JS window in your code pen. And with that working, we are ready to show it to our friend (the customer/client)</p>
+<p>Copy the code from below and paste it into the JS window in your CodePen. And with that working, we are ready to show it to our friend (the customer/client)</p>
 <div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">the JS</label><div class="tabbed-content">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -2917,38 +2967,62 @@
 <span class="normal">23</span>
 <span class="normal">24</span>
 <span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// set up variable to manage date rules</span><span class="w"></span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span><span class="w"> </span><span class="c1">// New Date object</span><span class="w"></span>
-<span class="nx">date</span><span class="p">.</span><span class="nx">setDate</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">30</span><span class="p">)</span><span class="w"> </span><span class="c1">// Current day plus 30 days</span><span class="w"></span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// this is a &quot;comment&quot;. Any characters after the &quot;//&quot; symbols are ignored by the computer.</span><span class="w"></span>
+<span class="c1">// The following line of code will create an object that will hold a date in the future</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">targetDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span><span class="w"></span>
+
+<span class="c1">// logs out the value of targetDate to the console which is the current date.</span><span class="w"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;targetDate is: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">targetDate</span><span class="p">)</span><span class="w"> </span>
+
+<span class="c1">// Adds 30 days to that date</span><span class="w"></span>
+<span class="nx">targetDate</span><span class="p">.</span><span class="nx">setDate</span><span class="p">(</span><span class="nx">targetDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">30</span><span class="p">)</span><span class="w"> </span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;the new targetDate is: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">targetDate</span><span class="p">)</span><span class="w"></span>
+
+<span class="c1">// create units of time for the computer to calculate with &amp; save them in variables</span><span class="w"></span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">second</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1000</span><span class="p">;</span><span class="w"></span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">minute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">second</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">60</span><span class="p">;</span><span class="w"></span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">hour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">minute</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">60</span><span class="p">;</span><span class="w"></span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">day</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">hour</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">24</span><span class="p">;</span><span class="w"></span>
 
-<span class="c1">// convert target date to a date object</span><span class="w"></span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">targetDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">date</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// set up a loop to update the countdown clock every second</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">calculateTimeAndUpdateCountdownDisplay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-<span class="c1">// set up the loop to update the countdown once a second</span><span class="w"></span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="c1">// get &amp; store the current time</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">();</span><span class="w"></span>
 
-<span class="w">  </span><span class="c1">// get the current time</span><span class="w"></span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">();</span><span class="w"></span>
+<span class="c1">// get &amp; store the remaining time</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">targetDate</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">now</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="c1">// get the time remaining</span><span class="w"></span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">targetDate</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">now</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// update each &lt;span&gt; tag with the corresponding countdown values</span><span class="w"></span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#days&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">distance</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">day</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; days, &quot;</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="c1">// update the &lt;span&gt; tags with the countdown values</span><span class="w"></span>
-<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#days&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">distance</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">day</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; days, &quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#hours&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">day</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">hour</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; hours, &quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#minutes&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">hour</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">minute</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; minutes, &quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#seconds&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">minute</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">second</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; seconds &quot;</span><span class="p">;</span><span class="w"></span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#hours&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">day</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">hour</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; hours, &quot;</span><span class="p">;</span><span class="w"></span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#minutes&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">hour</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">minute</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot; minutes, &quot;</span><span class="p">;</span><span class="w"></span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#seconds&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">distance</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="p">(</span><span class="nx">minute</span><span class="p">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">second</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; seconds &quot;</span><span class="p">;</span><span class="w"></span>
 <span class="p">},</span><span class="w"> </span><span class="nx">second</span><span class="p">)</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
 </div>
 <input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">result</label><div class="tabbed-content">
-<p><img alt="surfCity-io-example-wave-patterns" src="../../images/surfCity-io-example-wave-patterns.png" /></p>
+<p><iframe src="https://giphy.com/embed/9orov3qualQiJAPHRb" width="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
 </div>
 </div>
+<blockquote>
+<p>HINT: click the console button at the bottom left of your CodePen screen to see the logs of this script.</p>
+</blockquote>
+<p>Now <strong>delete line 9</strong> and <strong>change line 3</strong> to use your birthday as the future date, i.e. <code>const targetDate = new Date("October 20, 2025);</code></p>
 <h2 id="additional-resources">Additional Resources</h2>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> <a href="https://www.granneman.com/webdev/coding/css/fonts-and-formatting/web-browser-font-defaults">Reference, granneman.com - Web Browser Font Defaults</a></li>

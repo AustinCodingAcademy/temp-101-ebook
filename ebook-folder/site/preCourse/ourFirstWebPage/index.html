@@ -2799,18 +2799,20 @@
 </blockquote>
 <h3 id="lets-get-started">Let's get started</h3>
 <h4 id="html-is-a-tag-based-language">HTML IS A TAG-BASED LANGUAGE</h4>
-<p>The first thing you need to know about HTML is there are two different kinds of tags.</p>
-<p>Some tags, like the <strong>H1</strong>, are wrapped around content. The 'h' in <strong>H1</strong> is short for <strong>heading</strong>. It has an <strong>opening tag</strong>, <code>&lt;h1&gt;</code>, and a <strong>closing tag</strong>, <code>&lt;/h1&gt;</code>, (see below) and the text of the heading goes in between them.</p>
+<p>The first thing you need to know about HTML is that while HTML is made up of <strong>elements</strong> it is known as a "tag-based language" in that, <strong>elements</strong> are created with <strong>tags</strong>. And there are two different ways of making <strong>elements</strong> with <strong>tags</strong>.</p>
+<p>Some <strong>elements</strong>, like the <strong>H1</strong>, have two <strong>tags</strong> wrapped around their content. The 'h' in <strong>H1</strong> is short for <strong>heading</strong>. It has an <strong>opening tag</strong>, <code>&lt;h1&gt;</code>, and a <strong>closing tag</strong>, <code>&lt;/h1&gt;</code>, and the text of the heading goes in-between them like this:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>SurfCity.io - Coming Soon<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>The other type of HTML tags are called <strong>self-closing tags</strong> and they contain all that they need in the opening tag and do not need a closing tag. One example is the <strong>Img</strong> tag (see below) that includes the source <code>src=</code> <strong>attribute</strong> which gives directions on where to find the image that's supposed to be shown to the user. The Img tag is not wrapped around the image, instead it tells the browser where to find the source of the image and put the image on the page.</p>
+<p>The other type of HTML elements are called <strong>self-closing tags</strong> and they contain all that they need in the opening tag and do not need a closing tag because they don't have any "content". One example is the <strong>Img</strong> element that has a source <code>src=</code> <strong>attribute</strong> which gives directions on where to find the image that's supposed to be shown to the user. The Img element is not wrapped around the image, instead it tells the browser where to find the source of the image and puts the image on the page.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://assets.codepen.io/1240556/social.png&quot;</span> <span class="p">/&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>These are the two categories of HTML Tags we write when building web pages: <strong>Normal</strong> or <strong>Non-void</strong> tags and <strong>Self-Closing</strong> or <strong>Void</strong> tags. These tags create <strong>HTML Elements</strong> on our page. We'll learn much more about who to use these elements, in due time.</p>
+<blockquote>
+<p>NOTE: There are other names for these <strong>Self-Closing Tags</strong> including: <strong>Void Elements</strong> and <strong>Empty Tags</strong>. If you remember any one of these three names you'll be doing great!!</p>
+</blockquote>
 <h2 id="where-do-i-write-the-code">Where Do I Write The Code?</h2>
-<p>In this two week class we are going to write code in three different environments, but the easiest to get started with is a website called <a href="http://www.codepen.io/">codepen.io</a>.</p>
-<p><a href="http://www.codepen.io/">Codepen</a> asks you to make an account, and we'll do that later, but for now just scroll down the page until you see the 'Try the Editor' button and click it.</p>
-<p>Once it loads, you will see two parts, a section where you write the code, and a section where you see the page you're building. The code section has a separate place for each type of code (HTML, CSS, and JS). The page is designed to be responsive, meaning it changes itself to fit different size screens. If you have a high resolution monitor, you will see three panels in the code section that can be expanded to maximize the area you are coding in. If you have a smaller screen, you will see tabs at the top that allow you to choose which type of code to edit.</p>
+<p>In this Pre-Class section, we are going to write code in three different environments, but the easiest to get started with is a website called <a href="http://www.codepen.io/">codepen.io</a>.</p>
+<p><a href="http://www.codepen.io/">Codepen</a> asks you to make an account, and we'll do that later, but for now just look for the 'Start Coding' button.</p>
+<p>Once it loads, you will see two parts, a section where you write the code, and a section where you see the page you're building. The coding section has a separate place for each type of code (HTML, CSS, and JS). The page is designed to be responsive, meaning it changes itself to fit different size screens. If you have a high resolution monitor, you will see three panels in the code section that can be expanded to maximize the area you are coding in. If you have a smaller screen, you will see tabs at the top that allow you to choose which type of code to edit.</p>
 <p>In either case, we are ready to get started on building the page.</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Potential View 1</label><div class="tabbed-content">
 <p><img alt="code-pen-button-start-coding" src="../../images/code-pen-button-start-coding.png" /></p>
@@ -2820,7 +2822,8 @@
 </div>
 </div>
 <h2 id="short-cut-of-the-day-opening-tabs-in-chrome">Short-Cut of the Day - Opening Tabs in Chrome</h2>
-<p>Macs <span class="keys"><kbd class="key-command">Cmd</kbd></span> = Windows <span class="keys"><kbd class="key-control">Ctrl</kbd></span></p>
+<p><em>Macs <span class="keys"><kbd class="key-command">Cmd</kbd></span> = Windows <span class="keys"><kbd class="key-control">Ctrl</kbd></span></em></p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Mac Users</label><div class="tabbed-content">
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Open a link in a new tab <span class="keys"><kbd class="key-command">Cmd</kbd></span> + click</li>
 <li class="task-list-item"><input type="checkbox"/> Close a tab <span class="keys"><kbd class="key-command">Cmd</kbd></span> + <span class="keys"><kbd class="key-w">W</kbd></span></li>
@@ -2828,6 +2831,17 @@
 <li class="task-list-item"><input type="checkbox"/> Re-open a recently closed tab <span class="keys"><kbd class="key-command">Cmd</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-t">T</kbd></span></li>
 <li class="task-list-item"><input type="checkbox"/> Go to a specific tab <span class="keys"><kbd class="key-command">Cmd</kbd></span> + <span class="keys"><kbd class="key-1">1</kbd></span> , or <span class="keys"><kbd class="key-2">2</kbd></span> - <span class="keys"><kbd class="key-9">9</kbd></span>. <span class="keys"><kbd class="key-0">0</kbd></span> is always your last tab</li>
 </ul>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Windows Users</label><div class="tabbed-content">
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Open a link in a new tab <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + click</li>
+<li class="task-list-item"><input type="checkbox"/> Close a tab <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-w">W</kbd></span></li>
+<li class="task-list-item"><input type="checkbox"/> Open a new blank tab <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-t">T</kbd></span></li>
+<li class="task-list-item"><input type="checkbox"/> Re-open a recently closed tab <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-t">T</kbd></span></li>
+<li class="task-list-item"><input type="checkbox"/> Go to a specific tab <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-1">1</kbd></span> , or <span class="keys"><kbd class="key-2">2</kbd></span> - <span class="keys"><kbd class="key-9">9</kbd></span>. <span class="keys"><kbd class="key-0">0</kbd></span> is always your last tab</li>
+</ul>
+</div>
+</div>
 <!-- ## Additional Resources
 
 - [ ] [YT, tuber - title]()

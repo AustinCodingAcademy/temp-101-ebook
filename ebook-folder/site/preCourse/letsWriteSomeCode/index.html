@@ -279,8 +279,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#html-is-for-content" class="md-nav__link">
-    HTML is for Content
+  <a href="#create-the-main-section" class="md-nav__link">
+    Create the Main Section
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-countdown-clock" class="md-nav__link">
+    The Countdown Clock
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-form" class="md-nav__link">
+    The Form
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form-inputs" class="md-nav__link">
+    Form Inputs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-images" class="md-nav__link">
+    Social Images
   </a>
   
 </li>
@@ -2658,8 +2686,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#html-is-for-content" class="md-nav__link">
-    HTML is for Content
+  <a href="#create-the-main-section" class="md-nav__link">
+    Create the Main Section
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-countdown-clock" class="md-nav__link">
+    The Countdown Clock
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-form" class="md-nav__link">
+    The Form
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form-inputs" class="md-nav__link">
+    Form Inputs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-images" class="md-nav__link">
+    Social Images
   </a>
   
 </li>
@@ -2678,26 +2734,27 @@
                 
                 
                 <h1 id="lets-write-some-code">Let's Write Some Code</h1>
-<h2 id="html-is-for-content">HTML is for Content</h2>
-<p>We use HTML to insert our content into the page. Text, images, video, forms, PDFs, etc... are all created by the HTML tags we use.</p>
-<p>Some tags like <strong>Header</strong>, <strong>Main</strong>, and <strong>Footer</strong> are used to group together multiple pieces of content.</p>
-<p>Let's create a Main tag to hold all of the content. Be sure to follow along in CodePen. It looks like this:</p>
+<h2 id="create-the-main-section">Create the Main Section</h2>
+<p>The main thing to not about HTML is: HTML is for Content. We use HTML to organize our content on the web page. Text, images, video, forms, PDFs, etc... are all created by the HTML tags we use.</p>
+<p>Some elements like <strong>Header</strong>, <strong>Main</strong>, and <strong>Footer</strong> are used to group together multiple smaller pieces of content.</p>
+<p>Let's create a Main element to hold the informational content of this web page. Be sure to follow along in CodePen. Copy/Paste the following code into your CodePen text editor:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">main</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;box&quot;</span><span class="p">&gt;</span>
 
   <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>Our <code>&lt;main&gt;</code> opening tag looks a little different because we added an <code>id=</code> <strong>property</strong> to it.</p>
-<p><strong>ID</strong>s are like labels we put on our HTML tags. We can use these labels in CSS and JavaScript to 'select and affect' the contents in the HTML later.</p>
-<p>Inside the <strong>Main</strong> tag, let's create an <strong>H1</strong> tag and give the page a title with it:</p>
+<p>Our <code>&lt;main&gt;</code> opening tag looks a little different than some of the other elements coming up because we added an <code>id=</code> <strong>property</strong> to it.</p>
+<p><strong>ID</strong>s are like labels. We can use these labels in CSS and JavaScript to 'select and affect' the contents of our HTML elements..</p>
+<p>Inside the <strong>Main</strong> tag, let's create an <strong>H1</strong> tag and give the page a title with it. Again, copy/paste this code into CodePen to match this example exactly:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">main</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;box&quot;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>SurfCity.io - Coming Soon<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>The title looks good, so now we need to create the structure for our countdown clock. We are going to do that by creating a series of four <strong>Span</strong> tags. The Span tag is usually used to wrap around bits of text that we want to change using CSS or JavaScript. In this case we are going to use JavaScript to make the countdown timer, and we need to update the contents of these span tags once every second.</p>
+<h2 id="the-countdown-clock">The Countdown Clock</h2>
+<p>Now we need to create the structure for our countdown clock. We are going to do that by creating a series of four <strong>Span</strong> elements. The Span element is usually used to wrap around bits of text that we want to change using CSS or JavaScript. In this case we are going to use JavaScript to make the countdown timer, and we need to update the contents of these span tags once every second.</p>
 <blockquote>
 <p>Notice the new <strong>ID</strong>s we are adding. It's important to note that IDs like these have to be typed exactly as we show them here. Typos, or making the first letter upper-case <em>instead of lower-case</em> will confuse the browser and it will not work.</p>
 </blockquote>
@@ -2723,7 +2780,7 @@
 <p><img alt="surfIO-countdown-page-title" src="../../images/surfIO-countdown-page-title.png" /></p>
 </div>
 </div>
-<p>Now we're going to add two more tags. A <strong>br</strong> tag which adds a <strong>line-break</strong> to force the following content onto the next line, and a <strong>p</strong> tag. The <code>p</code> stands for paragraph and is designed to hold multiple lines of text.</p>
+<p>Now we're going to add two more elements. A <strong>br</strong> element which adds a <strong>line-break</strong> to force the following content onto the next line, and a <strong>p</strong> elements. The <code>p</code> stands for paragraph and is designed to hold multiple lines of text.</p>
 <p>We will use this space to ask if our users would like to join the mailing list.</p>
 <div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">the HTML</label><div class="tabbed-content">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -2754,12 +2811,9 @@
 </code></pre></div></td></tr></table></div>
 </div>
 </div>
-<!-- === "the Result"
-
-  ![surfIO-countdown-page-](./../images/surfIO-countdown-page-.png) -->
-
-<p>Now we come to the <strong>Form</strong> tag. Every time you've given your email address, logged in to an account, bought something with a credit card, or filled out a survey online, you've done it in a <strong>Form</strong> tag.</p>
-<p><strong>Form</strong> tags are how we accept information from our users and they are critically important to most web sites. The form is just a content container though, and inside the container we can design it to look any way we like, but in order to accept data from the user, we need to add at least one <strong>Input</strong> tag.</p>
+<h2 id="the-form">The Form</h2>
+<p>Now we come to the <strong>Form</strong> element. Every time you've given your email address, logged in to an account, bought something with a credit card, or filled out a survey online, you've done it in a <strong>Form</strong> element.</p>
+<p><em>Continue copy/pasting the code snippets into your CodePen text editor to make yours look exactly like the examples.</em></p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">the HTML</label><div class="tabbed-content">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -2802,10 +2856,12 @@
 <p><img alt="surfIO-countdown-page-form" src="../../images/surfIO-countdown-page-form.png" /></p>
 </div>
 </div>
-<p>There are a variety of different types of data that a form can accept, and the tag we use to do it is called an <strong>Input</strong> tag. Inside the <strong>Input</strong> tag is a property called <code>type=</code>. Changing the type property changes what kind of data the input accepts, and we need the user to give us an email, so we will use <code>type="text"</code>.</p>
-<p>The second input is a little different. It has its <code>type</code> property/attribute set to <code>submit</code>. This will create a button input element that will be used to trigger a submission function on the Form Element it's inside.</p>
+<h2 id="form-inputs">Form Inputs</h2>
+<p><strong>Form</strong> elements are how we accept information from our users and they are critically important to most web sites. The form is just a content container though, and inside the container we can design it to look any way we like, but in order to accept data from the user, we need to add at least one <strong>Input</strong> element.</p>
+<p>There are a variety of different types of data that can be <em>input ;)</em> on a form. Inside the <strong>Input opening tag</strong> is a attribute/property called <code>type=</code>. Changing the <strong>type property</strong> changes what kind of data the input accepts, and we need the user to give us an email, so we will use <code>type="email"</code>.</p>
+<p>The second input is a little different. It has its <code>type</code> property/attribute set to <code>submit</code> which will create a button that will be used to trigger a submission function on the Form.</p>
 <blockquote>
-<p>Notice: we also give Input elements a <code>name=</code> property. This gives us a way to access the value stored in that input via thing called a <strong>key</strong>. This input's <strong>key</strong> will be <code>email</code> and its <strong>value</strong> will be whatever the user inputs. You'll here the term <strong>key:value pairs</strong>; this describes the relationship of these pieces of data.</p>
+<p>NOTE: we also give Input elements a <code>name=</code> property. This gives us a way to access the value stored in that input via a thing called a <strong>key</strong>. This input's <strong>key</strong> will be <code>userEmail</code> and its <strong>value</strong> will be whatever the user inputs. As you progress, you'll here the term <strong>key:value pairs</strong>; this describes the relationship of these pieces of data.</p>
 </blockquote>
 <div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">the HTML</label><div class="tabbed-content">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -2842,7 +2898,7 @@
 
   <span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
     Email:
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;userEmail&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Submit&quot;</span><span class="p">&gt;</span>
 
   <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
@@ -2853,8 +2909,9 @@
 <p><img alt="surfIO-countdown-page-formWithEmailInput" src="../../images/surfIO-countdown-page-formWithEmailInput.png" /></p>
 </div>
 </div>
+<h2 id="social-images">Social Images</h2>
 <p>Ok, we're almost done with the HTML, but our friend, the client, just called to say we need to include links to their social media... He doesn't have the links yet because some of the accounts are still being created, but that's OK. We can include an image for now and add the link later when it's available.</p>
-<p>The Img tag just needs the <code>src=</code> property filled in with a URL so that it knows where find the image.</p>
+<p>In the meantime, the Img element just needs the <code>src=</code> property filled in with a URL so that it knows where find the image. Go ahead and wrap that Img Element with a Div Element to make it easier to position and style with the CSS. <em>(see the code snippet)</em></p>
 <p>That's it! We're done with the HTML. It still looks a little plain...let's learn how to use CSS to transform the look of it!!</p>
 <div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">the HTML</label><div class="tabbed-content">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>

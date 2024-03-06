@@ -1,21 +1,46 @@
-# CSS is for Looks, JS is for Interactivity
+# CSS is for Looks
 
-CSS works by targeting, selecting, and changing the HTML content, from basic things like text color to more advanced techniques for placing content on the page.
+CSS works by **selecting & effecting** the HTML content, from basic things like text color to more advanced techniques for placing content on the page you will always **select** an element and then write rules to **effect** the element.
 
-You can target and select HTML in a number of ways. Today we're going to select it by the **tag name**, or the **ID** name.
+You can target and select HTML in a number of ways but today you're going to use the **tag name** and the **ID** name methods.
 
-## Border
+## Selecting + Effecting
 
-Let's start by selecting the ID `box`. If you look in your HTML you'll see that the `box` ID is applied to the `main` tag holding all our content. IDs in CSS always start with a `#` in front of the ID name. Then, the **properties** & **values** we want to apply to the HTML go inside `{}` to form a **declaration block**. So we'll write our CSS Rule by typing the ID name then adding curly brackets `{}`. The curly brackets tell the browser where the rule begins and where it ends.
+Let's start by selecting the ID `box`. If you look in your HTML you'll see that the `box` ID is applied to the `main` element holding all our content. To select an ID in CSS always start with a `#` in front of the ID name. 
 
-Inside the brackets, we are going to add a `border` property and set it to `15px solid blue`. This creates a blue, 15-pixel wide border around all the content inside the element with the ID `box`.
+```css
+#box
+```
 
-<!-- TODO This should be changed to not use the short-hand of the border property -->
+Then, you create a **declaration block** by hitting the space bar and adding the `{}` syntax. 
+
+```css
+#box {}
+```
+
+You'll write the **rules** you want the HTML to follow inside of these curly-braces `{}`. 
+
+```css
+#box {
+  border-color: blue;
+  border-width: 15px;
+  border-style: solid;
+}
+```
+
+These **rules** are made up of two parts: a **property** and a **value** which are separated by a colon `:`. The **property** is a part of the element that can be changed and all HTML elements have *mostly* the same properties. The **value**, on the other hand, is something you decide to give it as long as it's a **valid value**, i.e. a measurement must be in `px;`, `%;`, or `em;` while a color must be in text (`purple;`) or hexadecimal form (`#e942f5;`) and so forth.
+
+> NOTE: **Valid values** can be found in the documentation of the [CSS Properties at W3Schools](https://www.w3schools.com/cssref/index.php).
+
+The rules you write inside the declaration block will be applied to the HTML element that was selected in-front of the declaration block.
+
 === "the CSS"
 
     ```css
     #box {
-      border: 15px solid blue;
+      border-color: blue;
+      border-width: 15px;
+      border-style: solid;
       border-radius: 25px;
     }
     ```
@@ -38,7 +63,9 @@ While we are centering things, let's center that image container we added in HTM
 
     ```css
     #box {
-      border: 15px outset blue;
+      border-color: blue;
+      border-width: 15px;
+      border-style: solid;
       border-radius: 25px;
       text-align: center;
       margin: auto;
@@ -65,7 +92,9 @@ After that, let's change the font. If you don't specify which font to use, the b
 
     ```css
     #box {
-      border: 15px outset blue;
+      border-color: blue;
+      border-width: 15px;
+      border-style: solid;
       border-radius: 25px;
       text-align: center;
       margin: auto;
@@ -89,7 +118,7 @@ Next we want to clean up some of the spacing and formatting in the `#box` contai
 
     ```css
     body {
-        background-color: red;
+      background-color: red;
     }
 
     h1 {
@@ -115,7 +144,9 @@ Scroll down until you see a pattern called "Wave" and click it. This will bring 
 
     ```css
     #box {
-      border: 15px outset blue;
+      border-color: blue;
+      border-width: 15px;
+      border-style: solid;
       border-radius: 25px;
       text-align: center;
       margin: auto;
@@ -134,44 +165,61 @@ Scroll down until you see a pattern called "Wave" and click it. This will bring 
 
     ![surfCity-io-example-wave-patterns](./../images/surfCity-io-example-wave-patterns.png)
 
+## JS is for Interactivity
+
 The last thing we need to do is make the countdown clock work. Writing JavaScript is a little more complicated than CSS or HTML, but you did a quick Google search and [found that someone else had written the code already](https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript) and like the CSS background patterns, they have shared the code for other developers to use and learn from.
 
-Copy the code from below and paste it into the JS window in your code pen. And with that working, we are ready to show it to our friend (the customer/client)
+Copy the code from below and paste it into the JS window in your CodePen. And with that working, we are ready to show it to our friend (the customer/client)
 
 === "the JS"
 
     ```js
-    // set up variable to manage date rules
-    const date = new Date(); // New Date object
-    date.setDate(date.getDate() + 30) // Current day plus 30 days
+    // this is a "comment". Any characters after the "//" symbols are ignored by the computer.
+    // The following line of code will create an object that will hold a date in the future
+    const targetDate = new Date();
+
+    // logs out the value of targetDate to the console which is the current date.
+    console.log("targetDate is: " + targetDate) 
+
+    // Adds 30 days to that date
+    targetDate.setDate(targetDate.getDate() + 30) 
+
+    console.log("the new targetDate is: " + targetDate)
+
+    // create units of time for the computer to calculate with & save them in variables
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
     const day = hour * 24;
 
-    // convert target date to a date object
-    let targetDate = date;
+    // set up a loop to update the countdown clock every second
+    const calculateTimeAndUpdateCountdownDisplay = setInterval(function() {
 
-    // set up the loop to update the countdown once a second
-    let x = setInterval(function() {
+    // get & store the current time
+    const now = new Date().getTime();
 
-      // get the current time
-      let now = new Date().getTime();
+    // get & store the remaining time
+    const distance = targetDate - now;
 
-      // get the time remaining
-      let distance = targetDate - now;
-
-      // update the <span> tags with the countdown values
-      document.querySelector('#days').innerHTML = Math.floor(distance / (day))+" days, ";
-      document.querySelector('#hours').innerHTML = Math.floor((distance % (day)) / (hour))+" hours, ";
-      document.querySelector('#minutes').innerHTML = Math.floor((distance % (hour)) / (minute))+" minutes, ";
-      document.querySelector('#seconds').innerHTML = Math.floor((distance % (minute)) / second)+" seconds ";
+    // update each <span> tag with the corresponding countdown values
+    document.querySelector('#days').innerHTML = Math.floor(distance / (day))+" days, ";
+    
+    document.querySelector('#hours').innerHTML = Math.floor((distance % (day)) / (hour))+" hours, ";
+    
+    document.querySelector('#minutes').innerHTML = Math.floor((distance % (hour)) / (minute))+" minutes, ";
+    
+    document.querySelector('#seconds').innerHTML = Math.floor((distance % (minute)) / second)+" seconds ";
     }, second)
     ```
 
 === "result"
 
-    ![surfCity-io-example-wave-patterns](./../images/surfCity-io-example-wave-patterns.png)
+    <iframe src="https://giphy.com/embed/9orov3qualQiJAPHRb" width="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+
+> HINT: click the console button at the bottom left of your CodePen screen to see the logs of this script.
+
+Now **delete line 9** and **change line 3** to use your birthday as the future date, i.e. `const targetDate = new Date("October 20, 2025);`
 
 ## Additional Resources
 

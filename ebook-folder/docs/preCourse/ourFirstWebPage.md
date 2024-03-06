@@ -35,29 +35,29 @@ You bump into an acquaintance and get to chatting. You tell them that you are le
 
 #### HTML IS A TAG-BASED LANGUAGE
 
-The first thing you need to know about HTML is there are two different kinds of tags.
+The first thing you need to know about HTML is that while HTML is made up of **elements** it is known as a "tag-based language" in that, **elements** are created with **tags**. And there are two different ways of making **elements** with **tags**.
 
-Some tags, like the **H1**, are wrapped around content. The 'h' in **H1** is short for **heading**. It has an **opening tag**, `<h1>`, and a **closing tag**, `</h1>`, (see below) and the text of the heading goes in between them.
+Some **elements**, like the **H1**, have two **tags** wrapped around their content. The 'h' in **H1** is short for **heading**. It has an **opening tag**, `<h1>`, and a **closing tag**, `</h1>`, and the text of the heading goes in-between them like this:
 
 ```html
   <h1>SurfCity.io - Coming Soon</h1>
 ```
 
-The other type of HTML tags are called **self-closing tags** and they contain all that they need in the opening tag and do not need a closing tag. One example is the **Img** tag (see below) that includes the source `src=` **attribute** which gives directions on where to find the image that's supposed to be shown to the user. The Img tag is not wrapped around the image, instead it tells the browser where to find the source of the image and put the image on the page.
+The other type of HTML elements are called **self-closing tags** and they contain all that they need in the opening tag and do not need a closing tag because they don't have any "content". One example is the **Img** element that has a source `src=` **attribute** which gives directions on where to find the image that's supposed to be shown to the user. The Img element is not wrapped around the image, instead it tells the browser where to find the source of the image and puts the image on the page.
 
 ```html
   <img src="https://assets.codepen.io/1240556/social.png" />
 ```
 
-These are the two categories of HTML Tags we write when building web pages: **Normal** or **Non-void** tags and **Self-Closing** or **Void** tags. These tags create **HTML Elements** on our page. We'll learn much more about who to use these elements, in due time.
+> NOTE: There are other names for these **Self-Closing Tags** including: **Void Elements** and **Empty Tags**. If you remember any one of these three names you'll be doing great!!
 
 ## Where Do I Write The Code?
 
-In this two week class we are going to write code in three different environments, but the easiest to get started with is a website called [codepen.io](http://www.codepen.io/).
+In this Pre-Class section, we are going to write code in three different environments, but the easiest to get started with is a website called [codepen.io](http://www.codepen.io/).
 
-[Codepen](http://www.codepen.io/) asks you to make an account, and we'll do that later, but for now just scroll down the page until you see the 'Try the Editor' button and click it.
+[Codepen](http://www.codepen.io/) asks you to make an account, and we'll do that later, but for now just look for the 'Start Coding' button.
 
-Once it loads, you will see two parts, a section where you write the code, and a section where you see the page you're building. The code section has a separate place for each type of code (HTML, CSS, and JS). The page is designed to be responsive, meaning it changes itself to fit different size screens. If you have a high resolution monitor, you will see three panels in the code section that can be expanded to maximize the area you are coding in. If you have a smaller screen, you will see tabs at the top that allow you to choose which type of code to edit.
+Once it loads, you will see two parts, a section where you write the code, and a section where you see the page you're building. The coding section has a separate place for each type of code (HTML, CSS, and JS). The page is designed to be responsive, meaning it changes itself to fit different size screens. If you have a high resolution monitor, you will see three panels in the code section that can be expanded to maximize the area you are coding in. If you have a smaller screen, you will see tabs at the top that allow you to choose which type of code to edit.
 
 In either case, we are ready to get started on building the page.
 
@@ -69,13 +69,21 @@ In either case, we are ready to get started on building the page.
 
 ## Short-Cut of the Day - Opening Tabs in Chrome
 
-Macs ++command++ = Windows ++control++
+*Macs ++command++ = Windows ++control++*
 
-- [ ] Open a link in a new tab ++command++ + click
-- [ ] Close a tab ++command++ + ++w++
-- [ ] Open a new blank tab ++command++ + ++t++
-- [ ] Re-open a recently closed tab ++command++ + ++shift++ + ++t++
-- [ ] Go to a specific tab ++command++ + ++1++ , or ++2++ - ++9++. ++0++ is always your last tab
+=== "Mac Users"
+    - [ ] Open a link in a new tab ++command++ + click
+    - [ ] Close a tab ++command++ + ++w++
+    - [ ] Open a new blank tab ++command++ + ++t++
+    - [ ] Re-open a recently closed tab ++command++ + ++shift++ + ++t++
+    - [ ] Go to a specific tab ++command++ + ++1++ , or ++2++ - ++9++. ++0++ is always your last tab
+
+=== "Windows Users"
+    - [ ] Open a link in a new tab ++control++ + click
+    - [ ] Close a tab ++control++ + ++w++
+    - [ ] Open a new blank tab ++control++ + ++t++
+    - [ ] Re-open a recently closed tab ++control++ + ++shift++ + ++t++
+    - [ ] Go to a specific tab ++control++ + ++1++ , or ++2++ - ++9++. ++0++ is always your last tab
 
 <!-- ## Additional Resources
 

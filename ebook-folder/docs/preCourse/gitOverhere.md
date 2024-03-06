@@ -4,7 +4,7 @@ Remember, in a Flipped Classroom you will study and consume your "lecture" *befo
 
 Let's begin:
 
-On the first day of class we will hosting your the portfolio webpage that you'll soon build. To do this, you will need the Git software to move the files from your local machine (*computer*) to a remote repository on GitHub from where it will be hosted live on the internet for anyone that has the URL to see!
+On the first day of class we will hosting your the portfolio web page that you'll soon build. To do this, you will need the Git software to move the files from your local machine (*computer*) to a remote repository on GitHub from where it will be hosted live on the internet for anyone that has the URL to see!
 
 ## Checklist
 
