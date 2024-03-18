@@ -1,5 +1,6 @@
 # Welcome to Web 101: Intro to the Web
 
+
 ## Objective Statement
 
 Students who have completed this course will be able to navigate and understand the DOM, use HTML elements and their attributes to style them using CSS rules, and handle DOM events with JavaScript functions. By the end of the course, students will have built multiple static web pages and practiced the skills to build a functional static web page. These skills will transfer directly to the students’ graduation app, completed in their 400 level course. In the students’ 200 level course, they will learn to program small applications before learning to structure data and serve it over the internet in their 300 level course.
