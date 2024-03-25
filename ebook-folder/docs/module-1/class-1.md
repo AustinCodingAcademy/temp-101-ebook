@@ -156,7 +156,7 @@ We'll be using these two programs tonight and for the rest of class. If you didn
     * `git init` - this will initialize the folder as a folder for the git software to watch.
     * `git add -A` - this adds all the files you created for your Portfolio Landing Page.
     * `git commit -m "first commit"` - This stages your new files to be added to the remote remote, you're "committing" to the changes.
-    * `git branch -M main` - [GitHub recently changed the name of the "main" branch](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main#:~:text=The%20master%20branch%20is%20no,like%20any%20other%20Git%20branch.) from `master` to `main`. This command ensure you're using `main` as your "main" branch.
+    * `git branch -M main` - [GitHub recently changed the name of the "main" branch](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main#:~:text=The%20master%20branch%20is%20no,like%20any%20other%20Git%20branch.){:target="_blank"} from `master` to `main`. This command ensure you're using `main` as your "main" branch.
     * `git remote add origin https://github.com/YOUR-USERNAME/web101-firstName_lastName.git` - Attaches the remote repo to this local folder.
       >  NOTE: be sure you replace the link wit the link given to YOU from gitHub.
     * `git push -u origin main` - pushes your committed files up to the remote repo.
@@ -170,7 +170,7 @@ We'll be using these two programs tonight and for the rest of class. If you didn
 * What problems have you encountered?
 * Is there anyone that was rejected by GitHub? Password? Username?
 * Let's partner up according to our problems and help each other get through them! Who's successful and who is struggling?
-* [Follow-Up Video: Creating a Repo and Using Git](https://vimeo.com/391317916)
+* [Follow-Up Video: Creating a Repo and Using Git](https://vimeo.com/391317916){:target="_blank"}
 * Is anyone having a trouble `push`ing? Maybe your configurations aren't set correctly. See next section: Git Configurations
 
   > NOTE: Mac users can learn to setup the `code .` path for VS Code in this video.
@@ -179,7 +179,7 @@ We'll be using these two programs tonight and for the rest of class. If you didn
 
 When you're pushing code to a repo, Git needs to know who you are so it can sign-in to GitHub. It uses your username/email and password to do this. If you don't setup this configuration, git will populate your email with an address assigned to your computer that doesn't match your account on GitHub.
 
-  > NOTE: if while doing these steps you'll see a strange looking screen pop up, it might be your computer's [default text editor, VIM or VI](https://en.wikipedia.org/wiki/Vim_(text_editor)). Just follow the instructions below and/or watch the video to use it.
+  > NOTE: if while doing these steps you'll see a strange looking screen pop up, it might be your computer's [default text editor, VIM or VI](https://en.wikipedia.org/wiki/Vim_(text_editor)){:target="_blank"}. Just follow the instructions below and/or watch the video to use it.
 
 ##### Set up Git Config(urations) All Machine Users
 
@@ -205,7 +205,7 @@ VIM has two modes: **Insert** (input text) and **Command** (move around and do s
 
     > NOTE: If you're lost, it's totally fine. VIM is an old relic that's stuck around and become a hipster text editor but really it's there so you can always change files, no matter what!
 
-If you're having trouble: [Git Config How-To Video](https://vimeo.com/384020788)
+If you're having trouble: [Git Config How-To Video](https://vimeo.com/384020788){:target="_blank"}
 
   > **Pause and Partner:** How we doing? Try `git push`ing again. Who hasn't been able to push?
 
@@ -277,6 +277,7 @@ Now that you've configured your git software and learned the `status`, `add`, `c
 
     # VS CODE
     .vscode/settings.json 
+    .vscode
 
     # End of https://www.toptal.com/developers/gitignore/api/macos,windows
   ```
@@ -364,7 +365,7 @@ Git software is powerful but confusing for beginners. If something goes wrong wh
 
   Let's take some time look over the topics and get prepared for them. Next class we'll organized who and when each person is going for each topic.
 
-  [List of Student Daily Presentations](./../additionalResources/studentPresentations.md)
+  [List of Student Daily Presentations](./../additionalResources/studentPresentations.md){:target="_blank"}
 
   <!-- TODO in the future - create an site that takes the students names and returns JSON that represents the topics, titles, and students. -->
 
@@ -377,19 +378,19 @@ Git software is powerful but confusing for beginners. If something goes wrong wh
 
 ## Blogs to Show You Know
 
-[Blog Prompts](./../additionalResources/blogPrompts.md)
+[Blog Prompts](./../additionalResources/blogPrompts.md){:target="_blank"}
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
 - [ ] Create Class One Blog assignment
-- [ ] Review [Class Structure & Expectations of Students](./../index.md#class-structure-and-expectations)
+- [ ] Review [Class Structure & Expectations of Students](./../index.md#class-structure-and-expectations){:target="_blank"}
 - [ ] Answer the following questions:
     * [ ] How would you describe programming?
     * [ ] How would you describe coding?
     * [ ] What does Clone mean?
     * [ ] What's a Local Machine?
     * [ ] What's a Repo?
-- [ ] Mentally prepare for [your presentations](./../additionalResources/studentPresentations.md).
+- [ ] Mentally prepare for [your presentations](./../additionalResources/studentPresentations.md){:target="_blank"} .
 - [ ] Next class we'll be adding an image gallery to your website so make sure you study CSS Grid & Box Model tonight and tomorrow. We'll see you then!
 
 <!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>

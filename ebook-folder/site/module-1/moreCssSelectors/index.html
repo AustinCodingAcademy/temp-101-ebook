@@ -2818,24 +2818,24 @@
                 <h1 id="more-css-selectors">More CSS Selectors</h1>
 <p><em>“Listen to the mustn'ts, child. Listen to the don'ts. Listen to the shouldn'ts, the impossibles, the won'ts. Listen to the never haves, then listen close to me... Anything can happen, child. Anything can be.” ―Shel Silverstein</em></p>
 <h2 id="overview">Overview</h2>
-<p>Today we're going to spend some solid time on <a href="https://css-tricks.com/the-difference-between-id-and-class/">how to select the right element</a> in your HTML file so you can style and manipulate to your pleasure.</p>
+<p>Today we're going to spend some solid time on <a href="https://css-tricks.com/the-difference-between-id-and-class/" target="_blank">how to select the right element</a> in your HTML file so you can style and manipulate to your pleasure.</p>
 <blockquote>
 <p>NOTE: This can be a little trickier than you may first realize. <em>Remember the "Cascade"? In this lesson, we're going to talk a little more about that and learn how to get to exactly the element on the document we want!</em></p>
 </blockquote>
 <p>Today you'll learn to:
   1. Reference elements by selectors and why you'd use different selectors.
   1. Select and style an element based on pseudo-elements and pseudo-classes.
-  1. Implement <a href="https://css-tricks.com/latest-ways-deal-cascade-inheritance-specificity/">inheritance</a> and learn to work with it using the Rules of Specificity.</p>
+  1. Implement <a href="https://css-tricks.com/latest-ways-deal-cascade-inheritance-specificity/" target="_blank">inheritance</a> and learn to work with it using the Rules of Specificity.</p>
 <iframe src="https://player.vimeo.com/video/393464823" width="655" height="368" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="the-selectors">The Selectors</h2>
-<p>The reason for all the many <strong>selectors</strong> is because of the way the <a href="https://en.wikipedia.org/wiki/Document_Object_Model">DOM</a> is built under-the-hood. As the browser loads your HTML it reserves space for each of the elements in the file, then assigns them properties and values based on what it finds in your CSS and JS files. As it does this it will rewrite those values when it finds a new value assignment, but... if no property &amp; value is found for each child elements during the build, they will <em>Inherit</em> the properties &amp; values of their Parent Elements. This process of <strong>Inheriting</strong> and reassigning values as the page is built is the <strong>Cascade</strong> of <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets. But the Cascade can be overwritten using the <em>Rules of Specificity</em>, hence why we need so many selectors.</p>
+<p>The reason for all the many <strong>selectors</strong> is because of the way the <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">DOM</a> is built under-the-hood. As the browser loads your HTML it reserves space for each of the elements in the file, then assigns them properties and values based on what it finds in your CSS and JS files. As it does this it will rewrite those values when it finds a new value assignment, but... if no property &amp; value is found for each child elements during the build, they will <em>Inherit</em> the properties &amp; values of their Parent Elements. This process of <strong>Inheriting</strong> and reassigning values as the page is built is the <strong>Cascade</strong> of <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets. But the Cascade can be overwritten using the <em>Rules of Specificity</em>, hence why we need so many selectors.</p>
 <p><strong>The 5 Main of Selectors</strong></p>
 <hr />
 <ol>
 <li><code>ids</code> - This is added inside the element's opening tag and denoted with a "#". html <code>&lt;article id="element_ID"&gt;</code> text goes here <code>&lt;/article&gt;</code></li>
 <li><code>classes</code> - This is denoted by the keyword: class="someClassNameHere" html <code>&lt;article class="element_class"&gt;</code> text goes here <code>&lt;/article&gt;</code></li>
-<li><code>attributes</code> - <code>&lt;input disabled &gt;</code> For a full list of <a href="https://www.w3schools.com/html/html_attributes.asp">HTML attributes</a>.</li>
+<li><code>attributes</code> - <code>&lt;input disabled &gt;</code> For a full list of <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">HTML attributes</a> .</li>
 <li><code>pseudo-classes</code> are selectors used on an element when something is done to them like when you hover over an element with your cursor: <code>:hover { }</code></li>
 </ol>
 <h3 id="type-selector">Type Selector</h3>
@@ -2963,18 +2963,18 @@
 <h3 id="practice-it-common-css-selectors">Practice It - Common CSS Selectors</h3>
 <ol>
 <li>
-<p>Fork the <a href="https://codepen.io/austincoding/pen/pempxa/">CSS Selector CodePen</a></p>
+<p>Fork the <a href="https://codepen.io/austincoding/pen/pempxa/" target="_blank">CSS Selector CodePen</a></p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Give every other <code>&lt;li&gt;</code> element the class name "other"</li>
 <li class="task-list-item"><input type="checkbox"/> Make the font color of "other" <code>brown</code>.</li>
-<li class="task-list-item"><input type="checkbox"/> Make the <a href="https://www.cssfontstack.com/Verdana">font style</a> of "other <code>verdana</code>.</li>
+<li class="task-list-item"><input type="checkbox"/> Make the <a href="https://www.cssfontstack.com/Verdana" target="_blank">font style</a> of "other <code>verdana</code>.</li>
 <li class="task-list-item"><input type="checkbox"/> Give different <code>id</code> attributes to each of the <code>&lt;p&gt;</code> elements.</li>
 <li class="task-list-item"><input type="checkbox"/> Use the <code>id</code>s to give them different background colors.</li>
 <li class="task-list-item"><input type="checkbox"/> Select the <code>body</code> element an get the text to be centered in the middle of the page.</li>
 </ul>
 </li>
 <li>
-<p>Fork the <a href="http://codepen.io/mistakevin/pen/grVaJL/">Pseudo Selector CodePen</a></p>
+<p>Fork the <a href="http://codepen.io/mistakevin/pen/grVaJL/" target="_blank">Pseudo Selector CodePen</a></p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Make an <code>&lt;h1&gt;&lt;/h1&gt;</code> tag in the html</li>
 <li class="task-list-item"><input type="checkbox"/> In the CSS, pseudo-select the h1 with a :hover and make it change to the font color of your choice when you hover on it.</li>
@@ -2983,14 +2983,14 @@
 </ul>
 </li>
 <li>
-<p>Fork the <a href="https://codepen.io/austincoding/pen/YQWNjK/">CSS Selector Practice Exercise CodePen</a></p>
+<p>Fork the <a href="https://codepen.io/austincoding/pen/YQWNjK/" target="_blank">CSS Selector Practice Exercise CodePen</a></p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox"/> Follow the directions in the comment section of the CSS to learn more about selectors.</li>
 <li class="task-list-item"><input type="checkbox"/> <strong>--or--</strong> follow these instructions</li>
 <li class="task-list-item"><input type="checkbox"/> Give the <code>&lt;body&gt;</code> element a background: #bdc3c7;</li>
 <li class="task-list-item"><input type="checkbox"/> Make the <code>&lt;h1&gt;</code> element color: #9b59b6;</li>
 <li class="task-list-item"><input type="checkbox"/> Make all <code>&lt;h2&gt;</code> elements color: orange;</li>
-<li class="task-list-item"><input type="checkbox"/> Make all <code>&lt;li&gt;</code> elements blue(Use this <a href="https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en">tool</a> to pick your own hexadecimal blue)</li>
+<li class="task-list-item"><input type="checkbox"/> Make all <code>&lt;li&gt;</code> elements blue(Use this <a href="https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en" target="_blank">tool</a> to pick your own hexadecimal blue)</li>
 <li class="task-list-item"><input type="checkbox"/> Change the background on every paragraph to be background: <code>yellow</code>;</li>
 <li class="task-list-item"><input type="checkbox"/> Make all inputs have a <code>border: solid red 3px</code>;</li>
 <li class="task-list-item"><input type="checkbox"/> Give everything with the class '<code>hello</code>' a <code>white</code> background</li>
@@ -3014,15 +3014,15 @@
 </ol>
 <h2 id="additional-resources">Additional Resources</h2>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox"/> <a href="https://css-tricks.com/the-difference-between-id-and-class/">Article, CSS Tricks - Difference btw <code>id</code> and <code>class</code></a></li>
-<li class="task-list-item"><input type="checkbox"/> <a href="https://css-tricks.com/latest-ways-deal-cascade-inheritance-specificity/">Article, CSS Tricks - Inheritance</a></li>
-<li class="task-list-item"><input type="checkbox"/> <a href="https://www.cssfontstack.com/Verdana">Reference, CSSFontStack - Verdana</a></li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://css-tricks.com/the-difference-between-id-and-class/" target="_blank">Article, CSS Tricks - Difference btw <code>id</code> and <code>class</code></a></li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://css-tricks.com/latest-ways-deal-cascade-inheritance-specificity/" target="_blank">Article, CSS Tricks - Inheritance</a></li>
+<li class="task-list-item"><input type="checkbox"/> <a href="https://www.cssfontstack.com/Verdana" target="_blank">Reference, CSSFontStack - Verdana</a></li>
 </ul>
 <!-- [Try it yourself](https://replit.com)! -->
 
 <h2 id="know-your-docs">Know Your Docs</h2>
 <ul>
-<li><a href="https://www.w3schools.com/html/html_attributes.asp">W3S Docs - HTML attributes</a></li>
+<li><a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">W3S Docs - HTML attributes</a></li>
 </ul>
 <!-- 
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>

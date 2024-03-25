@@ -57,15 +57,15 @@ Perhaps the most useful are **Child selectors** which match an element that is a
 
 ### Practice It - Specificity
 
-**MUST DO: [CSS Diner](https://flukeout.github.io/)!!**
+**MUST DO: [CSS Diner](https://flukeout.github.io/){:target="_blank"} !!**
 
 ## Additional Resources
 
-* [YT, Clayton@ACA - CSS](https://youtu.be/XnwlIF6pSWU)
-* [YT, DevTips - CSS Basics pt. 3](https://youtu.be/emMO3iCpvrc)
+* [YT, Clayton@ACA - CSS](https://youtu.be/XnwlIF6pSWU){:target="_blank"}
+* [YT, DevTips - CSS Basics pt. 3](https://youtu.be/emMO3iCpvrc){:target="_blank"}
 
 ## Know Your Docs
 
-* [Article, Carl Camera - CSS Poker](https://carl.camera/default.aspx?id=95)
-* [W3S Docs - Pseudo Classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
-* [Article, SmashingMagazine - CSS Inheritance and Cascade](https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/)
+* [Article, Carl Camera - CSS Poker](https://carl.camera/default.aspx?id=95){:target="_blank"}
+* [W3S Docs - Pseudo Classes](https://www.w3schools.com/css/css_pseudo_classes.asp){:target="_blank"}
+* [Article, SmashingMagazine - CSS Inheritance and Cascade](https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/){:target="_blank"}

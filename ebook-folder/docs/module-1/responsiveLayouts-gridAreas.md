@@ -12,7 +12,7 @@ Now that you have a solid understanding of CSS Grid, let's turn our attention to
 
 Along with being an introduction to responsive design, we'll also be getting a deeper dive into CSS Grid by studying `grid-template-areas`. If you didn't get that far in your latest pre-class lessons, here you go. This property is an incredibly powerful property to use with `display: grid`; because it allows you to shuffle child elements around by just changing the value assigned to the `grid-template-areas` property! If you can imagine, this will make it very easy for us to develop a view for a phone and then a tablet and then a laptop!
 
-Before moving ahead, I'd like you to read [this short article on Grid-Template-Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/). When you finish, come back and follow along with the examples below.
+Before moving ahead, I'd like you to read [this short article on Grid-Template-Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/){:target="_blank"} . When you finish, come back and follow along with the examples below.
 
 *I'll wait...*
 
@@ -77,7 +77,7 @@ Fantastic! Now each of our child elements have a name we can reference them by w
 
 In this next snippet, look at the number of `-columns` and `-rows` we create and then checkout the `grid-template-areas` property. Do you see the way we use the "names" of the child elements to position them on the screen?
 
-  > NOTE: to play with this for yourself, copy/paste these code snippets into a [CodePen](https://replit.com) or your text editor. **This is your responsibility and privilege now.**
+  > NOTE: to play with this for yourself, copy/paste these code snippets into a [CodePen](https://replit.com){:target="_blank"} or your text editor. **This is your responsibility and privilege now.**
 
 === "Grid Area Styling"
     ```css
@@ -131,21 +131,21 @@ Before we dive into Media Queries in the next pre-class lesson let's first see h
 
 ## Practice It - CSS Grid Areas
 
-1. [Responsive CodePen](https://codepen.io/austincoding/pen/vdLQmo/)
+1. [Responsive CodePen](https://codepen.io/austincoding/pen/vdLQmo/){:target="_blank"}
 
     - [ ] Open the CodePen up and resize your browser's window while watching the content at the bottom of the screen.
     - [ ] Fork the CodePen and then try rearranging the grid-areas. Have fun. Seriously!
     - [ ] Can you guess how Media Queries work before the next lesson?
 
-2. [Nested Grids](https://codepen.io/austincoding/pen/JMvLvx/)
+2. [Nested Grids](https://codepen.io/austincoding/pen/JMvLvx/){:target="_blank"}
 
     - [ ] You can also nest columns within columns. Let your curiosity over come you in the CodePen above to find out how!
 
 ## Additional Resources
 
-- [ ] [Article, Smashing Magazine - Grid Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/)
-- [ ] [CSS Properties Cheatsheet](https://websitesetup.org/css3-cheat-sheet/)
+- [ ] [Article, Smashing Magazine - Grid Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/){:target="_blank"}
+- [ ] [CSS Properties Cheatsheet](https://websitesetup.org/css3-cheat-sheet/){:target="_blank"}
 
 ## Know Your Docs
 
-* [W3S Docs - Grid-Template-Areas](https://www.w3schools.com/cssref/pr_grid-template-areas.asp)
+* [W3S Docs - Grid-Template-Areas](https://www.w3schools.com/cssref/pr_grid-template-areas.asp){:target="_blank"}

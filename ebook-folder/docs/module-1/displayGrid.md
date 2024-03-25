@@ -6,11 +6,11 @@
 
 Now that wireframing is fresh on your mind and you're thinking about the way websites get planned and laid out let's introduce a new tool that will help you code these well designed websites, CSS Grid.
 
-[Grids are used all over the place](https://www.smashingmagazine.com/2017/12/building-better-ui-designs-layout-grids/): spreadsheets, shelves, cities, and even art paintings. If you've ever thought about the way newspapers, books, magazines, or in-general: **print work** is laid out, they use a grid to structure composition. Over time, the grid was brought over to the web because again, our whole society shifted from print to digital media.
+[Grids are used all over the place](https://www.smashingmagazine.com/2017/12/building-better-ui-designs-layout-grids/){:target="_blank"} : spreadsheets, shelves, cities, and even art paintings. If you've ever thought about the way newspapers, books, magazines, or in-general: **print work** is laid out, they use a grid to structure composition. Over time, the grid was brought over to the web because again, our whole society shifted from print to digital media.
 
 When we begin building a website, laying out the overall structure is the first thing we do. It's like framing a house before deciding which wallpaper we'll put in. The skeleton of the page is, undoubtedly, the first part you should arrange every time you work on a project. Therefore, it is only fitting that we introduce it, sooner rather than later. Let's get to it.
 
-Like CSS Flex, [CSS Grid](https://gridbyexample.com/what/) is a value in CSS we can assign to the `display` property of an HTML element to lay out our page in a specific way. Once we've applied the `grid` value to the `display` property, you can then use columns and rows to layout the Child Element within the selected Parent Element. This is a really useful way to lay out your page quickly and sustainably.
+Like CSS Flex, [CSS Grid](https://gridbyexample.com/what/){:target="_blank"} is a value in CSS we can assign to the `display` property of an HTML element to lay out our page in a specific way. Once we've applied the `grid` value to the `display` property, you can then use columns and rows to layout the Child Element within the selected Parent Element. This is a really useful way to lay out your page quickly and sustainably.
 
 
 With the exception of the CSS Grid properties you see in the code given to you for your Portfolio Landing Page, you've been working with elements that stack below one another, due to normal document flow. But, as you know, typical websites have multiple elements across the screen and not just stacked on top of one another. This can be done with the value: flex given to the property display of the element we want. Let's dig into that.

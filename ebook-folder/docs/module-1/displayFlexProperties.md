@@ -131,7 +131,7 @@ When we add `flex` to an element's display property, it comes with some other pr
 
 ## Practice It: CSS Tricks - Flex Guide
 
-[Try it](https://codepen.io)!! Go to CodePen and create Section element to be your "Flex" Container. Then create three Article elements inside of it:
+[Try it](https://codepen.io){:target="_blank"} !! Go to CodePen and create Section element to be your "Flex" Container. Then create three Article elements inside of it:
 
 ```html
   <section class="my-flex-container">
@@ -174,5 +174,5 @@ Do NOT move on until you've worked through all the properties available to the d
 
 ## Additional Resources
 
-* [MDN Docs - CSS Flex Box Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
-* [W3S Docs - Flex/Flex Box](https://www.w3schools.com/css/css3_flexbox.asp)
+* [MDN Docs - CSS Flex Box Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout){:target="_blank"}
+* [W3S Docs - Flex/Flex Box](https://www.w3schools.com/css/css3_flexbox.asp){:target="_blank"}

@@ -102,14 +102,14 @@ We won't cover these in detail because you don't necessarily need them right awa
 
 ## Additional Resources
 
-- [ ] [YT, LayoutLand - Easy Layout with CSS Grid](https://www.youtube.com/embed/tFKrK4eAiUQ)
-- [ ] [Article, CSS Tricks - Intro to FR Units](https://css-tricks.com/introduction-fr-css-unit/)
-- [ ] [Article, Alligator IO - Grid Areas](https://alligator.io/css/css-grid-layout-grid-areas/)
-- [ ] [Article, SmashingMagazine, Best Practices with Grid](https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/)
+- [ ] [YT, LayoutLand - Easy Layout with CSS Grid](https://www.youtube.com/embed/tFKrK4eAiUQ){:target="_blank"}
+- [ ] [Article, CSS Tricks - Intro to FR Units](https://css-tricks.com/introduction-fr-css-unit/){:target="_blank"}
+- [ ] [Article, Alligator IO - Grid Areas](https://alligator.io/css/css-grid-layout-grid-areas/){:target="_blank"}
+- [ ] [Article, SmashingMagazine, Best Practices with Grid](https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/){:target="_blank"}
 
 ## Know Your Docs
 
-* [W3S Docs - Grid](https://www.w3schools.com/css/css_grid.asp)
-* [W3S Docs - Grid Container](https://www.w3schools.com/css/css_grid_container.asp)
-* [W3S Docs - Grid Item](https://www.w3schools.com/css/css_grid_item.asp)
-* [CSS Tricks - Grid Trick](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [W3S Docs - Grid](https://www.w3schools.com/css/css_grid.asp){:target="_blank"}
+* [W3S Docs - Grid Container](https://www.w3schools.com/css/css_grid_container.asp){:target="_blank"}
+* [W3S Docs - Grid Item](https://www.w3schools.com/css/css_grid_item.asp){:target="_blank"}
+* [CSS Tricks - Grid Trick](https://css-tricks.com/snippets/css/complete-guide-grid/){:target="_blank"}

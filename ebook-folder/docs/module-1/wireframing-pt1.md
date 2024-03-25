@@ -14,7 +14,7 @@ Most apps are built with distinct intention so that users adopt them into their 
 
 One of the tools used to communicate between designers, product managers, product owners, clients, front-end developers, and graphic designers are **Wireframes**.
 
-To really understand these two trades **PLEASE** see the video "Bad Doors = Bad Design" in the [Additional Resources](#additional-resources) below!
+To really understand these two trades **PLEASE** see the video "Bad Doors = Bad Design" in the [Additional Resources](#additional-resources){:target="_blank"} below!
 
 ## Wireframes
 
@@ -30,7 +30,7 @@ Before beginning to wireframe, a designer would decide on the objective of their
 
   > "Website wireframes are 90% thinking/planning and just 10% drawing" - *Design and Function*
 
-The wireframe is a visual guide that gives us a framework, or plan, on which to build our website. We use it to lay our site's elements to best support our specific [purpose or goal](https://www.market8.net/b2b-web-design-and-inbound-marketing-blog/what-site-architecture-is-and-how-to-get-it-right-for-b2b).
+The wireframe is a visual guide that gives us a framework, or plan, on which to build our website. We use it to lay our site's elements to best support our specific [purpose or goal](https://www.market8.net/b2b-web-design-and-inbound-marketing-blog/what-site-architecture-is-and-how-to-get-it-right-for-b2b){:target="_blank"} .
 
 Examples of Page Goals include:
 
@@ -44,9 +44,9 @@ and much, much more....
 
 **No doubt!** Wireframing can save you hours of time. As you saw in the video above, if you are worried about perfect alignment, or other details, when you're working on your basic layout, you're wasting time, and causing yourself needless stress. Break apart your tasks, and do them in the correct order. Planning visually on paper or in a wireframing tool before you think about the coding will save you time in the long run, because you will have a clear idea of what you're working toward, and won't waste work that will have to be redone. Do yourself a favor, and wireframe **every** project you work on — **every one**.
 
-Your code may be efficient and elegant, and provide awesome functionality, but none of that will matter if users aren't sure where to click. That is why it's important to spend time focusing on the **user interface** (UI) and **user experience** (UX). A UX designer's job is to positively influence perception of products and companies, so as to encourage people to use them more. A couple of examples of excellent UX designs are [Spotify.com](https://www.spotify.com/us/) and [Apple.com](https://www.apple.com/). Examples of the opposite extreme might be [arngren.net](http://arngren.net/) and [RockAuto.com](https://www.rockauto.com/). Dig deeper into what makes for good (and bad) UX design [here](https://www.appcues.com/blog/bad-ux-mistakes).
+Your code may be efficient and elegant, and provide awesome functionality, but none of that will matter if users aren't sure where to click. That is why it's important to spend time focusing on the **user interface** (UI) and **user experience** (UX). A UX designer's job is to positively influence perception of products and companies, so as to encourage people to use them more. A couple of examples of excellent UX designs are [Spotify.com](https://www.spotify.com/us/){:target="_blank"} and [Apple.com](https://www.apple.com/){:target="_blank"}. Examples of the opposite extreme might be [arngren.net](http://arngren.net/) and [RockAuto.com](https://www.rockauto.com/){:target="_blank"} . Dig deeper into what makes for good (and bad) UX design [here](https://www.appcues.com/blog/bad-ux-mistakes){:target="_blank"} .
 
-Again, checkout the videos in the [Additional Resources](#additional-resources) to get some tips and tool for creating wireframes.
+Again, checkout the videos in the [Additional Resources](#additional-resources){:target="_blank"} to get some tips and tool for creating wireframes.
 
 ### Practice It - Build a Wireframe
 
@@ -68,7 +68,7 @@ Here's a mobile version of the same website. Can you turn it into code, as well?
 
 ## Mockups
 
-We've talked about [Mockups](https://en.wikipedia.org/wiki/Website_wireframe) coming down from a design team and landing on your desk but what are they in the first place? Think of a mock up as a non functional web page. It's a design, a complete layout of a web page but the buttons don't work and the picture & videos are static. It's meant to be a direct representation of what the web page will look like when you, the Front-End Dev(you), gets done making it functional.
+We've talked about [Mockups](https://en.wikipedia.org/wiki/Website_wireframe){:target="_blank"} coming down from a design team and landing on your desk but what are they in the first place? Think of a mock up as a non functional web page. It's a design, a complete layout of a web page but the buttons don't work and the picture & videos are static. It's meant to be a direct representation of what the web page will look like when you, the Front-End Dev(you), gets done making it functional.
 
 ![mockup-example](./../images/mockup-example.png)
 ![mockup-example-mobile](./../images/mockup-example-mobile.png){ :align=left}
@@ -77,24 +77,24 @@ We've talked about [Mockups](https://en.wikipedia.org/wiki/Website_wireframe) co
 
 #### For Creating Wireframes
 
-- [ ] [Figma](https://www.figma.com/)
-- [ ] [wireframe.cc](https://wireframe.cc/)
-- [ ] [Adobe XD](https://www.adobe.com/products/xd.html)
-- [ ] [Adobe Comp](https://www.adobe.com/products/comp.html)
+- [ ] [Figma](https://www.figma.com/){:target="_blank"}
+- [ ] [wireframe.cc](https://wireframe.cc/){:target="_blank"}
+- [ ] [Adobe XD](https://www.adobe.com/products/xd.html){:target="_blank"}
+- [ ] [Adobe Comp](https://www.adobe.com/products/comp.html){:target="_blank"}
 
 #### For Creating Mockups
 
-- [ ] [Marvel](https://marvelapp.com/)
-- [ ] [inVision](https://www.invisionapp.com/)
-- [ ] [proto](https://proto.io/)
+- [ ] [Marvel](https://marvelapp.com/){:target="_blank"}
+- [ ] [inVision](https://www.invisionapp.com/){:target="_blank"}
+- [ ] [proto](https://proto.io/){:target="_blank"}
 
 ## Additional Resources
 
-- [ ] [YT, Vox - Bad Doors = Bad UX](https://youtu.be/yY96hTb8WgI)
-- [ ] [YT, Jessie Showalter - UX Crash Course](https://www.youtube.com/watch?v=_lyzy-vChh4)
-- [ ] [YT, CharlieMarie-TV - How To Wireframe a Website](https://www.youtube.com/embed/PmmQjLqJQlY)
-- [ ] [YT, ACA-Clayton - Wireframing and Code Planning](https://www.youtube.com/embed/iXf5DSCeyAA)
-- [ ] [Tutorial, Market8 - How to Make Useful Wireframes](https://www.market8.net/b2b-web-design-and-inbound-marketing-blog/how-to-make-useful-website-wireframes-tutorial)
+- [ ] [YT, Vox - Bad Doors = Bad UX](https://youtu.be/yY96hTb8WgI){:target="_blank"}
+- [ ] [YT, Jessie Showalter - UX Crash Course](https://www.youtube.com/watch?v=_lyzy-vChh4){:target="_blank"}
+- [ ] [YT, CharlieMarie-TV - How To Wireframe a Website](https://www.youtube.com/embed/PmmQjLqJQlY){:target="_blank"}
+- [ ] [YT, ACA-Clayton - Wireframing and Code Planning](https://www.youtube.com/embed/iXf5DSCeyAA){:target="_blank"}
+- [ ] [Tutorial, Market8 - How to Make Useful Wireframes](https://www.market8.net/b2b-web-design-and-inbound-marketing-blog/how-to-make-useful-website-wireframes-tutorial){:target="_blank"}
 
 <!-- 
 

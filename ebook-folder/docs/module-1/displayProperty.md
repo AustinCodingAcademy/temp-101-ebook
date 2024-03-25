@@ -20,7 +20,7 @@ In this screenshot we see a bunch of new boxes laid on top of the original scree
 
 All HTML elements can be divided into categories based on their default value of this property! The two main values, and therefore categories, are `block` and `inline`.
 
-The default `block` elements are element that create an entire "block across the screen and consequentially force other block elements to be on new separate lines, i.e. **Normal Document Flow**. Elements included in the category are Section, Article, Div, H1-H6, and P and [a whole list more](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements). Block elements are usually used to create structure on the page and generally have other elements, both inline and block, inside of them.
+The default `block` elements are element that create an entire "block across the screen and consequentially force other block elements to be on new separate lines, i.e. **Normal Document Flow**. Elements included in the category are Section, Article, Div, H1-H6, and P and [a whole list more](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements){:target="_blank"} . Block elements are usually used to create structure on the page and generally have other elements, both inline and block, inside of them.
 
 If we were to write this property in CSS it would look like like this:
 
@@ -32,7 +32,7 @@ If we were to write this property in CSS it would look like like this:
 
   > NOTE: We don't have to declare the value of Block elements to be block elements because that's their default value.
 
-  > Thanks [@ACRamirez1](https://github.com/ACRamirez1)
+  > Thanks [@ACRamirez1](https://github.com/ACRamirez1){:target="_blank"}
 
 The other main category is `inline` elements. These are elements that don't require a new line so they can start in the middle of a P Element if you'd like. These elements include: Span, Anchor, Button, Code, Img, and Input elements but you can find the entire list at [MDN Docs - Inline HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements). Inline elements don't have space inside of them for other elements to go inside.
 
@@ -58,9 +58,9 @@ Beyond these newly discovered `display` values: `inline`, `block`, and `inline-b
 
 ## Know Your Docs
 
-* [MDN Docs - The Display Property & Its Values](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+* [MDN Docs - The Display Property & Its Values](https://developer.mozilla.org/en-US/docs/Web/CSS/display){:target="_blank"}
 
 ## Additional Resources
 
-* [Display and Box Model](http://learn.shayhowe.com/html-css/opening-the-box-model/)
-* [Video - How to Use Display Flex](https://player.vimeo.com/video/391868529)
+* [Display and Box Model](http://learn.shayhowe.com/html-css/opening-the-box-model/){:target="_blank"}
+* [Video - How to Use Display Flex](https://player.vimeo.com/video/391868529){:target="_blank"}

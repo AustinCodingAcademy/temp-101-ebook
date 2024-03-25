@@ -1,8 +1,8 @@
 ## Box Model: Border
 
-The border of an element sits just outside the padding and before the margin, usually invisible. In fact, all HTML Elements have a border but have a default value of `null`, meaning you won't see them (See, [Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp)).
+The border of an element sits just outside the padding and before the margin, usually invisible. In fact, all HTML Elements have a border but have a default value of `null`, meaning you won't see them (See, [Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp){:target="_blank"} ).
 
-To make a border visible you need to set three values: `border-style`, `border-width`, and `border-color`. [Try it](https://codepen.io/)!
+To make a border visible you need to set three values: `border-style`, `border-width`, and `border-color`. [Try it](https://codepen.io/){:target="_blank"} !
 
 ```html
   <p>Hello World</p>
@@ -28,7 +28,7 @@ Just like padding (and margin) there is a short-hand, `border`:
 
 ## More Long-Hand
 
-To complicate things a little more there are properties that allow us to style each side of the border differently. This isn't all that common but it becomes VERY useful when you're creating strange and interesting shapes on the screen. [Try it](https://codepen.io/)!
+To complicate things a little more there are properties that allow us to style each side of the border differently. This isn't all that common but it becomes VERY useful when you're creating strange and interesting shapes on the screen. [Try it](https://codepen.io/){:target="_blank"}!
 
 ```css
   p {
@@ -58,6 +58,6 @@ There's a small "gotcha" with borders. Because borders are often invisible they 
 
 ## Additional Resources
 
-* [W3S Docs - Border](https://www.w3schools.com/css/css_border.asp)s
-* [CodePen - Box Model Visualizer](http://codepen.io/carolineartz/pen/ogVXZj/)
-* [W3S Docs  - Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp)
+* [W3S Docs - Border](https://www.w3schools.com/css/css_border.asp){:target="_blank"}
+* [CodePen - Box Model Visualizer](http://codepen.io/carolineartz/pen/ogVXZj/){:target="_blank"}
+* [W3S Docs  - Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp){:target="_blank"}

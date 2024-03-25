@@ -55,4 +55,87 @@ Much of learning to code means understanding what is possible. You are not expec
 
 <iframe src="https://player.vimeo.com/video/303113203" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-> For more information see [Additional Resources](additionalResources/graduationPrerequisites.md)
+> For more information see [Additional Resources](additionalResources/graduationPrerequisites.md){:target="_blank"}
+
+
+
+<!-- 
+This ebook is created with Material-Mkdocs - https://github.com/squidfunk/mkdocs-material but below are quick references on how to create specific features:
+
+**HOW TO MAKE A CODE FENCE:
+```javascript
+
+```
+
+**HOW TO MAKE A TABLE:
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | Fetch resource                       |
+| `PUT`       | Update resource |
+| `DELETE`    | Delete resource |
+
+**HOW TO CREATE A LINK:
+- [ ] [LINK DESCRIPTION](<URL>){:target="_blank"}
+
+**HOW TO DISPLAY AN IMAGE:
+- [ ] ![<IMAGE-DESCRIPTION](./../images/<IMAGE-FILE-NAME>.png)
+
+**HOW TO MAKE LINE NUMBERS:
+    `line numbers`
+:do you like 'em?
+
+**HOW TO MAKE KEYBOARD KEYS:
+++slash++
+https://facelessuser.github.io/pymdown-extensions/extensions/keys/
+
+**HOW TO MAKE AN ORDER LIST:
+1. something...
+1. something else...
+1. something more...
+
+**HOW TO MAKE AN UNORDERED LIST:
+- something...
+- something else...
+- something more...
+
+**HOW TO MAKE AN CHECKBOX LIST:
+- [ ] something...
+- [ ] something else...
+- [ ] something more...
+
+**HOW TO MAKE AN INDENTED NOTE:
+
+  > NOTE: This is a note that will be highlighted and indented.
+
+**HOW TO COPY A LESSON TEMPLATE ON THE CLI:
+cp workspace/resources/templateFile.md docs/module-
+
+**HOW TO SET THE WIDTH OF VIDEOS:
+! height/width = 1.777 ---- width="655" height="368"
+
+**HOW TO MAKE CODE FENCES/IMAGES WITH TABS:
+=== "Javascript"
+
+    ```javascript
+      .
+    ```
+
+=== "Python"
+
+  ```python
+    .
+  ```
+
+=== "Example"
+    ```console
+      .
+    ```
+
+=== "Instructions"
+    ```markdown
+      .
+    ```
+
+=== "Result"
+    ![PIC](./../images/pic.png)
+-->

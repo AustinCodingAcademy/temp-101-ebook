@@ -10,21 +10,21 @@ This pattern is important because it will help you learn faster and deeper! By n
 
 Items inside a "Container"/Parent Element with its `display` property set to `flex` are said to be **flex items**. When these items are rendered inside a flex display they get unique properties not available outside of the flex container.
 
-As you saw in the [CSS Tricks Flex Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) they include:
+As you saw in the [CSS Tricks Flex Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/){:target="_blank"} they include:
 
-* [order](https://www.w3schools.com/cssref/css3_pr_order.asp) - specifies the order of the flex items. You can tell the 3rd item to be the 1st item to be displayed.
-* [flex-grow](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp) - specifies how much a flex item will grow relative to the rest of the flex items. Items can be bigger than others.
-* [flex-shrink](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp) - how much a flex item will shrink relative to the rest of the flex items. They can also be smaller!
-* [flex-basis](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp) - specifies the initial length of a flex item. Add as much as you like.
-* [align-self](https://www.w3schools.com/cssref/css3_pr_align-self.asp) - specifies the alignment for the selected item inside the flexible container and overrides the align-items of the parent container.
+* [order](https://www.w3schools.com/cssref/css3_pr_order.asp){:target="_blank"} - specifies the order of the flex items. You can tell the 3rd item to be the 1st item to be displayed.
+* [flex-grow](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp){:target="_blank"} - specifies how much a flex item will grow relative to the rest of the flex items. Items can be bigger than others.
+* [flex-shrink](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp){:target="_blank"} - how much a flex item will shrink relative to the rest of the flex items. They can also be smaller!
+* [flex-basis](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp){:target="_blank"} - specifies the initial length of a flex item. Add as much as you like.
+* [align-self](https://www.w3schools.com/cssref/css3_pr_align-self.asp){:target="_blank"} - specifies the alignment for the selected item inside the flexible container and overrides the align-items of the parent container.
 
   > NOTE: Again, if you like shorthand (and don't mind less code readability), the `flex` property combines flex-grow, flex-shrink, and flex-basis into one.
 
 ## Practice It - Giphy Gallery
 
-1. Fork the [Giphy Gallery - https://codepen.io/austincoding/pen/pozQRyQ](https://codepen.io/austincoding/pen/pozQRyQ)
+1. Fork the [Giphy Gallery - https://codepen.io/austincoding/pen/pozQRyQ](https://codepen.io/austincoding/pen/pozQRyQ){:target="_blank"}
 
-2. Take a look at the HTML file. Can you find the `<section class="row portrait-gallery">` code on line 2? Inside this section you'll see three `<img>` elements. The `<img>` element has an attribute/property called `src=`, which stands for source, which is where the image comes from. In this case the images are coming from [giphy.com](https://giphy.com).
+2. Take a look at the HTML file. Can you find the `<section class="row portrait-gallery">` code on line 2? Inside this section you'll see three `<img>` elements. The `<img>` element has an attribute/property called `src=`, which stands for source, which is where the image comes from. In this case the images are coming from [giphy.com](https://giphy.com){:target="_blank"} .
 
 3. After that we see another attribute/property called `alt=`, which stands for alternate text. This is for people with blindness that can't see the image we put on the screen. It's important for you to create a descriptive alternate text for them to hear read to them.
 
@@ -42,12 +42,12 @@ As you saw in the [CSS Tricks Flex Guide](https://css-tricks.com/snippets/css/a-
 
 6. Use the suggested links below to copy/paste in between the " " of src="" attribute:
 
-    * [https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif](https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif)
-    * [https://media.giphy.com/media/l4FGoQFXF7xdU6O7m/giphy.gif](https://media.giphy.com/media/l4FGoQFXF7xdU6O7m/giphy.gif)
-    * [https://media.giphy.com/media/cJSjCgihYx9GqHXzDN/giphy.gif](https://media.giphy.com/media/cJSjCgihYx9GqHXzDN/giphy.gif)
-    * [https://media.giphy.com/media/1rK68yfkG1Q8Aw87Lv/giphy.gif](https://media.giphy.com/media/1rK68yfkG1Q8Aw87Lv/giphy.gif)
-    * [https://media.giphy.com/media/1xlqOpx8T0dlV3ZoHV/giphy.gif](https://media.giphy.com/media/1xlqOpx8T0dlV3ZoHV/giphy.gif)
-    * [https://media.giphy.com/media/3ohjV5W5NYvGnjJLTa/giphy.gif](https://media.giphy.com/media/3ohjV5W5NYvGnjJLTa/giphy.gif)
+    * [https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif](https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif){:target="_blank"}
+    * [https://media.giphy.com/media/l4FGoQFXF7xdU6O7m/giphy.gif](https://media.giphy.com/media/l4FGoQFXF7xdU6O7m/giphy.gif){:target="_blank"}
+    * [https://media.giphy.com/media/cJSjCgihYx9GqHXzDN/giphy.gif](https://media.giphy.com/media/cJSjCgihYx9GqHXzDN/giphy.gif){:target="_blank"}
+    * [https://media.giphy.com/media/1rK68yfkG1Q8Aw87Lv/giphy.gif](https://media.giphy.com/media/1rK68yfkG1Q8Aw87Lv/giphy.gif){:target="_blank"}
+    * [https://media.giphy.com/media/1xlqOpx8T0dlV3ZoHV/giphy.gif](https://media.giphy.com/media/1xlqOpx8T0dlV3ZoHV/giphy.gif){:target="_blank"}
+    * [https://media.giphy.com/media/3ohjV5W5NYvGnjJLTa/giphy.gif](https://media.giphy.com/media/3ohjV5W5NYvGnjJLTa/giphy.gif){:target="_blank"}
 
 7. Remember to change the `alt=""` value to describe the gif so that we meet 503 compliance.
 
@@ -77,11 +77,11 @@ As you saw in the [CSS Tricks Flex Guide](https://css-tricks.com/snippets/css/a-
 
 Now it's time to have some silly fun with serious results. Go and play, [Flex Box Froggy](https://flexboxfroggy.com/)!
 
-* [How To Froggy](https://player.vimeo.com/video/365836717)
+* [How To Froggy](https://player.vimeo.com/video/365836717){:target="_blank"}
 
 ## Know Your Docs
 
 Again, I cannot over-emphasize this, read your docs! This is a crucial tool you will use throughout your career and learning to work through them now is **vital** to your success in the future.
 
-* [W3S - Flex](https://www.w3schools.com/css/css3_flexbox.asp)
-* [MDN - Flex](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+* [W3S - Flex](https://www.w3schools.com/css/css3_flexbox.asp){:target="_blank"}
+* [MDN - Flex](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"}

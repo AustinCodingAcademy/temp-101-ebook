@@ -37,7 +37,7 @@ Today we're going to:
 <!-- The last two E happen here: elaborate and evaluate  -->
 <!-- this sections should have a challenge that can be solved with the skills they've learned since their last class. -->
 <!-- ! HIDDEN CONTENT: INSTRUCTOR ONLY -->
-[See Your Challenge Here](./../additionalResources/interviewChallenges.md)
+[See Your Challenge Here](./../additionalResources/interviewChallenges.md){:target="_blank"}
 <!-- ! END HIDDEN CONTENT: INSTRUCTOR ONLY -->
 
 ![NASA-Contact-Page](./../images/NASA-Contact-Page.png)
@@ -46,7 +46,7 @@ Today we're going to:
 
   Let's take some time to assign & document individual students and groups of students to present the coming topics.
 
-  [List of Student Daily Presentations](./../additionalResources/studentPresentations.md)
+  [List of Student Daily Presentations](./../additionalResources/studentPresentations.md){:target="_blank"}
 
 ## Creation Time, 60-90 mins
 
@@ -63,9 +63,9 @@ Today we're going to:
 - [ ] `git clone` it to your local machine.
 - [ ] Create an `index.html` and `style.css` file and link them together.
 - [ ] Using `display: flex;` and the box model, follow the mock-up below to build the NASA landing page.
-- [ ] Use [PixaBay](https://pixabay.com/) to download an image that is similar to the one on your mockup.
-- [ ] Use [GoogleFonts](https://fonts.google.com/) to find the font closest to the font on the mockup.
-- [ ] Use [ColorPick Eyedropper](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en) to get the right colors.
+- [ ] Use [PixaBay](https://pixabay.com/){:target="_blank"} to download an image that is similar to the one on your mockup.
+- [ ] Use [GoogleFonts](https://fonts.google.com/){:target="_blank"} to find the font closest to the font on the mockup.
+- [ ] Use [ColorPick Eyedropper](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en){:target="_blank"} to get the right colors.
 - [ ] Push your local changes up to your remote repo:
     * [ ] `git status`,
     * [ ] `git add .`,
@@ -76,15 +76,15 @@ Today we're going to:
 - [ ] Go to the settings of this repo and host it with GitHub Pages.
 - [ ] Copy/Paste the URL into Zollege.com.
 
-  > In case you need it, here's a [Follow-Up Video for the NASA Page](https://player.vimeo.com/video/296667713).
+  > In case you need it, here's a [Follow-Up Video for the NASA Page](https://player.vimeo.com/video/296667713){:target="_blank"} .
 
 ### Push Yourself Further
 
 - [ ] Use a Form & Input elements to create the form in the mockup.
 - [ ] Link your new NASA Page to your Portfolio website by creating a portfolio page in your Portfolio website folder that has a list of links with one of them as: "NASA Contact Page". This way you have 2 hosted pages and one of them links to the other. Go do it! You have the skills now. Get messy and play!!
 - [ ] Remember to link your `portfolio.html` file to your `index.html` file in your Portfolio folder and `push` your changes again.
-- [ ] Add a [slide show of images](https://www.w3schools.com/howto/howto_js_slideshow.asp) to your NASA Contact Page.
-- [ ] [Add an Overlay Zoom](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_zoom) to the page.
+- [ ] Add a [slide show of images](https://www.w3schools.com/howto/howto_js_slideshow.asp){:target="_blank"} to your NASA Contact Page.
+- [ ] [Add an Overlay Zoom](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_zoom){:target="_blank"} to the page.
 
 ## Student Feedback
 
@@ -92,7 +92,7 @@ Today we're going to:
 
 ## Blogs to Show You Know
 
-[Blog Prompts](./../additionalResources/blogPrompts.md)
+[Blog Prompts](./../additionalResources/blogPrompts.md){:target="_blank"}
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 

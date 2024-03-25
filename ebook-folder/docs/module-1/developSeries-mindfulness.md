@@ -19,8 +19,8 @@ Soon you'll think 10 minutes isn't long enough. I promise! There are a few medit
 
 Here are some apps to try:
 
-* [Headspace](https://www.headspace.com/)
-* [Calm](https://www.calm.com/)
-* [Insight Timer](https://insighttimer.com/)
+* [Headspace](https://www.headspace.com/){:target="_blank"}
+* [Calm](https://www.calm.com/){:target="_blank"}
+* [Insight Timer](https://insighttimer.com/){:target="_blank"}
 
 No matter what your practice looks like, you will see huge benefits in your relationships, your self-motivation, your coding, and your overall mood. Give it a try for the rest of this course and see what you think.

@@ -84,7 +84,7 @@ body {
 }
 ```
 
-Above you saw the use of `pt` or **points**. These are a little more reliable than `px` which are relative to the number of pixels in a user's display and [other factors](http://inamidst.com/stuff/notes/csspx). The `pt` value is equal to 1/72nd of an inch so you can calculate a little more easily the size of your elements.
+Above you saw the use of `pt` or **points**. These are a little more reliable than `px` which are relative to the number of pixels in a user's display and [other factors](http://inamidst.com/stuff/notes/csspx){:target="_blank"} . The `pt` value is equal to 1/72nd of an inch so you can calculate a little more easily the size of your elements.
 
 ### View-height & View-Width
 
@@ -92,9 +92,9 @@ The last units you should know about are `vh` and `vw` which stand for **view-he
 
 ## Additional Resources
 
-* [W3S Docs - Height & Width](https://www.w3schools.com/css/css_dimension.asp)
-* [CodePen - Box Model Visualizer](http://codepen.io/carolineartz/pen/ogVXZj/)
-* [W3S Docs - Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp)
+* [W3S Docs - Height & Width](https://www.w3schools.com/css/css_dimension.asp){:target="_blank"}
+* [CodePen - Box Model Visualizer](http://codepen.io/carolineartz/pen/ogVXZj/){:target="_blank"}
+* [W3S Docs - Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp){:target="_blank"}
 
 <!-- ! END OF VIDEO 101.1.20.1 - Height & Width + Length Values -->
 

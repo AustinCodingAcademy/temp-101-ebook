@@ -80,6 +80,6 @@ You can do the same thing but with a little more typing that results in **far mo
 
 ## Additional Resources
 
-* [W3S Docs - Margin](https://www.w3schools.com/css/css_margin.asp)
-* [CodePen - Box Model Visualizer](http://codepen.io/carolineartz/pen/ogVXZj/)
-* [W3S Docs - Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp)
+* [W3S Docs - Margin](https://www.w3schools.com/css/css_margin.asp){:target="_blank"}
+* [CodePen - Box Model Visualizer](http://codepen.io/carolineartz/pen/ogVXZj/){:target="_blank"}
+* [W3S Docs - Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp){:target="_blank"}

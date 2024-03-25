@@ -28,18 +28,18 @@ Today we're going to:
 ### Questions for Student Led Discussion, 15 mins
 <!-- This section should be structured with the 5E model: https://lesley.edu/article/empowering-students-the-5e-model-explained -->
 
-[Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-3.md)
+[Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-3.md){:target="_blank"}
 
 ### Interview Challenge, 15 mins
 <!-- The last two E happen here: elaborate and evaluate  -->
 <!-- this sections should have a challenge that can be solved with the skills they've learned since their last class. -->
 <!-- ! HIDDEN CONTENT: INSTRUCTOR ONLY -->
-[See Your Challenge Here](./../additionalResources/interviewChallenges.md)
+[See Your Challenge Here](./../additionalResources/interviewChallenges.md){:target="_blank"}
 <!-- ! END HIDDEN CONTENT: INSTRUCTOR ONLY -->
 
 ### Student Presentations, 15 mins
 
-[See Student Presentations List](./../additionalResources/studentPresentations.md)
+[See Student Presentations List](./../additionalResources/studentPresentations.md){:target="_blank"}
 
 ## Creation Time, 60-90 mins
 
@@ -62,14 +62,14 @@ First plan, then code. Trust this process; it will save you **so** much time!
 ### Tips
 
 * Build a resume for Kobe Bryant (RIP), Barack Obama, Michelle Williams, Jeff Bezos, Elon Musk, Ryan Holiday or some other figure you can find on wikipedia. *This will be easier building one for yourself!*
-* If you don't want to type content, then copy/paste [Lorem Ipsum](https://getlorem.com/) to get words into your page. Lorem Ipsum is a tried & true industry practice to get word spacing and aesthetics across without the wait time of **copy** to be created.
+* If you don't want to type content, then copy/paste [Lorem Ipsum](https://getlorem.com/){:target="_blank"} to get words into your page. Lorem Ipsum is a tried & true industry practice to get word spacing and aesthetics across without the wait time of **copy** to be created.
 
 ### Example Mockups
 
-1. [Mockup One](https://www.resume-now.com/wp-content/uploads/2018/02/RB_Modern2_CTP1_rsm_1664x2153-hi_res.png)
-1. [Mockup Two](https://img.resume.com/templates/2.png)
-1. [Mockup Three](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_OJu366oz6ps7JRkLbnMfo5moNM6strMT1qTpUBrbdbEOdMzKg)
-1. [Canva Resume Templates](https://www.canva.com/resumes/templates/)
+1. [Mockup One](https://www.resume-now.com/wp-content/uploads/2018/02/RB_Modern2_CTP1_rsm_1664x2153-hi_res.png){:target="_blank"}
+1. [Mockup Two](https://img.resume.com/templates/2.png){:target="_blank"}
+1. [Mockup Three](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_OJu366oz6ps7JRkLbnMfo5moNM6strMT1qTpUBrbdbEOdMzKg){:target="_blank"}
+1. [Canva Resume Templates](https://www.canva.com/resumes/templates/){:target="_blank"}
 
 === "Other One"
     ![resume-example-one](./../images/resume-example-one.png)
@@ -79,8 +79,8 @@ First plan, then code. Trust this process; it will save you **so** much time!
 
 ### Follow-Up Video
 
-- [ ] [Vimeo, Clayton@ACA - Building a Resume Page](https://vimeo.com/292956427/ae48516429)
-- [ ] [YT, Clayton@ACA - Whiteboarding](https://www.youtube.com/watch?v=iXf5DSCeyAA)
+- [ ] [Vimeo, Clayton@ACA - Building a Resume Page](https://vimeo.com/292956427/ae48516429){:target="_blank"}
+- [ ] [YT, Clayton@ACA - Whiteboarding](https://www.youtube.com/watch?v=iXf5DSCeyAA){:target="_blank"}
 
 ### Push Yourself Further
 

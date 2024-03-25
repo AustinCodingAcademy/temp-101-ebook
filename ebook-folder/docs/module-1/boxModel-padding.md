@@ -51,8 +51,8 @@ For **code readability**, you should use the long-hand form of the padding prope
 
 ## Additional Resources
 
-* [W3S Docs - Padding](https://www.w3schools.com/css/css_padding.asp)
-* [CodePen - Box Model Visualizer](http://codepen.io/carolineartz/pen/ogVXZj/)
-* [W3S Docs - Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp)
+* [W3S Docs - Padding](https://www.w3schools.com/css/css_padding.asp){:target="_blank"}
+* [CodePen - Box Model Visualizer](http://codepen.io/carolineartz/pen/ogVXZj/){:target="_blank"}
+* [W3S Docs - Default CSS Values Reference](https://www.w3schools.com/cssref/css_default_values.asp){:target="_blank"}
 
 <!-- ! END OF VIDEO 101.1.21.1 - Box Model: Padding -->

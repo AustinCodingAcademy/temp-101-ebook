@@ -27,18 +27,18 @@ Today we're going to:
 ### Questions for Student Led Discussion, 15 mins
 <!-- This section should be structured with the 5E model: https://lesley.edu/article/empowering-students-the-5e-model-explained -->
 
-[Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-4.md)
+[Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-4.md){:target="_blank"}
 
 ### Interview Challenge, 15 mins
 <!-- The last two E happen here: elaborate and evaluate  -->
 <!-- this sections should have a challenge that can be solved with the skills they've learned since their last class. -->
 <!-- ! HIDDEN CONTENT: INSTRUCTOR ONLY -->
-[See Your Challenge Here](./../additionalResources/interviewChallenges.md)
+[See Your Challenge Here](./../additionalResources/interviewChallenges.md){:target="_blank"}
 <!-- ! END HIDDEN CONTENT: INSTRUCTOR ONLY -->
 
 ### Student Presentations, 15 mins
 
-[See Student Presentations List](./../additionalResources/studentPresentations.md)
+[See Student Presentations List](./../additionalResources/studentPresentations.md){:target="_blank"}
 
 ## Creation Time, 60-90 mins
 
@@ -83,7 +83,7 @@ Our company needs this website up really soon, please make judgments about color
 
 ## Blogs to Show You Know
 
-[Blog Prompts](./../additionalResources/blogPrompts.md)
+[Blog Prompts](./../additionalResources/blogPrompts.md){:target="_blank"}
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
