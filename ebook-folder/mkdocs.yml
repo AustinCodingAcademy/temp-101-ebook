@@ -27,55 +27,24 @@ nav:
         - Building our first web page: preCourse/ourFirstWebPage.md
         - Let's Write Some Code: preCourse/letsWriteSomeCode.md
         - CSS For Looks: preCourse/cssForLooks.md
-        - Day One Homework: preCourse/day1-homework.md
+        - Day 1 Homework: preCourse/day1-homework.md
       - 'Day 2 HTML':
         - Code Sandboxes : preCourse/codeSandboxes.md
         - HTML Tags: preCourse/htmlTags.md
         - Characters To Know: preCourse/charactersToKnow.md
         - Keyboard Quiz: preCourse/keyboardQuiz.md
         - HTML Attributes: preCourse/htmlAttributes.md
-        - Day Two Homework: preCourse/day2-homework.md
+        - Day 2 Homework: preCourse/day2-homework.md
       - 'Day 3 CSS':  
         - CSS Getting Started: preCourse/cssGettingStarted.md
         - CSS Intro : preCourse/cssIntro.md
-        - Day Three Homework: preCourse/moreCSStechniques.md
+        - Day 3 Homework: preCourse/moreCSStechniques.md
       - 'Day 4 Program Prep':
         - Flipped Classroom: preCourse/succeedInThisCourse.md
-        - Prepare Your Machine: preCourse/setupInstructions.md
-        - GitHub Overview: preCourse/gitOverhere.md
-        - Git & GitHub Setup: preCourse/gitAndGitHub.md
-        - Portfolio Landing Page: preCourse/project-LandingPage.md
         - Develop Series: preCourse/theDevelopSeries.md
         - SAT Method: preCourse/theSATmethod.md
         - Blogging Habit: preCourse/whyBlogging.md
-        - Git Basics: preCourse/gitBasics.md
-        - Submitting Homework: preCourse/submittingHomework.md
-  
-
-  
-      #   - Programming vs Coding: preCourse/codingVsProgramming.md
-      #   - Intro to the Web: preCourse/introToTheWeb.md
-      #   - What is Web Development: preCourse/whatIsWebDev.md
-      #   - Front-End & Back-End: preCourse/frontVsBackEnd.md
-      #   - Focus of 101: preCourse/web101Focus.md
-  
-      # - "Let's Code":
-  
-        # - 'HTML':
-        #   - HTML Structure: preCourse/06PrepHTML_Semantics.md
-        #   - Semantic Elements: preCourse/semanticHTML.md
-        #   - Special Elements: preCourse/specialElements-intro.md
-  
-        # - 'CSS':
-        #   - Cascading Style Sheets: preCourse/10PrepCSS_Intro.md
-        #   - Syntax of CSS: preCourse/CSS-syntax.md
-        #   - Linking Style Sheets: preCourse/linkingCSSfile.md
-  
-        # - 'Your First Website':
-        #   - Accessibility: preCourse/ARIA_Accessibility.md
-        #   - First Blog: preCourse/firstBlog.md
-        #   - RocketChat: preCourse/howToRocketChat.md
-  
+        - Submitting Homework: preCourse/submittingHomework.md  
     # cp workspace/resources/templateFile.md docs/module-
     - 'Module One: Page Layout':
       - 'Pre-Class 1 Lessons': 
@@ -217,7 +186,14 @@ nav:
         - Day 16 QFD: additionalResources/questionsForDiscussion/qfd-class-16.md
       - Blog Prompts: additionalResources/blogPrompts.md
       - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
-      - Git & CLI Commands: additionalResources/gitCommands.md
+      - 'Git & GitHub':
+        - Prepare Your Machine: additionalResources/setupInstructions.md
+        - GitHub Overview: additionalResources/gitOverhere.md
+        - Git & GitHub Setup: additionalResources/gitAndGitHub.md
+        - Git Setup Check-in: additionalResources/gitAndGitHub.md
+        - Git Basics: additionalResources/gitSetup.md
+        - Git & CLI Commands: additionalResources/gitCommands.md
+      - Portfolio Landing Page: additionalResources/project-LandingPage.md
       - Graduation Prerequisites: additionalResources/graduationPrerequisites.md
       - Presentation Qualifications: additionalResources/presentationsQualifications.md
       - 'Bonus Materials':
