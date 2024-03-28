@@ -16,67 +16,61 @@ Today we're going to:
   
 *OBJECTIVE: Applying recently learned concepts to real world challenges, let's learn to use what we learn immediately.*
 
-- [ ] Questions for Student Led Discussion
-- [ ] Interview Challenge: Wireframe the NASA Web Page together - 25 mins
-- [ ] Organize Student Presentations - 15 mins
-- [ ] Creation Time
-    * [ ] NASA Contact Page - 75 mins
-    * [ ] use CSS Flex & Box Model
-    * [ ] create a new repo,
-    * [ ] host it, and turn it in
-- [ ] Push Yourself Further
+- [ ] Questions for Student Led Discussion - 15 mins
+- [ ] Organize Student Presentations - 10 mins
+- [ ] Interview Challenge: *Wireframe the NASA Contact Page Together* - 30 mins
+- [ ] Creation Time - 75 mins
+    * [ ] NASA Contact Page - Flex Property Practice
+    *  Push Yourself Further
 - [ ] Interview Questions: Blog to Show You Know
 - [ ] Exit Recap, Attendance, and Reminders
+
+<hr>
 
 ### Questions for Student Led Discussion, 15 mins
 <!-- This section should be structured with the 5E model: https://lesley.edu/article/empowering-students-the-5e-model-explained -->
 
 [Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-2.md)
 
-### Interview Challenge, 25 mins
+<hr>
+
+### Student Presentations, 10 mins
+
+Let's take some time to assign & document individual students and groups of students to present the coming topics.
+
+[List of Student Daily Presentations](./../additionalResources/studentPresentations.md){:target="_blank"}
+
+<hr>
+
+### Interview Challenge, 30 mins
 <!-- The last two E happen here: elaborate and evaluate  -->
 <!-- this sections should have a challenge that can be solved with the skills they've learned since their last class. -->
-<!-- ! HIDDEN CONTENT: INSTRUCTOR ONLY -->
+
 [See Your Challenge Here](./../additionalResources/interviewChallenges.md){:target="_blank"}
-<!-- ! END HIDDEN CONTENT: INSTRUCTOR ONLY -->
+
+Use this mockup to create a wireframe that includes HTML tags to be used as well as CSS properties that need to be used. Work as a class to create a thorough wireframe from each student to use.
 
 ![NASA-Contact-Page](./../images/NASA-Contact-Page.png)
 
-### Student Presentations, 15 mins
-
-  Let's take some time to assign & document individual students and groups of students to present the coming topics.
-
-  [List of Student Daily Presentations](./../additionalResources/studentPresentations.md){:target="_blank"}
+<hr>
 
 ## Creation Time, 60-90 mins
 
-* Instructor to Demonstrate with Examples, Explain and Set Expectations
-* Group Students in pairs
-  * plan and implements
-* Partner with other groups for elaboration
-* Share with the class for evaluation (potentially carry into the next class)
+If the instructor and students both see fit, this assignment may be done in partners but each student must turn in their own work.
 
-*****
-
-- [ ] Draw a wireframe with HTML tags denoting each element
-- [ ] Create a repo on GitHub with a `README.md`
-- [ ] `git clone` it to your local machine.
-- [ ] Create an `index.html` and `style.css` file and link them together.
-- [ ] Using `display: flex;` and the box model, follow the mock-up below to build the NASA landing page.
+- [ ] Go to [CodeSandbox](https://codesandbox.io/dashboard) and create a new HTML + CSS Sandbox named "NASA Contact Page - Flex Property Practice"
+- [ ] Use the wireframe you created during the Interview Challenge section to guide you as you build this page.
+- [ ] Remember to use the `display: flex;` property/value and the box model while following the mock-up and your wireframe.
 - [ ] Use [PixaBay](https://pixabay.com/){:target="_blank"} to download an image that is similar to the one on your mockup.
 - [ ] Use [GoogleFonts](https://fonts.google.com/){:target="_blank"} to find the font closest to the font on the mockup.
 - [ ] Use [ColorPick Eyedropper](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en){:target="_blank"} to get the right colors.
-- [ ] Push your local changes up to your remote repo:
-    * [ ] `git status`,
-    * [ ] `git add .`,
-    * [ ] `git status`,
-    * [ ] `git commit -m "your meaningful message"`,
-    * [ ] `git push`,
-    * [ ] `git status`
-- [ ] Go to the settings of this repo and host it with GitHub Pages.
-- [ ] Copy/Paste the URL into Zollege.com.
+- [ ] TURN IT IN: Copy/Paste the URL of the CodeSandbox into the assignment slot in your LMS (Learning Management System).
 
-  > In case you need it, here's a [Follow-Up Video for the NASA Page](https://player.vimeo.com/video/296667713){:target="_blank"} .
+  <!-- TODO Delete > In case you need it, here's a [Follow-Up Video for the NASA Page](https://player.vimeo.com/video/296667713){:target="_blank"} . -->
+
+### Follow-Up
+
+<iframe src="https://player.vimeo.com/video/928482663?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="655" height="491" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="using_flexbox_-_nasa_page (1080p)"></iframe>
 
 ### Push Yourself Further
 
@@ -86,9 +80,7 @@ Today we're going to:
 - [ ] Add a [slide show of images](https://www.w3schools.com/howto/howto_js_slideshow.asp){:target="_blank"} to your NASA Contact Page.
 - [ ] [Add an Overlay Zoom](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_zoom){:target="_blank"} to the page.
 
-## Student Feedback
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjuL10i2xFGMWRwkjtgAL8F1Y5ipMPPjtTCDzkO1ZBcxUYZA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<hr>
 
 ## Blogs to Show You Know
 
@@ -96,23 +88,11 @@ Today we're going to:
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 
-- [ ] Create NASA Contact Page Assignment
-- [ ] Create Class 2 Assignment
-- [ ] Prepare for next class by completing all of your pre-class lessons
+- [ ] Instructor: publish the NASA Contact Page Assignment
+- [ ] Students: Prepare for next class by completing all of your pre-class lessons
 <!-- * Complete the feedback survey -->
-- [ ] Over the next few days you'll learn about CSS Grid and how to wireframe so that you can build more efficiently and confidently!
+- [ ] Over the next few days you'll learn about CSS Grid and more about how to wireframe so that you can build more efficiently and confidently!
 
-<!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
-<script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script> -->
+## Student Feedback
 
-
-<!-- TODO Create 3 question exit questions -->
-
-<!-- TODO INSERT Student Feedback From -->
-
-<!-- TODO INSERT *HIDDEN* Instructor Feedback Form -->
-
-<!-- 
-height/width = 1.777 ---- width="655" height="368"
-cp workspace/resources/classOutlineTemplate.md docs/module-
- -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjuL10i2xFGMWRwkjtgAL8F1Y5ipMPPjtTCDzkO1ZBcxUYZA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

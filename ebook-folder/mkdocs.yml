@@ -29,7 +29,6 @@ nav:
         - CSS For Looks: preCourse/cssForLooks.md
         - Day 1 Homework: preCourse/day1-homework.md
       - 'Day 2 HTML':
-        - Code Sandboxes : preCourse/codeSandboxes.md
         - HTML Tags: preCourse/htmlTags.md
         - Characters To Know: preCourse/charactersToKnow.md
         - Keyboard Quiz: preCourse/keyboardQuiz.md
@@ -58,6 +57,7 @@ nav:
         - Display Property: module-1/displayProperty.md
         - Display Flex: module-1/displayFlexProperties.md
         - Flex Item: module-1/flexItemProperties.md
+        - Code Sandboxes : module-1/codeSandboxes.md
         - Develop - Self-Motivation: module-1/developSeries-selfMotivation.md
         - Class 2 NASA Page: module-1/class-2.md
       - 'Pre-Class 3 Lessons':
