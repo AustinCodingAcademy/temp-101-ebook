@@ -1,4 +1,4 @@
-# Building in CodeSandbox
+# Playing with Code in a Sandbox
 <!-- This is how each subject should be introduced. Give the students structure so they know they can start trusting the process sooner!  -->
 
 ## Overview

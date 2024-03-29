@@ -1,11 +1,6 @@
-# Class One: Hosting Your Landing Page
+# Class One: Building A Landing Page
 
-<!-- *A journey of a thousand miles begins with a single step. – Lao Tzu* -->
-
-<!-- ! HIDE FROM STUDENT; INSTRUCTOR ONLY CONTENT -->
-<!-- ## Instructor Only Content - HIDE FROM STUDENTS -->
-<!-- TODO Insert video from vimeo - 101 Instructor Video Day 1 -->
-<!-- ! END INSTRUCTOR ONLY CONTENT -->
+*A journey of a thousand miles begins with a single step. – Lao Tzu*
 
 ## Greet, Outline, and Objectify
 
@@ -18,18 +13,16 @@ Today we're going to:
 
 - [ ] Intro of Instructor + Staff - 15 mins
     * [ ] Student Intros - 30 mins
-    * [ ] Welcome to the class space with quick tour - 3 mins
-- [ ] Questions for Student Led Discussion
-    <!-- * [ ] Account Setup/Check-In - 20 mins -->
-    <!-- * [ ] Downloads Review - 10 mins -->
+    * [ ] Welcome to the class space with quick tour - 5 mins
+- [ ] Questions for Student Led Discussion - 20 mins
 - [ ] Creation Time
-    * [ ] Build a Landing Page for your Portfolio Website - 45 mins
-- [ ] Interview Questions: Blog to Show You Know
+    * [ ] Build a Landing Page for your Portfolio Website - 55 mins
+- [ ] Interview Questions: Blog to Show You Know - 10 mins
 - [ ] Exit Recap, Attendance, and Reminders
     * [ ] Learning Structure and Expectations - 10 mins
-    * [ ] What's next? - 2 mins
+    * [ ] What's next? - 5 mins
 
-### Intros
+### Intros - 15 mins
 
 - [ ] Intro of Instructor:
 
@@ -55,14 +48,14 @@ Today we're going to:
         * [ ] There are always Pre-Class Lessons (homework) to complete.
         * [ ] Look ahead into each class and write down your questions to be asked during class.
 
-- [ ] Intro of support staff: Campus Director and Tutor(s) + [Tutor Page](https://austincodingacademy.com/tutors)
+- [ ] Intro of support staff: Campus Director and Tutor(s) + [Tutor Page](https://austincodingacademy.com/tutors){:target="_blank"}
 
     * [ ] invitation to message in Discord at anytime
     * [ ] how to use AI Tutor
     * [ ] how to set up tutoring sessions
     * [ ] important: come to prepare for tutoring sessions
 
-#### Ice Breaker
+#### Ice Breaker - 30 mins
 
  - [ ] **3 mins** - **Virtually:** assign breakout rooms. **In-person:** Look across the table and find a classmate, someone that is interested in the same career as you and ask them the following questions to get to know them:
     * [ ] What's your name?
@@ -91,14 +84,14 @@ Today we're going to:
 
   > **Everyone should introduce their new friend.**
 
-### Questions for Student Led Discussion, 35 mins
+### Questions for Student Led Discussion - 20 mins
 <!-- This section should be structured with the 5E model: https://lesley.edu/article/empowering-students-the-5e-model-explained -->
 
-[Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-1.md)
+[Questions to prompt discussion](./../additionalResources/questionsForDiscussion/qfd-class-1.md){target="_blank"}
 
 *****
 
-### Student Presentation Organization
+### Student Presentation Organization - 10 mins
 
   Knowledge is best when it's learned not taught. In this program instructors and the learning portal guide the student's learning journey but our students own their learning experience. You'll be assigned to teach your classmates specific topics that are related to concepts and techniques being taught throughout the course and program. This process has been proven to deepen student's understanding, boost retention, and strengthen community and interpersonal communication skills.
 
@@ -108,22 +101,18 @@ Today we're going to:
 
   <!-- TODO in the future - create an site that takes the students names and returns JSON that represents the topics, titles, and students. -->
 
-## Creation Time
+## Creation Time - 55 mins
 
-By the end of this program you're going to be building a Full-stack application to show to the world you can build web apps. To display that you're going to build a portfolio website where you can collect and showcase each of the apps you build in the future. Today, you're going to begin to build the Landing Page of that portfolio website using CodePen and the example in the page: [Landing Page](../additionalResources/project-LandingPage.md)
+By the end of this program you're going to be building a Full-stack application to show to the world you can build web apps. To display that you're going to build a portfolio website where you can collect and showcase each of the apps you build in the future. Today, you're going to begin to build the Landing Page of that portfolio website using [Codepen.io](:http://codepen.io/){target="_blank"} and the example in the page: [Landing Page](../additionalResources/project-LandingPage.md){:target="_blank"}
 
 *****
 *****
 
-## Student Feedback
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjuL10i2xFGMWRwkjtgAL8F1Y5ipMPPjtTCDzkO1ZBcxUYZA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-## Blogs to Show You Know
+## Blogs to Show You Know - 10 mins
 
 [Blog Prompts](./../additionalResources/blogPrompts.md){:target="_blank"}
 
-## Exit Recap, Attendance, and Reminders, 5 mins
+## Exit Recap, Attendance, and Reminders - 15 mins
 
 - [ ] Create Class One Blog assignment
 - [ ] Review [Class Structure & Expectations of Students](./../index.md#class-structure-and-expectations){:target="_blank"}
@@ -136,17 +125,6 @@ By the end of this program you're going to be building a Full-stack application 
 - [ ] Mentally prepare for [your presentations](./../additionalResources/studentPresentations.md){:target="_blank"} .
 - [ ] Next class we'll be adding an image gallery to your website so make sure you study CSS Grid & Box Model tonight and tomorrow. We'll see you then!
 
-<!-- <iframe id="openedx-zollege" src="https://openedx.zollege.com/feedback" style="width: 100%; height: 500px; border: 0">Browser not compatible.</iframe>
-<script src="https://openedx.zollege.com/assets/index.js" type="application/javascript"></script> -->
+## Student Feedback
 
-
-<!-- TODO Create 3 question exit questions -->
-
-<!-- TODO INSERT Student Feedback From -->
-
-<!-- TODO INSERT *HIDDEN* Instructor Feedback Form -->
-
-<!-- 
-height/width = 1.777 ---- width="655" height="368"
-cp workspace/resources/classOutlineTemplate.md docs/module-
- -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd85nNCk_MdnaXCsX7fWl3vYgcqvozzlK2cKq26d2g67Zh8Kg/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

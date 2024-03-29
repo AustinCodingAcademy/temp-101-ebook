@@ -52,7 +52,7 @@ nav:
         - Padding: module-1/boxModel-padding.md
         - Border: module-1/boxModel-border.md
         - Margin: module-1/boxModel-margin.md
-        - Class 1 Hosting Your Page: module-1/class-1.md
+        - Class 1 Landing Page: module-1/class-1.md
       - 'Pre-Class 2 Lessons': 
         - Display Property: module-1/displayProperty.md
         - Display Flex: module-1/displayFlexProperties.md

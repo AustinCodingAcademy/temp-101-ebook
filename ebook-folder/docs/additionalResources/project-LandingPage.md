@@ -1,50 +1,38 @@
 # Portfolio Landing Page
 
-*A journey of a thousand miles begins with a single step. – Lao Tzu*
+<!-- ** -->
 
 ## Overview
 
-Today you will build the first page of your portfolio website! You'll get the hang of it quickly, so don't worry if you don't understand all the code. You'll build your page using VS Code and view it using the Live Server extension. In the next lesson, we'll get your site hosted for the world to see!
-
-## How Classes Work
-
-Each class throughout the program will include a "checklist" that describes the general flow of the class, as well as, key points and topics so you will know what to expect before diving in.
+Today you will build the first page of your portfolio website, the Landing Page! You'll get the hang of it quickly, so don't worry if you don't understand all the code right of the bat. You'll build your page using [Codepen.io](http://codepen.io/){:target="_blank"}.
 
 ## Today's Checklist
 
-- [ ] Create a folder called `myPortfolio` in your Documents folder.
-- [ ] Create your `index.html` file.
-- [ ] Build your first webpage using HTML.
-- [ ] Link a CSS file.
-- [ ] Copy/Paste CSS code into that CSS file.
-- [ ] Experiment with CSS on your own.
-- [ ] Build a modified "hero" style landing page by the end of class.
+  > NOTE: Each class throughout the program will include a "checklist" that describes the general flow of the class, as well as, key points and topics so you will know what to expect before diving in.
+
+- [ ] Build "hero" style landing page.
+- [ ] Play and explore
+- [ ] Push Yourself Further
 
 ## Project Instructions
 
-### Draw a Wireframe
+### Your Wireframe
 
-  *A [wireframe is a simplified outline](https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/) that defines the main design of a web page or site. Wireframes are used to plan the page structure, specify major elements, and explain functionality. It is the skeleton or blueprint of a website. You'll be using wireframes to plan your work throughout this course and your career.*
+  *A [wireframe is a simplified outline](https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/){:target="_blank"} that defines the main design of a web page or site. Wireframes are used to plan the page structure, specify major elements, and explain functionality. It is the skeleton or blueprint of a website. You'll be using wireframes to plan your work throughout this course and your career.*
 
-  Take a look at the wireframe below. This is the outline of the page you're building today and will serve as blue print for you to build from.
+  Take a look at the wireframe below. This is the outline of the page you're building today and will serve as blueprint for you to build from.
 
   ![landing-page-wireframe](./../images/landing-page-wireframe.png)
 
-*****
+<hr>
 
-### CreateYour Folder and First Page
+### Start with some "Boilerplate"
 
-- [ ] Create a folder called: myPortfolio in your Documents folder.
-- [ ] Open VS Code (Your text editor).
-- [ ] Click File > Open Folder in the top navigation bar and find the new folder you just created.
-  
-![vs-code-menu-open-folder](./../images/vs-code-menu-open-folder.png)
+Every web site or web app has something called **Boilerplate code** which refers to the core bit of code that is required to make the whole thing function. In our case, building a web page, we need the code you see below which creates a Document (`<!DOCTYPE html>`), creates an HTML element (`<html> </html>`), creates a Head element for the document (`<head> </head>`), creates a Body element for the document (`<body> </body>`), as well as a few meta links to help the web browser know how to display the whole document.
 
-- [ ] Click the New File icon next to your folder and name it `index.html`. The file will automatically open in the editor pane.
-  
-![vs-code-menu-new-file](./../images/vs-code-menu-new-file.png)
+From here on, you only have to worry about what goes inside the `<body> </body>` element because that's all that gets displayed on the browser's window.
 
-- [ ] Copy and paste the following code into your blank `index.html` file:
+- [ ] Copy and paste the following code into the HTML section of [Codepen.io](http://codepen.io/), on the left-side of the screen.
 
 ```html
   <!DOCTYPE html>
@@ -66,17 +54,13 @@ Each class throughout the program will include a "checklist" that describes the 
   </html>
 ```
 
-*****
+  > NOTE: In the code above and below, you'll notice lines of code in grey that begin with `<!--` and end with `-->`. These are called "**comments**" which are ignored by the computer but can still be read by us humans! They're useful for sharing notes, thoughts, and suggestions with other humans. In this lesson you'll need to read them to understand where to put certain pieces of code. When you get to the end, or as you go, feel free to delete them to clean up the code.
 
-### Add Your header and main Elements
-  
-- [ ] Save your page. ++cmd+s++ / ++ctrl+s++
+### Add Your Header and Main Elements
 
-  > TIP: Select **File** > **Auto Save** to automatically save any changes.
+With HTML, we want to organize pieces of the web page into a few of categories as possible. With these two elements we'll be able organize everything else to come into one of two places: **The Header**(top part of the page), or **The Main**(the main/center part of the page).
 
-- [ ] Create two elements inside the Body tags called Header and Main. Copy/paste the code below to get started.
-
-  > NOTE: Remember to reference your previous lessons and bookmarked docs. And be sure you have only ONE Body element.
+- [ ] Create two elements inside the Body tags called **Header** and **Main**. Copy/paste the code below in-between the opening `<body>` tag and the closing `</body>` tag.
 
 ```html
   <!-- Don't include this <body> tag. It's for reference only -->
@@ -95,9 +79,11 @@ Each class throughout the program will include a "checklist" that describes the 
   <!-- Don't include this </body> tag. It's for reference only -->
 ```
 
-*****
+  > NOTE: The words **Head** and **Header** can be confusing so let's clear that up now: The `<head>` element is not displayed on the browser window and contains information on how the browser should build and display the web page. By contrast, the `<header>` is displayed on the web window and is simply another element like any other HTML element that is displayed to the user.
 
-### Add a Logo and Navigation to the Header Section
+### Logo & Navigation
+
+As you've seen with many web pages, navigation and logos are a typical part of the top of the web page, aka the header of the web page.
 
 - [ ] Copy/paste the line of code below inside the Header element:
 
@@ -105,56 +91,71 @@ Each class throughout the program will include a "checklist" that describes the 
   <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
   ```
 
-- [ ] Create a Nav element below this code but still inside the Header tag.
-- [ ] Create 4 Anchor elements inside the Nav element for each of the following: "Resume", "About Me", "My Blog", and "Contact Me".
+- [ ] Below that new `<img >` tag but still inside the Header tag, create a **Nav**(igation) **element**.
 
-  > HINT: The anchor tag for "Contact Me" should look like this: `<a class="has-border">Contact Me</a>`
+  ```html
+  <nav>
+    <!-- Put the 4 Anchor tags here -->
+  </nav>
+  ```
+
+These next elements are called **Anchor** tags because they anchor one page of the website to another page. On this one you're going to have to write some come by hand.
+
+- [ ] Create 4 Anchor elements inside the Nav element for each of the following pages: "Resume", "About Me", "My Blog", and "Contact Me". Use this code as a template.
+
+  ```html
+    <a href="./contactMe.html" class="has-border">Contact Me</a>
+  ```
+
+  > NOTE: The `href="..."` part of that code is called the **path name**. It tells the web browsers where to navigate to when the user clicks on the link. We don't have multiple files here just yet so it won't work but write them all as if you did have them built. *We're going to be building these pages very very soon.*
+
+  > NOTE 2: The `class="has-border"` part is something you're going to use when you get to the CSS. It's a **class name** that labels these elements so that you can style them together at the same time. *You'll see shortly ;)*
 
 *****
 
-### Add Your Content to the Main Section
+### Add Content
 
-- [ ] Paste in this line of code in between the main tags :
-`<img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">`
-- [ ] Navigate to your finder/file explorer on your computer and open two separate windows on your computer.
-- [ ] Find a good, clear, professional picture of yourself in one of the windows.
-- [ ] Navigate to your `myPortfolio` project in the other window.
-- [ ] Drag the image of yourself from the first window into the `myPortfolio` folder in the other window.
-- [ ] Rename the image  `myProfilePic.jpg`.
+- [ ] Copy/paste following code in-between the opening `<main>` tag and the `<a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>` element:
 
-  > NOTE: if your image is a `.png`, `.jpeg`, or another format, simply change the suffix in the line of code from step above.
+  ```html
+    <img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
+  ```
 
-- [ ] Create an **H1** element with your full name in it below this new **Img** tag.
-- [ ] Create an **H2** element with your current title: Student of Web Development below the new H1 element.
-- [ ] Copy/paste this line of code below the **H2** element to create a **Button** element:
+Now you need to add a picture of yourself (or someone else) into this page.
+
+- [ ] Do a Google image search of yourself, i.e. LinkedIn or a person you look up to and copy the **Image Address**.
+
+![copyImageAddress-tonyRobbins](../images/copyImageAddress-tonyRobbins.png)
+
+```html
+  https://media.glamour.com/photos/5ac8fdda056de418042efe4c/master/pass/tony-robbins-getty.jpg
+```
+
+- [ ] Now replace the `./myProfilePic.jpg` part of that last bit of code with the image address you just copied, i.e: 
+
+```html
+  <img src="https://media.glamour.com/photos/5ac8fdda056de418042efe4c/master/pass/tony-robbins-getty.jpg" id="profile-pic" alt="picture of Tony Robbins">
+```
+
+- [ ] Now is your chance to write from scratch again. Create an **H1** element with your full name in it below this new **Img** tag.
+
+- [ ] Then create an **H2** element below that with your current title: "Student of Web Development".
+
+- [ ] Next, add this line of code below the **H2** element to create a **Button** element that will, eventually, take you to your portfolio page:
   
-  `<button id="portfolio">Portfolio</button>`.
-  
-- [ ] Save your code.
+  `<button id="portfolio"><a href="./portfolio.html">Portfolio</a></button>`.
 
-- [ ] Click the Go Live link in the bottom right-hand corner of VS Code. Go Live
-
-  ![vs-code-go-live-button](./../images/vs-code-go-live-button.png)
-
-  > TIP: If the button doesn't show up, try quitting VS Code and restarting it. Or uninstall Live-Server and reinstall then restart VS Code again.
-
-- [ ] Look at your website in Chrome.
+How's it looking?
 
 Not matching your wireframe? That's okay. What you see is called **normal document flow**. In all web files, each element is read top-to-bottom and left-to-right and rendered on the screen top-to-bottom and left-to-right. Next, we'll add styles to arrange our page and make it pretty.
 
-*****
+<hr>
 
-### Add Your Styles
+### CSS: Style the Page
 
-We're going to include a set of rules listed in a CSS file to make everything look pretty.
+Look in the **Head** tag at the top of your `index.html` file. Do you see `<link rel="stylesheet" href="./style.css">`? This line of code allows you to link styles to the otherwise very boring web page. The line is telling the browser to go find a file called `style.css` in the same folder as your `index.html` file. Luckily, CodePen already has that file created for you!!
 
-Look in the **Head** tag at the top of your `index.html` file. Do you see `<link rel="stylesheet" href="./style.css">`? This line of code allows you to link styles to the otherwise very boring web page. The line is telling the browser to go find a file called style.css in the same folder as your index.html file. Let's create one now.
-
-- [ ] Click the New File icon next to your folder and name it `style.css`. The file will automatically open in the editor pane.
-
-  ![vs-code-menu-new-file](./../images/vs-code-menu-new-file.png)
-
-- [ ] Copy and paste the following code inside your new `style.css` file:
+- [ ] Copy/paste the following code inside the CSS section in the center of your screen:
 
   ```css
   body {
@@ -186,7 +187,7 @@ Look in the **Head** tag at the top of your `index.html` file. Do you see `<link
       grid-template-columns: 30% 40% 30%;
     }
 
-    /* This is an element within and element selector */ 
+    /* This is an element within an element selector */ 
     nav > a {
       margin: 2% 1% 3%;
       height: 10%;
@@ -261,31 +262,34 @@ Look in the **Head** tag at the top of your `index.html` file. Do you see `<link
     }
   ```
 
-*****
+> NOTE: In the code above you see new types of **comment lines** denoted by `/*` and `*/`. This is the syntax for creating comments in CSS and JavaScript while the `<!--` and the `-->` is the syntax for HTML comments.
 
-### Playtime
+<hr>
 
-- [ ] Save your file and then go back to your browser to see what happened.
-- [ ] What happened? Is it all working?
-- [ ] If so, read through and see if you can figure out how to change the background img to something you like better.
+## Playtime
+
+- [ ] What's happening? Is it all working?
+- [ ] If so, read through and see if you can figure out how to change the `background-image` to something you like better.
 - [ ] Can you figure out how to change the color of the links at the top?
-- [ ] What about the logo at the top-left?
-- [ ] **Finally**: Fix any bugs you have and get excited about playing with stuff.
+- [ ] What about the logo at the top-left? Can you replace that? 
+- [ ] What about sizing? Can you adjust the picture? The Anchor links?
+- [ ] **Finally**: Fix any bugs you have and get excited about playing with stuff. Show off!
 
 This is how you will be learning from here on out! Playing, breaking, fixing, playing, breaking and fixing again! Don't be afraid to change colors, text sizes, font families – whatever! You can always undo.
 
 > NOTE: As you learn you will be pushing into unfamiliar territory. This will be your job! To push the boundary, experiment, and come up with solutions to problems. Embrace this learning, love the bugs, find joy in squashing them and you will do well!
 
+<hr>
+
 ## Review and Push Yourself Further
 
 *Every lesson in this book will end with a **Review and Push Yourself Further** section. These sections are here to help you push yourself further once you've completed the in-class assignment. You should never stop coding or think you can't do or learn more. So to help guide you forward, these sections are given as highly-recommended suggestions on what you should code next. Take advantage of them and don't be afraid to Google your way through the challenges*
 
-- [ ] Play with the properties and other values in the CSS file to see what they are changing on the page. Don't be afraid to break things. Just click undo! If you feel like you've made a mess, remember that you have all of the original code here within this assignment.
-- [ ] Google each of the properties in the CSS file like  margin, font-family, text-align, color, and so forth.
-- [ ] Learn new values for each of those properties.
-- [ ] **Don't be afraid to break things**. You can always come back and fix them. Just come back to these instructions!
+- [ ] Play with the **properties** and other values in the CSS file to see what they are changing on the page. Don't be afraid to break things. Just click undo! If you feel like you've made a mess, remember that you have all of the original code here within this assignment.
+- [ ] Google each of the **properties** in the CSS file like  `margin`, `font-family`, `text-align`, `color`, and so forth.
+- [ ] Learn new **values** for each of those **properties**.
+- [ ] *Don't be afraid to break things*. You can always come back and fix them. Just come back to these instructions!
 - [ ] See what else you can change and really get this page customized to your tastes. We'll learn more about CSS later on, but you should start experimenting and playing with it now.
-- [ ] [Learn more](https://www.shortcutfoo.com/app/dojos/vscode-win/cheatsheet) about your editor.
 - [ ] Use these pages for inspiration:
 
 ![portfolio-landing-page-example-one](./../images/portfolio-landing-page-example-one.png)
