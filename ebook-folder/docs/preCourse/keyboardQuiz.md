@@ -1,4 +1,4 @@
-# Keyboard Quiz
+# Keyboard Practice
 
 Take the comprehension and placement exam on Typing Club see where your mastery of keyboard characters is.
 
@@ -8,9 +8,7 @@ Take the comprehension and placement exam on Typing Club see where your mastery 
 
 Once you've completed the placement test try the lesson you're able to skip ahead to! Then consider creating an account at [TypingClub](https://www.typingclub.com/) and practicing a little each day. While you don't *need* to type fast to be a programmer, it will sure come in handy when you can use all of your fingers to type rather than just your two pointers...
 
-
 ## Additional Resources
-
 
 - [ ] [Website, Typing.com](../additionalResources/keyboardShortcuts)
 - [ ] [Website, Typing.com](https://www.typing.com/)

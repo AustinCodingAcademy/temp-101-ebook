@@ -1,14 +1,6 @@
 # HTML Project
 
-## Questions for Discussion
-
-BEFORE WE GET STARTED ARE THERE ANY QUESTIONS ABOUT THE HOMEWORK AND CLASS MATERIAL FROM DAY 1?
-
-*Purpose: To introduce you to the concepts of web development with a fundamental understanding of what HTML is.*
-
-*Objective: By the end of this lesson, you will be able to identify HTML as a language, as well as elements and tags with the language.*
-
-Exercise: Quizlet Game, HTML Burger
+*Purpose: To introduce you to the concepts of web development with a fundamental understanding of what HTML is. By the end of this lesson, you will be able to identify HTML as a language, as well as elements and tags withing the language.*
 
 ## WHAT IS HYPER-TEXT MARKUP LANGUAGE (HTML)?
 

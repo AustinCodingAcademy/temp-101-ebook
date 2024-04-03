@@ -4,7 +4,9 @@
 
  ―Markus Zusak, I Am the Messenger
 
-<iframe src="https://player.vimeo.com/video/391834446" width="900" height="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<!-- <iframe src="https://player.vimeo.com/video/391834446" width="900" height="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+
+<iframe src="https://player.vimeo.com/video/923488818?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="900" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="101_-_box_model (720p)"></iframe>
 
 Throughout this course and the rest of the program you'll be introduced to many "models". We mean models by the way we can understand how computers interact with the world around them. They don't see models or know about models, rather models are just ways we humans can conceptualize the way a computer keeps up with memory and transfers that information to other computers.
 
@@ -98,6 +100,7 @@ Keep this tool handy as you learn the properties of the Box Model and for the re
 * [See It - The Box Model](https://player.vimeo.com/video/391834446){:target="_blank"}
 * [CSS Tricks: The CSS Box Model](https://css-tricks.com/the-css-box-model/){:target="_blank"}
 * [Box Model, Sizing, Shadow](https://youtu.be/GvIP6QtCVSg?t=21){:target="_blank"}
+* [Understanding Pixels & Other CSS Units](https://webplatform.github.io/docs/tutorials/understanding-css-units/)
 
 <!-- [2nd Box Model Playground](https://codepen.io/mistakevin/pen/pbBGBp/) -->
 
