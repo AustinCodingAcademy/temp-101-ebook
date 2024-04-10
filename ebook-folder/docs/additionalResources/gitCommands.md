@@ -41,3 +41,7 @@
 | `cp <path-to-file-to-copy> <name-of-new-file>` | copy file |
 | `rm` | remove file or directory |
 | `tree` | Must install with brew or bash, but is a very useful command to see your entire working directory's tree. |
+
+## VS Code
+
+- [ ] [Learn more](https://www.shortcutfoo.com/app/dojos/vscode-win/cheatsheet) about your editor.
