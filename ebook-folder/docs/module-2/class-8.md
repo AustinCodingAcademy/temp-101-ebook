@@ -64,18 +64,17 @@ Use the following website to build and you may use artistic licensing to make re
 - [ ] Decide on the website style you'd like to design. Decide on the name of the company you're building it for.
 - [ ] Look at the assignments you've already created: About Page, Contact Me, Image Gallery, Landing Page, and NASA page for your blog/news. What can you reuse? How can you leverage the code you've already written to build this massive project? They want it in a week. You'll need to get creative.
 - [ ] After looking at your other pages, draw up your wireframes for your chosen website, for mobile, tablet, and desktop.
-- [ ] Create a new repo with a `README` file called: "hairSalonWebsite".
+- [ ] Go to [CodeSandbox](https://codesandbox.io/dashboard) and create a new sandbox called: "hairSalonWebsite".
 - [ ] Suggestions:
-        * [ ] Search for images on [Unsplash](https://unsplash.com/) to download and use.
-        * [ ] Use [GoogleFonts](https://fonts.google.com/) to get the best fonts
+
+    * [ ] Search for images on [Unsplash](https://unsplash.com/) to download and use.
+    * [ ] Use [GoogleFonts](https://fonts.google.com/) to get the best fonts
 - [ ] Make it mobile! As you structure your page, be sure to test on both desktop, tablet, and mobile.
-- [ ] `git status`, `add`, `commit` often!
+<!-- - [ ] `git status`, `add`, `commit` often!
 
-    > NOTE: This is something you should start doing as you code, to back up your work in case your computer goes down, water is spilled, or whatever. `git commit`!
+    > NOTE: This is something you should start doing as you code, to back up your work in case your computer goes down, water is spilled, or whatever. `git commit`! -->
 
-    > NOTE 2: This project will be due a week from now so get going smartly, swiftly, and safely!
-
-- [ ] Host the website on GitHub and turn in the live URL for your grade.
+> NOTE: This project will be due a week from now so get going smartly, swiftly, and safely!
 
 #### The Specifications/Rubric
 
@@ -85,13 +84,6 @@ Use the following website to build and you may use artistic licensing to make re
 - [ ] A Contact page - **10pts**
 - [ ] A Gallery page - **10pts**
 - [ ] A Blog/News page - **10pts**
-
-### Follow-up Video
-
-While these websites aren't built in this video, you can certainly use its flow and guidance if you get stuck.
-
-<!-- ! Video Content:  (width="655" height="368", ratio 1.77) -->
-* [YT, ACA@Clayton - Breaking into Your First Project]
 
 ### Push Yourself Further
 

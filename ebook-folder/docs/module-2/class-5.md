@@ -70,16 +70,16 @@ Your Portfolio Website has been up for a couple weeks now but doesn't have an Ab
 1. You can use other websites as inspiration:
 
     * [About 8-hour Day](http://eighthourday.com/studio)
-    * [About Kero1](https://www.kero1.com/about/)
     * [About Nike](https://about.nike.com/)
 
-1. Now go find your Portfolio Folder from Day 1 of this course, open it up and create a new `.html` file called `"aboutPage"` then create a `.css` file called `"about-styles"` to build this page in.
+1. Go to [CodeSandbox](https://codesandbox.io/dashboard) and open your "Portfolio Website" sandbox.
+    - [ ] Create two files: `about.html` & `about-styles.css`.
+    - [ ] Link them together.
+    - [ ] Now link the new HTML file to the appropriate Anchor element.
 
 1. Use all of the tools you've learned about so far and take this About Page to the next level.
 1. Remember to link the new page to your Portfolio's landing page.
 1. Remember your design must be designed for mobile, tablet, and laptop!
-1. `git` `status` `add` `status` `commit` push your work up to its repo.
-1. Then go to the URL that the website is hosted at and navigate to the "aboutPage" and copy/paste that URL to turn it in.
 
 ## Exit Recap, Attendance, and Reminders, 5 mins
 

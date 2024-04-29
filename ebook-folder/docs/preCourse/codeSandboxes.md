@@ -2,9 +2,9 @@
 
 ## Overview
 
-Up until now you've been using [Codepen.io](http://codepen.io/) to build projects. Programs like this are referred to as "Code Sandboxes" meaning you can build and play in a secure controlled environment without much setup, overhead, or concern about breaking something. Starting with this next class you're going to move to a new sandbox called [Code Sandbox](https://codesandbox.io/).
+Code **sandboxes** are useful tools to share ideas and explore new possibilities – without the pressures of building a **file structure**, setting up your machine, working through on the console, or remembering git commands. (*all of this will come soon.*)
 
-Code **sandboxes** are useful tools to share ideas and explore new possibilities – without the pressures of building a **file structure**, setting up your machine, working through on the console, or remembering git commands. For the forseeable future, we'll use [Code Sandbox](https://codesandbox.io/) to share snippets of code, practice coding, and discover new things. Get in the habit building in CodePen as you work through the textbook; it's "where the rubber meets the road."With them, you can apply the concepts you've learned, and experiment with the technologies at the heart of your future career.
+Up until now you've been using [Codepen.io](http://codepen.io/) to build projects. Programs like this are referred to as "Code Sandboxes" meaning you can build and play in a secure controlled environment without much setup, overhead, or concern about breaking something. From here on out we're going to use a different sandbox called [Code Sandbox](https://codesandbox.io/) to share snippets of code, practice coding, and discover new things. Get in the habit building in [Code Sandbox](https://codesandbox.io/) as you work through the textbook; it's "where the rubber meets the road." With it, you can apply the concepts you've learned, and experiment with the technologies at the heart of your future career.
 
 ### TODO - Create a CodeSandbox Account
 

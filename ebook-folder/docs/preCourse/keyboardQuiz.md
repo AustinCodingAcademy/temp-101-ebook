@@ -4,7 +4,7 @@ Take the comprehension and placement exam on Typing Club see where your mastery 
 
 > Click "Get Started" >> "Typing Jungle" >> "Take the Placement Test".
 
-<iframe src="https://www.typingclub.com/" height="500" width="100%" style="border:0"></iframe>
+<iframe src="https://www.typingclub.com/" height="300" width="100%" style="border:0"></iframe>
 
 Once you've completed the placement test try the lesson you're able to skip ahead to! Then consider creating an account at [TypingClub](https://www.typingclub.com/) and practicing a little each day. While you don't *need* to type fast to be a programmer, it will sure come in handy when you can use all of your fingers to type rather than just your two pointers...
 

@@ -29,10 +29,10 @@ WEB101 is your gateway to mastering web development, giving you the foundational
   * 50pts for anything beyond 3 days late.
   * Instructor will not grade any assignment beyond 2 weeks after the course has concluded.
 - Submissions are via your LMS (Canvas) through the method given to you by your instructor:
-  * URL to live web pages, 
-  * GitHub PRs, 
-  * repos, 
-  * or sometimes screenshot.
+    * URL to live web pages, 
+    * GitHub PRs, 
+    * repos, 
+    * or sometimes screenshot.
 
 ### Grading:
 

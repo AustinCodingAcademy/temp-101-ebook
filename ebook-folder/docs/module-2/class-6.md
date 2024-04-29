@@ -53,12 +53,16 @@ Today we're going to:
 * Partner with other groups for elaboration
 * Share with the class for evaluation (potentially carry into the next class)
 
-Just like the About Page you built for your Portfolio Website last class, tonight you're going to build a Contact Me Page that is responsive to mobile, tablet, & laptop that includes the following:
+- [ ] Go to [CodeSandbox](https://codesandbox.io/dashboard) and open your "Portfolio Website" sandbox.
+- [ ] Create two files: `contact-me.html` & `contact-me-styles.css`.
+- [ ] Link them together.
+- [ ] Now link the new HTML file to the appropriate Anchor element.
+
+Just like the "About" Page you built for your Portfolio Website last class, tonight you're going to build a "Contact Me" Page that is responsive to mobile, tablet, & laptop that includes the following:
 
 - [ ] `<input>` for Email that is required and validates for an actual email address
 - [ ] `<textarea>` that has a placeholder "comments" and limits the user to 500 characters and minimum of 20.
 - [ ] A section of checkboxes that asks the user: "How did you hear about me?"
-
     * [ ] Classmate
     * [ ] Resume Submission
     * [ ] LinkedIn
@@ -68,7 +72,6 @@ Just like the About Page you built for your Portfolio Website last class, tonigh
 - [ ] Offer to give an optional Birthday Wish by submitting their birth date through a `date` input.
 - [ ] Remember your design must be designed for mobile, tablet, and laptop!
 - [ ] Remember to have a submit button and create a `result.html` to capture the values for now until we get to building servers that can receive and hold the data.
-- [ ] After you've completed the contact page turn in the live link to in your Zollege Textbook.
 
   > HINT: You could use this [repo](https://github.com/AustinCodingAcademy/html-form-practice-101) to get started faster!
 
