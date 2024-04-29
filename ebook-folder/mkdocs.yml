@@ -201,6 +201,7 @@ nav:
         - Push to Repo: additionalResources/pushToGitHub.md
         - Host w/GitHub: additionalResources/hostWithGitHub.md
         - Git & CLI Commands: additionalResources/gitCommands.md
+        - Git Branches: module-3/gitBranchReview.md
       - 'Extra Projects':
         - Portfolio Landing Page: additionalResources/project-LandingPage.md
         - Even-Odd: additionalResources/bonusMaterial/evenOddFollowAlong.md
