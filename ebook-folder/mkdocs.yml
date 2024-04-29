@@ -22,17 +22,17 @@ site_name: Web 101 - Intro to the Web
 nav:
     - Home: 'index.md'
     - 'Self-Paced Prep':
-      - 'Your first web page':
+      - '1. Your first web page':
         - Building our first web page: preCourse/ourFirstWebPage.md
         - Let's Write Some Code: preCourse/letsWriteSomeCode.md
         - CSS For Looks: preCourse/cssForLooks.md
         - How The Web Works: preCourse/day1-homework.md
-      - 'HTML':
+      - '2. HTML':
         - HTML Tags: preCourse/htmlTags.md
         - Code Sandboxes : preCourse/codeSandboxes.md
         - HTML Attributes: preCourse/htmlAttributes.md
         - Semantic Elements: preCourse/day2-homework.md
-      - 'Cascading Style Sheets':  
+      - '3. Cascading Style Sheets':  
         - CSS Getting Started: preCourse/cssGettingStarted.md
         - CSS Intro : preCourse/cssIntro.md
         - CSS Principles: preCourse/moreCSStechniques.md
@@ -41,9 +41,9 @@ nav:
         - Padding: module-1/boxModel-padding.md
         - Border: module-1/boxModel-border.md
         - Margin: module-1/boxModel-margin.md
+      - '4. Program Prep':
         - Characters To Know: preCourse/charactersToKnow.md
         - Keyboard Practice: preCourse/keyboardQuiz.md
-      - 'Day 4 Program Prep':
         - Flipped Classroom: preCourse/succeedInThisCourse.md
         - Develop Series: preCourse/theDevelopSeries.md
         - SAT Method: preCourse/theSATmethod.md
@@ -82,6 +82,7 @@ nav:
         - Two Perspectives: module-2/twoPerspectives.md
         - The DOM + JS Intro pt.2: module-2/theDOM-jsIntro-pt2.md
         - Table and nth Child: module-2/table-nthChild.md
+        # TODO Move TTT code from Repo to CodeSandbox - make/find ACA account
         - Class 5 TicTacToe + About: module-2/class-5.md
       - 'Pre-Class 6 Lessons':
         # TODO - Develop - TITLE: module-2/.md
@@ -97,6 +98,7 @@ nav:
         - Window Methods: module-2/windowMethods.md
         - Document Methods: module-2/documentMethods.md
         - Image Element: module-2/imageElement.md
+        # TODO Move Calc code from Repo to CodeSandbox - make/find ACA account
         - Class 7 Calculator App: module-2/class-7.md
       - 'Pre-Class 8 Lessons':
         # TODO - Develop - TITLE: module-2/.md
@@ -112,7 +114,7 @@ nav:
         - Class 9 EvenOdd List: module-3/class-9.md
       - 'Pre-Class 10 Lessons': 
         - Develop - Handle Your Feeling: module-3/developSeries-handleFeelings.md
-        - Git Branch Review: module-3/gitBranchReview.md
+        # - Git Branch Review: module-3/gitBranchReview.md
         - Nested Arrays: module-3/nestedArrays.md
         - Class 10 TicTacToe: module-3/class-10.md
       - 'Pre-Class 11 Lessons':
@@ -185,21 +187,26 @@ nav:
         - Day 15 QFD: additionalResources/questionsForDiscussion/qfd-class-15.md
         - Day 16 QFD: additionalResources/questionsForDiscussion/qfd-class-16.md
       - Blog Prompts: additionalResources/blogPrompts.md
-      - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
+      - 'Better at Computers':
+        - DevFolder: additionalResources/devFolder.md
+        - Keyboard Shortcuts: additionalResources/keyboardShortcuts.md
       - 'Git & GitHub':
         - Prepare Your Machine: additionalResources/setupInstructions.md
-        - GitHub Overview: additionalResources/gitOverhere.md
+        - GitHub Overview: additionalResources/gitOverHere.md
         - Git & GitHub Setup: additionalResources/gitAndGitHub.md
         - Git Setup Check-in: additionalResources/gitAndGitHub.md
         - Git Setup: additionalResources/gitSetup.md
         - Git Basics: additionalResources/gitBasics.md
+        - New Repo: additionalResources/createNewGitHubRepo.md
+        - Push to Repo: additionalResources/pushToGitHub.md
+        - Host w/GitHub: additionalResources/hostWithGitHub.md
         - Git & CLI Commands: additionalResources/gitCommands.md
-      - Portfolio Landing Page: additionalResources/project-LandingPage.md
-      - Graduation Prerequisites: additionalResources/graduationPrerequisites.md
-      - Presentation Qualifications: additionalResources/presentationsQualifications.md
-      - 'Bonus Materials':
-      # add these resources in https://studio.zollege.com/container/block-v1:ACA+PW101+2021-Feb2+type@vertical+block@9e36b68dc98048238efe59e87cc619d1
-        - additionalResources/bonusMaterial/evenOddFollowAlong.md
+      - 'Extra Projects':
+        - Portfolio Landing Page: additionalResources/project-LandingPage.md
+        - Even-Odd: additionalResources/bonusMaterial/evenOddFollowAlong.md
+      - 'Graduation':
+        - Graduation Prerequisites: additionalResources/graduationPrerequisites.md
+        - Presentation Qualifications: additionalResources/presentationsQualifications.md
 
 # defines the styles, usually just a single name but `custom_dir` overrides this behavior
 theme:
@@ -214,7 +221,7 @@ theme:
   
   # ? Not rendering as expected??
   extra:
-    copyright: Copyright &copy; 2013 - 2021 Austin Coding Academy
+    copyright: Copyright &copy; 2013 - 2025 Austin Coding Academy
     social:
       - icon: fontawesome/brands/github
         link: https://github.com/AustinCodingAcademy

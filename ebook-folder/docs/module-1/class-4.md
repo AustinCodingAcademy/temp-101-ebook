@@ -58,12 +58,9 @@ Bringing together all the skills you've learned you're now asked to build a webs
 
 Our company needs this website up really soon, please make judgments about colors and layout that we haven't specifically laid out. Don't worry about content, use the lorem ipsum we provided for now or find your own. Remember to work from outside to in, commit often, plan your code, and comment your CSS code so our next developers know what you built.
 
-- [ ] Use the Mockups & Specs below to draw your wireframes and plan your code, FIRST.
-- [ ] Make a new repo called `First-Responsive-Website` and initialize it with `README.md`
-- [ ] `git clone` it to your local machine and get to working.
-- [ ] Once you're finished, `git status`, `add`, `commit`, `push`.
-- [ ] Host your website with GitHub pages.
-- [ ] Then turn in the url for your instructor to grade it.
+- [ ] **FIRST**, use the Mockups & Specs below to draw your wireframes and plan your code.
+- [ ] Go to [CodeSandbox](https://codesandbox.io/dashboard) and create a new HTML + CSS Sandbox named "First-Responsive-Website".
+- [ ] Then turn in the CodeSandbox URL for your instructor to grade it.
 
 === "Laptop View"
     ![responsive-website-project-laptopView](./../images/responsive-website-project-laptopView.png)

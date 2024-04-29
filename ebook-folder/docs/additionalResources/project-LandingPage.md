@@ -4,7 +4,7 @@
 
 ## Overview
 
-Today you will build the first page of your portfolio website, the Landing Page! You'll get the hang of it quickly, so don't worry if you don't understand all the code right of the bat. You'll build your page using [Codepen.io](http://codepen.io/){:target="_blank"}.
+Today you will build the first page of your portfolio website, the Landing Page! You'll get the hang of it quickly, so don't worry if you don't understand all the code right of the bat. You'll build your page using [Code Sandbox](http://codesandbox.io/){target="_blank"}.
 
 ## Today's Checklist
 
@@ -26,13 +26,19 @@ Today you will build the first page of your portfolio website, the Landing Page!
 
 <hr>
 
+### Create a place to Code
+
+For every project, you need a place to code:
+
+- [ ] Go to [CodeSandbox](https://codesandbox.io/dashboard) and create a new HTML + CSS Sandbox named "Portfolio Website".
+
 ### Start with some "Boilerplate"
 
 Every web site or web app has something called **Boilerplate code** which refers to the core bit of code that is required to make the whole thing function. In our case, building a web page, we need the code you see below which creates a Document (`<!DOCTYPE html>`), creates an HTML element (`<html> </html>`), creates a Head element for the document (`<head> </head>`), creates a Body element for the document (`<body> </body>`), as well as a few meta links to help the web browser know how to display the whole document.
 
 From here on, you only have to worry about what goes inside the `<body> </body>` element because that's all that gets displayed on the browser's window.
 
-- [ ] Copy and paste the following code into the HTML section of [Codepen.io](http://codepen.io/), on the left-side of the screen.
+- [ ] Copy and paste the following code into the HTML file.
 
 ```html
   <!DOCTYPE html>
@@ -55,6 +61,8 @@ From here on, you only have to worry about what goes inside the `<body> </body>`
 ```
 
   > NOTE: In the code above and below, you'll notice lines of code in grey that begin with `<!--` and end with `-->`. These are called "**comments**" which are ignored by the computer but can still be read by us humans! They're useful for sharing notes, thoughts, and suggestions with other humans. In this lesson you'll need to read them to understand where to put certain pieces of code. When you get to the end, or as you go, feel free to delete them to clean up the code.
+
+  > **REMEMBER**: You must manually save in CodeSandbox to see your work rendered: ++cmd++ + ++s++ (Mac) / ++ctrl++ + ++s++ (Windows).
 
 ### Add Your Header and Main Elements
 
@@ -153,9 +161,9 @@ Not matching your wireframe? That's okay. What you see is called **normal docume
 
 ### CSS: Style the Page
 
-Look in the **Head** tag at the top of your `index.html` file. Do you see `<link rel="stylesheet" href="./style.css">`? This line of code allows you to link styles to the otherwise very boring web page. The line is telling the browser to go find a file called `style.css` in the same folder as your `index.html` file. Luckily, CodePen already has that file created for you!!
+Look in the **Head** tag at the top of your `index.html` file. Do you see `<link rel="stylesheet" href="style.css">` on line 8? This line of code allows you to link styles to the otherwise very boring web page. The line is telling the browser to go find a file called `style.css` in the same folder as your `index.html` file. Luckily, when you created an HTML + CSS sandbox, CodeSandbox already automatically created one for you!!
 
-- [ ] Copy/paste the following code inside the CSS section in the center of your screen:
+- [ ] Copy/paste the following code inside the CSS file:
 
   ```css
   body {

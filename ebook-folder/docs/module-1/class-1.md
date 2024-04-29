@@ -103,7 +103,7 @@ Today we're going to:
 
 ## Creation Time - 55 mins
 
-By the end of this program you're going to be building a Full-stack application to show to the world you can build web apps. To display that you're going to build a portfolio website where you can collect and showcase each of the apps you build in the future. Today, you're going to begin to build the Landing Page of that portfolio website using [Codepen.io](:http://codepen.io/){target="_blank"} and the example in the page: [Landing Page](../additionalResources/project-LandingPage.md){:target="_blank"}
+By the end of this program you're going to be building a Full-stack application to show to the world you can build web apps. To display that you're going to build a portfolio website where you can collect and showcase each of the apps you build in the future. Today, you're going to begin to build the Landing Page of that portfolio website using [Code Sandbox](http://codesandbox.io/){target="_blank"} and the example in the page: [Landing Page](../additionalResources/project-LandingPage.md){:target="_blank"}
 
 *****
 *****

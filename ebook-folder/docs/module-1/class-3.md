@@ -49,19 +49,16 @@ First plan, then code. Trust this process; it will save you **so** much time!
 
 - [ ] Choose one of the mockups below or the one in the [Daily Interview Training](#interview-challenge) section to build.
 - [ ] Draw out your wireframe into detail to help you plan your code. *Remember, the code is just a tool, you are the thinker. How to you think up the plan before you execute with the tool?*
-- [ ] You're going to build this online resume into your ACA_web101_firstName_lastName folder and link it to the Landing Page so users can access your resume.
-- [ ] Using your terminal, navigate to `ACA_web101_firstName_lastName` O*bviously switching out `firstName` & `lastName` with your real name...*
-- [ ] Open the folder in VS Code
-- [ ] Create a new file called resume.html and another called resume-style.css
-- [ ] Generate your **boilerplate** HTML in that file and link the stylesheet to it. (`html:5` + ++enter++)
-- [ ] Then go to the `index.html` and link your *resume.html* file to the "Resume" a tag at the top of the page by changing the href= value to the pathname that points to the new *resume.html* you just created.
-- [ ] From there, test your link by Live-Serving your page and clicking on the "Resume" link.
+- [ ] Go to [CodeSandbox](https://codesandbox.io/dashboard) and your "Portfolio Website" sandbox.
+- [ ] Create two new files called `resume.html` and `resume-style.css`.
+- [ ] Then go to the `index.html` and link your `resume.html` file to the "Resume" Anchor element at the top of the page by changing the `href=""` value to the pathname that points to the new `resume.html` you just created.
+- [ ] From there, test your link by Saving (++cmd++ + ++s++) the clicking on the link.
 - [ ] From here, you can start building!
-- [ ] Once you're finished, `git status`, `add`, `commit`, `push` your changes then turn in the url to the resume page, NOT the url to the landing page. So the url you turn in should have something like `/resume.html` at the end of it.
 
 ### Tips
 
-* Build a resume for Kobe Bryant (RIP), Barack Obama, Michelle Williams, Jeff Bezos, Elon Musk, Ryan Holiday or some other figure you can find on wikipedia. *This will be easier building one for yourself!*
+* Build a resume for Kobe Bryant (RIP), Barack Obama, Michelle Williams, Jeff Bezos, Elon Musk, Ryan Holiday or some other figure you can find on wikipedia. *This will be easier than building one for yourself!*
+
 * If you don't want to type content, then copy/paste [Lorem Ipsum](https://getlorem.com/){:target="_blank"} to get words into your page. Lorem Ipsum is a tried & true industry practice to get word spacing and aesthetics across without the wait time of **copy** to be created.
 
 ### Example Mockups
@@ -114,9 +111,6 @@ Next class we'll be making our webpages responsive to mobile devices to read up,
 
 <!-- TODO Create 3 question exit questions -->
 
-<!-- TODO INSERT Student Feedback From -->
-
-<!-- TODO INSERT *HIDDEN* Instruc tor Feedback Form -->
 
 <!-- 
 height/width = 1.777 ---- width="655" height="368"
