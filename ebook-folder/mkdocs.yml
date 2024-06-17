@@ -21,6 +21,7 @@ site_name: Web 101 - Intro to the Web
 
 nav:
     - Home: 'index.md'
+    - Self-Help: 'HowTo-selfHelp.md'
     - 'Self-Paced Prep':
       - '1. Your first web page':
         - Building our first web page: preCourse/ourFirstWebPage.md
@@ -51,7 +52,7 @@ nav:
         - Submitting Homework: preCourse/submittingHomework.md
 
     # cp workspace/resources/templateFile.md docs/module-
-    - 'Module One: Page Layout':
+    - 'Pt. I: Page Layout':
       - 'Pre-Class 1 Lessons': 
         - Class 1 Landing Page: module-1/class-1.md
       - 'Pre-Class 2 Lessons': 
@@ -73,7 +74,7 @@ nav:
         - CSS Specificity: module-1/specificityAndCombinators.md
         - Develop - Letting Go of Self-Importance: module-1/developSeries-lettingGoOfShame.md
         - Class 4: module-1/class-4.md
-    - 'Module Two: Interactions': 
+    - 'Pt. II: Interactions': 
       - 'Pre-Class 5 Lessons': 
         - Intro to JavaScript: module-2/introToJavaScript.md
         - How the Internet Works: module-2/howTheInternetWorks.md
@@ -104,7 +105,7 @@ nav:
         # TODO - Develop - TITLE: module-2/.md
         - Video & Iframe Elements: module-2/video-iframe-elements.md
         - Class 8 Checkpoint: module-2/class-8.md
-    - 'Module Three: Programming': 
+    - 'Pt. III: Programming': 
       - 'Pre-Class 9 Lessons':
         - Develop - Cure Imposter Syndrome: module-3/developSeries-cureImposterSyndrome.md
         - The Console Object: module-3/consoleObject.md
@@ -130,7 +131,7 @@ nav:
         - Using Trello: module-3/usingTrello.md
         - Intro to Filtering: module-3/introToFiltering.md
         - Class 12 Filtering ToDos: module-3/class-12.md
-    - 'Module Four: API & Animation':
+    - 'Pt. IV: APIs & Animation':
       - 'Pre-Class 13 Lessons':
         - Develop Emotions vs Feelings: module-4/developSeries-feelingsVsEmotions.md
         - CSS Reset: module-4/cssReset.md
@@ -165,7 +166,7 @@ nav:
       #   - Render Data: module-1/lesson-7.md
       #   - Reading Docs: module-1/lesson-8.md
     - Report A Bug: additionalResources/reportABug.md
-    - 'Additional Resources':
+    - 'Resources':
       - Interview Training: additionalResources/interviewChallenges.md
       - Student Presentations: additionalResources/studentPresentations.md
       - Develop Series Collection: additionalResources/developSeries.md
@@ -219,7 +220,10 @@ theme:
     accent: deep orange
     # Defines the logo in the top-left, file must be in the /doc directory
   logo: CE_WhiteBlue_Icon.png
-  
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - header.autohide
   # ? Not rendering as expected??
   extra:
     copyright: Copyright &copy; 2013 - 2025 Austin Coding Academy
